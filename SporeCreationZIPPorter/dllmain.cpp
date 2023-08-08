@@ -67,8 +67,8 @@ member_detour(SavePNG_detour, App::Thumbnail_cImportExport, bool(Resource::Resou
 
 // ModAPI::ChooseAddress(0x5fba10, 0x5fbb90)
 // Called when PNGs are dragged into the game. We need to find its correct parameters.
-member_detour(PNG_Detour07, VirtualClass, uint32_t(IStream*,void*,void*,void*,void*)) {
-	uint32_t detoured(IStream* p1, void* p2, void* p3, void* p4, void* p5) {
+member_detour(PNG_Detour07, VirtualClass, uint32_t(IStream*,void*,void*,void*,IO::MemoryStream**)) {
+	uint32_t detoured(IStream* p1, void* p2, void* p3, void* p4, IO::MemoryStream** p5) {
 		return original_function(this, p1, p2, p3, p4, p5);
 	}
 };
@@ -102,6 +102,7 @@ void Dispose()
 
 void AttachDetours()
 {
+	ManualBreakpoint();
 	// Call the attach() method on any detours you want to add
 	// For example: cViewer_SetRenderType_detour::attach(GetAddress(cViewer, SetRenderType));
 	SavePNG_detour::attach(GetAddress(App::Thumbnail_cImportExport, SavePNG));
