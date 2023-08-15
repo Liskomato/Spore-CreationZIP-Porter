@@ -67,18 +67,18 @@ member_detour(SavePNG_detour, App::Thumbnail_cImportExport, bool(Resource::Resou
 
 // ModAPI::ChooseAddress(0x5fba10, 0x5fbb90)
 // Called when PNGs are dragged into the game. We need to find its correct parameters.
-member_detour(PNG_Detour07, VirtualClass, uint32_t(IStream*,void*,void*,void*,IO::MemoryStream**)) {
-	uint32_t detoured(IStream* p1, void* p2, void* p3, void* p4, IO::MemoryStream** p5) {
-		return original_function(this, p1, p2, p3, p4, p5);
-	}
-};
+//member_detour(PNG_Detour07, VirtualClass, uint32_t(IStream*,void*,void*,void*,IO::MemoryStream*)) {
+//	uint32_t detoured(IStream* p1, void* p2, void* p3, void* p4, IO::MemoryStream* p5) {
+//		return original_function(this, p1, p2, p3, p4, p5);
+//	}
+//};
 
 // ModAPI::ChooseAddress(0x5fc240, 0x5fc5fb)
-member_detour(PNG_Detour08, VirtualClass, uint32_t(const char16_t*, App::cIDGenerator*)) {
-	uint32_t detoured(const char16_t* p1, App::cIDGenerator* p2) {
-		return original_function(this, p1, p2);
-	}
-};
+//member_detour(PNG_Detour08, VirtualClass, uint32_t(const char16_t*, App::cIDGenerator*)) {
+//	uint32_t detoured(const char16_t* p1, App::cIDGenerator* p2) {
+//		return original_function(this, p1, p2);
+//	}
+//};
 //
 //// ModAPI::ChooseAddress(0x615cc0, 0x6160c0)
 //member_detour(PNG_Detour09, VirtualClass, void()) {
@@ -102,7 +102,7 @@ void Dispose()
 
 void AttachDetours()
 {
-	ManualBreakpoint();
+	/*ManualBreakpoint();*/
 	// Call the attach() method on any detours you want to add
 	// For example: cViewer_SetRenderType_detour::attach(GetAddress(cViewer, SetRenderType));
 	SavePNG_detour::attach(GetAddress(App::Thumbnail_cImportExport, SavePNG));
@@ -113,10 +113,10 @@ void AttachDetours()
 	//PNG_Detour04::attach(Address(ModAPI::ChooseAddress(0x5f89c0, 0x5f8b60)));
 	//PNG_Detour05::attach(Address(ModAPI::ChooseAddress(0x5f9830, 0x5f99b0)));
 	//PNG_Detour06::attach(Address(ModAPI::ChooseAddress(0x5fa1a0, 0x5fa320)));
-	PNG_Detour07::attach(Address(ModAPI::ChooseAddress(0x5fba10, 0x5fbb90)));
-	PNG_Detour08::attach(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc5fb)));
-	/*PNG_Detour09::attach(Address(ModAPI::ChooseAddress(0x615cc0, 0x6160c0)));
-	PNG_Detour10::attach(Address(ModAPI::ChooseAddress(0x615de0, 0x6161e0)));*/
+	//PNG_Detour07::attach(Address(ModAPI::ChooseAddress(0x5fba10, 0x5fbb90)));
+	//PNG_Detour08::attach(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc5fb)));
+	//PNG_Detour09::attach(Address(ModAPI::ChooseAddress(0x615cc0, 0x6160c0)));
+	//PNG_Detour10::attach(Address(ModAPI::ChooseAddress(0x615de0, 0x6161e0)));
 }
 
 
