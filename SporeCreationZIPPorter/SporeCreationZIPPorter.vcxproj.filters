@@ -22,6 +22,12 @@
     <ClInclude Include="DetourClasses.h">
       <Filter>SporeCreationZIPPorter</Filter>
     </ClInclude>
+    <ClInclude Include="DownloadCreation.h">
+      <Filter>SporeCreationZIPPorter</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenFileMessage.h">
+      <Filter>SporeCreationZIPPorter</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -29,6 +35,12 @@
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="DownloadCreation.cpp">
+      <Filter>SporeCreationZIPPorter</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenFileMessage.cpp">
+      <Filter>SporeCreationZIPPorter</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

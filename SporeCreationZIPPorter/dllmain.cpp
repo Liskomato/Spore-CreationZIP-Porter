@@ -1,5 +1,6 @@
 // dllmain.cpp : Defines the entry point for the DLL application.
 #include "stdafx.h"
+#include "DownloadCreation.h"
 #include "DetourClasses.h"
 
 void Initialize()
@@ -11,6 +12,7 @@ void Initialize()
 	//  - Add new game modes
 	//  - Add new space tools
 	//  - Change materials
+	CheatManager.AddCheat("DownloadCreation",new DownloadCreation());
 }
 
 member_detour(SavePNG_detour, App::Thumbnail_cImportExport, bool(Resource::ResourceObject*, RenderWare::Raster*, Resource::Database*, bool, bool)) {
