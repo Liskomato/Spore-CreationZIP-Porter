@@ -23,18 +23,23 @@ void DownloadCreation::ParseLine(const ArgScript::Line& line)
 	
 	vector<string16> filePaths;
 
-	char16_t file[1025] = { 0 };
+	WCHAR file[1025] = { 0 };
+	file[0] = '\0';
 	
 	OPENFILENAMEW openedFile;
 	ZeroMemory(&openedFile,sizeof(openedFile));
-	openedFile.lStructSize = sizeof(LPOPENFILENAMEA);
-	openedFile.lpstrFilter = L"Spore Creations\0*.png\0All\0*.*\0\0";
+	openedFile.lStructSize = sizeof(openedFile);
+	openedFile.lpstrFilter = L"Spore Creations (*.png)\0*.png\0All (*.*)\0*.*\0\0";
 	openedFile.nFileOffset = 1;
+	openedFile.lpstrFile = file;
 	openedFile.lpstrFile[0] = '\0';
-	openedFile.nMaxFile = 1024;
+	openedFile.nMaxFile = 1025;
 	openedFile.lpstrTitle = L"Load a Spore creation into the game.";
 	openedFile.Flags = OFN_ALLOWMULTISELECT | OFN_EXPLORER | OFN_FILEMUSTEXIST;
-	if (GetOpenFileNameW(&openedFile)) {
+	
+	bool check = GetOpenFileNameW(&openedFile);
+	
+	if (check) {
 		
 		char16_t* str = (char16_t*)openedFile.lpstrFile;
 		string16 dir = str;
@@ -50,7 +55,10 @@ void DownloadCreation::ParseLine(const ArgScript::Line& line)
 
 		OpenFileMessagePtr msg = new OpenFileMessage();
 		msg->files = filePaths;
-		MessageManager.MessagePost(0x24CE123,msg.get());
+		MessageManager.MessageSend(0x24CE123,msg.get());
+	}
+	else {
+		App::ConsolePrintF("DownloadCreation failed to open window dialog.");
 	}
 
 
