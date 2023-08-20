@@ -67,10 +67,10 @@ void DownloadCreation::ParseLine(const ArgScript::Line& line)
 				states.emplace_back(state);
 			}
 		}
-		if (eastl::find_if_not(states.begin(),states.end(),true)) {
+		if (eastl::find(states.begin(),states.end(),true) == false) {
 			App::ConsolePrintF("No creations were added. Either the filepaths were invalid, or no files read were valid.");
 		}
-		else if (eastl::find_if(states.begin(), states.end(), true)) {
+		else {
 			App::ConsolePrintF("New creations were successfully added to the Sporepedia!"); 
 		}
 
