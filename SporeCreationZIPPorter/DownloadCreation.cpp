@@ -22,7 +22,7 @@ void DownloadCreation::ParseLine(const ArgScript::Line& line)
 	// This method is called when your cheat is invoked.
 	// Put your cheat code here.
 	
-	vector<char16_t*> filePaths;
+	vector<string16> filePaths;
 
 	WCHAR file[1025] = { 0 };
 	file[0] = '\0';
@@ -54,15 +54,13 @@ void DownloadCreation::ParseLine(const ArgScript::Line& line)
 		else {
 			while (*str) {
 				string16 filename = str;
-				char16_t* filename_c = str;
 				str += (filename.length() + 1);
-				filePaths.emplace_back(filename_c);
+				filePaths.emplace_back(filename);
 			}
-			for (const char16_t* file : filePaths) {
-				char16_t* fullPath = dir_c;
-				fullPath += *file;
+			for (string16 file : filePaths) {
+				string16 fullPath = dir + u"\\" + file;
 				ResourceKey fileKey;
-				state = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), uint32_t, Args(App::Thumbnail_cImportExport*,const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(), fullPath, fileKey));
+				state = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), uint32_t, Args(App::Thumbnail_cImportExport*,const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(), fullPath.c_str(), fileKey));
 				keys.emplace_back(fileKey);
 			}
 		}
