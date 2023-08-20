@@ -44,12 +44,14 @@ void DownloadCreation::ParseLine(const ArgScript::Line& line)
 		ResourceKey key;
 		vector<ResourceKey> keys;
 		bool state = 0;
+		vector<bool> states;
 		char16_t* str = (char16_t*)openedFile.lpstrFile;
 		string16 dir = str;
 		char16_t* dir_c = str;
 		str += (dir.length() + 1);
 		if (*str == 0) {
 			state = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), bool, Args(App::Thumbnail_cImportExport*, const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(), dir_c, key));
+			states.emplace_back(state);
 		}
 		else {
 			while (*str) {
@@ -62,9 +64,13 @@ void DownloadCreation::ParseLine(const ArgScript::Line& line)
 				ResourceKey fileKey;
 				state = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), bool, Args(App::Thumbnail_cImportExport*,const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(), fullPath.c_str(), fileKey));
 				keys.emplace_back(fileKey);
+				states.emplace_back(state);
 			}
 		}
-		if (keys.size() != 0 || key != ResourceKey()) { 
+		if (eastl::find_if_not(states.begin(),states.end(),true)) {
+			App::ConsolePrintF("No creations were added. Either the filepaths were invalid, or no files read were valid.");
+		}
+		else if (eastl::find_if(states.begin(), states.end(), true)) {
 			App::ConsolePrintF("New creations were successfully added to the Sporepedia!"); 
 		}
 
