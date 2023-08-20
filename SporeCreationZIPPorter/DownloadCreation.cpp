@@ -43,13 +43,13 @@ void DownloadCreation::ParseLine(const ArgScript::Line& line)
 	if (check) {
 		ResourceKey key;
 		vector<ResourceKey> keys;
-		uint32_t state = 0;
+		bool state = 0;
 		char16_t* str = (char16_t*)openedFile.lpstrFile;
 		string16 dir = str;
 		char16_t* dir_c = str;
 		str += (dir.length() + 1);
 		if (*str == 0) {
-			state = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), uint32_t, Args(App::Thumbnail_cImportExport*, const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(), dir_c, key));
+			state = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), bool, Args(App::Thumbnail_cImportExport*, const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(), dir_c, key));
 		}
 		else {
 			while (*str) {
@@ -60,7 +60,7 @@ void DownloadCreation::ParseLine(const ArgScript::Line& line)
 			for (string16 file : filePaths) {
 				string16 fullPath = dir + u"\\" + file;
 				ResourceKey fileKey;
-				state = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), uint32_t, Args(App::Thumbnail_cImportExport*,const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(), fullPath.c_str(), fileKey));
+				state = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), bool, Args(App::Thumbnail_cImportExport*,const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(), fullPath.c_str(), fileKey));
 				keys.emplace_back(fileKey);
 			}
 		}
