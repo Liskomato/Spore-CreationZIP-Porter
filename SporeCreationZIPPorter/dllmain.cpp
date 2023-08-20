@@ -75,8 +75,8 @@ member_detour(PNG_Detour07, VirtualClass, uint32_t(IStream*,void*,void*)) {
 	}
 };
 // ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)
-member_detour(ReadPNG_dtour,VirtualClass, uint32_t(const char16_t*,ResourceKey*)) {
-	uint32_t detoured(const char16_t* path, ResourceKey* key) {
+member_detour(ReadPNG_dtour,VirtualClass, uint32_t(const char16_t*,ResourceKey&)) {
+	uint32_t detoured(const char16_t* path, ResourceKey& key) {
 		return original_function(this, path, key);
 	}
 };

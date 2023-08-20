@@ -4,6 +4,7 @@
 #include <commdlg.h>
 #include "DownloadCreation.h"
 #include "OpenFileMessage.h"
+#include "DetourClasses.h"
 
 
 DownloadCreation::DownloadCreation()
@@ -40,6 +41,7 @@ void DownloadCreation::ParseLine(const ArgScript::Line& line)
 	bool check = GetOpenFileNameW(&openedFile);
 	
 	if (check) {
+		VirtualClass vclass;
 		ResourceKey key;
 		vector<ResourceKey> keys;
 		uint32_t state = 0;
@@ -48,7 +50,7 @@ void DownloadCreation::ParseLine(const ArgScript::Line& line)
 		char16_t* dir_c = str;
 		str += (dir.length() + 1);
 		if (*str == 0) {
-			state = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), uint32_t, Args(char16_t*, ResourceKey*), Args(dir_c, &key));
+			state = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), uint32_t, Args(VirtualClass, const char16_t*, ResourceKey&), Args(vclass,dir_c, key));
 		}
 		else {
 			while (*str) {
@@ -61,7 +63,7 @@ void DownloadCreation::ParseLine(const ArgScript::Line& line)
 				char16_t* fullPath = dir_c;
 				fullPath += *file;
 				ResourceKey fileKey;
-				state = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), uint32_t, Args(char16_t*, ResourceKey*), Args(fullPath,&fileKey));
+				state = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), uint32_t, Args(VirtualClass,const char16_t*, ResourceKey&), Args(vclass,fullPath,fileKey));
 				keys.emplace_back(fileKey);
 			}
 		}
