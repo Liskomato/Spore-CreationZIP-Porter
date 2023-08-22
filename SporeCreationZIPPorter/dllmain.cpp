@@ -2,6 +2,10 @@
 #include "stdafx.h"
 #include "DownloadCreation.h"
 #include "DetourClasses.h"
+#include "AlternativePackageLocations.h"
+#include "libzippp.h"
+
+
 
 void Initialize()
 {
@@ -14,7 +18,7 @@ void Initialize()
 	//  - Change materials
 	CheatManager.AddCheat("DownloadCreation",new DownloadCreation());
 }
-
+/// Detour for App::Thumbnail_cImportExport::SavePNG
 member_detour(SavePNG_detour, App::Thumbnail_cImportExport, bool(Resource::ResourceObject*, RenderWare::Raster*, Resource::Database*, bool, bool)) {
 	bool detoured(Resource::ResourceObject * pResource, RenderWare::Raster * pImage, Resource::Database * database,
 		bool forceReplace = false, bool disableSteganography = false) {
@@ -22,6 +26,23 @@ member_detour(SavePNG_detour, App::Thumbnail_cImportExport, bool(Resource::Resou
 		return original_function(this,pResource,pImage,database,forceReplace,disableSteganography);
 	}
 };
+
+// ModAPI::ChooseAddress(0x5fba10, 0x5fbb90)
+// Called when PNGs are dragged into the game. We need to find its correct parameters.
+member_detour(PNG_Detour07, VirtualClass, uint32_t(IStream*, void*, void*)) {
+	uint32_t detoured(IStream * p1, void* p2, void* p3) {
+		return original_function(this, p1, p2, p3);
+	}
+};
+/// ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)
+/// Detour for App::Thumbnail_cImportExport::ImportPNG
+member_detour(ImportPNG_dtour, App::Thumbnail_cImportExport, bool(const char16_t*, ResourceKey&)) {
+	bool detoured(const char16_t* path, ResourceKey & key) {
+		return original_function(this, path, key);
+	}
+};
+
+
 
 //// ModAPI::ChooseAddress(0x563550, 0x5634b0)
 //member_detour(PNG_Detour01,VirtualClass,void(uint32_t*,char*)) {
@@ -67,19 +88,7 @@ member_detour(SavePNG_detour, App::Thumbnail_cImportExport, bool(Resource::Resou
 //	}
 //};
 
-// ModAPI::ChooseAddress(0x5fba10, 0x5fbb90)
-// Called when PNGs are dragged into the game. We need to find its correct parameters.
-member_detour(PNG_Detour07, VirtualClass, uint32_t(IStream*,void*,void*)) {
-	uint32_t detoured(IStream* p1, void* p2, void* p3) {
-		return original_function(this, p1, p2, p3);
-	}
-};
-// ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)
-member_detour(ReadPNG_dtour,App::Thumbnail_cImportExport, bool(const char16_t*,ResourceKey&)) {
-	bool detoured(const char16_t* path, ResourceKey& key) {
-		return original_function(this, path, key);
-	}
-};
+
 
 
 //
@@ -109,6 +118,10 @@ void AttachDetours()
 	// Call the attach() method on any detours you want to add
 	// For example: cViewer_SetRenderType_detour::attach(GetAddress(cViewer, SetRenderType));
 	SavePNG_detour::attach(GetAddress(App::Thumbnail_cImportExport, SavePNG));
+	PNG_Detour07::attach(Address(ModAPI::ChooseAddress(0x5fba10, 0x5fbb90)));
+	ImportPNG_dtour::attach(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)));
+
+	AlternativePackageLocations::AttachDetour();
 
 	//PNG_Detour01::attach(Address(ModAPI::ChooseAddress(0x563550, 0x5634b0)));
 	//PNG_Detour02::attach(Address(ModAPI::ChooseAddress(0x57e870, 0x57ea30)));
@@ -116,10 +129,11 @@ void AttachDetours()
 	//PNG_Detour04::attach(Address(ModAPI::ChooseAddress(0x5f89c0, 0x5f8b60)));
 	//PNG_Detour05::attach(Address(ModAPI::ChooseAddress(0x5f9830, 0x5f99b0)));
 	//PNG_Detour06::attach(Address(ModAPI::ChooseAddress(0x5fa1a0, 0x5fa320)));
-	PNG_Detour07::attach(Address(ModAPI::ChooseAddress(0x5fba10, 0x5fbb90)));
-	ReadPNG_dtour::attach(Address(ModAPI::ChooseAddress(0x5fc240,0x5fc3c0)));
+	
 	//PNG_Detour09::attach(Address(ModAPI::ChooseAddress(0x615cc0, 0x6160c0)));
 	//PNG_Detour10::attach(Address(ModAPI::ChooseAddress(0x615de0, 0x6161e0)));
+
+	
 }
 
 
@@ -132,6 +146,13 @@ BOOL APIENTRY DllMain( HMODULE hModule,
 	switch (ul_reason_for_call)
 	{
 	case DLL_PROCESS_ATTACH:
+		
+		LPWSTR dllFilePath[512 + 1] = { 0 };
+		GetModuleFileNameW(hModule, *dllFilePath, 512);
+
+		AlternativePackageLocations::libDir = (char16_t*)dllFilePath;
+		AlternativePackageLocations::SplitFileName();
+
 		ModAPI::AddPostInitFunction(Initialize);
 		ModAPI::AddDisposeFunction(Dispose);
 

@@ -1,6 +1,10 @@
 # Creation ZIP Porter
 A foundational Spore ModAPI mod to allow loading Spore creations from a ZIP file found in `mLibs` in order to enable distribution of creations with Spore mod managing software.
 
+## Dependencies
+* [libzippp-v6.1-1.9.2](https://github.com/ctabin/libzippp)
+* [Spore ModAPI SDK v2.5.278 or higher](https://github.com/emd4600/Spore-ModAPI)
+
 ## Credits
 - Liskomato: Main developer
 - Kade: Concept
