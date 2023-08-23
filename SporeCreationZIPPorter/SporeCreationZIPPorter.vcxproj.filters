@@ -28,6 +28,12 @@
     <ClInclude Include="OpenFileMessage.h">
       <Filter>SporeCreationZIPPorter</Filter>
     </ClInclude>
+    <ClInclude Include="AlternativePackageLocations.h">
+      <Filter>SporeCreationZIPPorter</Filter>
+    </ClInclude>
+    <ClInclude Include="ZipManager.h">
+      <Filter>SporeCreationZIPPorter</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -40,6 +46,12 @@
       <Filter>SporeCreationZIPPorter</Filter>
     </ClCompile>
     <ClCompile Include="OpenFileMessage.cpp">
+      <Filter>SporeCreationZIPPorter</Filter>
+    </ClCompile>
+    <ClCompile Include="AlternativePackageLocations.cpp">
+      <Filter>SporeCreationZIPPorter</Filter>
+    </ClCompile>
+    <ClCompile Include="ZipManager.cpp">
       <Filter>SporeCreationZIPPorter</Filter>
     </ClCompile>
   </ItemGroup>

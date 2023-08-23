@@ -147,11 +147,12 @@ BOOL APIENTRY DllMain( HMODULE hModule,
                        LPVOID lpReserved
 					 )
 {
+	LPWSTR dllFilePath[512 + 1] = { 0 };
 	switch (ul_reason_for_call)
 	{
 	case DLL_PROCESS_ATTACH:
+
 		
-		LPWSTR dllFilePath[512 + 1] = { 0 };
 		GetModuleFileNameW(hModule, *dllFilePath, 512);
 
 		AlternativePackageLocations::libDir = (char16_t*)dllFilePath;

@@ -401,3 +401,5 @@ FodyWeavers.xsd
 *.sporemod
 *.zip
 *.package
+!ExampleSporemods/**/*.zip
+!ExampleSporemods/**/*.package

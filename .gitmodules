@@ -1,0 +1,12 @@
+[submodule "3rdParty/libzippp"]
+	path = 3rdParty/libzippp
+	url = https://github.com/ctabin/libzippp.git
+	ignore = dirty
+[submodule "3rdParty/libzip"]
+	path = 3rdParty/libzip
+	url = https://github.com/nih-at/libzip.git
+	ignore = dirty
+[submodule "3rdParty/zlib"]
+	path = 3rdParty/zlib
+	url = https://github.com/madler/zlib.git
+	ignore = dirty

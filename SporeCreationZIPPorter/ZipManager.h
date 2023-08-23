@@ -3,7 +3,7 @@
 #include <Spore\BasicIncludes.h>
 #include "libzippp.h"
 
-#define ZipManagerPtr intrusive_ptr<ZipManager>
+#define ZipManagerPtr intrusive_ptr<cZipManager>
 #define ZipManager (*cZipManager::Get())
 
 	class cZipManager
@@ -27,7 +27,7 @@
 		void* Cast(uint32_t type) const override;
 	private:
 		cZipManager();
-		static cZipManager* ptr;
+		inline static cZipManager* ptr;
 		vector<string16> libPaths;
 
 	};

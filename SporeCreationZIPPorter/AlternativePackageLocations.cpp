@@ -19,18 +19,17 @@ namespace AlternativePackageLocations {
 		SetDataDirs_detour::attach(Address(ModAPI::ChooseAddress(0x687e20, 0x687bd0)));
 	}
 	
-	static_detour(SetDataDirs_detour, void())
+	
+	void SetDataDirs_detour::detoured()
 	{
-		void detoured()
-		{
 
-			original_function();
+		original_function();
 
-			auto data_dirs = reinterpret_cast<vector<DataDirObject> *>(Address(ModAPI::ChooseAddress(0x01602c88,0x015fea00)));
-			auto data_dirs_size = reinterpret_cast<int32_t*>(Address(ModAPI::ChooseAddress(0x0152f348,0x0152b348)));
+		auto data_dirs = reinterpret_cast<vector<DataDirObject> *>(Address(ModAPI::ChooseAddress(0x01602c88,0x015fea00)));
+		auto data_dirs_size = reinterpret_cast<int32_t*>(Address(ModAPI::ChooseAddress(0x0152f348,0x0152b348)));
 
-			data_dirs->emplace_back(0x1, 0x0, libDir, u"");
-			++(*data_dirs_size);
-		}
-	};
+		data_dirs->emplace_back(0x1, 0x0, libDir, u"");
+		++(*data_dirs_size);
+	}
+	
 }

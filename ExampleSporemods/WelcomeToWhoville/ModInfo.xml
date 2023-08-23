@@ -1,0 +1,4 @@
+<mod displayName="Welcome to Whoville" unique="Whoville-AdventurePack" description="A test for the Creation ZIP Porter to do its thing." installerSystemVersion="1.0.1.2" hasCustomInstaller="false" isExperimental="false" dllsBuild="2.5.278">
+<prerequisite>Welcome to Whoville_500811402159.zip</prerequisite>
+<remove>*Welcome to Whoville_500811402159*</remove>
+</mod>

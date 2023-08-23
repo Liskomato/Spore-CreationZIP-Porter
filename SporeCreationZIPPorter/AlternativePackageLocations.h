@@ -4,7 +4,7 @@ namespace AlternativePackageLocations
 {
 
 	/// Directory of this solution's DLL file.
-	string16 libDir;
+	static string16 libDir = u"";
 
 	struct DataDirObject
 	{
@@ -23,4 +23,8 @@ namespace AlternativePackageLocations
 
 	void AttachDetour();
 	void SplitFileName();
+
+	static_detour(SetDataDirs_detour, void()) {
+		void detoured();
+	};
 }
