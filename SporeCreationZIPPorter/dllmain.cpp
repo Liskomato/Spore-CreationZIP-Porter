@@ -16,10 +16,12 @@ void Initialize()
 	//  - Add new game modes
 	//  - Add new space tools
 	//  - Change materials
-	AlternativePackageLocations::Initialize();
+
+
 
 	CheatManager.AddCheat("DownloadCreation",new DownloadCreation());
-	ZipManager.AddFilepath(AlternativePackageLocations::libDir);
+	ZipManager.Initialize();
+ 	//ZipManager.AddFilepath(AlternativePackageLocations::libDir);
 	ZipManager.CheckFilepaths();
 }
 /// Detour for App::Thumbnail_cImportExport::SavePNG

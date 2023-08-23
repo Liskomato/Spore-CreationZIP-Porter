@@ -2,6 +2,7 @@
 
 #include "stdafx.h"
 #include "ZipLib\ZipArchive.h"
+#include "AlternativePackageLocations.h"
 
 #define ZipManagerPtr intrusive_ptr<cZipManager>
 #define ZipManager (*cZipManager::Get())
@@ -15,9 +16,9 @@
 		static cZipManager* Get();
 		void Initialize();
 		void Dispose();
-		void AddFilepath(eastl::string16 path);
+		void AddFilepath(const eastl::string16& path);
 		void CheckFilepaths();
-		bool ReadZIP(eastl::string16 zip, eastl::string16 parentDirectory);
+		bool ReadZIP(const eastl::string16& zip, const eastl::string16& parentDirectory);
 
 		cZipManager(const cZipManager& obj) = delete;
 		~cZipManager();
@@ -28,7 +29,7 @@
 	private:
 		cZipManager();
 		inline static cZipManager* ptr;
-		eastl::vector<eastl::string16> libPaths;
+		eastl::vector<eastl::string16> libPaths = {AlternativePackageLocations::libDir};
 
 	};
 

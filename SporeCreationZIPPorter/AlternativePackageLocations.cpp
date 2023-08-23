@@ -4,13 +4,16 @@
 namespace AlternativePackageLocations {
 	
 
+	WCHAR dllFilePath[512 + 1] = { 0 };
+
 	/// We call this after receiving the DLL file's path so we can get the directory it's in.
 	void SplitFileName() {
 		if (libDir != u"") {
-
+			eastl::string16 directory = libDir;
 			size_t found;
-			found = libDir.find_last_of(u"/\\");
-			libDir = libDir.substr(0, found);
+			found = directory.find_last_of(u"/\\");
+			directory = directory.substr(0, found);
+			libDir = directory;
 		}
 
 	}
@@ -33,17 +36,14 @@ namespace AlternativePackageLocations {
 	}
 	
 	void RecordModule(HMODULE hModule) {
-		module = hModule;
-	}
 
-	void Initialize() {
+		GetModuleFileNameW(hModule, dllFilePath, 512);
 
-		WCHAR dllFilePath[512 + 1] = { 0 };
+		eastl::string16 dir = (char16_t*)dllFilePath;
 
-		GetModuleFileNameW(module, dllFilePath, 512);
-
-		libDir = (char16_t*)dllFilePath;
+		libDir = dir;
 		SplitFileName();
 	}
+
 
 }

@@ -4,8 +4,7 @@ namespace AlternativePackageLocations
 {
 
 	/// Directory of this solution's DLL file.
-	static eastl::string16 libDir = u"";
-	static HMODULE module;
+	inline eastl::string16 libDir;
 
 	struct DataDirObject
 	{
@@ -26,7 +25,6 @@ namespace AlternativePackageLocations
 	void SplitFileName();
 
 	void RecordModule(HMODULE hModule);
-	void Initialize();
 
 	static_detour(SetDataDirs_detour, void()) {
 		void detoured();
