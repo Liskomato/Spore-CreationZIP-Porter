@@ -69,15 +69,15 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\libzippp\include\libzippp;C:\Program Files %28x86%29\libzip\include;C:\Program Files %28x86%29\zlib\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\tende\Documents\GitHub\Spore-CreationZIP-Porter\3rdParty\ziplib\Source</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>Default</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>detours.lib;SporeModAPIBase.lib;SporeModAPI.lib;libzippp.lib;zip.lib;zlibstaticd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\tende\Documents\GitHub\Spore-CreationZIP-Porter\3rdParty\zlib\build\Debug;C:\Users\tende\Documents\GitHub\Spore-CreationZIP-Porter\3rdParty\libzippp\build\Debug;C:\Users\tende\Documents\GitHub\Spore-CreationZIP-Porter\3rdParty\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>detours.lib;SporeModAPIBase.lib;SporeModAPI.lib;ZipLib.lib;bzip2.lib;lzma.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\tende\Documents\GitHub\Spore-CreationZIP-Porter\3rdParty\ziplib\Bin\x86\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -89,7 +89,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;SPOREMODAPITEMPLATE_EXPORTS;EXECUTABLE_TYPE=SPORE_STEAM;PATCHED_SPORE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\zlib\include;C:\Program Files %28x86%29\libzip\include;C:\Program Files %28x86%29\libzippp\include\libzippp</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\tende\Documents\GitHub\Spore-CreationZIP-Porter\3rdParty\ziplib\Source\ZipLib</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>Default</LanguageStandard_C>
     </ClCompile>
@@ -98,8 +98,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>detours.lib;SporeModAPIBase.lib;SporeModAPI.lib;libzippp.lib;zlibstatic.lib;zip.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\tende\Documents\GitHub\Spore-CreationZIP-Porter\3rdParty\libzippp\build\Release;C:\Users\tende\Documents\GitHub\Spore-CreationZIP-Porter\3rdParty\zlib\build\Release;C:\Users\tende\Documents\GitHub\Spore-CreationZIP-Porter\3rdParty\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>detours.lib;SporeModAPIBase.lib;SporeModAPI.lib;ZipLib.lib;bzip2.lib;lzma.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\tende\Documents\GitHub\Spore-CreationZIP-Porter\3rdParty\ziplib\Bin\x86\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -118,6 +118,7 @@
     </ClInclude>
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="ZipLib.h" />
     <ClInclude Include="ZipManager.h">
       <SubType>
       </SubType>

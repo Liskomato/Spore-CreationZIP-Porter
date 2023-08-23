@@ -1,7 +1,7 @@
 #pragma once
 
-#include <Spore\BasicIncludes.h>
-//#include "libzippp.h"
+#include "stdafx.h"
+#include "ZipLib\ZipArchive.h"
 
 #define ZipManagerPtr intrusive_ptr<cZipManager>
 #define ZipManager (*cZipManager::Get())
@@ -15,9 +15,9 @@
 		static cZipManager* Get();
 		void Initialize();
 		void Dispose();
-		void AddFilepath(string16 path);
-		//void CheckFilepaths();
-		//bool ReadZIP(libzippp::ZipArchive* zip, std::u16string parentDirectory);
+		void AddFilepath(eastl::string16 path);
+		void CheckFilepaths();
+		bool ReadZIP(eastl::string16 zip, eastl::string16 parentDirectory);
 
 		cZipManager(const cZipManager& obj) = delete;
 		~cZipManager();
@@ -28,7 +28,7 @@
 	private:
 		cZipManager();
 		inline static cZipManager* ptr;
-		vector<string16> libPaths;
+		eastl::vector<eastl::string16> libPaths;
 
 	};
 

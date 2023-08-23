@@ -22,7 +22,7 @@ void DownloadCreation::ParseLine(const ArgScript::Line& line)
 	// This method is called when your cheat is invoked.
 	// Put your cheat code here.
 	
-	vector<string16> filePaths;
+	eastl::vector<eastl::string16> filePaths;
 
 	WCHAR file[1025] = { 0 };
 	file[0] = '\0';
@@ -42,11 +42,11 @@ void DownloadCreation::ParseLine(const ArgScript::Line& line)
 	
 	if (check) {
 		ResourceKey key;
-		vector<ResourceKey> keys;
+		eastl::vector<ResourceKey> keys;
 		bool state = 0;
-		vector<bool> states;
+		eastl::vector<bool> states;
 		char16_t* str = (char16_t*)openedFile.lpstrFile;
-		string16 dir = str;
+		eastl::string16 dir = str;
 		char16_t* dir_c = str;
 		str += (dir.length() + 1);
 		if (*str == 0) {
@@ -55,12 +55,12 @@ void DownloadCreation::ParseLine(const ArgScript::Line& line)
 		}
 		else {
 			while (*str) {
-				string16 filename = str;
+				eastl::string16 filename = str;
 				str += (filename.length() + 1);
 				filePaths.emplace_back(filename);
 			}
-			for (string16 file : filePaths) {
-				string16 fullPath = dir + u"\\" + file;
+			for (eastl::string16 file : filePaths) {
+				eastl::string16 fullPath = dir + u"\\" + file;
 				ResourceKey fileKey;
 				state = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), bool, Args(App::Thumbnail_cImportExport*,const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(), fullPath.c_str(), fileKey));
 				keys.emplace_back(fileKey);

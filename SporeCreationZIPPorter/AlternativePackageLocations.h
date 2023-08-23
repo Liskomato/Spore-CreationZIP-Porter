@@ -4,12 +4,12 @@ namespace AlternativePackageLocations
 {
 
 	/// Directory of this solution's DLL file.
-	static string16 libDir = u"";
+	static eastl::string16 libDir = u"";
 	static HMODULE module;
 
 	struct DataDirObject
 	{
-		DataDirObject(const uint32_t _1, const uint32_t _2, string16 _3, string16 _4)
+		DataDirObject(const uint32_t _1, const uint32_t _2, eastl::string16 _3, eastl::string16 _4)
 			: enabled(_1)
 			, packid(_2)
 			, datadir(std::move(_3))
@@ -18,8 +18,8 @@ namespace AlternativePackageLocations
 		}
 		uint32_t enabled;
 		uint32_t packid;
-		string16 datadir;
-		string16 productkey;
+		eastl::string16 datadir;
+		eastl::string16 productkey;
 	};
 
 	void AttachDetour();
