@@ -5,6 +5,7 @@ namespace AlternativePackageLocations
 
 	/// Directory of this solution's DLL file.
 	static string16 libDir = u"";
+	static HMODULE module;
 
 	struct DataDirObject
 	{
@@ -23,6 +24,9 @@ namespace AlternativePackageLocations
 
 	void AttachDetour();
 	void SplitFileName();
+
+	void RecordModule(HMODULE hModule);
+	void Initialize();
 
 	static_detour(SetDataDirs_detour, void()) {
 		void detoured();

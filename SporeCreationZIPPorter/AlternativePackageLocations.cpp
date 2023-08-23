@@ -32,4 +32,18 @@ namespace AlternativePackageLocations {
 		++(*data_dirs_size);
 	}
 	
+	void RecordModule(HMODULE hModule) {
+		module = hModule;
+	}
+
+	void Initialize() {
+
+		WCHAR dllFilePath[512 + 1] = { 0 };
+
+		GetModuleFileNameW(module, dllFilePath, 512);
+
+		libDir = (char16_t*)dllFilePath;
+		SplitFileName();
+	}
+
 }

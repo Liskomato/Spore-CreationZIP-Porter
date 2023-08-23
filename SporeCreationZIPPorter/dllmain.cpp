@@ -17,6 +17,8 @@ void Initialize()
 	//  - Add new game modes
 	//  - Add new space tools
 	//  - Change materials
+	AlternativePackageLocations::Initialize();
+
 	CheatManager.AddCheat("DownloadCreation",new DownloadCreation());
 	ZipManager.AddFilepath(AlternativePackageLocations::libDir);
 	ZipManager.CheckFilepaths();
@@ -147,16 +149,11 @@ BOOL APIENTRY DllMain( HMODULE hModule,
                        LPVOID lpReserved
 					 )
 {
-	LPWSTR dllFilePath[512 + 1] = { 0 };
 	switch (ul_reason_for_call)
 	{
 	case DLL_PROCESS_ATTACH:
-
-		
-		GetModuleFileNameW(hModule, *dllFilePath, 512);
-
-		AlternativePackageLocations::libDir = (char16_t*)dllFilePath;
-		AlternativePackageLocations::SplitFileName();
+		ManualBreakpoint();
+		AlternativePackageLocations::RecordModule(hModule);
 
 		ModAPI::AddPostInitFunction(Initialize);
 		ModAPI::AddDisposeFunction(Dispose);
