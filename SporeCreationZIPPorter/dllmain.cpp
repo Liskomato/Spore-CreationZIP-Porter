@@ -3,6 +3,7 @@
 #include "DownloadCreation.h"
 #include "DetourClasses.h"
 #include "AlternativePackageLocations.h"
+#include "ZipManager.h"
 #include "libzippp.h"
 
 
@@ -17,6 +18,8 @@ void Initialize()
 	//  - Add new space tools
 	//  - Change materials
 	CheatManager.AddCheat("DownloadCreation",new DownloadCreation());
+	ZipManager.AddFilepath(AlternativePackageLocations::libDir);
+	ZipManager.CheckFilepaths();
 }
 /// Detour for App::Thumbnail_cImportExport::SavePNG
 member_detour(SavePNG_detour, App::Thumbnail_cImportExport, bool(Resource::ResourceObject*, RenderWare::Raster*, Resource::Database*, bool, bool)) {
@@ -110,6 +113,7 @@ member_detour(ImportPNG_dtour, App::Thumbnail_cImportExport, bool(const char16_t
 void Dispose()
 {
 	// This method is called when the game is closing
+	ZipManager.Dispose();
 }
 
 void AttachDetours()
