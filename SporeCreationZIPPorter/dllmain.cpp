@@ -4,7 +4,7 @@
 #include "DetourClasses.h"
 #include "AlternativePackageLocations.h"
 #include "ZipManager.h"
-#include "libzippp.h"
+//#include "libzippp.h"
 
 
 
@@ -21,7 +21,7 @@ void Initialize()
 
 	CheatManager.AddCheat("DownloadCreation",new DownloadCreation());
 	ZipManager.AddFilepath(AlternativePackageLocations::libDir);
-	ZipManager.CheckFilepaths();
+//	ZipManager.CheckFilepaths();
 }
 /// Detour for App::Thumbnail_cImportExport::SavePNG
 member_detour(SavePNG_detour, App::Thumbnail_cImportExport, bool(Resource::ResourceObject*, RenderWare::Raster*, Resource::Database*, bool, bool)) {
