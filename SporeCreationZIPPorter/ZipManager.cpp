@@ -58,6 +58,10 @@ bool cZipManager::ReadZIP(const eastl::string16& zip, const eastl::string16& par
 	if (parentDirectory != u"" && zip != u"") {
 		eastl::string8 zipPath;
 		zipPath.assign_convert(zip.c_str());
+
+		eastl::string8 parent;
+		parent.assign_convert(parentDirectory.c_str());
+
 		ZipArchive::Ptr archive = ZipFile::Open(zipPath.c_str());
 		for (uint32_t i = 0; i < archive->GetEntriesCount(); i++) {
 			const auto& entry = archive->GetEntry(i);
@@ -65,9 +69,9 @@ bool cZipManager::ReadZIP(const eastl::string16& zip, const eastl::string16& par
 				
 				ResourceKey key;
 				std::string extractedFolder = "\\Extracted\\";
-				std::string targetDir = (char*)parentDirectory.c_str() + extractedFolder + entry->GetName();
+				std::string targetDir = parent.c_str() + extractedFolder + entry->GetName();
 				if (entry->CanExtract()) {
-					ZipFile::ExtractFile(zipPath.c_str(),entry->GetName(),targetDir.c_str());
+					ZipFile::ExtractFile(zipPath.c_str(), entry->GetName(), targetDir);
 					bool readExtracted = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), bool, Args(App::Thumbnail_cImportExport*, const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(), (char16_t*)targetDir.c_str(), key));
 					if (readExtracted) {
 						SporeDebugPrint("File entry %s within ZIP archive %s was successfully added to Sporepedia.\nResource key: %#u!%#u.%#u", entry->GetName().c_str(), zipPath.c_str(), key.groupID, key.instanceID, key.typeID);
