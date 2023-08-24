@@ -18,7 +18,7 @@
 		void Dispose();
 		void AddFilepath(const eastl::string16& path);
 		void CheckFilepaths();
-		bool ReadZIP(const eastl::string16& zip, const eastl::string16& parentDirectory);
+		bool ReadZIP(const eastl::string16& zip);
 
 		cZipManager(const cZipManager& obj) = delete;
 		~cZipManager();
@@ -30,6 +30,7 @@
 		cZipManager();
 		inline static cZipManager* ptr;
 		eastl::vector<eastl::string16> libPaths = {AlternativePackageLocations::libDir};
+		DatabaseDirectoryFilesPtr zipFolder;
 
 	};
 

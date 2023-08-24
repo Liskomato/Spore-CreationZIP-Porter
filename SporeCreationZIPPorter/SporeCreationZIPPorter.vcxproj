@@ -107,6 +107,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AlternativePackageLocations.h" />
+    <ClInclude Include="CheckForZIPs.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="DetourClasses.h" />
     <ClInclude Include="DownloadCreation.h">
       <SubType>
@@ -126,6 +130,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AlternativePackageLocations.cpp" />
+    <ClCompile Include="CheckForZIPs.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="dllmain.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

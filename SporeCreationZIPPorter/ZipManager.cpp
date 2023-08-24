@@ -16,7 +16,17 @@ cZipManager::~cZipManager()
 }
 
 void cZipManager::Initialize() {
-	
+	if (libPaths[0] != AlternativePackageLocations::libDir) {
+		libPaths.push_back(AlternativePackageLocations::libDir);
+	}
+	eastl::string16 ZIPs = u"ZIPs", creations = Resource::Paths::GetDirFromID(Resource::PathID::Creations);
+
+	ZIPs = creations + ZIPs;
+	if (!std::filesystem::is_directory(ZIPs.c_str()) || !std::filesystem::exists(ZIPs.c_str())) { // Check if directory exists
+		 std::filesystem::create_directory(ZIPs.c_str()); // create folder
+	}
+
+	libPaths.push_back(ZIPs);
 }
 void cZipManager::Dispose() {
 	ptr = nullptr;
@@ -42,7 +52,7 @@ void cZipManager::CheckFilepaths() {
 					}
 				}
 				else if (entryPath.substr(entryPath.find_last_of(u".") + 1) == u"zip") {
-					if (!ReadZIP(entryPath, path)) {
+					if (!ReadZIP(entryPath)) {
 						SporeDebugPrint("%ls was not successfully read.", entry.path().u16string().c_str());
 					}
 				}
@@ -54,13 +64,11 @@ void cZipManager::CheckFilepaths() {
 	}
 }
 
-bool cZipManager::ReadZIP(const eastl::string16& zip, const eastl::string16& parentDirectory) {
-	if (parentDirectory != u"" && zip != u"") {
+bool cZipManager::ReadZIP(const eastl::string16& zip) {
+	if (zip != u"" && zip.substr(zip.find_last_of(u".") + 1) == u"zip") {
 		eastl::string8 zipPath;
 		zipPath.assign_convert(zip.c_str());
 
-		eastl::string8 parent;
-		parent.assign_convert(parentDirectory.c_str());
 
 		eastl::string8 creations;
 		creations.assign_convert(Resource::Paths::GetDirFromID(Resource::PathID::Creations));
