@@ -80,7 +80,7 @@ bool cZipManager::ReadZIP(const eastl::string16& zip, const eastl::string16& par
 						SporeDebugPrint("File entry %s within ZIP archive %s was successfully added to Sporepedia.\nResource key: %#u!%#u.%#u", entry->GetName().c_str(), zipPath.c_str(), key.groupID, key.instanceID, key.typeID);
 					}
 					else {
-						SporeDebugPrint("File entry %ls was successfully extracted but it could not be added to Sporepedia", entry->GetName().c_str());
+						SporeDebugPrint("File entry %s was successfully extracted but it could not be added to Sporepedia", entry->GetName().c_str());
 					}
 					
 				}

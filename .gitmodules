@@ -12,5 +12,5 @@
 	ignore = dirty
 [submodule "3rdParty/ziplib"]
 	path = 3rdParty/ziplib
-	url = https://bitbucket.org/wbenny/ziplib.git
+	url = https://github.com/frk1/ziplib.git
 	ignore = dirty
