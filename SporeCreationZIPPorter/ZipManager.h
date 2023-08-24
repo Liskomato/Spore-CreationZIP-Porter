@@ -1,7 +1,6 @@
 #pragma once
 
 #include "stdafx.h"
-#include "ZipLib\ZipArchive.h"
 #include "AlternativePackageLocations.h"
 
 #define ZipManagerPtr intrusive_ptr<cZipManager>
