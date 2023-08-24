@@ -65,22 +65,50 @@ bool cZipManager::ReadZIP(const eastl::string16& zip, const eastl::string16& par
 		eastl::string8 creations;
 		creations.assign_convert(Resource::Paths::GetDirFromID(Resource::PathID::Creations));
 
+
+		std::string extractedFolder = "Extracted/";
+		std::string destPath = creations.c_str() + extractedFolder;
+
+		if (!std::filesystem::is_directory(destPath) || !std::filesystem::exists(destPath)) { // Check if destination directory exists
+			std::filesystem::create_directory(destPath); // create folder
+		}
+
 		ZipArchive::Ptr archive = ZipFile::Open(zipPath.c_str());
 		for (uint32_t i = 0; i < archive->GetEntriesCount(); i++) {
 			const auto& entry = archive->GetEntry(i);
 			if (entry->GetName().substr(entry->GetName().find_last_of(".") + 1) == "png") {
 				
 				ResourceKey key;
-				std::string extractedFolder = "\\Extracted\\";
-				std::string targetDir = creations.c_str() + extractedFolder + entry->GetName();
+				std::string targetFile = destPath + entry->GetName();
+				
 				if (entry->CanExtract()) {
-					ZipFile::ExtractFile(zipPath.c_str(), entry->GetName(), targetDir);
-					bool readExtracted = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), bool, Args(App::Thumbnail_cImportExport*, const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(), (char16_t*)targetDir.c_str(), key));
+					
+					std::ofstream destFile;
+					destFile.open(targetFile, std::ios::binary | std::ios::trunc);
+
+					std::istream* dataStream = entry->GetDecompressionStream();
+
+					if (dataStream == nullptr)
+					{
+						SporeDebugPrint("File entry %s within ZIP archive %ls was not successfully read.", entry->GetName().c_str(), zip);
+						destFile.close();
+						continue;
+					}
+
+					utils::stream::copy(*dataStream, destFile);
+
+					destFile.flush();
+					destFile.close();
+
+					eastl::string16 file;
+					file.assign_convert(targetFile);
+
+					bool readExtracted = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), bool, Args(App::Thumbnail_cImportExport*, const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(), file.c_str(), key));
 					if (readExtracted) {
-						SporeDebugPrint("File entry %s within ZIP archive %s was successfully added to Sporepedia.\nResource key: %#u!%#u.%#u", entry->GetName().c_str(), zipPath.c_str(), key.groupID, key.instanceID, key.typeID);
+						SporeDebugPrint("File entry %s within ZIP archive %s was successfully added to Sporepedia.\nResource key: %#x!%#x.%#x", entry->GetName().c_str(), zipPath.c_str(), key.groupID, key.instanceID, key.typeID);
 					}
 					else {
-						SporeDebugPrint("File entry %ls was successfully extracted but it could not be added to Sporepedia", entry->GetName().c_str());
+						SporeDebugPrint("File entry %s was successfully extracted but it could not be added to Sporepedia. Either something went wrong, the file was invalid or it already exists in-game.", entry->GetName().c_str());
 					}
 					
 				}
