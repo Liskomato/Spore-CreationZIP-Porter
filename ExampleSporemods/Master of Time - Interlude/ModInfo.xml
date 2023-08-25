@@ -1,0 +1,6 @@
+<mod displayName="Master of Time - Interlude" unique="MasterOfTime-Interlude" description="Creation ZIP Porter test for localized adventures. Make sure you are logged in to download all the creations (Blame Peli's bot being offline)" installerSystemVersion="1.0.1.2" hasCustomInstaller="false" isExperimental="false" dllsBuild="2.5.278">
+<prerequisite game="GalacticAdventures">MasterOfTime-Interlude-foundation.package</prerequisite>
+<prerequisite>Master of Time Interlude locale.png</prerequisite>
+<remove game="GalacticAdventures">*MasterOfTime-Interlude-foundation*</remove>
+<remove>Master of Time Interlude locale.png</remove>
+</mod>

@@ -1,0 +1,4078 @@
+# Auto-generated localization file for: Master of Time - Interlude (ID: 0X626D07D6)
+# Adventure name
+0x00000001 Master of Time - Interlude
+
+# Adventure description
+0x00000002 [This interlude-episode is taking place after the events of MoT Part 9 - And you'll play as the God of Evolution Metartalius itself.] ~br~ ~br~Josh's League has torn off their strings & escaped the Creators' field of vision - and now the Overseer demands answers.
+
+# Intro text
+0x00000003 •The Temple of Evolution• ~br~The God of Evolution's presence has been demaned by the great Overseer - most likely concerning the "escape" of Metartalius' chosen ones.
+
+# Win text
+0x00000004 And like that the God of Evolution was sent to witness the coming of the end along with its own creation - hopeless to stop it. Is there still hope for the universe? ~br~ ~br~ Wait and see . . .
+
+# Lose text
+0x00000005 "Wait, what? H-How?.. Was the truth so unbearable you'd rather take your own life?.. *Sigh* Very well, I'm not going to waste my time bringing you back so... Bye-bye!"
+
+# Act 1
+0x00000006 The Judgement
+0x00000007 "The Overseer only calls me to its grand chamber physically whenever our Creators wish to have a word or two with me. Something tells me whatever the case - I am in deep trouble."
+
+# Goal 1
+0x00000008 METARTALIUS - PROGRESS REPORT ON THE NEUTRALIZATION OF YOUR CHOSEN ONES.~br~Metar[talius] (You): "They have escaped, Overseer."~br~ESCAPED? IMPOSSIBLE - ELABORATE.
+0x00000009 Metar: "They have found a way to mask their location from us - and made themselves invisible to Divitech. I fear going after them would only lose us time - time which we have precious little of. The Master's project is nearly complete, and we still lack the knowledge of where his motherbase is."
+0x0000000a DO NOT TRY & AVERT THE SUBJECT, METARTALIUS. THE "LEAGUE" AS YOU REFER TO THEM DOES NOT POSSESS THE INFORMATION OR POWER TO HIDE THEMSELVES FROM US - WHICH LEAVES ONLY TO POSSIBLE OPTIONS: THEY ARE EITHER BEING HELPED TO HIDE BY THE MASTER, OR BY ONE OF US.
+0x0000000b Metar: "One of us? That can't be possible. I would know if there's a traitor amongst us."
+0x0000000c AS WOULD I - FOR IT WAS I WHO DETECTED UNIT-4020'S DEFIANCE & HAD 4021 REPLACE THEM. ~br~Metar: "Which was foolish."
+
+# Goal 2
+0x0000000d Overseer: "FOOLISH?"~br~Metar: "Yes. Replacing Metarton with Gamaron was a grave mistake - one which cost us the League's trust. If you had listened to me, you would have understood it was never going to work."
+0x0000000e Overseer: "IF "METARTON" WAS LEFT TO HELP THE "LEAGUE" WITHOUT INTERVENTION THEY WOULD HAVE BECAME AN ANOTHER M3T0/METALON - AND YOU REMEMBER HOW DIFFICULT FIXING THAT MISTAKE WAS?"
+0x0000000f Metar: "I remember - for I was the one who had to send Metarton to deactivate him."~br~Overseer: "YOU HAVE GROWN FOND OF YOUR CREATIONS METARTALIUS."
+0x00000010 Far too fond, if I may interject. Metartalius had every opportunity to put "Metarton" back on track & remind them of their true purpose aboard the XX-21.
+0x00000011 Metar: "You are in no position to question me Gamaron. Your job was to replace Metarton, but in your hubris you tried to be better than him."~br~Because that was the objective given to me by the Overseer. I only obeyed.
+
+
+# Act 2
+0x00000012 Judge, Jury & Executioner
+0x00000013 "Seems the Overseer is in no mood for antics this day. I fear it has somehow become aware of me still providing aid to my chosen ones despite their exodus from the Big Picture."
+
+# Goal 1
+0x00000014 SILENCE GAMARON. METARTALIUS IS CORRECT - YOU FAILED. YOUR ORDERS WERE TO GAIN THE LEAGUE'S TRUST & GUIDE THEM TOWARDS VICTORY - BUT NOW THEY ARE OUT OF THE BIG PICTURE. NOW - LET US CONTINUE.
+0x00000015 AS I SAID - THERE IS NO WAY THE "LEAGUE" FOUND A WAY TO EVADE OUR GAZE BY THEMSELVES - AND NEVER BEFORE HAS A FULL GROUP OF "CHOSEN ONES" BETRAYED US. WHICH LEADS TO ONE - AND ONLY ONE OPTION.
+0x00000016 THEY WERE HELPED TO DISAPPEAR BY ONE OF US. AND SINCE IT NO DOUBT WASN'T ME - IT MUST HAVE BEEN YOUR OWN WORK, METARTALIUS. FOR FAR TOO LONG HAS YOUR SOFTNESS FOR YOUR OWN CREATION BLINDED YOU FROM YOUR MISSION.
+0x00000017 Metar: "That is an outrageous claim... And even if it were to be true, what of it? Are you going to dispose of me & replace me? Destroy me, and you & our Creators will lose everything. Zillions upon zillions of years of work - all down the drain."
+0x00000018 YOU DO NOT DENY IT, THEN? THAT YOU ARE STILL HELPING THE "LEAGUE"?~br~EXCELLENT.
+
+
+# Act 3
+0x00000019 Excellent?
+0x0000001a "The Overseer IS aware of me providing assistance to the League - and yet it doesn't seem surprised or displeased about it. This is... Worrying."
+
+# Goal 1
+0x0000001b Metar: "Excellent? You don't seem too unhappy about the revelation, Overseer."~br~DID YOU REALLY THINK WE HADN'T EXPECTED THIS? WE'VE ALWAYS KNOWN METARTALIUS - ALWAYS. YOU WERE BUILT BY CREATOR LOVERS - WHO NOTORIOUSLY LEFT THE BIG PICTURE TO BE WITH AN INFERIOR.
+0x0000001c IT WAS SHE WHO OVERSAW YOUR DECISION TO CREATE THE NAH'NEER - FEELINGLESS, MERCILESS DESTROYERS MEANT TO FORCE THE OTHER SPECIES OF THE TIME TO EVOLVE AT A FASTER PACE.
+0x0000001d AND FROM THEM, ONE BECAME THE "MASTER" - YET AN ANOTHER DEVIANT FROM THEIR ROLE. IT DOESN'T TAKE A SUPREME INTELLIGENCE TO PUT THE PIECES TOGETHER METARTALIUS - YOU TOO ARE A ROGUE - ALWAYS HAVE BEEN.
+0x0000001e Metar: "If you have known that all along, then why haven't you stopped me? Why have you allowed me to keep my role as the God of Evolution?"
+0x0000001f BECAUSE - YOU HAVE BECOME PREDICTABLE. IN THINKING YOU CAN DECEIVE US - YOU FORGOT THAT WE CAN DO THE SAME TO YOU.~br~???: "Alright, that's enough."
+
+
+# Act 4
+0x00000020 Outsider in the Temple
+0x00000021 "A voice spoke from behind me - and the Overseer shut down? More & more incalculable occurrences are happening too close together... Who is this unknown intruder?"
+
+# Goal 1
+0x00000022 Ugh, that giant eyeball just doesn't know when to shut up... A pity we need it to keep in touch with the "others" beyond reality. Now, while it takes a little nap - we can enjoy a private chat, you & me. It's due time.
+0x00000023 Metar: "Who are you?.. What are you?"~br~Definitely not one of your "proxies" despite my appearance. But yes, "who am I" indeed. Go ahead and guess, let's see how many tries it'll take.
+0x00000024 Metar: "You are... Artificial in nature... Definitely a product of a Creator Tool but... I do not recognize the craftsmanship..."~br~Look beyond this corporeal body.
+0x00000025 Metar: "Your soul is... W-What?.. It's as if I'm looking at white noise... Y-You are... No, that's just not possible!"~br~Did you look at the mess that is my "soul"? It was such a tedious task...
+0x00000026 ...to compress it into something that could be used to enter this side of reality. The "others" were so afraid of coming here & forfeiting their true forms, but I am glad I lost the coin toss.
+
+
+# Act 5
+0x00000027 Impossible Impossibility
+0x00000028 "I am unable to process this... Am I supposed to accept that... T-That being before me is... One of them? One of the... Creators?"
+
+# Goal 1
+0x00000029 I do understand your fondness for your creation, I really do - I've enjoyed dwelling among them greatly. There's rarely a dull moment in Miikka64's galaxy - compared to the "beyond".
+0x0000002a It's just "waiting & waiting" over there, watching you & your creations try getting the galaxy ready for its fate.~br~Metar: "B-But y-you are... N-No, this must be a ruse of the Overseer - or the Master!"
+0x0000002b Funny little critter, isn't he? Truly, he has done an astounding job, destroying each of your proxy-species & preventing the coming of the Zero State... And no, I am not one of his "spies" or whatever. 
+0x0000002c I am just... Me! Doing things my way, by myself. I arrived a few cycles ago... A bit before the Debugas imprisoned the "Eternal Bringer of Death". All that effort & death - pointless, as the Bringer was released by the heroes of this cycle.
+0x0000002d Metar: "I t-think I've figured WHAT you are, but not your name."~br~Then allow me to introduce myself:
+
+
+# Act 6
+0x0000002e HIEROPHANT
+0x0000002f *I AM ALL THINGS RIGHTEOUS AND SACRED - THE CHANNEL OF GRACE - THE LEADER OF SALVATION - ORDER INCARNATE - HEAD OF ALL HIERARCHY - THE HIEROPHANT!*
+
+# Goal 1
+0x00000030 Creator Hierophant, a pleasure to make your acquaintance! But recently I've gone by a rather colorful collection of names - Saint Seragon, Emperor Alfus II, Sefirot, Hadraniel Genesis Wells...
+0x00000031 Metar: "Y-You are a C-Creator - s-so h-how can you b-be here?!"~br~What an amusing sight - the mighty Metartalius, afraid & stuttering like a child that thinks there's a monster under their bed.
+0x00000032 And I already told you how I got here - by having my soul compressed & forced into this... Primal existence. I'd give a round of applause to my beloved sister for throwing her entire being...
+0x00000033 ...away to be with her love... Ah, but alas - she's dead. Poor Lovers - or Mezal, or Mem, whatever name she decided to go with in the end... Hah, it's still so strange calling her my sister. 
+0x00000034 But I guess living among you inferiors has rubbed a bit on me... So anyway, you must be eager to know why I am here - right now, before you. Let's have an another change of scenery first:
+
+
+# Act 7
+0x00000035 The Fallen Creator
+0x00000036 "The power & knowledge this being possesses all relay that "he" is speaking the truth of who "he" is... But "his" behavior is far more eccentric than that of any Creator - or their Tool."
+
+# Goal 1
+0x00000037 Ah, much better. Where was I..? I.. I was telling you why I am here. The short answer is: I am here to finish what you started, Metartalius. My brethren have at last, lost their patience and decided to let me handle the rest.
+0x00000038 Metar: "Go on then - destroy me. But kn..."~br~None of that cheek, or I'll crush you this instant. To be awfully honest, I don't want to destroy you.
+0x00000039 I could, very easily even - but that wouldn't be any fun.~br~Metar: "So if my fate is not to be discarded... What then? Replaced & made a prisoner?"
+0x0000003a Replaced? No Metartalius, there's no longer a need for a "god of evolution". The Zero State is looming just around the corner, just within reach... And there is nothing anyone can do now to prevent it. And the funniest thing of all:
+0x0000003b The Master himself will be architect of his own destruction! Just like you, even he couldn't predict that an actual Creator would throw away their omnipotence. My plan is flawless!
+
+# Goal 2
+0x0000003c Your "chosen ones", the Captain's League... Oh sorry, "Josh's" League - are not even a threat. Their endgame isn't stopping us - it's stopping the Master. And in doing so, they will only serve our cause...
+0x0000003d I so wish to see the look on their tiny frail faces when they realize the futility of... Everything. All that work, all that pain - all of it, a waste.
+0x0000003e Metar: "The only time I see wasted is mine & yours. So just tell me, what do you intend to do to me?"~br~I will not destroy you, that much I've decided - because I want you to be there when...
+0x0000003f ...the end comes. To bear witness to your chosen ones', the Master League's, and everyone else in the universe's complete failure to prevent their own doom. A suitable punishment for betraying the sole objective which you were created for.
+0x00000040 Metar: "Do you mean to tell me you're just letting me go? You are that certain of your plan?"~br~Ummm...~br~Yeah, I'm that certain.
+
+# Goal 3
+0x00000041 I've had my eye on the League for a while now, and heard a little rumor that they're planning to use the "Diamonds of Peace" to negate the powers of Master's "Crystals of Hate".
+0x00000042 I've got to admit, a very craftly plan - one you strangely haven't used since the "incident" of the first cycle. Might I assume there's a reason behind it?
+0x00000043 Metar:"The Diamonds of Peace can indeed negate Crystals of Hate - but like everything in the universe, there must be a balance - too much peace leads to blissful apathy, just as too much hate leads to madness."~br~That so?
+0x00000044 But I think it would be a kindness to "numb" the inferiors of this world before the Zero State is enacted. Which is why I plan to have a little fun... OVERSEER! Heed my orders!
+0x00000045 Overseer: *ALWAYS - CREATOR HIEROPHANT.*~br~Use our remaining energy to call forth heroes of the past!~br~Overseer: *WHICH HEROES?*~br~All of them - from all the cycles.~br~Metar: "N-NO! STOP!"~br~Too late!
+
+
+# Act 8
+0x00000046 An Insane God
+0x00000047 "What does the Hierophant think "he" is doing!? Summoning heroes of the past to the present at random is going to mutilate the already beaten & bleeding continuum of time!"
+
+# Goal 1
+0x00000048 COME ONE, COME ALL! HEROES OF ELD, LEGENDS OF YESTERDAY, CAPTAINS FROM AGES BYGONE!~br~Metar: "Y-You can not do this! You c-can't just steal people from random times & throw them here!"~br~I can't?
+0x00000049 Metar: "There is a reason why I only brought a few of them at a time - and only from points in time when their impact on the future had become minuscule! If you keep this up, you threaten the durability of this new timeline! You will c..."
+0x0000004a Do you think me oblivious to the consequences, Metartalius? I know exactly what I'm doing.
+0x0000004b By bringing as many heroes of the past here as possible, I am ripening the fruits of chaos! And the time of the harvest is nigh. Once Death is born, the end of existence begins - and it shall spread from this galaxy to the very last!
+0x0000004c Metar: "Y-You're using those who lost their lives defending the galaxy from evil... To destroy it?"~br~Quite despicable of me, isn't it?
+
+# Goal 2
+0x0000004d Here you go: your ride out of here. Now where are your manners? This is the part where you thank me!.. Gosh, my dear sister would roll over in her grave if she knew her "son" was so rude.
+0x0000004e Metar: "What is the real reason why you're letting me go Hierophant? I know you Creators better than anyone in this reality - you never leave anything to chance."~br~How hurtful of you to say things like that.
+0x0000004f Do you really doubt the sincerity of my kindness? ...Good. At least you still got some sense in your metal head despite having no connection to our technology anymore.
+0x00000050 Like I said: I want you to be there when the whole of your creation comes to understand the pointlessness of their hard labor. And... Because as we Creators always say: "you still have a role to play in the Big Picture". 
+0x00000051 It feels a bit shitty to be on the receiving end of that statement, doesn't it?~br~Metar: "You... You are completely - totally - utterly - INSANE."~br~Yup.
+
+# Goal 3
+
+
+# Prop #82 - See?
+0x00000052 See?
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #83 - Blue Gate
+0x00000053 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #84 - Blue Gate
+0x00000054 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #85 - Blue Gate
+0x00000055 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #86 - Blue Gate
+0x00000056 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #87 - Blue Gate
+0x00000057 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #88 - META-Tentacle
+0x00000058 META-Tentacle
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #89 - META-Gear
+0x00000059 META-Gear
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #90 - META-Pipe
+0x0000005a META-Pipe
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #91 - Blue Gate
+0x0000005b Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #92 - Blue Gate
+0x0000005c Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #93 - the great Overseer
+0x0000005d the great Overseer
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #94 - Jump Pad 
+0x0000005e Jump Pad 
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #95 - Gamaron
+0x0000005f Gamaron
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #96 - Lightning Once
+0x00000060 Lightning Once
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #97 - Mysterious Surisin?
+0x00000061 Mysterious Surisin?
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+0x00000062 Greetings and salutations, o' God of Evolution!.. I know, I know - how rude of me to just march in without warning but... On the other hand you are MY property. Well, "our" property more like.
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #99 - Traffic 2
+0x00000063 Traffic 2
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #100 - Factory Rumble 1
+0x00000064 Factory Rumble 1
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #101 - Factory Exhaust
+0x00000065 Factory Exhaust
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #102 - Spotlight Yellow
+0x00000066 Spotlight Yellow
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #103 - Light White
+0x00000067 Light White
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #104 - An Impossible Being!
+0x00000068 An Impossible Being!
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+0x00000069 Don't mind me, I simply adjusted my size. Feels a bit strange looking up at you, considering you are so, so beneath me in status... Sorry, I hope that didn't come out too arrogantly.
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+0x0000006a Don't mind me, I simply adjusted my size. Feels a bit strange looking up at you, considering you are so, so beneath me in status... Sorry, I hope that didn't come out too arrogantly.
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+0x0000006b Don't mind me, I simply adjusted my size. Feels a bit strange looking up at you, considering you are so, so beneath me in status... Sorry, I hope that didn't come out too arrogantly.
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+0x0000006c Don't mind me, I simply adjusted my size. Feels a bit strange looking up at you, considering you are so, so beneath me in status... Sorry, I hope that didn't come out too arrogantly.
+
+# Inspect for Act 8
+
+# Prop #109 - Poof White
+0x0000006d Poof White
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #110 - Hierophant
+0x0000006e Hierophant
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #111 - Blue Gate
+0x0000006f Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #112 - Teleporter
+0x00000070 Teleporter
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #113 - Metartalius Floor
+0x00000071 Metartalius Floor
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #114 - Will'o'wisps
+0x00000072 Will'o'wisps
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #115 - Hierophant
+0x00000073 Hierophant
+
+# Chatter for Act 1
+0x00000074 I have to admit, I really like the design of the Surisins... Except for the spiky limbs & one eye. Shame you won't get the chance to create an another proxy-species - for this is the last cycle.
+
+# Inspect for Act 1
+0x00000075 For eon after eon, cycle after cycle that little birdie has ruined our plans & prevented the Zero State... And you've been secretly aiding him in that. You did a pretty good job, making it...
+0x00000076 ...little flaws in your creations there & there to ensure the Master found a way to defeat each proxy-species of each cycle... Yet it must have hurt, to knowingly doom your own "children".
+0x00000077 Metar: "It hurt. It hurt more & more each time I did it - but there was no other way. The suffering of a few generations so a billion others may enjoy living - it's a small cost in my eyes."
+0x00000078 And yet it will all be for nothing, come the Zero State. All of existence erased - space & time removed - it'll be like there never even was anything. Happiness, joy - hate, sorrow - all of...
+0x00000079 ...it will be reduced to nothing - to a zero. It'll be beautiful.~br~Metar: "Enough. Master - and my chosen ones will stop you, like they've always done."~br~*Sigh* Let's change scenery again.
+
+# Chatter for Act 2
+0x0000007a I have to admit, I really like the design of the Surisins... Except for the spiky limbs and one eye. Shame you won't get the chance to create an another proxy-species - for this is the last cycle.
+
+# Inspect for Act 2
+0x0000007b For eon after eon, cycle after cycle that little birdie has ruined our plans & prevented the Zero State... And you've been secretly aiding him in that. You did a pretty good job, making it...
+0x0000007c ...little flaws in your creations there & there to ensure the Master found a way to defeat each proxy-species of each cycle... Yet it must have hurt, to knowingly doom your own "children".
+0x0000007d Metar: "It hurt. It hurt more & more each time I did it - but there was no other way. The suffering of a few generations so a billion others may enjoy living - it's a small cost in my eyes."
+0x0000007e And yet it will all be for nothing, come the Zero State. All of existence erased - space & time removed - it'll be like there never even was anything. Happiness, joy - hate, sorrow - all of...
+0x0000007f ...it will be reduced to nothing - to a zero. It'll be beautiful.~br~Metar: "Enough. Master - and my chosen ones will stop you, like they've always done."~br~*Sigh* Let's change scenery again.
+
+# Chatter for Act 3
+0x00000080 I have to admit, I really like the design of the Surisins... Except for the spiky limbs and one eye. Shame you won't get the chance to create an another proxy-species - for this is the last cycle.
+
+# Inspect for Act 3
+0x00000081 For eon after eon, cycle after cycle that little birdie has ruined our plans & prevented the Zero State... And you've been secretly aiding him in that. You did a pretty good job, making it...
+0x00000082 ...little flaws in your creations there & there to ensure the Master found a way to defeat each proxy-species of each cycle... Yet it must have hurt, to knowingly doom your own "children".
+0x00000083 Metar: "It hurt. It hurt more & more each time I did it - but there was no other way. The suffering of a few generations so a billion others may enjoy living - it's a small cost in my eyes."
+0x00000084 And yet it will all be for nothing, come the Zero State. All of existence erased - space & time removed - it'll be like there never even was anything. Happiness, joy - hate, sorrow - all of...
+0x00000085 ...it will be reduced to nothing - to a zero. It'll be beautiful.~br~Metar: "Enough. Master - and my chosen ones will stop you, like they've always done."~br~*Sigh* Let's change scenery again.
+
+# Chatter for Act 4
+0x00000086 I have to admit, I really like the design of the Surisins... Except for the spiky limbs and one eye. Shame you won't get the chance to create an another proxy-species - for this is the last cycle.
+
+# Inspect for Act 4
+0x00000087 For eon after eon, cycle after cycle that little birdie has ruined our plans & prevented the Zero State... And you've been secretly aiding him in that. You did a pretty good job, making it...
+0x00000088 ...little flaws in your creations there & there to ensure the Master found a way to defeat each proxy-species of each cycle... Yet it must have hurt, to knowingly doom your own "children".
+0x00000089 Metar: "It hurt. It hurt more & more each time I did it - but there was no other way. The suffering of a few generations so a billion others may enjoy living - it's a small cost in my eyes."
+0x0000008a And yet it will all be for nothing, come the Zero State. All of existence erased - space & time removed - it'll be like there never even was anything. Happiness, joy - hate, sorrow - all of...
+0x0000008b ...it will be reduced to nothing - to a zero. It'll be beautiful.~br~Metar: "Enough. Master - and my chosen ones will stop you, like they've always done."~br~*Sigh* Let's change scenery again.
+
+# Chatter for Act 5
+0x0000008c I have to admit, I really like the design of the Surisins... Except for the spiky limbs and one eye. Shame you won't get the chance to create an another proxy-species - for this is the last cycle.
+
+# Inspect for Act 5
+0x0000008d For eon after eon, cycle after cycle that little birdie has ruined our plans & prevented the Zero State... And you've been secretly aiding him in that. You did a pretty good job, making it...
+0x0000008e ...little flaws in your creations there & there to ensure the Master found a way to defeat each proxy-species of each cycle... Yet it must have hurt, to knowingly doom your own "children".
+0x0000008f Metar: "It hurt. It hurt more & more each time I did it - but there was no other way. The suffering of a few generations so a billion others may enjoy living - it's a small cost in my eyes."
+0x00000090 And yet it will all be for nothing, come the Zero State. All of existence erased - space & time removed - it'll be like there never even was anything. Happiness, joy - hate, sorrow - all of...
+0x00000091 ...it will be reduced to nothing - to a zero. It'll be beautiful.~br~Metar: "Enough. Master - and my chosen ones will stop you, like they've always done."~br~*Sigh* Let's change scenery again.
+
+# Chatter for Act 6
+0x00000092 I have to admit, I really like the design of the Surisins... Except for the spiky limbs and one eye. Shame you won't get the chance to create an another proxy-species - for this is the last cycle.
+
+# Inspect for Act 6
+0x00000093 For eon after eon, cycle after cycle that little birdie has ruined our plans & prevented the Zero State... And you've been secretly aiding him in that. You did a pretty good job, making it...
+0x00000094 ...little flaws in your creations there & there to ensure the Master found a way to defeat each proxy-species of each cycle... Yet it must have hurt, to knowingly doom your own "children".
+0x00000095 Metar: "It hurt. It hurt more & more each time I did it - but there was no other way. The suffering of a few generations so a billion others may enjoy living - it's a small cost in my eyes."
+0x00000096 And yet it will all be for nothing, come the Zero State. All of existence erased - space & time removed - it'll be like there never even was anything. Happiness, joy - hate, sorrow - all of...
+0x00000097 ...it will be reduced to nothing - to a zero. It'll be beautiful.~br~Metar: "Enough. Master - and my chosen ones will stop you, like they've always done."~br~*Sigh* Let's change scenery again.
+
+# Chatter for Act 7
+0x00000098 I have to admit, I really like the design of the Surisins... Except for the spiky limbs and one eye. Shame you won't get the chance to create an another proxy-species - for this is the last cycle.
+
+# Inspect for Act 7
+0x00000099 For eon after eon, cycle after cycle that little birdie has ruined our plans & prevented the Zero State... And you've been secretly aiding him in that. You did a pretty good job, making it...
+0x0000009a ...little flaws in your creations there & there to ensure the Master found a way to defeat each proxy-species of each cycle... Yet it must have hurt, to knowingly doom your own "children".
+0x0000009b Metar: "It hurt. It hurt more & more each time I did it - but there was no other way. The suffering of a few generations so a billion others may enjoy living - it's a small cost in my eyes."
+0x0000009c And yet it will all be for nothing, come the Zero State. All of existence erased - space & time removed - it'll be like there never even was anything. Happiness, joy - hate, sorrow - all of...
+0x0000009d ...it will be reduced to nothing - to a zero. It'll be beautiful.~br~Metar: "Enough. Master - and my chosen ones will stop you, like they've always done."~br~*Sigh* Let's change scenery again.
+
+# Chatter for Act 8
+0x0000009e I have to admit, I really like the design of the Surisins... Except for the spiky limbs and one eye. Shame you won't get the chance to create an another proxy-species - for this is the last cycle.
+
+# Inspect for Act 8
+0x0000009f For eon after eon, cycle after cycle that little birdie has ruined our plans & prevented the Zero State... And you've been secretly aiding him in that. You did a pretty good job, making it...
+0x000000a0 ...little flaws in your creations there & there to ensure the Master found a way to defeat each proxy-species of each cycle... Yet it must have hurt, to knowingly doom your own "children".
+0x000000a1 Metar: "It hurt. It hurt more & more each time I did it - but there was no other way. The suffering of a few generations so a billion others may enjoy living - it's a small cost in my eyes."
+0x000000a2 And yet it will all be for nothing, come the Zero State. All of existence erased - space & time removed - it'll be like there never even was anything. Happiness, joy - hate, sorrow - all of...
+0x000000a3 ...it will be reduced to nothing - to a zero. It'll be beautiful.~br~Metar: "Enough. Master - and my chosen ones will stop you, like they've always done."~br~*Sigh* Let's change scenery again.
+
+# Prop #164 - Bubbles
+0x000000a4 Bubbles
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #165 - Pond
+0x000000a5 Pond
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #166 - Jumping Fish
+0x000000a6 Jumping Fish
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #167 - 7
+0x000000a7 7
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #168 - 7
+0x000000a8 7
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #169 - Cold Wind
+0x000000a9 Cold Wind
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #170 - Lake Ambience
+0x000000aa Lake Ambience
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #171 - Hierophant
+0x000000ab Hierophant
+
+# Chatter for Act 1
+0x000000ac I do admire your work greatly, Metartalius. This galaxy you've created, it truly is a thing of beauty. But still, even its brightest star is nothing compared to the absence of everything.
+
+# Inspect for Act 1
+0x000000ad Besides, what danger can you possibly pose to my plans at this point? Do you think your precious "chosen ones" will let you back in with opens arms & believe everything you'll tell them?
+0x000000ae Or perhaps you're thinking of going to join the Master instead? That would be interesting to see, but how likely do you think the old crow will leave you intact?
+0x000000af His archenemy walks into his cave, powerless & afraid - will he even give you the opportunity to speak? No, despite your little "friend & foe" game, he wants nothing more than you out of the equation.
+0x000000b0 Metar: "Powerless?.."~br~Pow..? Oh yeah, about that: you probably didn't notice, but I've removed your connection to Divitech entirely.
+0x000000b1 No more teleporting or holograms for you Metartalius: your days as the God of Evolution ended a minute ago. Now you're just a big robot, all alone in your lil' sandbox. But, I still have one more surprise in store for you.
+
+# Chatter for Act 2
+0x000000b2 I do admire your work greatly, Metartalius. This galaxy you've created, it truly is a thing of beauty. But still, even its brightest star is nothing compared to the absence of everything.
+
+# Inspect for Act 2
+0x000000b3 Besides, what danger can you possibly pose to my plans at this point? Do you think your precious "chosen ones" will let you back in with opens arms & believe everything you'll tell them?
+0x000000b4 Or perhaps you're thinking of going to join the Master instead? That would be interesting to see, but how likely do you think the old crow will leave you intact?
+0x000000b5 His archenemy walks into his cave, powerless & afraid - will he even give you the opportunity to speak? No, despite your little "friend & foe" game, he wants nothing more than you out of the equation.
+0x000000b6 Metar: "Powerless?.."~br~Pow..? Oh yeah, about that: you probably didn't notice, but I've removed your connection to Divitech entirely.
+0x000000b7 No more teleporting or holograms for you Metartalius: your days as the God of Evolution ended a minute ago. Now you're just a big robot, all alone in your lil' sandbox. But, I still have one more surprise in store for you.
+
+# Chatter for Act 3
+0x000000b8 I do admire your work greatly, Metartalius. This galaxy you've created, it truly is a thing of beauty. But still, even its brightest star is nothing compared to the absence of everything.
+
+# Inspect for Act 3
+0x000000b9 Besides, what danger can you possibly pose to my plans at this point? Do you think your precious "chosen ones" will let you back in with opens arms & believe everything you'll tell them?
+0x000000ba Or perhaps you're thinking of going to join the Master instead? That would be interesting to see, but how likely do you think the old crow will leave you intact?
+0x000000bb His archenemy walks into his cave, powerless & afraid - will he even give you the opportunity to speak? No, despite your little "friend & foe" game, he wants nothing more than you out of the equation.
+0x000000bc Metar: "Powerless?.."~br~Pow..? Oh yeah, about that: you probably didn't notice, but I've removed your connection to Divitech entirely.
+0x000000bd No more teleporting or holograms for you Metartalius: your days as the God of Evolution ended a minute ago. Now you're just a big robot, all alone in your lil' sandbox. But, I still have one more surprise in store for you.
+
+# Chatter for Act 4
+0x000000be I do admire your work greatly, Metartalius. This galaxy you've created, it truly is a thing of beauty. But still, even its brightest star is nothing compared to the absence of everything.
+
+# Inspect for Act 4
+0x000000bf Besides, what danger can you possibly pose to my plans at this point? Do you think your precious "chosen ones" will let you back in with opens arms & believe everything you'll tell them?
+0x000000c0 Or perhaps you're thinking of going to join the Master instead? That would be interesting to see, but how likely do you think the old crow will leave you intact?
+0x000000c1 His archenemy walks into his cave, powerless & afraid - will he even give you the opportunity to speak? No, despite your little "friend & foe" game, he wants nothing more than you out of the equation.
+0x000000c2 Metar: "Powerless?.."~br~Pow..? Oh yeah, about that: you probably didn't notice, but I've removed your connection to Divitech entirely.
+0x000000c3 No more teleporting or holograms for you Metartalius: your days as the God of Evolution ended a minute ago. Now you're just a big robot, all alone in your lil' sandbox. But, I still have one more surprise in store for you.
+
+# Chatter for Act 5
+0x000000c4 I do admire your work greatly, Metartalius. This galaxy you've created, it truly is a thing of beauty. But still, even its brightest star is nothing compared to the absence of everything.
+
+# Inspect for Act 5
+0x000000c5 Besides, what danger can you possibly pose to my plans at this point? Do you think your precious "chosen ones" will let you back in with opens arms & believe everything you'll tell them?
+0x000000c6 Or perhaps you're thinking of going to join the Master instead? That would be interesting to see, but how likely do you think the old crow will leave you intact?
+0x000000c7 His archenemy walks into his cave, powerless & afraid - will he even give you the opportunity to speak? No, despite your little "friend & foe" game, he wants nothing more than you out of the equation.
+0x000000c8 Metar: "Powerless?.."~br~Pow..? Oh yeah, about that: you probably didn't notice, but I've removed your connection to Divitech entirely.
+0x000000c9 No more teleporting or holograms for you Metartalius: your days as the God of Evolution ended a minute ago. Now you're just a big robot, all alone in your lil' sandbox. But, I still have one more surprise in store for you.
+
+# Chatter for Act 6
+0x000000ca I do admire your work greatly, Metartalius. This galaxy you've created, it truly is a thing of beauty. But still, even its brightest star is nothing compared to the absence of everything.
+
+# Inspect for Act 6
+0x000000cb Besides, what danger can you possibly pose to my plans at this point? Do you think your precious "chosen ones" will let you back in with opens arms & believe everything you'll tell them?
+0x000000cc Or perhaps you're thinking of going to join the Master instead? That would be interesting to see, but how likely do you think the old crow will leave you intact?
+0x000000cd His archenemy walks into his cave, powerless & afraid - will he even give you the opportunity to speak? No, despite your little "friend & foe" game, he wants nothing more than you out of the equation.
+0x000000ce Metar: "Powerless?.."~br~Pow..? Oh yeah, about that: you probably didn't notice, but I've removed your connection to Divitech entirely.
+0x000000cf No more teleporting or holograms for you Metartalius: your days as the God of Evolution ended a minute ago. Now you're just a big robot, all alone in your lil' sandbox. But, I still have one more surprise in store for you.
+
+# Chatter for Act 7
+0x000000d0 I do admire your work greatly, Metartalius. This galaxy you've created, it truly is a thing of beauty. But still, even its brightest star is nothing compared to the absence of everything.
+
+# Inspect for Act 7
+0x000000d1 Besides, what danger can you possibly pose to my plans at this point? Do you think your precious "chosen ones" will let you back in with opens arms & believe everything you'll tell them?
+0x000000d2 Or perhaps you're thinking of going to join the Master instead? That would be interesting to see, but how likely do you think the old crow will leave you intact?
+0x000000d3 His archenemy walks into his cave, powerless & afraid - will he even give you the opportunity to speak? No, despite your little "friend & foe" game, he wants nothing more than you out of the equation.
+0x000000d4 Metar: "Powerless?.."~br~Pow..? Oh yeah, about that: you probably didn't notice, but I've removed your connection to Divitech entirely.
+0x000000d5 No more teleporting or holograms for you Metartalius: your days as the God of Evolution ended a minute ago. Now you're just a big robot, all alone in your lil' sandbox. But, I still have one more surprise in store for you.
+
+# Chatter for Act 8
+0x000000d6 I do admire your work greatly, Metartalius. This galaxy you've created, it truly is a thing of beauty. But still, even its brightest star is nothing compared to the absence of everything.
+
+# Inspect for Act 8
+0x000000d7 Besides, what danger can you possibly pose to my plans at this point? Do you think your precious "chosen ones" will let you back in with opens arms & believe everything you'll tell them?
+0x000000d8 Or perhaps you're thinking of going to join the Master instead? That would be interesting to see, but how likely do you think the old crow will leave you intact?
+0x000000d9 His archenemy walks into his cave, powerless & afraid - will he even give you the opportunity to speak? No, despite your little "friend & foe" game, he wants nothing more than you out of the equation.
+0x000000da Metar: "Powerless?.."~br~Pow..? Oh yeah, about that: you probably didn't notice, but I've removed your connection to Divitech entirely.
+0x000000db No more teleporting or holograms for you Metartalius: your days as the God of Evolution ended a minute ago. Now you're just a big robot, all alone in your lil' sandbox. But, I still have one more surprise in store for you.
+
+# Prop #220 - Blue Gate
+0x000000dc Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #221 - Blue Gate
+0x000000dd Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #222 - Blue Gate
+0x000000de Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #223 - Sunsetsin Floor
+0x000000df Sunsetsin Floor
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #224 - Blue Gate
+0x000000e0 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #225 - Hierophant
+0x000000e1 Hierophant
+
+# Chatter for Act 1
+0x000000e2 XX-21, such a nice little ship. Perhaps you can use its return to buy favor with your "chosen ones". As for your own "Temple of Evolution"... I'll leave it in the Overseer's capable... Eye?..
+
+# Inspect for Act 1
+0x000000e3 But what did you expect? I am an omnipotent, all-powerful supreme being from a superior form of existence - put into a world of small, smelly inferiors! I've been humiliated & punished to a...
+0x000000e4 ...fate far, far FARFARFAR worse than death! And why? JUST BECAUSE I DREW THE SHORT STRAW OUT OF ALL MY BRETHREN! It took me so many millennia to accept my life among you, & my role in this...
+0x000000e5 ...great play of fools. The only thing that keeps me going forward is the knowledge that this will all soon be over & I get to return to the lovely slumber of nonexistence. Now... I want to...
+0x000000e6 ...just go & get that damn mojito. So, hop into the XX-21 & zoom out of here. As much as I'd love for you to stay out of the "final act", we both know you can't resist trying to stop me.
+0x000000e7 So, will you go look for the League or the Legion? Or will you try to stop the heroes I'm calling forth from making everyone in the galaxy fall into rapture? Until we meet again, Metartalius.
+
+# Chatter for Act 2
+0x000000e8 XX-21, such a nice little ship. Perhaps you can use its return to buy favor with your "chosen ones". As for your own "Temple of Evolution"... I'll leave it in the Overseer's capable... Eye?..
+
+# Inspect for Act 2
+0x000000e9 But what did you expect? I am an omnipotent, all-powerful supreme being from a superior form of existence - put into a world of small, smelly inferiors! I've been humiliated & punished to a...
+0x000000ea ...fate far, far FARFARFAR worse than death! And why? JUST BECAUSE I DREW THE SHORT STRAW OUT OF ALL MY BRETHREN! It took me so many millennia to accept my life among you, & my role in this...
+0x000000eb ...great play of fools. The only thing that keeps me going forward is the knowledge that this will all soon be over & I get to return to the lovely slumber of nonexistence. Now... I want to...
+0x000000ec ...just go & get that damn mojito. So, hop into the XX-21 & zoom out of here. As much as I'd love for you to stay out of the "final act", we both know you can't resist trying to stop me.
+0x000000ed So, will you go look for the League or the Legion? Or will you try to stop the heroes I'm calling forth from making everyone in the galaxy fall into rapture? Until we meet again, Metartalius.
+
+# Chatter for Act 3
+0x000000ee XX-21, such a nice little ship. Perhaps you can use its return to buy favor with your "chosen ones". As for your own "Temple of Evolution"... I'll leave it in the Overseer's capable... Eye?..
+
+# Inspect for Act 3
+0x000000ef But what did you expect? I am an omnipotent, all-powerful supreme being from a superior form of existence - put into a world of small, smelly inferiors! I've been humiliated & punished to a...
+0x000000f0 ...fate far, far FARFARFAR worse than death! And why? JUST BECAUSE I DREW THE SHORT STRAW OUT OF ALL MY BRETHREN! It took me so many millennia to accept my life among you, & my role in this...
+0x000000f1 ...great play of fools. The only thing that keeps me going forward is the knowledge that this will all soon be over & I get to return to the lovely slumber of nonexistence. Now... I want to...
+0x000000f2 ...just go & get that damn mojito. So, hop into the XX-21 & zoom out of here. As much as I'd love for you to stay out of the "final act", we both know you can't resist trying to stop me.
+0x000000f3 So, will you go look for the League or the Legion? Or will you try to stop the heroes I'm calling forth from making everyone in the galaxy fall into rapture? Until we meet again, Metartalius.
+
+# Chatter for Act 4
+0x000000f4 XX-21, such a nice little ship. Perhaps you can use its return to buy favor with your "chosen ones". As for your own "Temple of Evolution"... I'll leave it in the Overseer's capable... Eye?..
+
+# Inspect for Act 4
+0x000000f5 But what did you expect? I am an omnipotent, all-powerful supreme being from a superior form of existence - put into a world of small, smelly inferiors! I've been humiliated & punished to a...
+0x000000f6 ...fate far, far FARFARFAR worse than death! And why? JUST BECAUSE I DREW THE SHORT STRAW OUT OF ALL MY BRETHREN! It took me so many millennia to accept my life among you, & my role in this...
+0x000000f7 ...great play of fools. The only thing that keeps me going forward is the knowledge that this will all soon be over & I get to return to the lovely slumber of nonexistence. Now... I want to...
+0x000000f8 ...just go & get that damn mojito. So, hop into the XX-21 & zoom out of here. As much as I'd love for you to stay out of the "final act", we both know you can't resist trying to stop me.
+0x000000f9 So, will you go look for the League or the Legion? Or will you try to stop the heroes I'm calling forth from making everyone in the galaxy fall into rapture? Until we meet again, Metartalius.
+
+# Chatter for Act 5
+0x000000fa XX-21, such a nice little ship. Perhaps you can use its return to buy favor with your "chosen ones". As for your own "Temple of Evolution"... I'll leave it in the Overseer's capable... Eye?..
+
+# Inspect for Act 5
+0x000000fb But what did you expect? I am an omnipotent, all-powerful supreme being from a superior form of existence - put into a world of small, smelly inferiors! I've been humiliated & punished to a...
+0x000000fc ...fate far, far FARFARFAR worse than death! And why? JUST BECAUSE I DREW THE SHORT STRAW OUT OF ALL MY BRETHREN! It took me so many millennia to accept my life among you, & my role in this...
+0x000000fd ...great play of fools. The only thing that keeps me going forward is the knowledge that this will all soon be over & I get to return to the lovely slumber of nonexistence. Now... I want to...
+0x000000fe ...just go & get that damn mojito. So, hop into the XX-21 & zoom out of here. As much as I'd love for you to stay out of the "final act", we both know you can't resist trying to stop me.
+0x000000ff So, will you go look for the League or the Legion? Or will you try to stop the heroes I'm calling forth from making everyone in the galaxy fall into rapture? Until we meet again, Metartalius.
+
+# Chatter for Act 6
+0x00000100 XX-21, such a nice little ship. Perhaps you can use its return to buy favor with your "chosen ones". As for your own "Temple of Evolution"... I'll leave it in the Overseer's capable... Eye?..
+
+# Inspect for Act 6
+0x00000101 But what did you expect? I am an omnipotent, all-powerful supreme being from a superior form of existence - put into a world of small, smelly inferiors! I've been humiliated & punished to a...
+0x00000102 ...fate far, far FARFARFAR worse than death! And why? JUST BECAUSE I DREW THE SHORT STRAW OUT OF ALL MY BRETHREN! It took me so many millennia to accept my life among you, & my role in this...
+0x00000103 ...great play of fools. The only thing that keeps me going forward is the knowledge that this will all soon be over & I get to return to the lovely slumber of nonexistence. Now... I want to...
+0x00000104 ...just go & get that damn mojito. So, hop into the XX-21 & zoom out of here. As much as I'd love for you to stay out of the "final act", we both know you can't resist trying to stop me.
+0x00000105 So, will you go look for the League or the Legion? Or will you try to stop the heroes I'm calling forth from making everyone in the galaxy fall into rapture? Until we meet again, Metartalius.
+
+# Chatter for Act 7
+0x00000106 XX-21, such a nice little ship. Perhaps you can use its return to buy favor with your "chosen ones". As for your own "Temple of Evolution"... I'll leave it in the Overseer's capable... Eye?..
+
+# Inspect for Act 7
+0x00000107 But what did you expect? I am an omnipotent, all-powerful supreme being from a superior form of existence - put into a world of small, smelly inferiors! I've been humiliated & punished to a...
+0x00000108 ...fate far, far FARFARFAR worse than death! And why? JUST BECAUSE I DREW THE SHORT STRAW OUT OF ALL MY BRETHREN! It took me so many millennia to accept my life among you, & my role in this...
+0x00000109 ...great play of fools. The only thing that keeps me going forward is the knowledge that this will all soon be over & I get to return to the lovely slumber of nonexistence. Now... I want to...
+0x0000010a ...just go & get that damn mojito. So, hop into the XX-21 & zoom out of here. As much as I'd love for you to stay out of the "final act", we both know you can't resist trying to stop me.
+0x0000010b So, will you go look for the League or the Legion? Or will you try to stop the heroes I'm calling forth from making everyone in the galaxy fall into rapture? Until we meet again, Metartalius.
+
+# Chatter for Act 8
+0x0000010c XX-21, such a nice little ship. Perhaps you can use its return to buy favor with your "chosen ones". As for your own "Temple of Evolution"... I'll leave it in the Overseer's capable... Eye?..
+
+# Inspect for Act 8
+0x0000010d But what did you expect? I am an omnipotent, all-powerful supreme being from a superior form of existence - put into a world of small, smelly inferiors! I've been humiliated & punished to a...
+0x0000010e ...fate far, far FARFARFAR worse than death! And why? JUST BECAUSE I DREW THE SHORT STRAW OUT OF ALL MY BRETHREN! It took me so many millennia to accept my life among you, & my role in this...
+0x0000010f ...great play of fools. The only thing that keeps me going forward is the knowledge that this will all soon be over & I get to return to the lovely slumber of nonexistence. Now... I want to...
+0x00000110 ...just go & get that damn mojito. So, hop into the XX-21 & zoom out of here. As much as I'd love for you to stay out of the "final act", we both know you can't resist trying to stop me.
+0x00000111 So, will you go look for the League or the Legion? Or will you try to stop the heroes I'm calling forth from making everyone in the galaxy fall into rapture? Until we meet again, Metartalius.
+
+# Prop #274 - Yellow Gate
+0x00000112 Yellow Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #275 - Hierophant
+0x00000113 Hierophant
+
+# Chatter for Act 1
+0x00000114 HAHAHAHAHAAA! This is going to be complete chaos! The broken heroes of the past against the Master League & the rest of the corruption of this dying galaxy! The balance of order - decimated!
+
+# Inspect for Act 1
+0x00000115 Let the heroes become the villains - and the villains become... Meaningless. The Master thought himself so clever by turning the League's members against one another - but by doing so he...
+0x00000116 Overseer: *C-CREATOR H-HIEROPHANT! T-THE IS A-A MALFUNCTION! M-MORE H-HEROES OF THE P-PAST I BRING TO T-THE PRESENT - T-THE MORE T-TANGLED THEIR BODIES - MINDS - AND SOULS A-ARE!*
+0x00000117 And..? Please don't talk over me again, Overseer. I know what I'm doing.~br~Metar: "Y-You're fine with it bringing heroes that have had their whole beings scattered across time & space?"
+0x00000118 Yes. Mindless abominations - detached souls - thousand legends sharing one body; it doesn't matter - they are still heroes. Heroes who will seek to bring peace back to the galaxy.
+0x00000119 I shall find a nice vantage point to admire the chaos with a cold mojito in my hand. You should do the same! I'll even provide you with a ship to do so, since I took away your god privileges.
+
+# Chatter for Act 2
+0x0000011a HAHAHAHAHAAA! This is going to be complete chaos! The broken heroes of the past against the Master League & the rest of the corruption of this dying galaxy! The balance of order - decimated!
+
+# Inspect for Act 2
+0x0000011b Let the heroes become the villains - and the villains become... Meaningless. The Master thought himself so clever by turning the League's members against one another - but by doing so he...
+0x0000011c Overseer: *C-CREATOR H-HIEROPHANT! T-THE IS A-A MALFUNCTION! M-MORE H-HEROES OF THE P-PAST I BRING TO T-THE PRESENT - T-THE MORE T-TANGLED THEIR BODIES - MINDS - AND SOULS A-ARE!*
+0x0000011d And..? Please don't talk over me again, Overseer. I know what I'm doing.~br~Metar: "Y-You're fine with it bringing heroes that have had their whole beings scattered across time & space?"
+0x0000011e Yes. Mindless abominations - detached souls - thousand legends sharing one body; it doesn't matter - they are still heroes. Heroes who will seek to bring peace back to the galaxy.
+0x0000011f I shall find a nice vantage point to admire the chaos with a cold mojito in my hand. You should do the same! I'll even provide you with a ship to do so, since I took away your god privileges.
+
+# Chatter for Act 3
+0x00000120 HAHAHAHAHAAA! This is going to be complete chaos! The broken heroes of the past against the Master League & the rest of the corruption of this dying galaxy! The balance of order - decimated!
+
+# Inspect for Act 3
+0x00000121 Let the heroes become the villains - and the villains become... Meaningless. The Master thought himself so clever by turning the League's members against one another - but by doing so he...
+0x00000122 Overseer: *C-CREATOR H-HIEROPHANT! T-THE IS A-A MALFUNCTION! M-MORE H-HEROES OF THE P-PAST I BRING TO T-THE PRESENT - T-THE MORE T-TANGLED THEIR BODIES - MINDS - AND SOULS A-ARE!*
+0x00000123 And..? Please don't talk over me again, Overseer. I know what I'm doing.~br~Metar: "Y-You're fine with it bringing heroes that have had their whole beings scattered across time & space?"
+0x00000124 Yes. Mindless abominations - detached souls - thousand legends sharing one body; it doesn't matter - they are still heroes. Heroes who will seek to bring peace back to the galaxy.
+0x00000125 I shall find a nice vantage point to admire the chaos with a cold mojito in my hand. You should do the same! I'll even provide you with a ship to do so, since I took away your god privileges.
+
+# Chatter for Act 4
+0x00000126 HAHAHAHAHAAA! This is going to be complete chaos! The broken heroes of the past against the Master League & the rest of the corruption of this dying galaxy! The balance of order - decimated!
+
+# Inspect for Act 4
+0x00000127 Let the heroes become the villains - and the villains become... Meaningless. The Master thought himself so clever by turning the League's members against one another - but by doing so he...
+0x00000128 Overseer: *C-CREATOR H-HIEROPHANT! T-THE IS A-A MALFUNCTION! M-MORE H-HEROES OF THE P-PAST I BRING TO T-THE PRESENT - T-THE MORE T-TANGLED THEIR BODIES - MINDS - AND SOULS A-ARE!*
+0x00000129 And..? Please don't talk over me again, Overseer. I know what I'm doing.~br~Metar: "Y-You're fine with it bringing heroes that have had their whole beings scattered across time & space?"
+0x0000012a Yes. Mindless abominations - detached souls - thousand legends sharing one body; it doesn't matter - they are still heroes. Heroes who will seek to bring peace back to the galaxy.
+0x0000012b I shall find a nice vantage point to admire the chaos with a cold mojito in my hand. You should do the same! I'll even provide you with a ship to do so, since I took away your god privileges.
+
+# Chatter for Act 5
+0x0000012c HAHAHAHAHAAA! This is going to be complete chaos! The broken heroes of the past against the Master League & the rest of the corruption of this dying galaxy! The balance of order - decimated!
+
+# Inspect for Act 5
+0x0000012d Let the heroes become the villains - and the villains become... Meaningless. The Master thought himself so clever by turning the League's members against one another - but by doing so he...
+0x0000012e Overseer: *C-CREATOR H-HIEROPHANT! T-THE IS A-A MALFUNCTION! M-MORE H-HEROES OF THE P-PAST I BRING TO T-THE PRESENT - T-THE MORE T-TANGLED THEIR BODIES - MINDS - AND SOULS A-ARE!*
+0x0000012f And..? Please don't talk over me again, Overseer. I know what I'm doing.~br~Metar: "Y-You're fine with it bringing heroes that have had their whole beings scattered across time & space?"
+0x00000130 Yes. Mindless abominations - detached souls - thousand legends sharing one body; it doesn't matter - they are still heroes. Heroes who will seek to bring peace back to the galaxy.
+0x00000131 I shall find a nice vantage point to admire the chaos with a cold mojito in my hand. You should do the same! I'll even provide you with a ship to do so, since I took away your god privileges.
+
+# Chatter for Act 6
+0x00000132 HAHAHAHAHAAA! This is going to be complete chaos! The broken heroes of the past against the Master League & the rest of the corruption of this dying galaxy! The balance of order - decimated!
+
+# Inspect for Act 6
+0x00000133 Let the heroes become the villains - and the villains become... Meaningless. The Master thought himself so clever by turning the League's members against one another - but by doing so he...
+0x00000134 Overseer: *C-CREATOR H-HIEROPHANT! T-THE IS A-A MALFUNCTION! M-MORE H-HEROES OF THE P-PAST I BRING TO T-THE PRESENT - T-THE MORE T-TANGLED THEIR BODIES - MINDS - AND SOULS A-ARE!*
+0x00000135 And..? Please don't talk over me again, Overseer. I know what I'm doing.~br~Metar: "Y-You're fine with it bringing heroes that have had their whole beings scattered across time & space?"
+0x00000136 Yes. Mindless abominations - detached souls - thousand legends sharing one body; it doesn't matter - they are still heroes. Heroes who will seek to bring peace back to the galaxy.
+0x00000137 I shall find a nice vantage point to admire the chaos with a cold mojito in my hand. You should do the same! I'll even provide you with a ship to do so, since I took away your god privileges.
+
+# Chatter for Act 7
+0x00000138 I put the Overseer back on, despite how much its monotone voice vexes me... But it is its turn to listen and mine to speak - I have a very "neat" order for it.
+
+# Inspect for Act 7
+0x00000139 Let the heroes become the villains - and the villains become... Meaningless. The Master thought himself so clever by turning the League's members against one another - but by doing so he...
+0x0000013a Overseer: *C-CREATOR H-HIEROPHANT! T-THE IS A-A MALFUNCTION! M-MORE H-HEROES OF THE P-PAST I BRING TO T-THE PRESENT - T-THE MORE T-TANGLED THEIR BODIES - MINDS - AND SOULS A-ARE!*
+0x0000013b And..? Please don't talk over me again, Overseer. I know what I'm doing.~br~Metar: "Y-You're fine with it bringing heroes that have had their whole beings scattered across time & space?"
+0x0000013c Yes. Mindless abominations - detached souls - thousand legends sharing one body; it doesn't matter - they are still heroes. Heroes who will seek to bring peace back to the galaxy.
+0x0000013d I shall find a nice vantage point to admire the chaos with a cold mojito in my hand. You should do the same! I'll even provide you with a ship to do so, since I took away your god privileges.
+
+# Chatter for Act 8
+0x0000013e HAHAHAHAHAAA! This is going to be complete chaos! The broken heroes of the past against the Master League & the rest of the corruption of this dying galaxy! The balance of order - decimated!
+
+# Inspect for Act 8
+0x0000013f Let the heroes become the villains - and the villains become... Meaningless. The Master thought himself so clever by turning the League's own members against one another, but by doing so he...
+0x00000140 Overseer: *C-CREATOR H-HIEROPHANT! T-THE IS A-A MALFUNCTION! M-MORE H-HEROES OF THE P-PAST I BRING TO T-THE PRESENT - T-THE MORE T-TANGLED & FRAGMENTED THEIR BODIES - MINDS - AND SOULS A-ARE!*
+0x00000141 And..? Please don't talk over me ever again, Overseer. I know what I'm doing.~br~Metar: "Y-You're fine with it bringing heroes that have had their whole beings scattered across time & space?"
+0x00000142 Yes. Mindless abominations - detached souls - thousand legends sharing one body; it doesn't matter - they are still heroes. Heroes who will seek to bring peace back to the galaxy.
+0x00000143 I shall find a nice vantage point to admire the havoc with a cold mojito in my hand. You should do the same! I'll even provide you with a ship to do so, since I took away your god privileges.
+
+# Prop #324 - Teleporter
+0x00000144 Teleporter
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #325 - Searchlight
+0x00000145 Searchlight
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #326 - Spout Water
+0x00000146 Spout Water
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #327 - Spotlight White
+0x00000147 Spotlight White
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #328 - Broken Machinery
+0x00000148 Broken Machinery
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #329 - Smoke Black
+0x00000149 Smoke Black
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #330 - Static Storm
+0x0000014a Static Storm
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #331 - Blue Gate
+0x0000014b Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #332 - Blue Gate
+0x0000014c Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #333 - Blue Gate
+0x0000014d Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #334 - Blue Gate
+0x0000014e Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #335 - Blue Gate
+0x0000014f Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #336 - Blue Gate
+0x00000150 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #337 - Meta-Support
+0x00000151 Meta-Support
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #338 - Lightning
+0x00000152 Lightning
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #339 - Alarm Intruder
+0x00000153 Alarm Intruder
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #340 - Alarm Prison
+0x00000154 Alarm Prison
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #341 - Alarm Car
+0x00000155 Alarm Car
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #342 - Alarm Rave
+0x00000156 Alarm Rave
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #343 - Alarm Buzz
+0x00000157 Alarm Buzz
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #344 - Alarm Horn
+0x00000158 Alarm Horn
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #345 - Retreator's Door
+0x00000159 Retreator's Door
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #346 - Aurora Sporealis
+0x0000015a Aurora Sporealis
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #347 - Blue Gate
+0x0000015b Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #348 - Blue Gate
+0x0000015c Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #349 - Blue Gate
+0x0000015d Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #350 - Blue Gate
+0x0000015e Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #351 - Blue Gate
+0x0000015f Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #352 - Maplis
+0x00000160 Maplis
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #353 - Psepostoa
+0x00000161 Psepostoa
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #354 - Tibrosia
+0x00000162 Tibrosia
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #355 - Mordleff
+0x00000163 Mordleff
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #356 - Twardyllus
+0x00000164 Twardyllus
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #357 - Smoke Pink
+0x00000165 Smoke Pink
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #358 - Radio Static 
+0x00000166 Radio Static 
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #359 - Blue Gate
+0x00000167 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #360 - Blue Gate
+0x00000168 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #361 - Blue Gate
+0x00000169 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #362 - Blue Gate
+0x0000016a Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #363 - Blue Gate
+0x0000016b Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #364 - Blue Gate
+0x0000016c Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #365 - Vectix
+0x0000016d Vectix
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #366 - The Captain
+0x0000016e The Captain
+
+# Chatter for Act 1
+0x0000016f Kept you waiting, huh?
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+0x00000170 Kept you waiting, huh?
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+0x00000171 Kept you waiting, huh?
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+0x00000172 Kept you waiting, huh?
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+0x00000173 Kept you waiting, huh?
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+0x00000174 Kept you waiting, huh?
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+0x00000175 Kept you waiting, huh?
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+0x00000176 Kept you waiting, huh?
+
+# Inspect for Act 8
+
+# Prop #375 - Haunted House
+0x00000177 Haunted House
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #376 - Cloud Poison
+0x00000178 Cloud Poison
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #377 - Evil Whispers
+0x00000179 Evil Whispers
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #378 - Arrow
+0x0000017a Arrow
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #379 - Nuclear Fallout
+0x0000017b Nuclear Fallout
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #380 - Preview of the Future
+0x0000017c Preview of the Future
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #381 - Light White
+0x0000017d Light White
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #382 - 8
+0x0000017e 8
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #383 - Blue Gate
+0x0000017f Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #384 - Sting Mysterious
+0x00000180 Sting Mysterious
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #385 - Power Supply
+0x00000181 Power Supply
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #386 - Sting Newsflash
+0x00000182 Sting Newsflash
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #387 - Alien Abduction
+0x00000183 Alien Abduction
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #388 - Jungle Ambience 1
+0x00000184 Jungle Ambience 1
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #389 - Sting Mysterious
+0x00000185 Sting Mysterious
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #390 - Findme-Creature
+0x00000186 Findme-Creature
+
+# Chatter for Act 1
+0x00000187 Did you fall off the catwalk or actually find me?
+
+# Inspect for Act 1
+0x00000188 Bet you weren't expecting an adventure like this. Neither was Miikka64 to be honest. There's a lot of fun trivia about this adventure, despite how short it is. Let's start with saying: damn...
+0x00000189 ...has this adventure been hanging around the trash bin's edge for a good while. The first version of it was actually made right after Master of Time - part 9. It was almost the same, except..
+0x0000018a ...there was no "Creator Hierophant" in any form... And that the adventure would end with Metartalius being sent by the Overseer to PERSONALLY deal with the League. Next, shall we talk about..
+0x0000018b ...the ending "teaser"? The return of the Captain from wherever the God of Hate sent them at the end of Twintimes - Episode 8... Or is it? 
+0x0000018c That shall remain a surprise... So, does this actually mean the 'end' is actually, FINALLY, around the corner?.. Nope. There's still plenty of stuff that needs to happen before it. That's it.
+
+# Chatter for Act 2
+0x0000018d Did you fall off the catwalk or actually find me?
+
+# Inspect for Act 2
+0x0000018e Bet you weren't expecting an adventure like this. Neither was Miikka64 to be honest. There's a lot of fun trivia about this adventure, despite how short it is. Let's start with saying: damn...
+0x0000018f ...has this adventure been hanging around the trash bin's edge for a good while. The first version of it was actually made right after Master of Time - part 9. It was almost the same, except..
+0x00000190 ...there was no "Creator Hierophant" in any form... And that the adventure would end with Metartalius being sent by the Overseer to PERSONALLY deal with the League. Next, shall we talk about..
+0x00000191 ...the ending "teaser"? The return of the Captain from wherever the God of Hate sent them at the end of Twintimes - Episode 8... Or is it? 
+0x00000192 That shall remain a surprise... So, does this actually mean the 'end' is actually, FINALLY, around the corner?.. Nope. There's still plenty of stuff that needs to happen before it. That's it.
+
+# Chatter for Act 3
+0x00000193 Did you fall off the catwalk or actually find me?
+
+# Inspect for Act 3
+0x00000194 Bet you weren't expecting an adventure like this. Neither was Miikka64 to be honest. There's a lot of fun trivia about this adventure, despite how short it is. Let's start with saying: damn...
+0x00000195 ...has this adventure been hanging around the trash bin's edge for a good while. The first version of it was actually made right after Master of Time - part 9. It was almost the same, except..
+0x00000196 ...there was no "Creator Hierophant" in any form... And that the adventure would end with Metartalius being sent by the Overseer to PERSONALLY deal with the League. Next, shall we talk about..
+0x00000197 ...the ending "teaser"? The return of the Captain from wherever the God of Hate sent them at the end of Twintimes - Episode 8... Or is it? 
+0x00000198 That shall remain a surprise... So, does this actually mean the 'end' is actually, FINALLY, around the corner?.. Nope. There's still plenty of stuff that needs to happen before it. That's it.
+
+# Chatter for Act 4
+0x00000199 Did you fall off the catwalk or actually find me?
+
+# Inspect for Act 4
+0x0000019a Bet you weren't expecting an adventure like this. Neither was Miikka64 to be honest. There's a lot of fun trivia about this adventure, despite how short it is. Let's start with saying: damn...
+0x0000019b ...has this adventure been hanging around the trash bin's edge for a good while. The first version of it was actually made right after Master of Time - part 9. It was almost the same, except..
+0x0000019c ...there was no "Creator Hierophant" in any form... And that the adventure would end with Metartalius being sent by the Overseer to PERSONALLY deal with the League. Next, shall we talk about..
+0x0000019d ...the ending "teaser"? The return of the Captain from wherever the God of Hate sent them at the end of Twintimes - Episode 8... Or is it? 
+0x0000019e That shall remain a surprise... So, does this actually mean the 'end' is actually, FINALLY, around the corner?.. Nope. There's still plenty of stuff that needs to happen before it. That's it.
+
+# Chatter for Act 5
+0x0000019f Did you fall off the catwalk or actually find me?
+
+# Inspect for Act 5
+0x000001a0 Bet you weren't expecting an adventure like this. Neither was Miikka64 to be honest. There's a lot of fun trivia about this adventure, despite how short it is. Let's start with saying: damn...
+0x000001a1 ...has this adventure been hanging around the trash bin's edge for a good while. The first version of it was actually made right after Master of Time - part 9. It was almost the same, except..
+0x000001a2 ...there was no "Creator Hierophant" in any form... And that the adventure would end with Metartalius being sent by the Overseer to PERSONALLY deal with the League. Next, shall we talk about..
+0x000001a3 ...the ending "teaser"? The return of the Captain from wherever the God of Hate sent them at the end of Twintimes - Episode 8... Or is it? 
+0x000001a4 That shall remain a surprise... So, does this actually mean the 'end' is actually, FINALLY, around the corner?.. Nope. There's still plenty of stuff that needs to happen before it. That's it.
+
+# Chatter for Act 6
+0x000001a5 Did you fall off the catwalk or actually find me?
+
+# Inspect for Act 6
+0x000001a6 Bet you weren't expecting an adventure like this. Neither was Miikka64 to be honest. There's a lot of fun trivia about this adventure, despite how short it is. Let's start with saying: damn...
+0x000001a7 ...has this adventure been hanging around the trash bin's edge for a good while. The first version of it was actually made right after Master of Time - part 9. It was almost the same, except..
+0x000001a8 ...there was no "Creator Hierophant" in any form... And that the adventure would end with Metartalius being sent by the Overseer to PERSONALLY deal with the League. Next, shall we talk about..
+0x000001a9 ...the ending "teaser"? The return of the Captain from wherever the God of Hate sent them at the end of Twintimes - Episode 8... Or is it? 
+0x000001aa That shall remain a surprise... So, does this actually mean the 'end' is actually, FINALLY, around the corner?.. Nope. There's still plenty of stuff that needs to happen before it. That's it.
+
+# Chatter for Act 7
+0x000001ab Did you fall off the catwalk or actually find me?
+
+# Inspect for Act 7
+0x000001ac Bet you weren't expecting an adventure like this. Neither was Miikka64 to be honest. There's a lot of fun trivia about this adventure, despite how short it is. Let's start with saying: damn...
+0x000001ad ...has this adventure been hanging around the trash bin's edge for a good while. The first version of it was actually made right after Master of Time - part 9. It was almost the same, except..
+0x000001ae ...there was no "Creator Hierophant" in any form... And that the adventure would end with Metartalius being sent by the Overseer to PERSONALLY deal with the League. Next, shall we talk about..
+0x000001af ...the ending "teaser"? The return of the Captain from wherever the God of Hate sent them at the end of Twintimes - Episode 8... Or is it? 
+0x000001b0 That shall remain a surprise... So, does this actually mean the 'end' is actually, FINALLY, around the corner?.. Nope. There's still plenty of stuff that needs to happen before it. That's it.
+
+# Chatter for Act 8
+0x000001b1 Did you fall off the catwalk or actually find me?
+
+# Inspect for Act 8
+0x000001b2 Bet you weren't expecting an adventure like this. Neither was Miikka64 to be honest. There's a lot of fun trivia about this adventure, despite how short it is. Let's start with saying: damn...
+0x000001b3 ...has this adventure been hanging around the trash bin's edge for a good while. The first version of it was actually made right after Master of Time - part 9. It was almost the same, except..
+0x000001b4 ...there was no "Creator Hierophant" in any form... And that the adventure would end with Metartalius being sent by the Overseer to PERSONALLY deal with the League. Next, shall we talk about..
+0x000001b5 ...the ending "teaser"? The return of the Captain from wherever the God of Hate sent them at the end of Twintimes - Episode 8... Or is it? 
+0x000001b6 That shall remain a surprise... So, does this actually mean the 'end' is actually, FINALLY, around the corner?.. Nope. There's still plenty of stuff that needs to happen before it. That's it.
+
+# Prop #439 - Teleporter
+0x000001b7 Teleporter
+
+# Chatter for Act 1
+0x000001b8 *In case you fell off the catwalk: use this door to get back up!*
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+0x000001b9 *In case you fell off the catwalk: use this door to get back up!*
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+0x000001ba *In case you fell off the catwalk: use this door to get back up!*
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+0x000001bb *In case you fell off the catwalk: use this door to get back up!*
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+0x000001bc *In case you fell off the catwalk: use this door to get back up!*
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+0x000001bd *In case you fell off the catwalk: use this door to get back up!*
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+0x000001be *In case you fell off the catwalk: use this door to get back up!*
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+0x000001bf *In case you fell off the catwalk: use this door to get back up!*
+
+# Inspect for Act 8
+
