@@ -14,3 +14,7 @@
 	path = 3rdParty/ziplib
 	url = https://bitbucket.org/wbenny/ziplib.git
 	ignore = dirty
+[submodule "Spore-ModAPI"]
+	path = Spore-ModAPI
+	url = https://github.com/emd4600/Spore-ModAPI.git
+	ignore = dirty
