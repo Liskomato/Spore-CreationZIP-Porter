@@ -1,11 +1,11 @@
 // dllmain.cpp : Defines the entry point for the DLL application.
 #include "stdafx.h"
 #include "DownloadCreation.h"
+#include "CheckForZIPs.h"
 #include "DetourClasses.h"
 #include "AlternativePackageLocations.h"
 #include "ZipManager.h"
-//#include "libzippp.h"
-
+#include "ZipLib.h"
 
 
 void Initialize()
@@ -17,11 +17,14 @@ void Initialize()
 	//  - Add new game modes
 	//  - Add new space tools
 	//  - Change materials
-	AlternativePackageLocations::Initialize();
+
+
 
 	CheatManager.AddCheat("DownloadCreation",new DownloadCreation());
-	ZipManager.AddFilepath(AlternativePackageLocations::libDir);
-//	ZipManager.CheckFilepaths();
+	CheatManager.AddCheat("CheckForZIPs", new CheckForZIPs());
+	ZipManager.Initialize();
+ 	//ZipManager.AddFilepath(AlternativePackageLocations::libDir);
+	ZipManager.CheckFilepaths();
 }
 /// Detour for App::Thumbnail_cImportExport::SavePNG
 member_detour(SavePNG_detour, App::Thumbnail_cImportExport, bool(Resource::ResourceObject*, RenderWare::Raster*, Resource::Database*, bool, bool)) {
@@ -43,6 +46,15 @@ member_detour(PNG_Detour07, VirtualClass, uint32_t(IStream*, void*, void*)) {
 /// Detour for App::Thumbnail_cImportExport::ImportPNG
 member_detour(ImportPNG_dtour, App::Thumbnail_cImportExport, bool(const char16_t*, ResourceKey&)) {
 	bool detoured(const char16_t* path, ResourceKey & key) {
+		eastl::string16 sPath = path;
+
+		if (sPath.substr(sPath.find_last_of(u".") + 1) == u"zip") {
+			bool zipRead = ZipManager.ReadZIP(sPath);
+			if (!zipRead) {
+				App::ConsolePrintF("Creation ZIP Porter: Failed to read dropped ZIP archive in %ls",path);
+			}
+		}
+
 		return original_function(this, path, key);
 	}
 };

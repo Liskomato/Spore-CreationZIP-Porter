@@ -34,6 +34,12 @@
     <ClInclude Include="ZipManager.h">
       <Filter>SporeCreationZIPPorter</Filter>
     </ClInclude>
+    <ClInclude Include="ZipLib.h">
+      <Filter>SporeCreationZIPPorter</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckForZIPs.h">
+      <Filter>SporeCreationZIPPorter</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -52,6 +58,9 @@
       <Filter>SporeCreationZIPPorter</Filter>
     </ClCompile>
     <ClCompile Include="ZipManager.cpp">
+      <Filter>SporeCreationZIPPorter</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckForZIPs.cpp">
       <Filter>SporeCreationZIPPorter</Filter>
     </ClCompile>
   </ItemGroup>
