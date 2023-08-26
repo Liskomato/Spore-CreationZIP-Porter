@@ -72,15 +72,19 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 
 				// Pushing back avatar and crew members.
 				cast.push_back(scenario->mAvatarAsset.mKey);
-				cast.push_back(scenario->mInitialPosseMembers[0].mAsset.mKey);
-				cast.push_back(scenario->mInitialPosseMembers[1].mAsset.mKey);
-				cast.push_back(scenario->mInitialPosseMembers[2].mAsset.mKey);
+				if (scenario->mInitialPosseMembers.size() != 0) {
+					for (const auto& posseMember : scenario->mInitialPosseMembers) {
+						cast.push_back(posseMember.mAsset.mKey);
+					}
+				}
 
 				// pushing back all of the cast.
-				for (auto& asset : scenario->mClasses) {
-					cast.push_back(asset.second.mAsset.mKey);
-					cast.push_back(asset.second.mGameplayObjectGfxOverrideAsset.mKey);
-					cast.push_back(asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey);
+				if (scenario->mClasses.size() != 0) {
+					for (const auto& asset : scenario->mClasses) {
+						cast.push_back(asset.second.mAsset.mKey);
+						cast.push_back(asset.second.mGameplayObjectGfxOverrideAsset.mKey);
+						cast.push_back(asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey);
+					}
 				}
 
 				for (const ResourceKey& key : cast) {
@@ -159,7 +163,7 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 
 }
 void ZIPExport::OnShopperAccept(const ResourceKey& selection) {
-	eastl::vector<ResourceKey>& container = {selection};
+	eastl::vector<ResourceKey> container = {selection};
 	this->OnShopperAccept(container);
 }
 
@@ -176,15 +180,17 @@ bool ZIPExport::ExportAsset(const ResourceKey& key, eastl::string16 targetDir, R
 		eastl::string16 fName;
 
 		if (key == ResourceKey(key.instanceID, TypeIDs::png, 0x408a0000)) {
-			fName.append_sprintf(u"zzz"); // Making adventures load last ín imports, hopefully.
+			fName.append_sprintf(u"zzz_0x%x.png", key.instanceID); // Making adventures load last in imports, hopefully.
 		}
-
-		//if (Pollinator::GetMetadata(key.instanceID, key.groupID, metadata)) {
+		else if (key.typeID == TypeIDs::png) {
+			fName.append_sprintf(u"0x%x.png", key.instanceID);
+		}
+		//else if (Pollinator::GetMetadata(key.instanceID, key.groupID, metadata)) {
 		//	fName.append_sprintf(u"%ls.%ls", metadata->GetName().c_str(),ResourceManager.GetTypenameFromType(key.typeID));
 		//}
-		//else {
-			fName.append_sprintf(u"0x%x.%ls", key.instanceID, ResourceManager.GetTypenameFromType(key.typeID));
-		//}
+		else {
+			fName.append_sprintf(u"0x%x.0x%x", key.instanceID, key.typeID);
+		}
 		eastl::string16 fPath = targetDir + fName;
 
 		FileStreamPtr fstream = new IO::FileStream(fPath.c_str());

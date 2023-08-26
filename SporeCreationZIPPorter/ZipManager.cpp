@@ -19,7 +19,7 @@ void cZipManager::Initialize() {
 	if (libPaths[0] != AlternativePackageLocations::libDir) {
 		libPaths.push_back(AlternativePackageLocations::libDir);
 	}
-	eastl::string16 ZIPs = u"ZIPs", creations = Resource::Paths::GetDirFromID(Resource::PathID::Creations);
+	eastl::string16 ZIPs = u"ZIPs/", creations = Resource::Paths::GetDirFromID(Resource::PathID::Creations);
 
 	ZIPs = creations + ZIPs;
 	if (!std::filesystem::is_directory(ZIPs.c_str()) || !std::filesystem::exists(ZIPs.c_str())) { // Check if directory exists
