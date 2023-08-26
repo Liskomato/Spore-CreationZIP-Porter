@@ -5,6 +5,8 @@
 #include <Spore\Resource\IResourceManager.h>
 #include <Spore\Resource\IResourceFactory.h>
 #include <filesystem>
+#include <urlmon.h>
+#pragma comment(lib, "Urlmon")
 
 ZIPExport::ZIPExport()
 {
@@ -264,6 +266,27 @@ bool ZIPExport::ExportAsset(const ResourceKey& key, eastl::string16 targetDir, R
 
 ResourceKey ZIPExport::GetKeyfromServerID(uint64_t id) {
 	ResourceKey key;
-	uint32_t t = CALL(Address(ModAPI::ChooseAddress(0x54e410, 0x54e460)),uint32_t,Args(void*,uint64_t,uint32_t,ResourceKey&),Args(this, id, (uint32_t)id >> 0x20, key));
+	//uint32_t t = CALL(Address(ModAPI::ChooseAddress(0x54e410, 0x54e460)),uint32_t,Args(VirtualClass,uint64_t,uint32_t,ResourceKey&),Args(VirtualClass(), id, (uint32_t)id >> 0x20, key));
+	eastl::string16 idString, webAddress, tmpPath = u"tmp";
+	idString.append_sprintf(u"%lu",id);
+	eastl::string16 s1 = idString.substr(0, 3), s2 = idString.substr(3, 3), s3 = idString.substr(6, 3);
+	webAddress.append_sprintf(u"http://static.spore.com/static/thumb/%ls/%ls/%ls/%ls.png",s1.c_str(),s2.c_str(),s3.c_str(),idString.c_str());
+	eastl::wstring address, path;
+	address.assign_convert(webAddress.c_str());
+
+	tmpPath = ZipManager.GetZIPExportPath() + tmpPath + webAddress.substr(webAddress.find_last_of(u"/"));
+	path.assign_convert(tmpPath.c_str());
+
+	HRESULT result = URLDownloadToFileW(NULL, address.c_str(), path.c_str(), BINDF_GETNEWESTVERSION, NULL);
+	if (result != S_OK) {
+		App::ConsolePrintF("WARNING: Failed to download file from Spore.com. Are you connected to the internet?");
+		return key;
+	}
+	bool newItem = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), bool, Args(App::Thumbnail_cImportExport*, const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(),tmpPath.c_str(), key));
+
+	if (key != ResourceKey() && newItem) {
+		App::ConsolePrintF("New creation was added to Sporepedia. Resource key: %#x!%#x.%#x",key.groupID,key.instanceID,key.typeID);
+	}
+
 	return key;
 }
