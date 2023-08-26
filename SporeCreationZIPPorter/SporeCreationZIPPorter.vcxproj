@@ -116,6 +116,10 @@
       <SubType>
       </SubType>
     </ClInclude>
+    <ClInclude Include="ImportFromURL.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="OpenFileMessage.h">
       <SubType>
       </SubType>
@@ -147,6 +151,10 @@
       </PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="DownloadCreation.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ImportFromURL.cpp">
       <SubType>
       </SubType>
     </ClCompile>

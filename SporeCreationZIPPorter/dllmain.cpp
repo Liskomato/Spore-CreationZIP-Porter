@@ -3,6 +3,7 @@
 #include "DownloadCreation.h"
 #include "CheckForZIPs.h"
 #include "ZIPExport.h"
+#include "ImportFromURL.h"
 #include "DetourClasses.h"
 #include "AlternativePackageLocations.h"
 #include "ZipManager.h"
@@ -24,6 +25,7 @@ void Initialize()
 	CheatManager.AddCheat("DownloadCreation",new DownloadCreation());
 	CheatManager.AddCheat("CheckForZIPs", new CheckForZIPs());
 	CheatManager.AddCheat("ZIPExport", new ZIPExport());
+	CheatManager.AddCheat("ImportFromURL", new ImportFromURL());
 	ZipManager.Initialize();
  	//ZipManager.AddFilepath(AlternativePackageLocations::libDir);
 	ZipManager.CheckFilepaths();
