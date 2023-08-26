@@ -20,6 +20,7 @@ void ZIPExport::ParseLine(const ArgScript::Line& line)
 	// This method is called when your cheat is invoked.
 	// Put your cheat code here.
 	Sporepedia::ShopperRequest request(this);
+	request.maxSelections = -1;
 	Sporepedia::ShopperRequest::Show(request);
 }
 
@@ -72,18 +73,28 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 
 				// Pushing back avatar and crew members.
 				cast.push_back(scenario->mAvatarAsset.mKey);
+				SporeDebugPrint("%#x!%#x.%#x", scenario->mAvatarAsset.mKey.groupID, scenario->mAvatarAsset.mKey.instanceID, scenario->mAvatarAsset.mKey.typeID);
 				if (scenario->mInitialPosseMembers.size() != 0) {
 					for (const auto& posseMember : scenario->mInitialPosseMembers) {
 						cast.push_back(posseMember.mAsset.mKey);
+						SporeDebugPrint("%#x!%#x.%#x", posseMember.mAsset.mKey.groupID, posseMember.mAsset.mKey.instanceID, posseMember.mAsset.mKey.typeID);
 					}
 				}
 
 				// pushing back all of the cast.
 				if (scenario->mClasses.size() != 0) {
+					int i = 1;
 					for (const auto& asset : scenario->mClasses) {
 						cast.push_back(asset.second.mAsset.mKey);
 						cast.push_back(asset.second.mGameplayObjectGfxOverrideAsset.mKey);
 						cast.push_back(asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey);
+						SporeDebugPrint("Asset %d key: %#x!%#x.%#x", i,asset.second.mAsset.mKey.groupID, asset.second.mAsset.mKey.instanceID, asset.second.mAsset.mKey.typeID);
+						if (auto d = ResourceManager.FindDatabase(asset.second.mAsset.mKey)) SporeDebugPrint("File found in %ls",d->GetLocation());
+						SporeDebugPrint("Override key: %#x!%#x.%#x", asset.second.mGameplayObjectGfxOverrideAsset.mKey.groupID, asset.second.mGameplayObjectGfxOverrideAsset.mKey.instanceID, asset.second.mGameplayObjectGfxOverrideAsset.mKey.typeID);
+						if (auto d = ResourceManager.FindDatabase(asset.second.mGameplayObjectGfxOverrideAsset.mKey)) SporeDebugPrint("File found in %ls", d->GetLocation());
+						SporeDebugPrint("Override 2 key: %#x!%#x.%#x", asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey.groupID, asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey.instanceID, asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey.typeID);
+						if (auto d = ResourceManager.FindDatabase(asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey)) SporeDebugPrint("File found in %ls", d->GetLocation());
+						i++;
 					}
 				}
 
@@ -94,7 +105,11 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 						key.groupID == GroupIDs::VehicleModels ||
 						key.groupID == GroupIDs::UfoModels) {
 						png = { key.instanceID, TypeIDs::png, key.groupID };
-						auto loc = ResourceManager.FindRecord(png);
+						SporeDebugPrint("Stored key: %#x!%#x.%#x",key.groupID,key.instanceID,key.typeID);
+						if (key.instanceID == 0) {
+							
+						}
+						auto loc = ResourceManager.FindDatabase(png);
 						if (loc == nullptr || !ExportAsset(png,tmpPath,loc)) {
 							App::ConsolePrintF("Failed to export %#x.png", png.instanceID);
 						}
@@ -155,7 +170,7 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 		SporeDebugPrint("Added entry %s to ZIP file %s",entryPath.c_str(),zipPathC.c_str());
 	}
 
-	if (!std::filesystem::remove(tmpPath.c_str())) {
+	if (!std::filesystem::remove_all(tmpPath.c_str())) {
 		App::ConsolePrintF("Failed to remove temporary folder. It will persist after this process has ended.");
 	}
 
