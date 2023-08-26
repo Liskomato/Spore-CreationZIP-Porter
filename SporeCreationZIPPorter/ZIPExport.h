@@ -19,6 +19,7 @@ public:
 	void OnShopperAccept(const ResourceKey& selection) override;
 	void OnShopperAccept(const eastl::vector<ResourceKey>& selection) override;
 	static bool ExportAsset(const ResourceKey& key, eastl::string16 targetDir, Resource::Database* database);
+	ResourceKey GetKeyfromServerID(uint64_t id);
 
 	// Returns a string containing the description. If mode != DescriptionMode::Basic, return a more elaborated description
 	const char* GetDescription(ArgScript::DescriptionMode mode) const override;

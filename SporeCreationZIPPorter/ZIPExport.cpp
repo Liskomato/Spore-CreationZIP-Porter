@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "ZIPExport.h"
+#include "DetourClasses.h"
 #include <Spore\Resource\PFRecordRead.h>
 #include <Spore\Resource\IResourceManager.h>
 #include <Spore\Resource\IResourceFactory.h>
@@ -72,12 +73,27 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 				eastl::vector<ResourceKey> cast;
 
 				// Pushing back avatar and crew members.
-				cast.push_back(scenario->mAvatarAsset.mKey);
-				SporeDebugPrint("%#x!%#x.%#x", scenario->mAvatarAsset.mKey.groupID, scenario->mAvatarAsset.mKey.instanceID, scenario->mAvatarAsset.mKey.typeID);
+				if (scenario->mAvatarAsset.mKey.instanceID == 0 && scenario->mAvatarAsset.mServerId != -1) {
+					auto serverKey = this->GetKeyfromServerID(scenario->mAvatarAsset.mServerId);
+					cast.push_back(serverKey);
+					SporeDebugPrint("Server ID: %lu, Resource key: %#x!%#x.%#x",scenario->mAvatarAsset.mServerId,serverKey.groupID,serverKey.instanceID,serverKey.typeID);
+				}
+				else {
+					cast.push_back(scenario->mAvatarAsset.mKey);
+					SporeDebugPrint("Resource key: %#x!%#x.%#x", scenario->mAvatarAsset.mKey.groupID, scenario->mAvatarAsset.mKey.instanceID, scenario->mAvatarAsset.mKey.typeID);
+				}
+				
 				if (scenario->mInitialPosseMembers.size() != 0) {
 					for (const auto& posseMember : scenario->mInitialPosseMembers) {
-						cast.push_back(posseMember.mAsset.mKey);
-						SporeDebugPrint("%#x!%#x.%#x", posseMember.mAsset.mKey.groupID, posseMember.mAsset.mKey.instanceID, posseMember.mAsset.mKey.typeID);
+						if (posseMember.mAsset.mKey.instanceID == 0 && posseMember.mAsset.mServerId != -1) {
+							auto serverKey = this->GetKeyfromServerID(posseMember.mAsset.mServerId);
+							cast.push_back(serverKey);
+							SporeDebugPrint("Server ID: %lu, Resource key: %#x!%#x.%#x", posseMember.mAsset.mServerId, serverKey.groupID, serverKey.instanceID, serverKey.typeID);
+						}
+						else {
+							cast.push_back(posseMember.mAsset.mKey);
+							SporeDebugPrint("Resource key: %#x!%#x.%#x", posseMember.mAsset.mKey.groupID, posseMember.mAsset.mKey.instanceID, posseMember.mAsset.mKey.typeID);
+						}
 					}
 				}
 
@@ -85,15 +101,38 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 				if (scenario->mClasses.size() != 0) {
 					int i = 1;
 					for (const auto& asset : scenario->mClasses) {
-						cast.push_back(asset.second.mAsset.mKey);
-						cast.push_back(asset.second.mGameplayObjectGfxOverrideAsset.mKey);
-						cast.push_back(asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey);
-						SporeDebugPrint("Asset %d key: %#x!%#x.%#x", i,asset.second.mAsset.mKey.groupID, asset.second.mAsset.mKey.instanceID, asset.second.mAsset.mKey.typeID);
-						if (auto d = ResourceManager.FindDatabase(asset.second.mAsset.mKey)) SporeDebugPrint("File found in %ls",d->GetLocation());
-						SporeDebugPrint("Override key: %#x!%#x.%#x", asset.second.mGameplayObjectGfxOverrideAsset.mKey.groupID, asset.second.mGameplayObjectGfxOverrideAsset.mKey.instanceID, asset.second.mGameplayObjectGfxOverrideAsset.mKey.typeID);
-						if (auto d = ResourceManager.FindDatabase(asset.second.mGameplayObjectGfxOverrideAsset.mKey)) SporeDebugPrint("File found in %ls", d->GetLocation());
-						SporeDebugPrint("Override 2 key: %#x!%#x.%#x", asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey.groupID, asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey.instanceID, asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey.typeID);
-						if (auto d = ResourceManager.FindDatabase(asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey)) SporeDebugPrint("File found in %ls", d->GetLocation());
+
+						if (asset.second.mAsset.mKey.instanceID == 0 && asset.second.mAsset.mServerId != -1) {
+							auto serverKey = this->GetKeyfromServerID(asset.second.mAsset.mServerId);
+							cast.push_back(serverKey);
+							SporeDebugPrint("Server ID: %lu, Resource key: %#x!%#x.%#x", asset.second.mAsset.mServerId, serverKey.groupID, serverKey.instanceID, serverKey.typeID);
+						}
+						else {
+							cast.push_back(asset.second.mAsset.mKey);
+							SporeDebugPrint("Resource key: %#x!%#x.%#x", asset.second.mAsset.mKey.groupID, asset.second.mAsset.mKey.instanceID, asset.second.mAsset.mKey.typeID);
+
+						}
+						
+						if (asset.second.mGameplayObjectGfxOverrideAsset.mKey.instanceID == 0 && asset.second.mGameplayObjectGfxOverrideAsset.mServerId != -1) {
+							auto serverKey = this->GetKeyfromServerID(asset.second.mGameplayObjectGfxOverrideAsset.mServerId);
+							cast.push_back(serverKey);
+							SporeDebugPrint("Server ID: %lu, Resource key: %#x!%#x.%#x", asset.second.mGameplayObjectGfxOverrideAsset.mServerId, serverKey.groupID, serverKey.instanceID, serverKey.typeID);
+						}
+						else {
+							cast.push_back(asset.second.mGameplayObjectGfxOverrideAsset.mKey);
+							SporeDebugPrint("Resource key: %#x!%#x.%#x", asset.second.mGameplayObjectGfxOverrideAsset.mKey.groupID, asset.second.mGameplayObjectGfxOverrideAsset.mKey.instanceID, asset.second.mGameplayObjectGfxOverrideAsset.mKey.typeID);
+						}
+						
+						if (asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey.instanceID == 0 && asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId != -1) {
+							auto serverKey = this->GetKeyfromServerID(asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId);
+							cast.push_back(serverKey);
+							SporeDebugPrint("Server ID: %lu, Resource key: %#x!%#x.%#x", asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId, serverKey.groupID, serverKey.instanceID, serverKey.typeID);
+						}
+						else {
+							cast.push_back(asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey);
+							SporeDebugPrint("Resource key: %#x!%#x.%#x", asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey.groupID, asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey.instanceID, asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey.typeID);
+						}
+						
 						i++;
 					}
 				}
@@ -106,9 +145,7 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 						key.groupID == GroupIDs::UfoModels) {
 						png = { key.instanceID, TypeIDs::png, key.groupID };
 						SporeDebugPrint("Stored key: %#x!%#x.%#x",key.groupID,key.instanceID,key.typeID);
-						if (key.instanceID == 0) {
-							
-						}
+						
 						auto loc = ResourceManager.FindDatabase(png);
 						if (loc == nullptr || !ExportAsset(png,tmpPath,loc)) {
 							App::ConsolePrintF("Failed to export %#x.png", png.instanceID);
@@ -223,4 +260,10 @@ bool ZIPExport::ExportAsset(const ResourceKey& key, eastl::string16 targetDir, R
 	else {
 		return false;
 	}
+}
+
+ResourceKey ZIPExport::GetKeyfromServerID(uint64_t id) {
+	ResourceKey key;
+	uint32_t t = CALL(Address(ModAPI::ChooseAddress(0x54e410, 0x54e460)),uint32_t,Args(void*,uint64_t,uint32_t,ResourceKey&),Args(this, id, (uint32_t)id >> 0x20, key));
+	return key;
 }
