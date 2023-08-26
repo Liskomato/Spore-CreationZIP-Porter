@@ -28,7 +28,6 @@ void cZipManager::Initialize() {
 
 	libPaths.push_back(ZIPs);
 	ZipExportPath = ZIPs;
-	zipFolder = new Resource::DatabaseDirectoryFiles(ZIPs.c_str());
 }
 void cZipManager::Dispose() {
 	ptr = nullptr;
@@ -143,10 +142,6 @@ eastl::string16 cZipManager::GetPath(uint32_t index) {
 
 eastl::string16 cZipManager::GetZIPExportPath() {
 	return ZipExportPath;
-}
-
-DatabaseDirectoryFilesPtr cZipManager::GetZIPExportFolder() {
-	return zipFolder;
 }
 
 cZipManager* cZipManager::Get() {

@@ -21,7 +21,6 @@
 		bool ReadZIP(const eastl::string16& zip);
 		eastl::string16 GetPath(uint32_t index);
 		eastl::string16 GetZIPExportPath();
-		DatabaseDirectoryFilesPtr GetZIPExportFolder();
 
 		cZipManager(const cZipManager& obj) = delete;
 		~cZipManager();
@@ -33,8 +32,7 @@
 		cZipManager();
 		inline static cZipManager* ptr;
 		eastl::vector<eastl::string16> libPaths = {AlternativePackageLocations::libDir};
-		string16 ZipExportPath;
-		DatabaseDirectoryFilesPtr zipFolder;
+		eastl::string16 ZipExportPath;
 
 	};
 

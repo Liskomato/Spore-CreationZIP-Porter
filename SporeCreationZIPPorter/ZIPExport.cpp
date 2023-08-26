@@ -35,59 +35,171 @@ const char* ZIPExport::GetDescription(ArgScript::DescriptionMode mode) const
 
 void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 	
-	DatabaseDirectoryFilesPtr exportDatabase = ZipManager.GetZIPExportFolder();
 	eastl::string16 tmpPath = u"tmp/";
 	tmpPath = ZipManager.GetZIPExportPath() + tmpPath;
 
 	if (!std::filesystem::is_directory(tmpPath.c_str()) || !std::filesystem::exists(tmpPath.c_str())) { // Check if directory exists
 		std::filesystem::create_directory(tmpPath.c_str()); // create folder
 	}
-	DatabaseDirectoryFilesPtr tmpDatabase = new Resource::DatabaseDirectoryFiles(tmpPath.c_str());
-	tmpDatabase->AddExtensionMapping(u".png",TypeIDs::png);
-	ZipArchive::Ptr archive = ZipArchive::Create();
-	IResourceFactoryPtr pngFactory = ResourceManager.FindFactory(TypeIDs::png);
 
-	for (const ResourceKey& key : selection) {
+	for (const ResourceKey& key : selection) 
+	{
 		ResourceObjectPtr resource;
 		ResourceKey png = {key.instanceID, TypeIDs::png, key.groupID};
 		auto package = ResourceManager.FindRecord(png);
-		Resource::IRecord* record;
+		
 		if (package != nullptr && ResourceManager.GetResource(key, &resource)) {
 			
-			if (key.typeID == TypeIDs::adventure) {
+			if (key.groupID == 0x408a0000) 
+			{
 				cScenarioResourcePtr scenario = object_cast<Simulator::cScenarioResource>(resource);
 				
-				png = {png.instanceID,TypeIDs::png,id("adventureImages_1~")};
-
-				if (package->OpenRecord(png,&record)) {
-					record->GetStream()->SetPosition(0);
-					auto size = record->GetStream()->GetSize();
-					char* buffer = new char[size];
-					record->GetStream()->Read(buffer,size);
-					record->RecordClose();
+				if (!ExportAsset(png,tmpPath,package)) {
+					App::ConsolePrintF("Failed to export %#x.png",png.instanceID);
+					continue;
+				}
+				else {
+					SporeDebugPrint("Successfully exported %#x.png to %ls",png.instanceID,tmpPath.c_str());
+				}
+				
+				if (scenario == nullptr) {
+					App::ConsolePrintF("Failed to fetch scenario resource. No dependency creations were fetched.");
+					continue;
 				}
 
-				ResourceKey avatar = scenario->mAvatarAsset.mKey,
-					posse1 = scenario->mInitialPosseMembers[0].mAsset.mKey,
-					posse2 = scenario->mInitialPosseMembers[1].mAsset.mKey,
-					posse3 = scenario->mInitialPosseMembers[2].mAsset.mKey;
-				vector<ResourceKey&> cast;
+				// Vector to store all the dependency keys.
+				eastl::vector<ResourceKey> cast;
+
+				// Pushing back avatar and crew members.
+				cast.push_back(scenario->mAvatarAsset.mKey);
+				cast.push_back(scenario->mInitialPosseMembers[0].mAsset.mKey);
+				cast.push_back(scenario->mInitialPosseMembers[1].mAsset.mKey);
+				cast.push_back(scenario->mInitialPosseMembers[2].mAsset.mKey);
+
+				// pushing back all of the cast.
 				for (auto& asset : scenario->mClasses) {
 					cast.push_back(asset.second.mAsset.mKey);
 					cast.push_back(asset.second.mGameplayObjectGfxOverrideAsset.mKey);
 					cast.push_back(asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey);
 				}
 
-				ResourceKey avatarPNG = { avatar.instanceID,TypeIDs::png,avatar.groupID };
+				for (const ResourceKey& key : cast) {
+					if (key.groupID == GroupIDs::BuildingModels ||
+						key.groupID == GroupIDs::CellModels ||
+						key.groupID == GroupIDs::CreatureModels ||
+						key.groupID == GroupIDs::VehicleModels ||
+						key.groupID == GroupIDs::UfoModels) {
+						png = { key.instanceID, TypeIDs::png, key.groupID };
+						auto loc = ResourceManager.FindRecord(png);
+						if (loc == nullptr || !ExportAsset(png,tmpPath,loc)) {
+							App::ConsolePrintF("Failed to export %#x.png", png.instanceID);
+						}
+						else {
+							SporeDebugPrint("Successfully exported %#x.png to %ls", png.instanceID, tmpPath.c_str());
+						}
+					}
+					else {
+						continue;
+					}
+				}
 
 
 			}
+			else if (key.groupID == GroupIDs::BuildingModels ||
+					 key.groupID == GroupIDs::CellModels ||
+					 key.groupID == GroupIDs::CreatureModels ||
+					 key.groupID == GroupIDs::VehicleModels ||
+					 key.groupID == GroupIDs::UfoModels ) 
+			{
+				if (!ExportAsset(png, tmpPath, package)) {
+					App::ConsolePrintF("Failed to export %#x.png", png.instanceID);
+				}
+				else {
+					SporeDebugPrint("Successfully exported %#x.png to %ls", png.instanceID, tmpPath.c_str());
+				}
+			}
 		}
 		else {
-			SporeDebugPrint("Failed to get resource for %#x",key.instanceID);
+			App::ConsolePrintF("Failed to get resource for %#x",key.instanceID);
 		}
 	}
+
+	// Gathering the PNGs in temp folder, creating the ZIP archive and then delete the temp folder.
+	
+	eastl::string16 zipName;
+	cAssetMetadataPtr firstSelection;
+	if (Pollinator::GetMetadata(selection[0].instanceID, selection[0].groupID, firstSelection)) {
+		zipName.append_sprintf(u"%ls.zip",firstSelection->GetName());
+	}
+	else {
+		zipName.append_sprintf(u"%#x.zip",selection[0].instanceID);
+	}
+
+	eastl::string16 zipPath = ZipManager.GetZIPExportPath() + zipName;
+	eastl::string8 zipPathC;
+	zipPathC.assign_convert(zipPath.c_str());
+
+	if (std::filesystem::is_empty(tmpPath.c_str())) {
+		App::ConsolePrintF("ZIPExport ERROR: Temporary folder was empty after iterating through creations. Function aborted.");
+		return;
+	}
+
+
+	for (const auto& entry : std::filesystem::directory_iterator(tmpPath.c_str())) {
+		std::string entryPath = entry.path().string();
+		ZipFile::AddFile(zipPathC.c_str(),entryPath);
+		SporeDebugPrint("Added entry %s to ZIP file %s",entryPath.c_str(),zipPathC.c_str());
+	}
+
+	if (!std::filesystem::remove(tmpPath.c_str())) {
+		App::ConsolePrintF("Failed to remove temporary folder. It will persist after this process has ended.");
+	}
+
+	App::ConsolePrintF("Your creations have been added to ZIP archive %ls. It can be found in %ls",zipName.c_str(),ZipManager.GetZIPExportPath().c_str());
+
 }
 void ZIPExport::OnShopperAccept(const ResourceKey& selection) {
+	eastl::vector<ResourceKey>& container = {selection};
+	this->OnShopperAccept(container);
+}
 
+bool ZIPExport::ExportAsset(const ResourceKey& key, eastl::string16 targetDir, Resource::Database* database) {
+	Resource::IRecord* record;
+	if (database->OpenRecord(key, &record)) {
+		record->GetStream()->SetPosition(0);
+		auto size = record->GetStream()->GetSize();
+		char* buffer = new char[size];
+		record->GetStream()->Read(buffer, size);
+		record->RecordClose();
+
+		//cAssetMetadataPtr metadata;
+		eastl::string16 fName;
+
+		if (key == ResourceKey(key.instanceID, TypeIDs::png, 0x408a0000)) {
+			fName.append_sprintf(u"zzz"); // Making adventures load last ín imports, hopefully.
+		}
+
+		//if (Pollinator::GetMetadata(key.instanceID, key.groupID, metadata)) {
+		//	fName.append_sprintf(u"%ls.%ls", metadata->GetName().c_str(),ResourceManager.GetTypenameFromType(key.typeID));
+		//}
+		//else {
+			fName.append_sprintf(u"0x%x.%ls", key.instanceID, ResourceManager.GetTypenameFromType(key.typeID));
+		//}
+		eastl::string16 fPath = targetDir + fName;
+
+		FileStreamPtr fstream = new IO::FileStream(fPath.c_str());
+
+		if (fstream->Open(IO::AccessFlags::ReadWrite, IO::CD::CreateAlways)) {
+			fstream->Write(buffer, size);
+			fstream->Close();
+			return true;
+		}
+		else {
+			return false;
+		}
+
+	}
+	else {
+		return false;
+	}
 }
