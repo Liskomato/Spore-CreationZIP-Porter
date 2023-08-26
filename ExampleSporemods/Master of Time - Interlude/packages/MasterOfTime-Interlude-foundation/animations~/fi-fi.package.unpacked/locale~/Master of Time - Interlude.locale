@@ -1,0 +1,4078 @@
+# Auto-generated localization file for: Master of Time - Interlude (ID: 0X626D07D6)
+# Adventure name
+0x00000001 Master of Time - Interlude
+
+# Adventure description
+0x00000002 [This interlude-episode is taking place after the events of MoT Part 9 - And you'll play as the God of Evolution Metartalius itself.] ~br~ ~br~Josh's League has torn off their strings & escaped the Creators' field of vision - and now the Overseer demands answers.
+
+# Intro text
+0x00000003 •Kehittymisen temppeli• ~br~Suuri Valvoja on vaatinut kehittymisen jumalan läsnäoloa - todennäköisimmin liittyen Metartaliuksen valittujen "pakoon".
+
+# Win text
+0x00000004 Ja niin entinen Kehittymisen jumala Metartalius lähetettiin näkemään lopun tulo hänen luomustensa kanssa - ilman toivoa että he pysäyttäisivät sen. Onko universumilla vielä toivoa selviytymiseen? ~br~ ~br~ Odota, niin näet . . .
+
+# Lose text
+0x00000005 "Hetkinen, mitä? K-kuinka?.. Oliko totuus niin epämukava että mieluummin tapoit itsesi?.. <huoh> Hyvä on, en aio tuhlata aikaani sinun takaisin tuomiseen, joten... Heippa!"
+
+# Act 1
+0x00000006 Tuomio
+0x00000007 "Valvoja yleensä kutsuu minut paikalle fyysiseti vain kun Luojamme tahtovat sanoa jotain. Jokin kertoo minulle että olen joka tapauksessa pulassa."
+
+# Goal 1
+0x00000008 METARTALIUS - TILANNERAPORTTI VALITTUJESI NEUTRALISAATIOON.~br~Metar[talius] (Sinä): "He ovat paenneet, Valvoja."~br~PAENNEET? MAHDOTONTA. SELITÄ.
+0x00000009 Metar: "He ovat löytäneet tavan naamioida sijaintinsa meiltä - ja ovat tehneet itsestään näkymättömiä Divitechille. Pelkään pahoin että jos menemme heidän peräänsä, menetämme kallista aikaa, aikaa jota meillä on muutenkin liian vähän. Mestarin projekti on melkein valmis, emmekä vieläkään tiedä missä hänen tukikohtansa on."
+0x0000000a ÄLÄ YRITÄ VAIHTAA AIHETTA, METARTALIUS. "LIIGALLA", JOKSI SINÄ KUTSUT ALAMAISIASI, EI OLE TARVITTAVAA TIETOTAITOA TAI VOIMAA PIILOTTAAKSENSA HEIDÄT MEILTÄ - MIKÄ JOHTAA VAIN YHTEEN LOPPUTULOKSEEN. JOKO MESTARI AUTTOI HEITÄ PIILOUTUMAAN, TAI YKSI MEISTÄ.
+0x0000000b Metar: "Yksi meistä? Tuohan on mahdotonta. Tietäisin jos meidän keskuudessamme olisi petturi."
+0x0000000c NIIN MINÄKIN - SILLÄ SE OLIN MINÄ JOKA HUOMASI YKSIKKÖ 4020:N KAPINOINNIN JA KORVASIN HÄNET YKSIKKÖ 4021:LLÄ. ~br~Metar: "Mikä oli typerää."
+
+# Goal 2
+0x0000000d Valvoja: "TYPERÄÄ?"~br~Metar: "Niin. Metartonin korvaaminen Gamaronilla oli suuri virhe - virhe joka sai meidät menettämään Liigan luottamuksen. Jos olisit kuunnellut minua, olisit tietänyt että tuo ei olisi ikinä edes toiminut."
+0x0000000e Valvoja: "JOS 'METARTON' OLISI JÄTETTY AUTTAMAAN 'LIIGAA' ILMAN VÄLIINTULOA, HEISTÄ OLISI TULLUT TOINEN M3T0/METALON - JA SINÄ KYLLÄ MUISTAT KUINKA HANKALAA TUON VIRHEEN KORJAAMINEN OLI."
+0x0000000f Metar: "Muistan, sillä minä itse lähetin Metartonin sammuttamaan hänet."~br~Valvoja: "SINUSTA ON TULLUT LIIAN LÄHEINEN LUOMUSTESI KANSSA, METARTALIUS."
+0x00000010 Liian läheinen, jos saan itse sanoa. Metartaliuksella oli kaikki mahdollisuudet panna "Metarton" takaisin raiteilleen ja muistuttaa häntä todellisista aikomuksistamme XX-21:llä.
+0x00000011 Metar: "Sinulla ei ole oikeutta kyseenalaistaa minua Gamaron. Sinun työsi oli korvata Metarton, mutta ylimielisyydessäsi yritit olla parempi kuin hän."~br~Koska *se* oli se tavoita jonka Valvoja antoi minulle. Toteutin vain käskyjäni.
+
+
+# Act 2
+0x00000012 Tuomari ja teloittaja
+0x00000013 "Näyttää siltä ettei Valvojalla ole aikaa pilailulle. Pelkään pahoin että hän on jotenkin saanut tietää että autan vielä valittujani vaikka he ovatkin poissa Suuresta Kokonaisuudesta."
+
+# Goal 1
+0x00000014 HILJAA, GAMARON. METARTALIUS ON OIKEASSA - EPÄONNISTUIT. KÄSKYNÄSI OLI HANKKIA LIIGAN LUOTTAMUS JA OPASTAA HEIDÄT VOITTOON. MUTTA NYT HE OVAT POISSA KOKONAISUUDESTA. JATKETAANPAS.
+0x00000015 KUTEN SANOIN - EI OLE MITÄÄN KEINOA ETTÄ LIIGA OLISI ITSESTÄÄN PAENNUT KATSETTAMME - EIKÄ KOSKAAN IKINÄ OLE KOKONAINEN VALITTUJEN RYHMÄ PETTÄNYT MEITÄ. MIKÄ JOHTAA VAIN YHTEEN - JA AINOAAN - LOPPUTULOKSEEN.
+0x00000016 HEIDÄT AUTTOI KATOAMAAN YKSI MEISTÄ. JA SE EI TODELLAKAAN OLLUT MINÄ - TÄMÄN TÄYTYY OLLA SINUN TÖITÄSI, METARTALIUS. SINUN PEHMEYTESI OMIA LUOMUKSIASI KOHTAAN ON SOKEUTTANUT SINUT TEHTÄVÄSTÄSI JO LIIAN KAUAN.
+0x00000017 Metar: "Pöyristyttävä väite... Ja jos se silti on totta, mitä siitä? Aiotko sinä hävittää ja korvata minut? Tuhoa minut, ja sinä ja meidän Luojamme menettävät kaiken. Tsiljoonien vuosien työ - kaikki hukkaan."
+0x00000018 SINÄ ET SIIS VÄITÄ VASTAAN? ETTÄ SINÄ VIELÄ AUTAT "LIIGAASI"?~br~LOISTAVAA.
+
+
+# Act 3
+0x00000019 Loistavaa?
+0x0000001a "Valvoja ON siis tietoinen avustani Liigalle - mutta ei silti vaikuta yllättyneeltä tai pettyneeltä. Huolestuttavaa..."
+
+# Goal 1
+0x0000001b Metar: "Loistavaa? Et vaikuta liian onnetomalta tähän liittyen, Suuri Valvoja."~br~LUULITKO TOSIAAN ETTEMME OLISI ODOTTANEET TÄTÄ? ME AINA TIESIMME, METARTALIUS - AINA. SINUT RAKENSI LUOJA RAKASTAVAISET - JOKA KUULUISASTI LÄHTI KOKONAISUUDESTA OLLAKSEEN ALEMMAN TAHON KANSSA.
+0x0000001c SE OLI HÄN JOKA VALVOI PÄÄTÖSTÄSI LUODA NAH'NEERIT - TUNTEETTOMAT, ARMOTTOMAT TUHOAJAT, JOIDEN TARKOITUS OLI PAKOTTAA MUUT SEN AJAN LAJIT KEHITTYMÄÄN NOPEAMMIN.
+0x0000001d JA YHDESTÄ HEISTÄ TULI "MESTARI" - JO TOINEN POIKKEAVUUS KOKONAISUUDESSA. EI TARVITA YLIÄLYÄ KOOTAKSEEN TÄMÄN PALAPELIN - SINÄ MYÖS OLET OLLUT POIKKEAVA - AINA.
+0x0000001e Metar: "Jos olet tiennyt tuon aina, mikset ole sitten pysäyttänyt minua? Miksi olet antanut minun jatkaa Kehittymisen jumalan roolissa?"
+0x0000001f KOSKA SINUSTA ON TULLUT ENNALTA-ARVATTAVA. AJATELLESSASI HUIJATA MEITÄ, OLET UNOHTANUT ETTÄ *ME* VOIME TEHDÄ SAMOIN.~br~???: "Okei, tuo riittää jo."
+
+
+# Act 4
+0x00000020 Muukalainen temppelissä
+0x00000021 "Ääni puhui takaani - ja Valvoja sammui? Lisää ja lisää mahdottomia sattumia on tapahtumassa liian lähekkäin... Kuka on tämä tunkeilija?"
+
+# Goal 1
+0x00000022 Ugh, tuo suuri silmäpallo ei ikinä tiedä milloin lopettaa... Sääli että tarvitsemme sitä ollakseeme yhteydessä "toisiin" todellisuuden ulkopuolella. Noh, nyt kun se ottaa pienet torkut, on aika puhua. Pidetään pieni yksityinen keskustelutuokio.
+0x00000023 Metar: "Kuka sinä olet?.. Mikä oikein olet?"~br~Varmastikaan ei yksi "edustus-lajeistasi" vaikka näytänkin heiltä. Mutta joo, "kuka minä olen" tietenkin. Arvaa vain, katsotaan kuinka monta yritystä menee.
+0x00000024 Metar: "Sinä olet... Luonnoltasi keinotekoinen... Varmasti Luojan Työkalun luomus, mutta... En tunnista käsityötä..."~br~Katso tämän fyysisen olemuksen taakse.
+0x00000025 Metar: "Sielusi on... M-mitä?.. Se on aivan kuin katsoisin valkoista kohinaa... S-sinä olet... Ei, se ei vain ole mahdollista!"~br~Tarkastitko kenties sitä sotkua mitä "sieluni" on? Se oli niin rankkaa työtä saada se kasaan...
+0x00000026 ...tiivistää se muotoon joka olisi mahtunut tämän todellisuuden sisälle. "Muut" pelkäsivät niin pahoin tullakseen tänne ja luovuttaakseen todellisen muotonsa, mutta olen ylpeä että minä hävisin sen arpaheiton.
+
+
+# Act 5
+0x00000027 Mahdoton mahdottomuus
+0x00000028 "En voi prosessoida tätä... Pitäisikö minun uskoa... E-että olento edessäni olisi... Yksi heistä? Yksi... Luojista?"
+
+# Goal 1
+0x00000029 Ymmärrän sympatiasi luomuksiasi kohtaan, todella. Olen rakastanut vaeltelua heidän keskuudessaan. Miikka64:n galaksissa ei ole koskaan tylsiä hetkiä, toisin kuin "tuolla puolen".
+0x0000002a Se oli vain odottelua ja odottelua siellä pain, katsellen kun sinä ja luomuksesi yritätte saada galaksin valmiiksi kohtaloaan varten.~br~Metar: "M-Mutta s-sinä olet... E-ei, tämä täytyy olla joku Valvojan temppu - tai Mestarin!"
+0x0000002b Hassu pikku ötökkä, eikö olekin? Todellakin, hän on tehnyt huipputyötä, tuhoten jokaisen "edustaja-lajisi" ja estäen Nollatilan... Ja ei, en ole hänen vakoojansa tai mitään sellaista. 
+0x0000002c Olen vain... Minä! Tehden asioita omalla tavallani, itsestäni. Saavuin muutamia syklejä sitten... Hiukan ennen kuin Debugat vangitsivat "Ikuisen Kuoleman-Tuojan". Kaikki tuo raato ja kuolema - merkityksettömiä, koska tämän syklin sankarit vapauttivat Tuojan.
+0x0000002d Metar: "L-luulen että olen selvittänyt MIKÄ sinä olet, mutta en nimeäsi."~br~Joten annapas minun esitellä itseni:
+
+
+# Act 6
+0x0000002e HIEROFANTTI
+0x0000002f *OLEN KAIKKEA HURSKASTA JA PYHÄÄ - ARMON KANAVOIJA - PELASTUKSEN JOHTAJA - JÄRJESTYKSEN ILMENTYMÄ - KAIKEN HIERARKIAN PÄÄ - HIEROFANTTI!*
+
+# Goal 1
+0x00000030 Luoja Hierofantti, hauska tutustua! Mutta nykyään olen kulkenut kirjavilla nimillä - Pyhä Seragon, Keisari Alfus II, Sefirot, Hadraniel Genesis Wells...
+0x00000031 Metar: "S-sinä olet L-Luoja - j-joten m-miten o-olet täällä?!"~br~Miten hassu näky - mahtava Metartalius, pelokas ja änkyttävä kuin lapsi joka uskoo hirviöön sängyn alla.
+0x00000032 Kerroin jo sinulle miten tulin tänne - sieluni tiivistettiin ja pakotettiin tähän... alkukantaiseen olemukseen. Antaisin kirkuvat aplodit rakkaalle siskolleni...
+0x00000033 ...kun hän heitti koko olemuksensa pois ollakseen rakkaansa kanssa... Ah, mutta hän on kuollut. Rakastavaiset-parka - tai Mezal, tai Mem, miten hän kutsui itseään elämänsä lopussa... Hah, on yhä outoa kutsuä häntä siskokseni. 
+0x00000034 Luulen että elo teidän alempien kanssa on vaikuttanut minuun hiukan... Mutta joo, sinä olet varmaan utelias siitä miksi olen täällä - juuri nyt, edessäsi. Vaihdetaan kuitenkin nyt ensin ympäristöä:
+
+
+# Act 7
+0x00000035 Langennut Luoja
+0x00000036 "Koko se tieto ja voima jota tätä olento hallitsee kertoo kaiken, että hän puhuu totta itsestään. ...Mutta hänen käytöksensä on paljon eksentrisempää kuin minkään muun Luojan... Tai heidän Työkalunsa."
+
+# Goal 1
+0x00000037 Ah, paljon parempi. Missä olinkaan..? Ai niin, olin kertomassa miksi olen täällä. Lyhyt vastaus on: Olen täällä viimeistelemässä työtäsi, Metartalius. Sisarukseni tuolla puolen ovat saaneet tarpeekseen ja ovat päättäneet minun hoitavan loput.
+0x00000038 Metar: "Siitä vain sitten - tuhoa minut. Mutta ti..."~br~Ei mitään tuollaista höpöä, tai murskaan sinut tässä ja nyt. Rehellisesti sanottuna, en halua tuhota sinua.
+0x00000039 Voisin hyvin helposti - mutta se ei olisi lainkaan hauskaa.~br~Metar: "Jos siis kohtaloni ei ole tuhoutua... Mitä sitten? Korvattu ja vangittu?"
+0x0000003a Korvattu? Ei Metartalius, ei ole enää tarvetta "kehittymisen jumalille". Nollatila on juuri kulman takana, aivan kosketettavissa... Ja et voi tehdä mitään pysäyttääksesi sen. Ja hassuinta kaikista:
+0x0000003b Mestari itse tulee olemaan oman tuhonsa seppä! Aivan kuten sinä, jopa hän ei olisi voinut arvata että oikea Luoja heittäisi koko olemuksensa menemään. Suunnitelmani on läpäisemätön!
+
+# Goal 2
+0x0000003c Sinun "valittusi", Kapteenin Liiga... Pahoittelut, "Joshin" Liiga - he eivät ole edes uhka. Heidän loppupelinsä ei ole meidän pysäyttäminen - Se on Mestarin pysäyttäminen. Ja sitä kautta he vain palvelevat meidän tarkoitusperiä...
+0x0000003d Tahdon niin pahasti nähdä heidän pikku kasvonsa kun he tajuavat kaiken olevan... Merkityksetöntä. Kaikki se työ, kaikki se tuska - aivan kaikki, turhaa.
+0x0000003e Metar: "Näen vain että me haaskaamme toistemme aikaa. Joten kerro, mitä aiot tehdä minun suhteen?"~br~En aio tuhota sinua, sen verran olen päättänyt - koska haluan sinun olevan paikalla kun...
+0x0000003f ...loppu tulee. Nähdäksesi sinun valittujesi, Mestarin Liigan, ja kaikkien muiden täyden epäonnistumisen oman tuhonsa estämisessä. Sopiva rangaistus sinulle, joka petti ainoan tarkoituksensa johon sinut oli luotu.
+0x00000040 Metar: "Tarkoitatko sitä että aiot vain päästää minut menemään? Oletko niin varma suunnitelmastasi?"~br~Ööömmm...~br~Joo, aivan varma.
+
+# Goal 3
+0x00000041 Olen pitänyt Liigaa silmällä jo jonkin aikaa, ja kuulin pikku juorun että he aikovat käyttää "Rauhan timantteja" neutralisoidakseen Mestarin "Vihan kristallien" vaikutukset.
+0x00000042 Täytyy myöntää, kätevä suunnitelma - semmoinen jota et taida käyttäneen sitten ensimmäisen syklin "tapauksen". Saanko kysyä mikä siinä oli syynä?
+0x00000043 Metar: "Rauhan timantit todella voivat pysäyttää Vihan kristallit - mutta kuten kaikella universumissa, täytyy olla tasapaino - liika rauha johtaa antoisaan apatiaan, aivan kuten liika viha johtaa hulluuteen."~br~Niinkö?
+0x00000044 Mutta luulen että se olisi ihan hyvä antaa alhaisten lajien "puuduttaa" itsensä ennen kuin Nollatila käynnistetään. Minkä johdosta aion pitää vähän hauskaa... VALVOJA! Tottele käskyjäni!
+0x00000045 Valvoja: *TAHTOSI TOTEUTUKOON, LUOJA HIEROFANTTI .*~br~Käytä loput energiastamme tuodaksemme menneet sankarit!~br~Valvoja: *KETKÄ HEISTÄ?*~br~Kaikki - joka ikisestä syklistä.~br~Metar: "Ä-ÄLÄ! LOPETA!"~br~Myöhäistä!
+
+
+# Act 8
+0x00000046 Hullu jumala
+0x00000047 "Mitä Hierofantti ajattelee oikein tekevänsä!? Kutsumalla menneisyyden sankarit nykyisyyteen sattumanvaraisesti tulee vain runtelemaan jo alunperin vuotavan ajan jatkumon!"
+
+# Goal 1
+0x00000048 TULKAA KAIKKI! MENNEET SANKARIT, EILISEN LEGENDAT, KAPTEENIT MENNEILTÄ AJOILTA!~br~Metar: "E-et voi tehdä tätä! E-et voi vain ryöstää otuksia sattumanvaraisesti ajoistaan ja heittää heitä tänne!"~br~Enkö muka?
+0x00000049 Metar: "Sillä on syynsä miksi toin heitä vain muutama kerrallaan - ja vain niistä kohdin jolloin heidän vaikutuksensa tulevaan olisi minimaalinen! Jos jatkat tätä hulluutta, uhkaat tämän uuden aikajanan kestävyyttä! Sinä tulet..."
+0x0000004a Luuletko minut sokeaksi seurauksille, Metartalius? Tiedän tarkalleen mitä teen.
+0x0000004b Tuomalla niin paljon sankareita menneisyydestä kuin mahdollista, kypsytän kaaoksen hedelmät! Ja aika sadonkorjuulle on lähellä. Kun Kuolema syntyy, olemassaolon loppu alkaa - ja se tulee leviämään tästä galaksista jok' ikiseen universumin kolkkaan!
+0x0000004c Metar: "A-aiot siis käyttää heitä jotka menettivät henkensä pelastaakseen galaksin pahalta... Tuhotaksesi sen?"~br~Aikamoinen ilkimys olenkin, eikö vain?
+
+# Goal 2
+0x0000004d Ole hyvä: kyytisi ulos täältä. Noh, missäs sinun käytöstapasi? Tämä on se kohta jossa kiität minua!.. Jukra, rakas siskoni kääntyisi haudassaan jos tietäisi miten töykeä hänen "poikansa" on.
+0x0000004e Metar: "Mikä on todellinen syy sille että annat minun mennä, Hierofantti? Tiedän teidät Luojat paremmin kuin kukaan muu tässä todellisuudessa - ette jätä mitään sattuman varaan."~br~Kuinka loukkaavaa sinulta sanoa noin.
+0x0000004f Epäiletkö todella vilpittömyyttäni tässä tapauksessa? ...Hyvä. Ainakin sinulla on vielä jotain järkeä tuossa metallipäässäsi vaikka sinut on irrotettu teknologiastamme.
+0x00000050 Kuten sanoin aiemmin: Tahdon sinun olevan paikalla kun luomuksesi tulevat ymmärtämään kovan työnsä merkityksettömyyden. Ja... Kuten me Luojat tahdomme usein sanoa: "Sinulla on vielä rooli Suuressa Kokonaisuudessa". 
+0x00000051 Tuntuu aika paskaiselta olla tuon sanonnan vastaanottavana puolena, eikö olekin?~br~Metar: "Sinä... Olet todella - täysin - kokonaan - HULLU."~br~Jep.
+
+# Goal 3
+
+
+# Prop #82 - See?
+0x00000052 Näetkö?
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #83 - Blue Gate
+0x00000053 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #84 - Blue Gate
+0x00000054 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #85 - Blue Gate
+0x00000055 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #86 - Blue Gate
+0x00000056 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #87 - Blue Gate
+0x00000057 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #88 - META-Tentacle
+0x00000058 META-Tentacle
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #89 - META-Gear
+0x00000059 META-Gear
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #90 - META-Pipe
+0x0000005a META-Pipe
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #91 - Blue Gate
+0x0000005b Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #92 - Blue Gate
+0x0000005c Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #93 - the great Overseer
+0x0000005d Suuri Valvoja
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #94 - Jump Pad 
+0x0000005e Jump Pad 
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #95 - Gamaron
+0x0000005f Gamaron
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #96 - Lightning Once
+0x00000060 Lightning Once
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #97 - Mysterious Surisin?
+0x00000061 Salaperäinen Surisin?
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+0x00000062 Terhehdys oi tervehdys, oi Kehittymisen jumala!.. Tiedän, tiedän - kuinka töykeää minusta marssia sisään ilman varoitusta... Mutta toisaalta olet kyllä MINUN omaisuutta. Noh, siis "meidän" omaisuutta enemmänkin.
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #99 - Traffic 2
+0x00000063 Traffic 2
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #100 - Factory Rumble 1
+0x00000064 Factory Rumble 1
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #101 - Factory Exhaust
+0x00000065 Factory Exhaust
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #102 - Spotlight Yellow
+0x00000066 Spotlight Yellow
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #103 - Light White
+0x00000067 Light White
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #104 - An Impossible Being!
+0x00000068 Mahdoton olento!
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+0x00000069 Älä minusta vaivaannu, muutin vain kokoani. Tuntui vain oudolta katsoa sinua ylöspain, ajatellen kuinka alhainen sinä olet minuun verrattuna... Sori, toivon että tuo ei kuulostanut liian ärhäkkäältä.
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+0x0000006a Älä minusta vaivaannu, muutin vain kokoani. Tuntui vain oudolta katsoa sinua ylöspain, ajatellen kuinka alhainen sinä olet minuun verrattuna... Sori, toivon että tuo ei kuulostanut liian ärhäkkäältä.
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+0x0000006b Älä minusta vaivaannu, muutin vain kokoani. Tuntui vain oudolta katsoa sinua ylöspain, ajatellen kuinka alhainen sinä olet minuun verrattuna... Sori, toivon että tuo ei kuulostanut liian ärhäkkäältä.
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+0x0000006c Älä minusta vaivaannu, muutin vain kokoani. Tuntui vain oudolta katsoa sinua ylöspain, ajatellen kuinka alhainen sinä olet minuun verrattuna... Sori, toivon että tuo ei kuulostanut liian ärhäkkäältä.
+
+# Inspect for Act 8
+
+# Prop #109 - Poof White
+0x0000006d Poof White
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #110 - Hierophant
+0x0000006e Hierofantti
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #111 - Blue Gate
+0x0000006f Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #112 - Teleporter
+0x00000070 Teleporter
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #113 - Metartalius Floor
+0x00000071 Metartalius Floor
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #114 - Will'o'wisps
+0x00000072 Will'o'wisps
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #115 - Hierophant
+0x00000073 Hierofantti
+
+# Chatter for Act 1
+0x00000074 Minun täytyy myöntää, pidän todella paljon Surisinten ulkomuodosta... Paitsi ehkä heidän piikikkäistä raajoistaan ja jättisilmästä. Harmi ettei sinulla ole mahdollisuutta luoda uutta edustaja-lajia - sillä tämä on viimeinen sykli.
+
+# Inspect for Act 1
+0x00000075 Ikuisuudesta ikuisuuteen, sykli syklin jälkeen, se pikku lintunen on pilannut suunnitelmamme ja estänyt Nollatilan... Ja sinä olet salaa auttanut häntä. Teit hyvää työtä...
+0x00000076 ...tehden pikku puutteita luomuksiisi sinne ja tänne, varmistaaksesi että Mestari löytäisi tavan päihittää jokaisen edustaja-lajin jokaisessa syklissä... Mutta sen on täytynyt sattua, tietoisesti tuomita omat lapsesi kuolemaan.
+0x00000077 Metar: "Se sattui. Joka kerta kun tein sen, se sattui enemmän ja enemmän - mutta ei ollut muuta keinoa. Muutaman sukupolven tuska jotta miljardit muut saisivat nauttia elämästä - se oli silmissäni pieni hinta."
+0x00000078 Ja se kaikki tulee olemaan merkityksetöntä Nollatilan tullessa. Koko olevaisuus tuhottu, aika ja avaruus mukaanlukien - se olisi aivan kuin missään ei olisi ikinä ollut mitään.
+0x00000079 Ilo, onnellisuus, viha, suru... Kaikki se tulee olemaan olematonta - ei yhtikäs mitään. Ja se tulee olemaan kaunista.~br~Metar: "Riittää. Mestari - ja minun valittuni - tulevat pysäyttämään teidät. Niin kuin he ovat aina tehneet."~br~<huoh> Vaihdetaan taas ympäristöä.
+
+# Chatter for Act 2
+0x0000007a Minun täytyy myöntää, pidän todella paljon Surisinten ulkomuodosta... Paitsi ehkä heidän piikikkäistä raajoistaan ja jättisilmästä. Harmi ettei sinulla ole mahdollisuutta luoda uutta edustaja-lajia - sillä tämä on viimeinen sykli.
+
+# Inspect for Act 2
+0x0000007b Ikuisuudesta ikuisuuteen, sykli syklin jälkeen, se pikku lintunen on pilannut suunnitelmamme ja estänyt Nollatilan... Ja sinä olet salaa auttanut häntä. Teit hyvää työtä...
+0x0000007c ...tehden pikku puutteita luomuksiisi sinne ja tänne, varmistaaksesi että Mestari löytäisi tavan päihittää jokaisen edustaja-lajin jokaisessa syklissä... Mutta sen on täytynyt sattua, tietoisesti tuomita omat lapsesi kuolemaan.
+0x0000007d Metar: "Se sattui. Joka kerta kun tein sen, se sattui enemmän ja enemmän - mutta ei ollut muuta keinoa. Muutaman sukupolven tuska jotta miljardit muut saisivat nauttia elämästä - se oli silmissäni pieni hinta."
+0x0000007e Ja se kaikki tulee olemaan merkityksetöntä Nollatilan tullessa. Koko olevaisuus tuhottu, aika ja avaruus mukaanlukien - se olisi aivan kuin missään ei olisi ikinä ollut mitään.
+0x0000007f Ilo, onnellisuus, viha, suru... Kaikki se tulee olemaan olematonta - ei yhtikäs mitään. Ja se tulee olemaan kaunista.~br~Metar: "Riittää. Mestari - ja minun valittuni - tulevat pysäyttämään teidät. Niin kuin he ovat aina tehneet."~br~<huoh> Vaihdetaan taas ympäristöä.
+
+# Chatter for Act 3
+0x00000080 Minun täytyy myöntää, pidän todella paljon Surisinten ulkomuodosta... Paitsi ehkä heidän piikikkäistä raajoistaan ja jättisilmästä. Harmi ettei sinulla ole mahdollisuutta luoda uutta edustaja-lajia - sillä tämä on viimeinen sykli.
+
+# Inspect for Act 3
+0x00000081 Ikuisuudesta ikuisuuteen, sykli syklin jälkeen, se pikku lintunen on pilannut suunnitelmamme ja estänyt Nollatilan... Ja sinä olet salaa auttanut häntä. Teit hyvää työtä...
+0x00000082 ...tehden pikku puutteita luomuksiisi sinne ja tänne, varmistaaksesi että Mestari löytäisi tavan päihittää jokaisen edustaja-lajin jokaisessa syklissä... Mutta sen on täytynyt sattua, tietoisesti tuomita omat lapsesi kuolemaan.
+0x00000083 Metar: "Se sattui. Joka kerta kun tein sen, se sattui enemmän ja enemmän - mutta ei ollut muuta keinoa. Muutaman sukupolven tuska jotta miljardit muut saisivat nauttia elämästä - se oli silmissäni pieni hinta."
+0x00000084 Ja se kaikki tulee olemaan merkityksetöntä Nollatilan tullessa. Koko olevaisuus tuhottu, aika ja avaruus mukaanlukien - se olisi aivan kuin missään ei olisi ikinä ollut mitään.
+0x00000085 Ilo, onnellisuus, viha, suru... Kaikki se tulee olemaan olematonta - ei yhtikäs mitään. Ja se tulee olemaan kaunista.~br~Metar: "Riittää. Mestari - ja minun valittuni - tulevat pysäyttämään teidät. Niin kuin he ovat aina tehneet."~br~<huoh> Vaihdetaan taas ympäristöä.
+
+# Chatter for Act 4
+0x00000086 Minun täytyy myöntää, pidän todella paljon Surisinten ulkomuodosta... Paitsi ehkä heidän piikikkäistä raajoistaan ja jättisilmästä. Harmi ettei sinulla ole mahdollisuutta luoda uutta edustaja-lajia - sillä tämä on viimeinen sykli.
+
+# Inspect for Act 4
+0x00000087 Ikuisuudesta ikuisuuteen, sykli syklin jälkeen, se pikku lintunen on pilannut suunnitelmamme ja estänyt Nollatilan... Ja sinä olet salaa auttanut häntä. Teit hyvää työtä...
+0x00000088 ...tehden pikku puutteita luomuksiisi sinne ja tänne, varmistaaksesi että Mestari löytäisi tavan päihittää jokaisen edustaja-lajin jokaisessa syklissä... Mutta sen on täytynyt sattua, tietoisesti tuomita omat lapsesi kuolemaan.
+0x00000089 Metar: "Se sattui. Joka kerta kun tein sen, se sattui enemmän ja enemmän - mutta ei ollut muuta keinoa. Muutaman sukupolven tuska jotta miljardit muut saisivat nauttia elämästä - se oli silmissäni pieni hinta."
+0x0000008a Ja se kaikki tulee olemaan merkityksetöntä Nollatilan tullessa. Koko olevaisuus tuhottu, aika ja avaruus mukaanlukien - se olisi aivan kuin missään ei olisi ikinä ollut mitään.
+0x0000008b Ilo, onnellisuus, viha, suru... Kaikki se tulee olemaan olematonta - ei yhtikäs mitään. Ja se tulee olemaan kaunista.~br~Metar: "Riittää. Mestari - ja minun valittuni - tulevat pysäyttämään teidät. Niin kuin he ovat aina tehneet."~br~<huoh> Vaihdetaan taas ympäristöä.
+
+# Chatter for Act 5
+0x0000008c Minun täytyy myöntää, pidän todella paljon Surisinten ulkomuodosta... Paitsi ehkä heidän piikikkäistä raajoistaan ja jättisilmästä. Harmi ettei sinulla ole mahdollisuutta luoda uutta edustaja-lajia - sillä tämä on viimeinen sykli.
+
+# Inspect for Act 5
+0x0000008d Ikuisuudesta ikuisuuteen, sykli syklin jälkeen, se pikku lintunen on pilannut suunnitelmamme ja estänyt Nollatilan... Ja sinä olet salaa auttanut häntä. Teit hyvää työtä...
+0x0000008e ...tehden pikku puutteita luomuksiisi sinne ja tänne, varmistaaksesi että Mestari löytäisi tavan päihittää jokaisen edustaja-lajin jokaisessa syklissä... Mutta sen on täytynyt sattua, tietoisesti tuomita omat lapsesi kuolemaan.
+0x0000008f Metar: "Se sattui. Joka kerta kun tein sen, se sattui enemmän ja enemmän - mutta ei ollut muuta keinoa. Muutaman sukupolven tuska jotta miljardit muut saisivat nauttia elämästä - se oli silmissäni pieni hinta."
+0x00000090 Ja se kaikki tulee olemaan merkityksetöntä Nollatilan tullessa. Koko olevaisuus tuhottu, aika ja avaruus mukaanlukien - se olisi aivan kuin missään ei olisi ikinä ollut mitään.
+0x00000091 Ilo, onnellisuus, viha, suru... Kaikki se tulee olemaan olematonta - ei yhtikäs mitään. Ja se tulee olemaan kaunista.~br~Metar: "Riittää. Mestari - ja minun valittuni - tulevat pysäyttämään teidät. Niin kuin he ovat aina tehneet."~br~<huoh> Vaihdetaan taas ympäristöä.
+
+# Chatter for Act 6
+0x00000092 Minun täytyy myöntää, pidän todella paljon Surisinten ulkomuodosta... Paitsi ehkä heidän piikikkäistä raajoistaan ja jättisilmästä. Harmi ettei sinulla ole mahdollisuutta luoda uutta edustaja-lajia - sillä tämä on viimeinen sykli.
+
+# Inspect for Act 6
+0x00000093 Ikuisuudesta ikuisuuteen, sykli syklin jälkeen, se pikku lintunen on pilannut suunnitelmamme ja estänyt Nollatilan... Ja sinä olet salaa auttanut häntä. Teit hyvää työtä...
+0x00000094 ...tehden pikku puutteita luomuksiisi sinne ja tänne, varmistaaksesi että Mestari löytäisi tavan päihittää jokaisen edustaja-lajin jokaisessa syklissä... Mutta sen on täytynyt sattua, tietoisesti tuomita omat lapsesi kuolemaan.
+0x00000095 Metar: "Se sattui. Joka kerta kun tein sen, se sattui enemmän ja enemmän - mutta ei ollut muuta keinoa. Muutaman sukupolven tuska jotta miljardit muut saisivat nauttia elämästä - se oli silmissäni pieni hinta."
+0x00000096 Ja se kaikki tulee olemaan merkityksetöntä Nollatilan tullessa. Koko olevaisuus tuhottu, aika ja avaruus mukaanlukien - se olisi aivan kuin missään ei olisi ikinä ollut mitään.
+0x00000097 Ilo, onnellisuus, viha, suru... Kaikki se tulee olemaan olematonta - ei yhtikäs mitään. Ja se tulee olemaan kaunista.~br~Metar: "Riittää. Mestari - ja minun valittuni - tulevat pysäyttämään teidät. Niin kuin he ovat aina tehneet."~br~<huoh> Vaihdetaan taas ympäristöä.
+
+# Chatter for Act 7
+0x00000098 Minun täytyy myöntää, pidän todella paljon Surisinten ulkomuodosta... Paitsi ehkä heidän piikikkäistä raajoistaan ja jättisilmästä. Harmi ettei sinulla ole mahdollisuutta luoda uutta edustaja-lajia - sillä tämä on viimeinen sykli.
+
+# Inspect for Act 7
+0x00000099 Ikuisuudesta ikuisuuteen, sykli syklin jälkeen, se pikku lintunen on pilannut suunnitelmamme ja estänyt Nollatilan... Ja sinä olet salaa auttanut häntä. Teit hyvää työtä...
+0x0000009a ...tehden pikku puutteita luomuksiisi sinne ja tänne, varmistaaksesi että Mestari löytäisi tavan päihittää jokaisen edustaja-lajin jokaisessa syklissä... Mutta sen on täytynyt sattua, tietoisesti tuomita omat lapsesi kuolemaan.
+0x0000009b Metar: "Se sattui. Joka kerta kun tein sen, se sattui enemmän ja enemmän - mutta ei ollut muuta keinoa. Muutaman sukupolven tuska jotta miljardit muut saisivat nauttia elämästä - se oli silmissäni pieni hinta."
+0x0000009c Ja se kaikki tulee olemaan merkityksetöntä Nollatilan tullessa. Koko olevaisuus tuhottu, aika ja avaruus mukaanlukien - se olisi aivan kuin missään ei olisi ikinä ollut mitään.
+0x0000009d Ilo, onnellisuus, viha, suru... Kaikki se tulee olemaan olematonta - ei yhtikäs mitään. Ja se tulee olemaan kaunista.~br~Metar: "Riittää. Mestari - ja minun valittuni - tulevat pysäyttämään teidät. Niin kuin he ovat aina tehneet."~br~<huoh> Vaihdetaan taas ympäristöä.
+
+# Chatter for Act 8
+0x0000009e Minun täytyy myöntää, pidän todella paljon Surisinten ulkomuodosta... Paitsi ehkä heidän piikikkäistä raajoistaan ja jättisilmästä. Harmi ettei sinulla ole mahdollisuutta luoda uutta edustaja-lajia - sillä tämä on viimeinen sykli.
+
+# Inspect for Act 8
+0x0000009f Ikuisuudesta ikuisuuteen, sykli syklin jälkeen, se pikku lintunen on pilannut suunnitelmamme ja estänyt Nollatilan... Ja sinä olet salaa auttanut häntä. Teit hyvää työtä...
+0x000000a0 ...tehden pikku puutteita luomuksiisi sinne ja tänne, varmistaaksesi että Mestari löytäisi tavan päihittää jokaisen edustaja-lajin jokaisessa syklissä... Mutta sen on täytynyt sattua, tietoisesti tuomita omat lapsesi kuolemaan.
+0x000000a1 Metar: "Se sattui. Joka kerta kun tein sen, se sattui enemmän ja enemmän - mutta ei ollut muuta keinoa. Muutaman sukupolven tuska jotta miljardit muut saisivat nauttia elämästä - se oli silmissäni pieni hinta."
+0x000000a2 Ja se kaikki tulee olemaan merkityksetöntä Nollatilan tullessa. Koko olevaisuus tuhottu, aika ja avaruus mukaanlukien - se olisi aivan kuin missään ei olisi ikinä ollut mitään.
+0x000000a3 Ilo, onnellisuus, viha, suru... Kaikki se tulee olemaan olematonta - ei yhtikäs mitään. Ja se tulee olemaan kaunista.~br~Metar: "Riittää. Mestari - ja minun valittuni - tulevat pysäyttämään teidät. Niin kuin he ovat aina tehneet."~br~<huoh> Vaihdetaan taas ympäristöä.
+
+# Prop #164 - Bubbles
+0x000000a4 Bubbles
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #165 - Pond
+0x000000a5 Pond
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #166 - Jumping Fish
+0x000000a6 Jumping Fish
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #167 - 7
+0x000000a7 7
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #168 - 7
+0x000000a8 7
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #169 - Cold Wind
+0x000000a9 Cold Wind
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #170 - Lake Ambience
+0x000000aa Lake Ambience
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #171 - Hierophant
+0x000000ab Hierofantti
+
+# Chatter for Act 1
+0x000000ac Arvostan työtäsi todella, Metartalius. Tämä galaksi jonka loit, se todella on kaunis. Mutta jopa kirkkaimmankin tähden loiste kalpenee silti kaiken olemattomuudelle.
+
+# Inspect for Act 1
+0x000000ad Sitä paitsi, mitä uhkia sinä voit muka kohdistaa suunnitelmiinni? Ajatteletko todella että sinun arvokkaat "valittusi" antavat sinun tulla takaisin lämpimin tervehdyksin ja uskoa kaikkea mitä aiot kertoa heille?
+0x000000ae Tai ajattelitko kenties liittyä Mestarin seuraan? Tuo olisi kiintoisaa nähdä, mutta kuinka todennäköistä on, että se vanha varis pitäisi sinut kokonaisena?
+0x000000af Hänen arkkivihollisensa kävelee hänen luolaansa, voimattomana ja pelokkaana. Antaako hän sinulle edes mahdollisuuden puhua? Ei, vaikka teillä onkin pikku "ystävä ja vihollinen" -peli käynnissä, hän ei halua mitään muuta kuin poistaa sinut laskuista.
+0x000000b0 Metar: "Voimattomana?.."~br~Voi..? Aivan, unohdin mainita: et varmaan huomannut, mutta poistin yhteytesi Divitechiin kokonaan.
+0x000000b1 Ei enää teleporttaamista tai hologrammeja sinulle Metartalius: sinun päiväsi Kehittymisen jumalana loppuivat minuutti sitten. Nyt olet vain iso robotti, kokonaan yksin pikku hiekkalaatikossasi. Mutta minulla vielä yksi yllätys sinulle.
+
+# Chatter for Act 2
+0x000000b2 Arvostan työtäsi todella, Metartalius. Tämä galaksi jonka loit, se todella on kaunis. Mutta jopa kirkkaimmankin tähden loiste kalpenee silti kaiken olemattomuudelle.
+
+# Inspect for Act 2
+0x000000b3 Sitä paitsi, mitä uhkia sinä voit muka kohdistaa suunnitelmiinni? Ajatteletko todella että sinun arvokkaat "valittusi" antavat sinun tulla takaisin lämpimin tervehdyksin ja uskoa kaikkea mitä aiot kertoa heille?
+0x000000b4 Tai ajattelitko kenties liittyä Mestarin seuraan? Tuo olisi kiintoisaa nähdä, mutta kuinka todennäköistä on, että se vanha varis pitäisi sinut kokonaisena?
+0x000000b5 Hänen arkkivihollisensa kävelee hänen luolaansa, voimattomana ja pelokkaana. Antaako hän sinulle edes mahdollisuuden puhua? Ei, vaikka teillä onkin pikku "ystävä ja vihollinen" -peli käynnissä, hän ei halua mitään muuta kuin poistaa sinut laskuista.
+0x000000b6 Metar: "Voimattomana?.."~br~Voi..? Aivan, unohdin mainita: et varmaan huomannut, mutta poistin yhteytesi Divitechiin kokonaan.
+0x000000b7 Ei enää teleporttaamista tai hologrammeja sinulle Metartalius: sinun päiväsi Kehittymisen jumalana loppuivat minuutti sitten. Nyt olet vain iso robotti, kokonaan yksin pikku hiekkalaatikossasi. Mutta minulla vielä yksi yllätys sinulle.
+
+# Chatter for Act 3
+0x000000b8 Arvostan työtäsi todella, Metartalius. Tämä galaksi jonka loit, se todella on kaunis. Mutta jopa kirkkaimmankin tähden loiste kalpenee silti kaiken olemattomuudelle.
+
+# Inspect for Act 3
+0x000000b9 Sitä paitsi, mitä uhkia sinä voit muka kohdistaa suunnitelmiinni? Ajatteletko todella että sinun arvokkaat "valittusi" antavat sinun tulla takaisin lämpimin tervehdyksin ja uskoa kaikkea mitä aiot kertoa heille?
+0x000000ba Tai ajattelitko kenties liittyä Mestarin seuraan? Tuo olisi kiintoisaa nähdä, mutta kuinka todennäköistä on, että se vanha varis pitäisi sinut kokonaisena?
+0x000000bb Hänen arkkivihollisensa kävelee hänen luolaansa, voimattomana ja pelokkaana. Antaako hän sinulle edes mahdollisuuden puhua? Ei, vaikka teillä onkin pikku "ystävä ja vihollinen" -peli käynnissä, hän ei halua mitään muuta kuin poistaa sinut laskuista.
+0x000000bc Metar: "Voimattomana?.."~br~Voi..? Aivan, unohdin mainita: et varmaan huomannut, mutta poistin yhteytesi Divitechiin kokonaan.
+0x000000bd Ei enää teleporttaamista tai hologrammeja sinulle Metartalius: sinun päiväsi Kehittymisen jumalana loppuivat minuutti sitten. Nyt olet vain iso robotti, kokonaan yksin pikku hiekkalaatikossasi. Mutta minulla vielä yksi yllätys sinulle.
+
+# Chatter for Act 4
+0x000000be Arvostan työtäsi todella, Metartalius. Tämä galaksi jonka loit, se todella on kaunis. Mutta jopa kirkkaimmankin tähden loiste kalpenee silti kaiken olemattomuudelle.
+
+# Inspect for Act 4
+0x000000bf Sitä paitsi, mitä uhkia sinä voit muka kohdistaa suunnitelmiinni? Ajatteletko todella että sinun arvokkaat "valittusi" antavat sinun tulla takaisin lämpimin tervehdyksin ja uskoa kaikkea mitä aiot kertoa heille?
+0x000000c0 Tai ajattelitko kenties liittyä Mestarin seuraan? Tuo olisi kiintoisaa nähdä, mutta kuinka todennäköistä on, että se vanha varis pitäisi sinut kokonaisena?
+0x000000c1 Hänen arkkivihollisensa kävelee hänen luolaansa, voimattomana ja pelokkaana. Antaako hän sinulle edes mahdollisuuden puhua? Ei, vaikka teillä onkin pikku "ystävä ja vihollinen" -peli käynnissä, hän ei halua mitään muuta kuin poistaa sinut laskuista.
+0x000000c2 Metar: "Voimattomana?.."~br~Voi..? Aivan, unohdin mainita: et varmaan huomannut, mutta poistin yhteytesi Divitechiin kokonaan.
+0x000000c3 Ei enää teleporttaamista tai hologrammeja sinulle Metartalius: sinun päiväsi Kehittymisen jumalana loppuivat minuutti sitten. Nyt olet vain iso robotti, kokonaan yksin pikku hiekkalaatikossasi. Mutta minulla vielä yksi yllätys sinulle.
+
+# Chatter for Act 5
+0x000000c4 Arvostan työtäsi todella, Metartalius. Tämä galaksi jonka loit, se todella on kaunis. Mutta jopa kirkkaimmankin tähden loiste kalpenee silti kaiken olemattomuudelle.
+
+# Inspect for Act 5
+0x000000c5 Sitä paitsi, mitä uhkia sinä voit muka kohdistaa suunnitelmiinni? Ajatteletko todella että sinun arvokkaat "valittusi" antavat sinun tulla takaisin lämpimin tervehdyksin ja uskoa kaikkea mitä aiot kertoa heille?
+0x000000c6 Tai ajattelitko kenties liittyä Mestarin seuraan? Tuo olisi kiintoisaa nähdä, mutta kuinka todennäköistä on, että se vanha varis pitäisi sinut kokonaisena?
+0x000000c7 Hänen arkkivihollisensa kävelee hänen luolaansa, voimattomana ja pelokkaana. Antaako hän sinulle edes mahdollisuuden puhua? Ei, vaikka teillä onkin pikku "ystävä ja vihollinen" -peli käynnissä, hän ei halua mitään muuta kuin poistaa sinut laskuista.
+0x000000c8 Metar: "Voimattomana?.."~br~Voi..? Aivan, unohdin mainita: et varmaan huomannut, mutta poistin yhteytesi Divitechiin kokonaan.
+0x000000c9 Ei enää teleporttaamista tai hologrammeja sinulle Metartalius: sinun päiväsi Kehittymisen jumalana loppuivat minuutti sitten. Nyt olet vain iso robotti, kokonaan yksin pikku hiekkalaatikossasi. Mutta minulla vielä yksi yllätys sinulle.
+
+# Chatter for Act 6
+0x000000ca Arvostan työtäsi todella, Metartalius. Tämä galaksi jonka loit, se todella on kaunis. Mutta jopa kirkkaimmankin tähden loiste kalpenee silti kaiken olemattomuudelle.
+
+# Inspect for Act 6
+0x000000cb Sitä paitsi, mitä uhkia sinä voit muka kohdistaa suunnitelmiinni? Ajatteletko todella että sinun arvokkaat "valittusi" antavat sinun tulla takaisin lämpimin tervehdyksin ja uskoa kaikkea mitä aiot kertoa heille?
+0x000000cc Tai ajattelitko kenties liittyä Mestarin seuraan? Tuo olisi kiintoisaa nähdä, mutta kuinka todennäköistä on, että se vanha varis pitäisi sinut kokonaisena?
+0x000000cd Hänen arkkivihollisensa kävelee hänen luolaansa, voimattomana ja pelokkaana. Antaako hän sinulle edes mahdollisuuden puhua? Ei, vaikka teillä onkin pikku "ystävä ja vihollinen" -peli käynnissä, hän ei halua mitään muuta kuin poistaa sinut laskuista.
+0x000000ce Metar: "Voimattomana?.."~br~Voi..? Aivan, unohdin mainita: et varmaan huomannut, mutta poistin yhteytesi Divitechiin kokonaan.
+0x000000cf Ei enää teleporttaamista tai hologrammeja sinulle Metartalius: sinun päiväsi Kehittymisen jumalana loppuivat minuutti sitten. Nyt olet vain iso robotti, kokonaan yksin pikku hiekkalaatikossasi. Mutta minulla vielä yksi yllätys sinulle.
+
+# Chatter for Act 7
+0x000000d0 Arvostan työtäsi todella, Metartalius. Tämä galaksi jonka loit, se todella on kaunis. Mutta jopa kirkkaimmankin tähden loiste kalpenee silti kaiken olemattomuudelle.
+
+# Inspect for Act 7
+0x000000d1 Sitä paitsi, mitä uhkia sinä voit muka kohdistaa suunnitelmiinni? Ajatteletko todella että sinun arvokkaat "valittusi" antavat sinun tulla takaisin lämpimin tervehdyksin ja uskoa kaikkea mitä aiot kertoa heille?
+0x000000d2 Tai ajattelitko kenties liittyä Mestarin seuraan? Tuo olisi kiintoisaa nähdä, mutta kuinka todennäköistä on, että se vanha varis pitäisi sinut kokonaisena?
+0x000000d3 Hänen arkkivihollisensa kävelee hänen luolaansa, voimattomana ja pelokkaana. Antaako hän sinulle edes mahdollisuuden puhua? Ei, vaikka teillä onkin pikku "ystävä ja vihollinen" -peli käynnissä, hän ei halua mitään muuta kuin poistaa sinut laskuista.
+0x000000d4 Metar: "Voimattomana?.."~br~Voi..? Aivan, unohdin mainita: et varmaan huomannut, mutta poistin yhteytesi Divitechiin kokonaan.
+0x000000d5 Ei enää teleporttaamista tai hologrammeja sinulle Metartalius: sinun päiväsi Kehittymisen jumalana loppuivat minuutti sitten. Nyt olet vain iso robotti, kokonaan yksin pikku hiekkalaatikossasi. Mutta minulla vielä yksi yllätys sinulle.
+
+# Chatter for Act 8
+0x000000d6 Arvostan työtäsi todella, Metartalius. Tämä galaksi jonka loit, se todella on kaunis. Mutta jopa kirkkaimmankin tähden loiste kalpenee silti kaiken olemattomuudelle.
+
+# Inspect for Act 8
+0x000000d7 Sitä paitsi, mitä uhkia sinä voit muka kohdistaa suunnitelmiinni? Ajatteletko todella että sinun arvokkaat "valittusi" antavat sinun tulla takaisin lämpimin tervehdyksin ja uskoa kaikkea mitä aiot kertoa heille?
+0x000000d8 Tai ajattelitko kenties liittyä Mestarin seuraan? Tuo olisi kiintoisaa nähdä, mutta kuinka todennäköistä on, että se vanha varis pitäisi sinut kokonaisena?
+0x000000d9 Hänen arkkivihollisensa kävelee hänen luolaansa, voimattomana ja pelokkaana. Antaako hän sinulle edes mahdollisuuden puhua? Ei, vaikka teillä onkin pikku "ystävä ja vihollinen" -peli käynnissä, hän ei halua mitään muuta kuin poistaa sinut laskuista.
+0x000000da Metar: "Voimattomana?.."~br~Voi..? Aivan, unohdin mainita: et varmaan huomannut, mutta poistin yhteytesi Divitechiin kokonaan.
+0x000000db Ei enää teleporttaamista tai hologrammeja sinulle Metartalius: sinun päiväsi Kehittymisen jumalana loppuivat minuutti sitten. Nyt olet vain iso robotti, kokonaan yksin pikku hiekkalaatikossasi. Mutta minulla vielä yksi yllätys sinulle.
+
+# Prop #220 - Blue Gate
+0x000000dc Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #221 - Blue Gate
+0x000000dd Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #222 - Blue Gate
+0x000000de Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #223 - Sunsetsin Floor
+0x000000df Sunsetsin Floor
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #224 - Blue Gate
+0x000000e0 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #225 - Hierophant
+0x000000e1 Hierofantti
+
+# Chatter for Act 1
+0x000000e2 XX-21, mukava pikku alus. Ehkä voisit käyttää sen palauttamista "valittujesi" luottamuksen palauttamiseen. Mitä tulee "Kehittymisen temppeliisi"... Jätän sen Valvojan vahtivan... Silmän?.. Alle.
+
+# Inspect for Act 1
+0x000000e3 Mutta mitä sinä oikein odotit? Olen kaikkivoipa, kaikkivaltias yliolento ylemmästä todellisuudesta - potkittu alempiluokkaisten olioiden maailmaan!
+0x000000e4 Minut on rangaistu ja häpäisty kohtaloon joka on ainakin sata kertaa pahempi kuin kuolema! Ja miksi? VAIN KOSKA MINÄ VEDIN LYHIMMÄN TIKUN KAIKISTA KALTAISISTANI!
+0x000000e5 Kesti monta vuosituhatta ennen kuin pystyin edes hyväksymään paikkani tässä suuressa typerysten pelissä. Ainoa asia mikä sai minut jatkamaan oli toivo että tämä kaikki olisi pian ohi ja pääsisin jatkaan untani olemattomuudessa.
+0x000000e6 Ja nyt... Tahtoisin vain mennä hakemaan sen hiton mojiton. Joten hyppääppäs nyt siihen XX-21:een ja häivy täältä. Aivan paljon kuin tahtoisin sinun pysyvän erossa "loppunäytöksestä", me molemmat tiedämme ettet voi vastustaa kiusausta yrittää estää minut.
+0x000000e7 Joten menetkö sinä Liigan vai Legioonan perään? Vai aiotko kenties pysäyttää ne sankarit jotka kutsun menneisyydestä ennen kuin he aiheuttavat ylöstempauksen? Kunnes tapaamme jälleen, Metartalius.
+
+# Chatter for Act 2
+0x000000e8 XX-21, mukava pikku alus. Ehkä voisit käyttää sen palauttamista "valittujesi" luottamuksen palauttamiseen. Mitä tulee "Kehittymisen temppeliisi"... Jätän sen Valvojan vahtivan... Silmän?.. Alle.
+
+# Inspect for Act 2
+0x000000e9 Mutta mitä sinä oikein odotit? Olen kaikkivoipa, kaikkivaltias yliolento ylemmästä todellisuudesta - potkittu alempiluokkaisten olioiden maailmaan!
+0x000000ea Minut on rangaistu ja häpäisty kohtaloon joka on ainakin sata kertaa pahempi kuin kuolema! Ja miksi? VAIN KOSKA MINÄ VEDIN LYHIMMÄN TIKUN KAIKISTA KALTAISISTANI!
+0x000000eb Kesti monta vuosituhatta ennen kuin pystyin edes hyväksymään paikkani tässä suuressa typerysten pelissä. Ainoa asia mikä sai minut jatkamaan oli toivo että tämä kaikki olisi pian ohi ja pääsisin jatkaan untani olemattomuudessa.
+0x000000ec Ja nyt... Tahtoisin vain mennä hakemaan sen hiton mojiton. Joten hyppääppäs nyt siihen XX-21:een ja häivy täältä. Aivan paljon kuin tahtoisin sinun pysyvän erossa "loppunäytöksestä", me molemmat tiedämme ettet voi vastustaa kiusausta yrittää estää minut.
+0x000000ed Joten menetkö sinä Liigan vai Legioonan perään? Vai aiotko kenties pysäyttää ne sankarit jotka kutsun menneisyydestä ennen kuin he aiheuttavat ylöstempauksen? Kunnes tapaamme jälleen, Metartalius.
+
+# Chatter for Act 3
+0x000000ee XX-21, mukava pikku alus. Ehkä voisit käyttää sen palauttamista "valittujesi" luottamuksen palauttamiseen. Mitä tulee "Kehittymisen temppeliisi"... Jätän sen Valvojan vahtivan... Silmän?.. Alle.
+
+# Inspect for Act 3
+0x000000ef Mutta mitä sinä oikein odotit? Olen kaikkivoipa, kaikkivaltias yliolento ylemmästä todellisuudesta - potkittu alempiluokkaisten olioiden maailmaan!
+0x000000f0 Minut on rangaistu ja häpäisty kohtaloon joka on ainakin sata kertaa pahempi kuin kuolema! Ja miksi? VAIN KOSKA MINÄ VEDIN LYHIMMÄN TIKUN KAIKISTA KALTAISISTANI!
+0x000000f1 Kesti monta vuosituhatta ennen kuin pystyin edes hyväksymään paikkani tässä suuressa typerysten pelissä. Ainoa asia mikä sai minut jatkamaan oli toivo että tämä kaikki olisi pian ohi ja pääsisin jatkaan untani olemattomuudessa.
+0x000000f2 Ja nyt... Tahtoisin vain mennä hakemaan sen hiton mojiton. Joten hyppääppäs nyt siihen XX-21:een ja häivy täältä. Aivan paljon kuin tahtoisin sinun pysyvän erossa "loppunäytöksestä", me molemmat tiedämme ettet voi vastustaa kiusausta yrittää estää minut.
+0x000000f3 Joten menetkö sinä Liigan vai Legioonan perään? Vai aiotko kenties pysäyttää ne sankarit jotka kutsun menneisyydestä ennen kuin he aiheuttavat ylöstempauksen? Kunnes tapaamme jälleen, Metartalius.
+
+# Chatter for Act 4
+0x000000f4 XX-21, mukava pikku alus. Ehkä voisit käyttää sen palauttamista "valittujesi" luottamuksen palauttamiseen. Mitä tulee "Kehittymisen temppeliisi"... Jätän sen Valvojan vahtivan... Silmän?.. Alle.
+
+# Inspect for Act 4
+0x000000f5 Mutta mitä sinä oikein odotit? Olen kaikkivoipa, kaikkivaltias yliolento ylemmästä todellisuudesta - potkittu alempiluokkaisten olioiden maailmaan!
+0x000000f6 Minut on rangaistu ja häpäisty kohtaloon joka on ainakin sata kertaa pahempi kuin kuolema! Ja miksi? VAIN KOSKA MINÄ VEDIN LYHIMMÄN TIKUN KAIKISTA KALTAISISTANI!
+0x000000f7 Kesti monta vuosituhatta ennen kuin pystyin edes hyväksymään paikkani tässä suuressa typerysten pelissä. Ainoa asia mikä sai minut jatkamaan oli toivo että tämä kaikki olisi pian ohi ja pääsisin jatkaan untani olemattomuudessa.
+0x000000f8 Ja nyt... Tahtoisin vain mennä hakemaan sen hiton mojiton. Joten hyppääppäs nyt siihen XX-21:een ja häivy täältä. Aivan paljon kuin tahtoisin sinun pysyvän erossa "loppunäytöksestä", me molemmat tiedämme ettet voi vastustaa kiusausta yrittää estää minut.
+0x000000f9 Joten menetkö sinä Liigan vai Legioonan perään? Vai aiotko kenties pysäyttää ne sankarit jotka kutsun menneisyydestä ennen kuin he aiheuttavat ylöstempauksen? Kunnes tapaamme jälleen, Metartalius.
+
+# Chatter for Act 5
+0x000000fa XX-21, mukava pikku alus. Ehkä voisit käyttää sen palauttamista "valittujesi" luottamuksen palauttamiseen. Mitä tulee "Kehittymisen temppeliisi"... Jätän sen Valvojan vahtivan... Silmän?.. Alle.
+
+# Inspect for Act 5
+0x000000fb Mutta mitä sinä oikein odotit? Olen kaikkivoipa, kaikkivaltias yliolento ylemmästä todellisuudesta - potkittu alempiluokkaisten olioiden maailmaan!
+0x000000fc Minut on rangaistu ja häpäisty kohtaloon joka on ainakin sata kertaa pahempi kuin kuolema! Ja miksi? VAIN KOSKA MINÄ VEDIN LYHIMMÄN TIKUN KAIKISTA KALTAISISTANI!
+0x000000fd Kesti monta vuosituhatta ennen kuin pystyin edes hyväksymään paikkani tässä suuressa typerysten pelissä. Ainoa asia mikä sai minut jatkamaan oli toivo että tämä kaikki olisi pian ohi ja pääsisin jatkaan untani olemattomuudessa.
+0x000000fe Ja nyt... Tahtoisin vain mennä hakemaan sen hiton mojiton. Joten hyppääppäs nyt siihen XX-21:een ja häivy täältä. Aivan paljon kuin tahtoisin sinun pysyvän erossa "loppunäytöksestä", me molemmat tiedämme ettet voi vastustaa kiusausta yrittää estää minut.
+0x000000ff Joten menetkö sinä Liigan vai Legioonan perään? Vai aiotko kenties pysäyttää ne sankarit jotka kutsun menneisyydestä ennen kuin he aiheuttavat ylöstempauksen? Kunnes tapaamme jälleen, Metartalius.
+
+# Chatter for Act 6
+0x00000100 XX-21, mukava pikku alus. Ehkä voisit käyttää sen palauttamista "valittujesi" luottamuksen palauttamiseen. Mitä tulee "Kehittymisen temppeliisi"... Jätän sen Valvojan vahtivan... Silmän?.. Alle.
+
+# Inspect for Act 6
+0x00000101 Mutta mitä sinä oikein odotit? Olen kaikkivoipa, kaikkivaltias yliolento ylemmästä todellisuudesta - potkittu alempiluokkaisten olioiden maailmaan!
+0x00000102 Minut on rangaistu ja häpäisty kohtaloon joka on ainakin sata kertaa pahempi kuin kuolema! Ja miksi? VAIN KOSKA MINÄ VEDIN LYHIMMÄN TIKUN KAIKISTA KALTAISISTANI!
+0x00000103 Kesti monta vuosituhatta ennen kuin pystyin edes hyväksymään paikkani tässä suuressa typerysten pelissä. Ainoa asia mikä sai minut jatkamaan oli toivo että tämä kaikki olisi pian ohi ja pääsisin jatkaan untani olemattomuudessa.
+0x00000104 Ja nyt... Tahtoisin vain mennä hakemaan sen hiton mojiton. Joten hyppääppäs nyt siihen XX-21:een ja häivy täältä. Aivan paljon kuin tahtoisin sinun pysyvän erossa "loppunäytöksestä", me molemmat tiedämme ettet voi vastustaa kiusausta yrittää estää minut.
+0x00000105 Joten menetkö sinä Liigan vai Legioonan perään? Vai aiotko kenties pysäyttää ne sankarit jotka kutsun menneisyydestä ennen kuin he aiheuttavat ylöstempauksen? Kunnes tapaamme jälleen, Metartalius.
+
+# Chatter for Act 7
+0x00000106 XX-21, mukava pikku alus. Ehkä voisit käyttää sen palauttamista "valittujesi" luottamuksen palauttamiseen. Mitä tulee "Kehittymisen temppeliisi"... Jätän sen Valvojan vahtivan... Silmän?.. Alle.
+
+# Inspect for Act 7
+0x00000107 Mutta mitä sinä oikein odotit? Olen kaikkivoipa, kaikkivaltias yliolento ylemmästä todellisuudesta - potkittu alempiluokkaisten olioiden maailmaan!
+0x00000108 Minut on rangaistu ja häpäisty kohtaloon joka on ainakin sata kertaa pahempi kuin kuolema! Ja miksi? VAIN KOSKA MINÄ VEDIN LYHIMMÄN TIKUN KAIKISTA KALTAISISTANI!
+0x00000109 Kesti monta vuosituhatta ennen kuin pystyin edes hyväksymään paikkani tässä suuressa typerysten pelissä. Ainoa asia mikä sai minut jatkamaan oli toivo että tämä kaikki olisi pian ohi ja pääsisin jatkaan untani olemattomuudessa.
+0x0000010a Ja nyt... Tahtoisin vain mennä hakemaan sen hiton mojiton. Joten hyppääppäs nyt siihen XX-21:een ja häivy täältä. Aivan paljon kuin tahtoisin sinun pysyvän erossa "loppunäytöksestä", me molemmat tiedämme ettet voi vastustaa kiusausta yrittää estää minut.
+0x0000010b Joten menetkö sinä Liigan vai Legioonan perään? Vai aiotko kenties pysäyttää ne sankarit jotka kutsun menneisyydestä ennen kuin he aiheuttavat ylöstempauksen? Kunnes tapaamme jälleen, Metartalius.
+
+# Chatter for Act 8
+0x0000010c XX-21, mukava pikku alus. Ehkä voisit käyttää sen palauttamista "valittujesi" luottamuksen palauttamiseen. Mitä tulee "Kehittymisen temppeliisi"... Jätän sen Valvojan vahtivan... Silmän?.. Alle.
+
+# Inspect for Act 8
+0x0000010d Mutta mitä sinä oikein odotit? Olen kaikkivoipa, kaikkivaltias yliolento ylemmästä todellisuudesta - potkittu alempiluokkaisten olioiden maailmaan!
+0x0000010e Minut on rangaistu ja häpäisty kohtaloon joka on ainakin sata kertaa pahempi kuin kuolema! Ja miksi? VAIN KOSKA MINÄ VEDIN LYHIMMÄN TIKUN KAIKISTA KALTAISISTANI!
+0x0000010f Kesti monta vuosituhatta ennen kuin pystyin edes hyväksymään paikkani tässä suuressa typerysten pelissä. Ainoa asia mikä sai minut jatkamaan oli toivo että tämä kaikki olisi pian ohi ja pääsisin jatkaan untani olemattomuudessa.
+0x00000110 Ja nyt... Tahtoisin vain mennä hakemaan sen hiton mojiton. Joten hyppääppäs nyt siihen XX-21:een ja häivy täältä. Aivan paljon kuin tahtoisin sinun pysyvän erossa "loppunäytöksestä", me molemmat tiedämme ettet voi vastustaa kiusausta yrittää estää minut.
+0x00000111 Joten menetkö sinä Liigan vai Legioonan perään? Vai aiotko kenties pysäyttää ne sankarit jotka kutsun menneisyydestä ennen kuin he aiheuttavat ylöstempauksen? Kunnes tapaamme jälleen, Metartalius.
+
+# Prop #274 - Yellow Gate
+0x00000112 Yellow Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #275 - Hierophant
+0x00000113 Hierofantti
+
+# Chatter for Act 1
+0x00000114 HAHAHAHAHAAA! Tästä tulee syntymään täysi kaaos! Menneisyyden rikkinäiset sankarit vastaan Mestarin liiga ja kaikki muu korruptio tässä kuolevassa galaksissa! Järjestyksen tasapaino: tuhottu!
+
+# Inspect for Act 1
+0x00000115 Antaa sankarien tulla pahiksiksi - ja pahisten tulla... Merkityksettömiksi. Mestari ajatteli itsensä niin fiksuksi kääntämällä Liigan jäsenet toisiaan vastaan - mutta tehdessään niin...
+0x00000116 Valvoja: *L-LUOJA H-HIEROFANTTI! T-TÄMÄ ON HÄIRIÖ! M-MITÄ E-ENEMMÄN S-SANKAREITA T-TUON N-NYKYISYYTEEN - S-SITÄ S-SEKAISEMPIA HEIDÄN KEHONSA - MIELENSÄ - JA HEIDÄN SIELUNSA O-OVAT!*
+0x00000117 Ja..? Älä puhu minulle uudestaan, Valvoja. Tiedän jo mitä olen tekemässä.~br~Metar: "O-olet sujut sen kanssa että tuot sankareita joiden koko olemus on hajautettu ajan ja avaruuden halki?"
+0x00000118 Jep. Mielettömiä kauheuksia - irrotettuja sieluja - tuhansia legendoja jotka jakavat saman kehon; ei väliä - he ovat silti sankareita. Sankareita jotka haluavat tuoda rauhan galaksiin.
+0x00000119 Aion seuraavaksi löytää mukavan paikan levätä katsomassa tätä näytöstä, kylmä mojito kädessäni. Sinun pitäisi tehdä samoin! Aion jopa antaa sinulle aluksen, kun kerran otin jumaluutesi pois.
+
+# Chatter for Act 2
+0x0000011a HAHAHAHAHAAA! Tästä tulee syntymään täysi kaaos! Menneisyyden rikkinäiset sankarit vastaan Mestarin liiga ja kaikki muu korruptio tässä kuolevassa galaksissa! Järjestyksen tasapaino: tuhottu!
+
+# Inspect for Act 2
+0x0000011b Antaa sankarien tulla pahiksiksi - ja pahisten tulla... Merkityksettömiksi. Mestari ajatteli itsensä niin fiksuksi kääntämällä Liigan jäsenet toisiaan vastaan - mutta tehdessään niin...
+0x0000011c Valvoja: *L-LUOJA H-HIEROFANTTI! T-TÄMÄ ON HÄIRIÖ! M-MITÄ E-ENEMMÄN S-SANKAREITA T-TUON N-NYKYISYYTEEN - S-SITÄ S-SEKAISEMPIA HEIDÄN KEHONSA - MIELENSÄ - JA HEIDÄN SIELUNSA O-OVAT!*
+0x0000011d Ja..? Älä puhu minulle uudestaan, Valvoja. Tiedän jo mitä olen tekemässä.~br~Metar: "O-olet sujut sen kanssa että tuot sankareita joiden koko olemus on hajautettu ajan ja avaruuden halki?"
+0x0000011e Jep. Mielettömiä kauheuksia - irrotettuja sieluja - tuhansia legendoja jotka jakavat saman kehon; ei väliä - he ovat silti sankareita. Sankareita jotka haluavat tuoda rauhan galaksiin.
+0x0000011f Aion seuraavaksi löytää mukavan paikan levätä katsomassa tätä näytöstä, kylmä mojito kädessäni. Sinun pitäisi tehdä samoin! Aion jopa antaa sinulle aluksen, kun kerran otin jumaluutesi pois.
+
+# Chatter for Act 3
+0x00000120 HAHAHAHAHAAA! Tästä tulee syntymään täysi kaaos! Menneisyyden rikkinäiset sankarit vastaan Mestarin liiga ja kaikki muu korruptio tässä kuolevassa galaksissa! Järjestyksen tasapaino: tuhottu!
+
+# Inspect for Act 3
+0x00000121 Antaa sankarien tulla pahiksiksi - ja pahisten tulla... Merkityksettömiksi. Mestari ajatteli itsensä niin fiksuksi kääntämällä Liigan jäsenet toisiaan vastaan - mutta tehdessään niin...
+0x00000122 Valvoja: *L-LUOJA H-HIEROFANTTI! T-TÄMÄ ON HÄIRIÖ! M-MITÄ E-ENEMMÄN S-SANKAREITA T-TUON N-NYKYISYYTEEN - S-SITÄ S-SEKAISEMPIA HEIDÄN KEHONSA - MIELENSÄ - JA HEIDÄN SIELUNSA O-OVAT!*
+0x00000123 Ja..? Älä puhu minulle uudestaan, Valvoja. Tiedän jo mitä olen tekemässä.~br~Metar: "O-olet sujut sen kanssa että tuot sankareita joiden koko olemus on hajautettu ajan ja avaruuden halki?"
+0x00000124 Jep. Mielettömiä kauheuksia - irrotettuja sieluja - tuhansia legendoja jotka jakavat saman kehon; ei väliä - he ovat silti sankareita. Sankareita jotka haluavat tuoda rauhan galaksiin.
+0x00000125 Aion seuraavaksi löytää mukavan paikan levätä katsomassa tätä näytöstä, kylmä mojito kädessäni. Sinun pitäisi tehdä samoin! Aion jopa antaa sinulle aluksen, kun kerran otin jumaluutesi pois.
+
+# Chatter for Act 4
+0x00000126 HAHAHAHAHAAA! Tästä tulee syntymään täysi kaaos! Menneisyyden rikkinäiset sankarit vastaan Mestarin liiga ja kaikki muu korruptio tässä kuolevassa galaksissa! Järjestyksen tasapaino: tuhottu!
+
+# Inspect for Act 4
+0x00000127 Antaa sankarien tulla pahiksiksi - ja pahisten tulla... Merkityksettömiksi. Mestari ajatteli itsensä niin fiksuksi kääntämällä Liigan jäsenet toisiaan vastaan - mutta tehdessään niin...
+0x00000128 Valvoja: *L-LUOJA H-HIEROFANTTI! T-TÄMÄ ON HÄIRIÖ! M-MITÄ E-ENEMMÄN S-SANKAREITA T-TUON N-NYKYISYYTEEN - S-SITÄ S-SEKAISEMPIA HEIDÄN KEHONSA - MIELENSÄ - JA HEIDÄN SIELUNSA O-OVAT!*
+0x00000129 Ja..? Älä puhu minulle uudestaan, Valvoja. Tiedän jo mitä olen tekemässä.~br~Metar: "O-olet sujut sen kanssa että tuot sankareita joiden koko olemus on hajautettu ajan ja avaruuden halki?"
+0x0000012a Jep. Mielettömiä kauheuksia - irrotettuja sieluja - tuhansia legendoja jotka jakavat saman kehon; ei väliä - he ovat silti sankareita. Sankareita jotka haluavat tuoda rauhan galaksiin.
+0x0000012b Aion seuraavaksi löytää mukavan paikan levätä katsomassa tätä näytöstä, kylmä mojito kädessäni. Sinun pitäisi tehdä samoin! Aion jopa antaa sinulle aluksen, kun kerran otin jumaluutesi pois.
+
+# Chatter for Act 5
+0x0000012c HAHAHAHAHAAA! Tästä tulee syntymään täysi kaaos! Menneisyyden rikkinäiset sankarit vastaan Mestarin liiga ja kaikki muu korruptio tässä kuolevassa galaksissa! Järjestyksen tasapaino: tuhottu!
+
+# Inspect for Act 5
+0x0000012d Antaa sankarien tulla pahiksiksi - ja pahisten tulla... Merkityksettömiksi. Mestari ajatteli itsensä niin fiksuksi kääntämällä Liigan jäsenet toisiaan vastaan - mutta tehdessään niin...
+0x0000012e Valvoja: *L-LUOJA H-HIEROFANTTI! T-TÄMÄ ON HÄIRIÖ! M-MITÄ E-ENEMMÄN S-SANKAREITA T-TUON N-NYKYISYYTEEN - S-SITÄ S-SEKAISEMPIA HEIDÄN KEHONSA - MIELENSÄ - JA HEIDÄN SIELUNSA O-OVAT!*
+0x0000012f Ja..? Älä puhu minulle uudestaan, Valvoja. Tiedän jo mitä olen tekemässä.~br~Metar: "O-olet sujut sen kanssa että tuot sankareita joiden koko olemus on hajautettu ajan ja avaruuden halki?"
+0x00000130 Jep. Mielettömiä kauheuksia - irrotettuja sieluja - tuhansia legendoja jotka jakavat saman kehon; ei väliä - he ovat silti sankareita. Sankareita jotka haluavat tuoda rauhan galaksiin.
+0x00000131 Aion seuraavaksi löytää mukavan paikan levätä katsomassa tätä näytöstä, kylmä mojito kädessäni. Sinun pitäisi tehdä samoin! Aion jopa antaa sinulle aluksen, kun kerran otin jumaluutesi pois.
+
+# Chatter for Act 6
+0x00000132 HAHAHAHAHAAA! Tästä tulee syntymään täysi kaaos! Menneisyyden rikkinäiset sankarit vastaan Mestarin liiga ja kaikki muu korruptio tässä kuolevassa galaksissa! Järjestyksen tasapaino: tuhottu!
+
+# Inspect for Act 6
+0x00000133 Antaa sankarien tulla pahiksiksi - ja pahisten tulla... Merkityksettömiksi. Mestari ajatteli itsensä niin fiksuksi kääntämällä Liigan jäsenet toisiaan vastaan - mutta tehdessään niin...
+0x00000134 Valvoja: *L-LUOJA H-HIEROFANTTI! T-TÄMÄ ON HÄIRIÖ! M-MITÄ E-ENEMMÄN S-SANKAREITA T-TUON N-NYKYISYYTEEN - S-SITÄ S-SEKAISEMPIA HEIDÄN KEHONSA - MIELENSÄ - JA HEIDÄN SIELUNSA O-OVAT!*
+0x00000135 Ja..? Älä puhu minulle uudestaan, Valvoja. Tiedän jo mitä olen tekemässä.~br~Metar: "O-olet sujut sen kanssa että tuot sankareita joiden koko olemus on hajautettu ajan ja avaruuden halki?"
+0x00000136 Jep. Mielettömiä kauheuksia - irrotettuja sieluja - tuhansia legendoja jotka jakavat saman kehon; ei väliä - he ovat silti sankareita. Sankareita jotka haluavat tuoda rauhan galaksiin.
+0x00000137 Aion seuraavaksi löytää mukavan paikan levätä katsomassa tätä näytöstä, kylmä mojito kädessäni. Sinun pitäisi tehdä samoin! Aion jopa antaa sinulle aluksen, kun kerran otin jumaluutesi pois.
+
+# Chatter for Act 7
+0x00000138 Pistin Valvojan takaisin päälle, vaikka sen monotoninen ääni ärsyttääkin minua... Mutta nyt on sen aika kuunnella ja totella käskyjäni - Ja minulla onkin "siisti" käsky tulossa.
+
+# Inspect for Act 7
+0x00000139 Antaa sankarien tulla pahiksiksi - ja pahisten tulla... Merkityksettömiksi. Mestari ajatteli itsensä niin fiksuksi kääntämällä Liigan jäsenet toisiaan vastaan - mutta tehdessään niin...
+0x0000013a Valvoja: *L-LUOJA H-HIEROFANTTI! T-TÄMÄ ON HÄIRIÖ! M-MITÄ E-ENEMMÄN S-SANKAREITA T-TUON N-NYKYISYYTEEN - S-SITÄ S-SEKAISEMPIA HEIDÄN KEHONSA - MIELENSÄ - JA HEIDÄN SIELUNSA O-OVAT!*
+0x0000013b Ja..? Älä puhu minulle uudestaan, Valvoja. Tiedän jo mitä olen tekemässä.~br~Metar: "O-olet sujut sen kanssa että tuot sankareita joiden koko olemus on hajautettu ajan ja avaruuden halki?"
+0x0000013c Jep. Mielettömiä kauheuksia - irrotettuja sieluja - tuhansia legendoja jotka jakavat saman kehon; ei väliä - he ovat silti sankareita. Sankareita jotka haluavat tuoda rauhan galaksiin.
+0x0000013d Aion seuraavaksi löytää mukavan paikan levätä katsomassa tätä näytöstä, kylmä mojito kädessäni. Sinun pitäisi tehdä samoin! Aion jopa antaa sinulle aluksen, kun kerran otin jumaluutesi pois.
+
+# Chatter for Act 8
+0x0000013e HAHAHAHAHAAA! Tästä tulee syntymään täysi kaaos! Menneisyyden rikkinäiset sankarit vastaan Mestarin liiga ja kaikki muu korruptio tässä kuolevassa galaksissa! Järjestyksen tasapaino: tuhottu!
+
+# Inspect for Act 8
+0x0000013f Antaa sankarien tulla pahiksiksi - ja pahisten tulla... Merkityksettömiksi. Mestari ajatteli itsensä niin fiksuksi kääntämällä Liigan jäsenet toisiaan vastaan - mutta tehdessään niin...
+0x00000140 Valvoja: *L-LUOJA H-HIEROFANTTI! T-TÄMÄ ON HÄIRIÖ! M-MITÄ E-ENEMMÄN S-SANKAREITA T-TUON N-NYKYISYYTEEN - S-SITÄ S-SEKAISEMPIA HEIDÄN KEHONSA - MIELENSÄ - JA HEIDÄN SIELUNSA O-OVAT!*
+0x00000141 Ja..? Älä puhu minulle uudestaan, Valvoja. Tiedän jo mitä olen tekemässä.~br~Metar: "O-olet sujut sen kanssa että tuot sankareita joiden koko olemus on hajautettu ajan ja avaruuden halki?"
+0x00000142 Jep. Mielettömiä kauheuksia - irrotettuja sieluja - tuhansia legendoja jotka jakavat saman kehon; ei väliä - he ovat silti sankareita. Sankareita jotka haluavat tuoda rauhan galaksiin.
+0x00000143 Aion seuraavaksi löytää mukavan paikan levätä katsomassa tätä näytöstä, kylmä mojito kädessäni. Sinun pitäisi tehdä samoin! Aion jopa antaa sinulle aluksen, kun kerran otin jumaluutesi pois.
+
+# Prop #324 - Teleporter
+0x00000144 Teleporter
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #325 - Searchlight
+0x00000145 Searchlight
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #326 - Spout Water
+0x00000146 Spout Water
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #327 - Spotlight White
+0x00000147 Spotlight White
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #328 - Broken Machinery
+0x00000148 Broken Machinery
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #329 - Smoke Black
+0x00000149 Smoke Black
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #330 - Static Storm
+0x0000014a Static Storm
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #331 - Blue Gate
+0x0000014b Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #332 - Blue Gate
+0x0000014c Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #333 - Blue Gate
+0x0000014d Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #334 - Blue Gate
+0x0000014e Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #335 - Blue Gate
+0x0000014f Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #336 - Blue Gate
+0x00000150 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #337 - Meta-Support
+0x00000151 Meta-Support
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #338 - Lightning
+0x00000152 Lightning
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #339 - Alarm Intruder
+0x00000153 Alarm Intruder
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #340 - Alarm Prison
+0x00000154 Alarm Prison
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #341 - Alarm Car
+0x00000155 Alarm Car
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #342 - Alarm Rave
+0x00000156 Alarm Rave
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #343 - Alarm Buzz
+0x00000157 Alarm Buzz
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #344 - Alarm Horn
+0x00000158 Alarm Horn
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #345 - Retreator's Door
+0x00000159 Pakurin ovi
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #346 - Aurora Sporealis
+0x0000015a Aurora Sporealis
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #347 - Blue Gate
+0x0000015b Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #348 - Blue Gate
+0x0000015c Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #349 - Blue Gate
+0x0000015d Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #350 - Blue Gate
+0x0000015e Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #351 - Blue Gate
+0x0000015f Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #352 - Maplis
+0x00000160 Maplis
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #353 - Psepostoa
+0x00000161 Psepostoa
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #354 - Tibrosia
+0x00000162 Tibrosia
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #355 - Mordleff
+0x00000163 Mordleff
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #356 - Twardyllus
+0x00000164 Twardyllus
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #357 - Smoke Pink
+0x00000165 Smoke Pink
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #358 - Radio Static 
+0x00000166 Radio Static 
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #359 - Blue Gate
+0x00000167 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #360 - Blue Gate
+0x00000168 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #361 - Blue Gate
+0x00000169 Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #362 - Blue Gate
+0x0000016a Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #363 - Blue Gate
+0x0000016b Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #364 - Blue Gate
+0x0000016c Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #365 - Vectix
+0x0000016d Vectix
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #366 - The Captain
+0x0000016e Kapteeni
+
+# Chatter for Act 1
+0x0000016f Pistin sinut odottamaan, enkö?
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+0x00000170 Pistin sinut odottamaan, enkö?
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+0x00000171 Pistin sinut odottamaan, enkö?
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+0x00000172 Pistin sinut odottamaan, enkö?
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+0x00000173 Pistin sinut odottamaan, enkö?
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+0x00000174 Pistin sinut odottamaan, enkö?
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+0x00000175 Pistin sinut odottamaan, enkö?
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+0x00000176 Pistin sinut odottamaan, enkö?
+
+# Inspect for Act 8
+
+# Prop #375 - Haunted House
+0x00000177 Haunted House
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #376 - Cloud Poison
+0x00000178 Cloud Poison
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #377 - Evil Whispers
+0x00000179 Evil Whispers
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #378 - Arrow
+0x0000017a Arrow
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #379 - Nuclear Fallout
+0x0000017b Nuclear Fallout
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #380 - Preview of the Future
+0x0000017c Preview of the Future
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #381 - Light White
+0x0000017d Light White
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #382 - 8
+0x0000017e 8
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #383 - Blue Gate
+0x0000017f Blue Gate
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #384 - Sting Mysterious
+0x00000180 Sting Mysterious
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #385 - Power Supply
+0x00000181 Power Supply
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #386 - Sting Newsflash
+0x00000182 Sting Newsflash
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #387 - Alien Abduction
+0x00000183 Alien Abduction
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #388 - Jungle Ambience 1
+0x00000184 Jungle Ambience 1
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #389 - Sting Mysterious
+0x00000185 Sting Mysterious
+
+# Chatter for Act 1
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+
+# Inspect for Act 8
+
+# Prop #390 - Findme-Creature
+0x00000186 Findme-otus
+
+# Chatter for Act 1
+0x00000187 Putositko sinä vai löysitkö minut oikeasti? Valitettavasti puhun vain englanniksi - Liskomato oli liian laiska kääntämään Miikan triviat.
+
+# Inspect for Act 1
+0x00000188 Bet you weren't expecting an adventure like this. Neither was Miikka64 to be honest. There's a lot of fun trivia about this adventure, despite how short it is. Let's start with saying: damn...
+0x00000189 ...has this adventure been hanging around the trash bin's edge for a good while. The first version of it was actually made right after Master of Time - part 9. It was almost the same, except..
+0x0000018a ...there was no "Creator Hierophant" in any form... And that the adventure would end with Metartalius being sent by the Overseer to PERSONALLY deal with the League. Next, shall we talk about..
+0x0000018b ...the ending "teaser"? The return of the Captain from wherever the God of Hate sent them at the end of Twintimes - Episode 8... Or is it? 
+0x0000018c That shall remain a surprise... So, does this actually mean the 'end' is actually, FINALLY, around the corner?.. Nope. There's still plenty of stuff that needs to happen before it. That's it.
+
+# Chatter for Act 2
+0x0000018d Putositko sinä vai löysitkö minut oikeasti? Valitettavasti puhun vain englanniksi - Liskomato oli liian laiska kääntämään Miikan triviat.
+
+# Inspect for Act 2
+0x0000018e Bet you weren't expecting an adventure like this. Neither was Miikka64 to be honest. There's a lot of fun trivia about this adventure, despite how short it is. Let's start with saying: damn...
+0x0000018f ...has this adventure been hanging around the trash bin's edge for a good while. The first version of it was actually made right after Master of Time - part 9. It was almost the same, except..
+0x00000190 ...there was no "Creator Hierophant" in any form... And that the adventure would end with Metartalius being sent by the Overseer to PERSONALLY deal with the League. Next, shall we talk about..
+0x00000191 ...the ending "teaser"? The return of the Captain from wherever the God of Hate sent them at the end of Twintimes - Episode 8... Or is it? 
+0x00000192 That shall remain a surprise... So, does this actually mean the 'end' is actually, FINALLY, around the corner?.. Nope. There's still plenty of stuff that needs to happen before it. That's it.
+
+# Chatter for Act 3
+0x00000193 Putositko sinä vai löysitkö minut oikeasti? Valitettavasti puhun vain englanniksi - Liskomato oli liian laiska kääntämään Miikan triviat.
+
+# Inspect for Act 3
+0x00000194 Bet you weren't expecting an adventure like this. Neither was Miikka64 to be honest. There's a lot of fun trivia about this adventure, despite how short it is. Let's start with saying: damn...
+0x00000195 ...has this adventure been hanging around the trash bin's edge for a good while. The first version of it was actually made right after Master of Time - part 9. It was almost the same, except..
+0x00000196 ...there was no "Creator Hierophant" in any form... And that the adventure would end with Metartalius being sent by the Overseer to PERSONALLY deal with the League. Next, shall we talk about..
+0x00000197 ...the ending "teaser"? The return of the Captain from wherever the God of Hate sent them at the end of Twintimes - Episode 8... Or is it? 
+0x00000198 That shall remain a surprise... So, does this actually mean the 'end' is actually, FINALLY, around the corner?.. Nope. There's still plenty of stuff that needs to happen before it. That's it.
+
+# Chatter for Act 4
+0x00000199 Putositko sinä vai löysitkö minut oikeasti? Valitettavasti puhun vain englanniksi - Liskomato oli liian laiska kääntämään Miikan triviat.
+
+# Inspect for Act 4
+0x0000019a Bet you weren't expecting an adventure like this. Neither was Miikka64 to be honest. There's a lot of fun trivia about this adventure, despite how short it is. Let's start with saying: damn...
+0x0000019b ...has this adventure been hanging around the trash bin's edge for a good while. The first version of it was actually made right after Master of Time - part 9. It was almost the same, except..
+0x0000019c ...there was no "Creator Hierophant" in any form... And that the adventure would end with Metartalius being sent by the Overseer to PERSONALLY deal with the League. Next, shall we talk about..
+0x0000019d ...the ending "teaser"? The return of the Captain from wherever the God of Hate sent them at the end of Twintimes - Episode 8... Or is it? 
+0x0000019e That shall remain a surprise... So, does this actually mean the 'end' is actually, FINALLY, around the corner?.. Nope. There's still plenty of stuff that needs to happen before it. That's it.
+
+# Chatter for Act 5
+0x0000019f Putositko sinä vai löysitkö minut oikeasti? Valitettavasti puhun vain englanniksi - Liskomato oli liian laiska kääntämään Miikan triviat.
+
+# Inspect for Act 5
+0x000001a0 Bet you weren't expecting an adventure like this. Neither was Miikka64 to be honest. There's a lot of fun trivia about this adventure, despite how short it is. Let's start with saying: damn...
+0x000001a1 ...has this adventure been hanging around the trash bin's edge for a good while. The first version of it was actually made right after Master of Time - part 9. It was almost the same, except..
+0x000001a2 ...there was no "Creator Hierophant" in any form... And that the adventure would end with Metartalius being sent by the Overseer to PERSONALLY deal with the League. Next, shall we talk about..
+0x000001a3 ...the ending "teaser"? The return of the Captain from wherever the God of Hate sent them at the end of Twintimes - Episode 8... Or is it? 
+0x000001a4 That shall remain a surprise... So, does this actually mean the 'end' is actually, FINALLY, around the corner?.. Nope. There's still plenty of stuff that needs to happen before it. That's it.
+
+# Chatter for Act 6
+0x000001a5 Putositko sinä vai löysitkö minut oikeasti? Valitettavasti puhun vain englanniksi - Liskomato oli liian laiska kääntämään Miikan triviat.
+
+# Inspect for Act 6
+0x000001a6 Bet you weren't expecting an adventure like this. Neither was Miikka64 to be honest. There's a lot of fun trivia about this adventure, despite how short it is. Let's start with saying: damn...
+0x000001a7 ...has this adventure been hanging around the trash bin's edge for a good while. The first version of it was actually made right after Master of Time - part 9. It was almost the same, except..
+0x000001a8 ...there was no "Creator Hierophant" in any form... And that the adventure would end with Metartalius being sent by the Overseer to PERSONALLY deal with the League. Next, shall we talk about..
+0x000001a9 ...the ending "teaser"? The return of the Captain from wherever the God of Hate sent them at the end of Twintimes - Episode 8... Or is it? 
+0x000001aa That shall remain a surprise... So, does this actually mean the 'end' is actually, FINALLY, around the corner?.. Nope. There's still plenty of stuff that needs to happen before it. That's it.
+
+# Chatter for Act 7
+0x000001ab Putositko sinä vai löysitkö minut oikeasti? Valitettavasti puhun vain englanniksi - Liskomato oli liian laiska kääntämään Miikan triviat.
+
+# Inspect for Act 7
+0x000001ac Bet you weren't expecting an adventure like this. Neither was Miikka64 to be honest. There's a lot of fun trivia about this adventure, despite how short it is. Let's start with saying: damn...
+0x000001ad ...has this adventure been hanging around the trash bin's edge for a good while. The first version of it was actually made right after Master of Time - part 9. It was almost the same, except..
+0x000001ae ...there was no "Creator Hierophant" in any form... And that the adventure would end with Metartalius being sent by the Overseer to PERSONALLY deal with the League. Next, shall we talk about..
+0x000001af ...the ending "teaser"? The return of the Captain from wherever the God of Hate sent them at the end of Twintimes - Episode 8... Or is it? 
+0x000001b0 That shall remain a surprise... So, does this actually mean the 'end' is actually, FINALLY, around the corner?.. Nope. There's still plenty of stuff that needs to happen before it. That's it.
+
+# Chatter for Act 8
+0x000001b1 Putositko sinä vai löysitkö minut oikeasti? Valitettavasti puhun vain englanniksi - Liskomato oli liian laiska kääntämään Miikan triviat.
+
+# Inspect for Act 8
+0x000001b2 Bet you weren't expecting an adventure like this. Neither was Miikka64 to be honest. There's a lot of fun trivia about this adventure, despite how short it is. Let's start with saying: damn...
+0x000001b3 ...has this adventure been hanging around the trash bin's edge for a good while. The first version of it was actually made right after Master of Time - part 9. It was almost the same, except..
+0x000001b4 ...there was no "Creator Hierophant" in any form... And that the adventure would end with Metartalius being sent by the Overseer to PERSONALLY deal with the League. Next, shall we talk about..
+0x000001b5 ...the ending "teaser"? The return of the Captain from wherever the God of Hate sent them at the end of Twintimes - Episode 8... Or is it? 
+0x000001b6 That shall remain a surprise... So, does this actually mean the 'end' is actually, FINALLY, around the corner?.. Nope. There's still plenty of stuff that needs to happen before it. That's it.
+
+# Prop #439 - Teleporter
+0x000001b7 Teleporter
+
+# Chatter for Act 1
+0x000001b8 *Jos putosit alas, käytä tätä ovea palataksesi ylös!*
+
+# Inspect for Act 1
+
+# Chatter for Act 2
+0x000001b9 *Jos putosit alas, käytä tätä ovea palataksesi ylös!*
+
+# Inspect for Act 2
+
+# Chatter for Act 3
+0x000001ba *Jos putosit alas, käytä tätä ovea palataksesi ylös!*
+
+# Inspect for Act 3
+
+# Chatter for Act 4
+0x000001bb *Jos putosit alas, käytä tätä ovea palataksesi ylös!*
+
+# Inspect for Act 4
+
+# Chatter for Act 5
+0x000001bc *Jos putosit alas, käytä tätä ovea palataksesi ylös!*
+
+# Inspect for Act 5
+
+# Chatter for Act 6
+0x000001bd *Jos putosit alas, käytä tätä ovea palataksesi ylös!*
+
+# Inspect for Act 6
+
+# Chatter for Act 7
+0x000001be *Jos putosit alas, käytä tätä ovea palataksesi ylös!*
+
+# Inspect for Act 7
+
+# Chatter for Act 8
+0x000001bf *Jos putosit alas, käytä tätä ovea palataksesi ylös!*
+
+# Inspect for Act 8
+

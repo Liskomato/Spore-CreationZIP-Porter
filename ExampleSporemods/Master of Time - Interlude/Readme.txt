@@ -1,0 +1,3 @@
+This pack is an example of a localized adventure utilizing Creation ZIP porter capabilities. The adventure itself utilizes localized text strings that receive data from the foundation .package file included in the .sporemod file. It will be installed to GA's Data folder while the PNG itself is imported by Creation ZIP Porter from the mLibs folder.
+
+Credit goes to Miikka64 for creating the original adventure. Translation to Finnish is done by me (Liskomato), as a way to showcase what is possible with this and the Adventure Localizer (https://github.com/Liskomato/Spore-AdventureLocalizer) being utilized together.

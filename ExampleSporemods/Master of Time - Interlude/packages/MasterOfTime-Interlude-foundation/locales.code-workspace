@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "en-us"
+			"path": "animations~/en-us.package.unpacked/locale~"
+		},
+		{
+			"name": "fi-fi"
+			"path": "animations~/fi-fi.package.unpacked/locale~"
+		}
+	],
+	"settings": {}
+}
