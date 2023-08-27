@@ -58,6 +58,12 @@ member_detour(ImportPNG_dtour, App::Thumbnail_cImportExport, bool(const char16_t
 				App::ConsolePrintF("Creation ZIP Porter: Failed to read dropped ZIP archive in %ls",path);
 			}
 		}
+		else if (sPath.substr(sPath.find_last_of(u".") + 1) == u"sporemod") {
+			App::ConsolePrintF("Please install .sporemod files ONLY with Spore ModAPI Easy Installer!");
+		}
+		else if (sPath.substr(sPath.find_last_of(u".") + 1) == u"package") {
+			App::ConsolePrintF("Dragging .package files directly into the game like this isn't possible. Please use the Spore ModAPI Easy Installer.");
+		}
 
 		return original_function(this, path, key);
 	}

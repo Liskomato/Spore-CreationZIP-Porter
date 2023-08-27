@@ -207,7 +207,7 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 	eastl::string16 zipName;
 	cAssetMetadataPtr firstSelection;
 	if (Pollinator::GetMetadata(selection[0].instanceID, selection[0].groupID, firstSelection)) {
-		zipName.append_sprintf(u"%ls.zip",firstSelection->GetName());
+		zipName.append_sprintf(u"%ls.zip",firstSelection->GetName().c_str());
 	}
 	else {
 		zipName.append_sprintf(u"%#x.zip",selection[0].instanceID);

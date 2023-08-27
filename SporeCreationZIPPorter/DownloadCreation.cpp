@@ -97,9 +97,9 @@ void DownloadCreation::ParseLine(const ArgScript::Line& line)
 const char* DownloadCreation::GetDescription(ArgScript::DescriptionMode mode) const
 {
 	if (mode == ArgScript::DescriptionMode::Basic) {
-		return "This cheat does something.";
+		return "Downloads creations from the local file system.";
 	}
 	else {
-		return "DownloadCreation: Elaborate description of what this cheat does.";
+		return "DownloadCreation: Opens Windows Explorer to select a creation to load into the game.";
 	}
 }
