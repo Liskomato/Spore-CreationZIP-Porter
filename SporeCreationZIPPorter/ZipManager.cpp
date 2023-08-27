@@ -69,10 +69,10 @@ bool cZipManager::ReadZIP(const eastl::string16& zip) {
 	if (zip != u"" && zip.substr(zip.find_last_of(u".") + 1) == u"zip") {
 		
 		eastl::string16 creations = Resource::Paths::GetDirFromID(Resource::PathID::Creations);
-		eastl::string16 fileName = zip.substr(zip.find_last_of(u"/\\"));
+		eastl::string16 fileName = zip.substr(zip.find_last_of(u"/\\")+1);
 
-		eastl::string16 extractedFolder = u"Extracted";
-		eastl::string16 destPath = creations.c_str() + extractedFolder + fileName.substr(0,fileName.find_last_of(u".")-1) + u"/";
+		eastl::string16 extractedFolder = u"Extracted/";
+		eastl::string16 destPath = creations.c_str() + extractedFolder + fileName.substr(0,fileName.find_last_of(u".")) + u"/";
 
 		if (!std::filesystem::is_directory(destPath.c_str()) || !std::filesystem::exists(destPath.c_str())) { // Check if destination directory exists
 			std::filesystem::create_directory(destPath.c_str()); // create folder
@@ -94,13 +94,13 @@ bool cZipManager::ReadZIP(const eastl::string16& zip) {
 			const auto& entry = archive->GetEntry(i);
 			eastl::string16 targetFile = destPath;
 
-			if (entry->GetName().substr(0, 2) == "50" ||
-				entry->GetName().substr(0, 6) == "zzz_0x" ||
-				entry->GetName().substr(0, 2) == "0x" ||
-				entry->GetName().substr(0, 9) == "creation_") {
+			if (entry->GetName().substr(0, 3) == "50" ||
+				entry->GetName().substr(0, 7) == "zzz_0x" ||
+				entry->GetName().substr(0, 3) == "0x" ||
+				entry->GetName().substr(0, 10) == "creation_") {
 				targetFile.append_convert(entry->GetName().c_str());
 			}
-			else if (entry->GetName().substr(entry->GetName().find_last_of("_"),3) == "_50") {
+			else if (entry->GetName().substr(entry->GetName().find_last_of("_"),4) == "_50") {
 				targetFile.append_sprintf(u"zzz%s",entry->GetName().substr(entry->GetName().find_last_of("_")).c_str());
 			}
 			else if (!entry->IsDirectory()) {

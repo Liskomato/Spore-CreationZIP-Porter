@@ -263,12 +263,12 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 			
 			// Making sure to make "exceptions" for specific types of filenames.
 
-			if (entryFile.substr(0,2) == u"50" ||
-				entryFile.substr(0,6) == u"zzz_0x" ||
-				entryFile.substr(0,2) == u"0x") {
+			if (entryFile.substr(0,3) == u"50" ||
+				entryFile.substr(0,7) == u"zzz_0x" ||
+				entryFile.substr(0,3) == u"0x") {
 				inArchiveName.assign_convert(entryFile.c_str());
 			}
-			else if (entryFile.substr(entryFile.find_last_of(u"_"),3) == u"_50") {
+			else if (entryFile.substr(entryFile.find_last_of(u"_"),4) == u"_50") {
 				//inArchiveName.append_convert(tmpPath.c_str());
 				inArchiveName.append_sprintf("zzz");
 				inArchiveName.append_convert(entryFile.substr(entryFile.find_last_of(u"_")).c_str());
