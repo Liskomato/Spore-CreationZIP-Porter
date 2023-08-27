@@ -5,6 +5,7 @@
 #include <Spore\Resource\IResourceManager.h>
 #include <Spore\Resource\IResourceFactory.h>
 #include <filesystem>
+#include <fstream>
 #include <urlmon.h>
 #pragma comment(lib, "Urlmon")
 
@@ -214,19 +215,104 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 	}
 
 	eastl::string16 zipPath = ZipManager.GetZIPExportPath() + zipName;
-	eastl::string8 zipPathC;
-	zipPathC.assign_convert(zipPath.c_str());
 
 	if (std::filesystem::is_empty(tmpPath.c_str())) {
 		App::ConsolePrintF("ZIPExport ERROR: Temporary folder was empty after iterating through creations. Function aborted.");
 		return;
 	}
-
+	// entry count
+	uint32_t i = 0;
 
 	for (const auto& entry : std::filesystem::directory_iterator(tmpPath.c_str())) {
-		std::string entryPath = entry.path().string();
-		ZipFile::AddFile(zipPathC.c_str(),entryPath);
-		SporeDebugPrint("Added entry %s to ZIP file %s",entryPath.c_str(),zipPathC.c_str());
+		eastl::string16 entryPath = entry.path().u16string().c_str(); // Entry full location
+		eastl::string16 entryFile = entryPath.substr(entryPath.find_last_of(u"/\\")+1); // Entry file name
+		i++;
+		//ZipFile::AddFile(zipPath.c_str(),entryPath);
+		
+		eastl::string16 tmpFile = zipPath + u".tmp";
+		{
+			//ZipFile::Open(const std::string& zipPath);
+			std::ifstream* zipFile = new std::ifstream();
+			zipFile->open(zipPath.c_str(), std::ios::binary);
+
+			if (!zipFile->is_open()) {
+				std::ofstream tmpFile;
+				tmpFile.open(zipPath.c_str(), std::ios::binary);
+				tmpFile.close();
+
+				zipFile->open(zipPath.c_str(), std::ios::binary);
+				if (!zipFile->is_open()) {
+					App::ConsolePrintF("ZIP Export ERROR: ZIP file could not be created. Terminating function call.");
+					return;
+				}
+			}
+			
+			ZipArchive::Ptr zipArchive = ZipArchive::Create(zipFile, true);
+
+			//AddFile continues
+
+			std::ifstream fileToAdd;
+			fileToAdd.open(entryPath.c_str(), std::ios::binary);
+
+			if (!fileToAdd.is_open()) {
+				App::ConsolePrintF("ZIP Export ERROR: Could not open input file. Continuing.");
+				continue;
+			}
+
+			eastl::string8 inArchiveName;
+			
+			// Making sure to make "exceptions" for specific types of filenames.
+
+			if (entryFile.substr(0,2) == u"50" ||
+				entryFile.substr(0,6) == u"zzz_0x" ||
+				entryFile.substr(0,2) == u"0x") {
+				inArchiveName.assign_convert(entryFile.c_str());
+			}
+			else if (entryFile.substr(entryFile.find_last_of(u"_"),3) == u"_50") {
+				//inArchiveName.append_convert(tmpPath.c_str());
+				inArchiveName.append_sprintf("zzz");
+				inArchiveName.append_convert(entryFile.substr(entryFile.find_last_of(u"_")).c_str());
+			}
+			else if (entryFile.substr(entryFile.find_last_of(u".")) == u".png") {
+				inArchiveName.append_sprintf("creation_%i_%#x.png",i,id(entryFile.c_str()));
+			}
+			else {
+				continue;
+			}
+			if (inArchiveName == "") {
+				continue;
+			}
+			ZipArchiveEntry::Ptr fileEntry = zipArchive->CreateEntry(inArchiveName.c_str());
+
+			if (fileEntry == nullptr)
+			{
+				//throw std::runtime_error("input file already exist in the archive");
+				zipArchive->RemoveEntry(inArchiveName.c_str());
+				fileEntry = zipArchive->CreateEntry(inArchiveName.c_str());
+			}
+
+			//////////////////////////////////////////////////////////////////////////
+
+			ICompressionMethod::Ptr method = DeflateMethod::Create();
+
+			fileEntry->SetCompressionStream(fileToAdd,method);
+
+			std::ofstream outFile;
+			outFile.open(tmpFile.c_str(), std::ios::binary);
+
+			if (!outFile.is_open()) {
+				App::ConsolePrintF("std::ofstream ERROR: Could not open output file. Continuing.");
+				continue;
+			}
+
+			zipArchive->WriteToStream(outFile);
+			outFile.close();
+			// force closing the input zip stream
+		}
+		std::filesystem::remove(zipPath.c_str());
+		std::filesystem::rename(tmpFile.c_str(),zipPath.c_str());
+
+		SporeDebugPrint("Added entry %ls to ZIP file %ls",entryPath.c_str(),zipPath.c_str());
 	}
 
 	if (!std::filesystem::remove_all(tmpPath.c_str())) {
