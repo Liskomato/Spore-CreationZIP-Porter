@@ -75,10 +75,14 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 				eastl::vector<ResourceKey> cast;
 
 				// Pushing back avatar and crew members.
-				if (scenario->mAvatarAsset.mKey.instanceID == 0 && scenario->mAvatarAsset.mServerId != -1) {
-					auto serverKey = this->GetKeyfromServerID(scenario->mAvatarAsset.mServerId);
-					//cast.push_back(serverKey);
-					SporeDebugPrint("Server ID: %lu, Resource key: %#x!%#x.%#x",scenario->mAvatarAsset.mServerId,serverKey.groupID,serverKey.instanceID,serverKey.typeID);
+				if (scenario->mAvatarAsset.mServerId != -1 && this->DownloadfromServerID(scenario->mAvatarAsset.mServerId,tmpPath)) {
+					//ResourceKey serverKey;
+					//if (this->GetKeyfromServerID(scenario->mAvatarAsset.mServerId,tmpPath,serverKey)) {
+					//	cast.push_back(serverKey);
+					//	SporeDebugPrint("Server ID: %llu, Resource key: %#x!%#x.%#x",scenario->mAvatarAsset.mServerId,serverKey.groupID,serverKey.instanceID,serverKey.typeID);
+					//}
+					//else
+					SporeDebugPrint("Server ID: %llu", scenario->mAvatarAsset.mServerId);
 				}
 				else {
 					cast.push_back(scenario->mAvatarAsset.mKey);
@@ -87,10 +91,14 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 				
 				if (scenario->mInitialPosseMembers.size() != 0) {
 					for (const auto& posseMember : scenario->mInitialPosseMembers) {
-						if (posseMember.mAsset.mKey.instanceID == 0 && posseMember.mAsset.mServerId != -1) {
-							auto serverKey = this->GetKeyfromServerID(posseMember.mAsset.mServerId);
-							//cast.push_back(serverKey);
-							SporeDebugPrint("Server ID: %lu, Resource key: %#x!%#x.%#x", posseMember.mAsset.mServerId, serverKey.groupID, serverKey.instanceID, serverKey.typeID);
+						if (posseMember.mAsset.mServerId != -1 && this->DownloadfromServerID(posseMember.mAsset.mServerId, tmpPath)) {
+							//ResourceKey serverKey;
+							//if (this->GetKeyfromServerID(posseMember.mAsset.mServerId,tmpPath,serverKey)) {
+							//	cast.push_back(serverKey);
+							//	SporeDebugPrint("Server ID: %llu, Resource key: %#x!%#x.%#x",posseMember.mAsset.mServerId,serverKey.groupID,serverKey.instanceID,serverKey.typeID);
+							//}
+							//else
+							SporeDebugPrint("Server ID: %llu", posseMember.mAsset.mServerId);
 						}
 						else {
 							cast.push_back(posseMember.mAsset.mKey);
@@ -104,10 +112,14 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 					int i = 1;
 					for (const auto& asset : scenario->mClasses) {
 
-						if (asset.second.mAsset.mKey.instanceID == 0 && asset.second.mAsset.mServerId != -1) {
-							auto serverKey = this->GetKeyfromServerID(asset.second.mAsset.mServerId);
-							//cast.push_back(serverKey);
-							SporeDebugPrint("Server ID: %lu, Resource key: %#x!%#x.%#x", asset.second.mAsset.mServerId, serverKey.groupID, serverKey.instanceID, serverKey.typeID);
+						if (asset.second.mAsset.mServerId != -1 && this->DownloadfromServerID(asset.second.mAsset.mServerId,tmpPath)) {
+							//ResourceKey serverKey;
+							//if (this->GetKeyfromServerID(asset.second.mAsset.mServerId, tmpPath, serverKey))
+							//	cast.push_back(serverKey);
+							//	SporeDebugPrint("Server ID: %llu, Resource key: %#x!%#x.%#x",asset.second.mAsset.mServerId,serverKey.groupID,serverKey.instanceID,serverKey.typeID);
+							//}
+							//else
+							SporeDebugPrint("Server ID: %llu", asset.second.mAsset.mServerId);
 						}
 						else {
 							cast.push_back(asset.second.mAsset.mKey);
@@ -115,20 +127,28 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 
 						}
 						
-						if (asset.second.mGameplayObjectGfxOverrideAsset.mKey.instanceID == 0 && asset.second.mGameplayObjectGfxOverrideAsset.mServerId != -1) {
-							auto serverKey = this->GetKeyfromServerID(asset.second.mGameplayObjectGfxOverrideAsset.mServerId);
-							//cast.push_back(serverKey);
-							SporeDebugPrint("Server ID: %lu, Resource key: %#x!%#x.%#x", asset.second.mGameplayObjectGfxOverrideAsset.mServerId, serverKey.groupID, serverKey.instanceID, serverKey.typeID);
+						if (asset.second.mGameplayObjectGfxOverrideAsset.mServerId != -1 && this->DownloadfromServerID(asset.second.mGameplayObjectGfxOverrideAsset.mServerId, tmpPath)) {
+							//ResourceKey serverKey;
+							//if (this->GetKeyfromServerID(asset.second.mGameplayObjectGfxOverrideAsset.mServerId, tmpPath, serverKey))
+							//	cast.push_back(serverKey);
+							//	SporeDebugPrint("Server ID: %llu, Resource key: %#x!%#x.%#x",asset.second.mGameplayObjectGfxOverrideAsset.mServerId,serverKey.groupID,serverKey.instanceID,serverKey.typeID);
+							//}
+							//else
+							SporeDebugPrint("Server ID: %llu", asset.second.mGameplayObjectGfxOverrideAsset.mServerId);
 						}
 						else {
 							cast.push_back(asset.second.mGameplayObjectGfxOverrideAsset.mKey);
 							SporeDebugPrint("Resource key: %#x!%#x.%#x", asset.second.mGameplayObjectGfxOverrideAsset.mKey.groupID, asset.second.mGameplayObjectGfxOverrideAsset.mKey.instanceID, asset.second.mGameplayObjectGfxOverrideAsset.mKey.typeID);
 						}
 						
-						if (asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey.instanceID == 0 && asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId != -1) {
-							auto serverKey = this->GetKeyfromServerID(asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId);
-							//cast.push_back(serverKey);
-							SporeDebugPrint("Server ID: %lu, Resource key: %#x!%#x.%#x", asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId, serverKey.groupID, serverKey.instanceID, serverKey.typeID);
+						if (asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId != -1 && this->DownloadfromServerID(asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId,tmpPath)) {
+							//ResourceKey serverKey;
+							//if (this->GetKeyfromServerID(asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId, tmpPath, serverKey))
+							//	cast.push_back(serverKey);
+							//	SporeDebugPrint("Server ID: %llu, Resource key: %#x!%#x.%#x",asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId,serverKey.groupID,serverKey.instanceID,serverKey.typeID);
+							//}
+							//else
+							SporeDebugPrint("Server ID: %llu", asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId);
 						}
 						else {
 							cast.push_back(asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey);
@@ -264,29 +284,72 @@ bool ZIPExport::ExportAsset(const ResourceKey& key, eastl::string16 targetDir, R
 	}
 }
 
-ResourceKey ZIPExport::GetKeyfromServerID(uint64_t id) {
-	ResourceKey key;
+bool ZIPExport::DownloadfromServerID(uint64_t id,eastl::string16 dst) {
+	
 	//uint32_t t = CALL(Address(ModAPI::ChooseAddress(0x54e410, 0x54e460)),uint32_t,Args(VirtualClass,uint64_t,uint32_t,ResourceKey&),Args(VirtualClass(), id, (uint32_t)id >> 0x20, key));
-	eastl::string16 idString, webAddress, tmpPath = u"tmp";
+	eastl::string16 idString, webAddress;
 	idString.append_sprintf(u"%llu",id);
 	eastl::string16 s1 = idString.substr(0, 3), s2 = idString.substr(3, 3), s3 = idString.substr(6, 3);
 	webAddress.append_sprintf(u"http://static.spore.com/static/thumb/%ls/%ls/%ls/%ls.png",s1.c_str(),s2.c_str(),s3.c_str(),idString.c_str());
 	eastl::wstring address, path;
 	address.assign_convert(webAddress.c_str());
 
-	tmpPath = ZipManager.GetZIPExportPath() + tmpPath + webAddress.substr(webAddress.find_last_of(u"/"));
-	path.assign_convert(tmpPath.c_str());
+	dst += webAddress.substr(webAddress.find_last_of(u"/"));
+	path.assign_convert(dst.c_str());
 
 	HRESULT result = URLDownloadToFileW(NULL, address.c_str(), path.c_str(), BINDF_GETNEWESTVERSION, NULL);
 	if (result != S_OK) {
 		App::ConsolePrintF("WARNING: Failed to download file from Spore.com. Are you connected to the internet?");
-		return key;
+		return false;
 	}
-	bool newItem = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), bool, Args(App::Thumbnail_cImportExport*, const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(),tmpPath.c_str(), key));
+	//bool newItem = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), bool, Args(App::Thumbnail_cImportExport*, const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(),tmpPath.c_str(), key));
 
-	if (key != ResourceKey() && newItem) {
-		App::ConsolePrintF("New creation was added to Sporepedia. Resource key: %#x!%#x.%#x",key.groupID,key.instanceID,key.typeID);
+	//if (key != ResourceKey() && newItem) {
+	//	App::ConsolePrintF("New creation was added to Sporepedia. Resource key: %#x!%#x.%#x",key.groupID,key.instanceID,key.typeID);
+	//}
+	SporeDebugPrint("%ls was downloaded to %ls", webAddress.substr(webAddress.find_last_of(u"/")).c_str(),dst.substr(0,dst.find_last_of(u"/")));
+	return true;
+}
+
+bool ZIPExport::GetKeyfromServerID(uint64_t id, eastl::string16 dst, ResourceKey& key) {
+	
+	eastl::string16 idString, entryPath;
+	idString.append_sprintf(u"%llu.png", id);
+	bool foundLocal = false;
+	
+	if (!std::filesystem::is_directory(dst.c_str()) || !std::filesystem::exists(dst.c_str())) { // Check if destination directory exists
+		std::filesystem::create_directory(dst.c_str()); // create folder
+	}
+	for (const auto& entry : std::filesystem::directory_iterator(dst.c_str())) {
+		entryPath = entry.path().u16string().c_str();
+		if (entryPath.substr(entryPath.find_last_of(dst.end())) == idString) {
+			foundLocal = true;
+			break;
+		}
 	}
 
-	return key;
+	if (foundLocal || this->DownloadfromServerID(id, dst)) {
+		
+		bool newItem = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), bool, Args(App::Thumbnail_cImportExport*, const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(),entryPath.c_str(), key));
+
+		if (key != ResourceKey() && newItem) {
+			App::ConsolePrintF("New creation was added to Sporepedia. Resource key: %#x!%#x.%#x",key.groupID,key.instanceID,key.typeID);
+		}
+
+		return true;
+	}
+	else {
+		return false;
+	}
+
+}
+
+bool ZIPExport::GetKeyfromServerID(uint64_t id, ResourceKey& key) {
+	//uint32_t t = CALL(Address(ModAPI::ChooseAddress(0x54e410, 0x54e460)),uint32_t,Args(void*,uint64_t,uint32_t,ResourceKey&),Args(this, id, (uint32_t)id >> 0x20, key));
+	if (key != ResourceKey()) {
+		return true;
+	}
+	else {
+		return false;
+	}
 }
