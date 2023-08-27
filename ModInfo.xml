@@ -1,4 +1,4 @@
-<mod displayName="Creation ZIP Porter" unique="CreationZIP-Porter" description="Enables loading of ZIP files into the game via drag-n-drop, ModAPI folders and My Spore Creations." installerSystemVersion="1.0.1.2" hasCustomInstaller="false" isExperimental="false" dllsBuild="2.5.278">
+<mod displayName="Creation ZIP Porter" unique="CreationZIP-Porter" description="Enables loading and packing of ZIP files within the game itself." installerSystemVersion="1.0.1.2" hasCustomInstaller="false" isExperimental="false" dllsBuild="2.5.278">
 <prerequisite>SporeCreationZIPPorter.dll</prerequisite>
 <remove>SporeCreationZIPPorter.dll</remove>
 </mod>
