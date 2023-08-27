@@ -69,10 +69,10 @@ bool cZipManager::ReadZIP(const eastl::string16& zip) {
 	if (zip != u"" && zip.substr(zip.find_last_of(u".") + 1) == u"zip") {
 		
 		eastl::string16 creations = Resource::Paths::GetDirFromID(Resource::PathID::Creations);
-
+		eastl::string16 fileName = zip.substr(zip.find_last_of(u"/\\"));
 
 		eastl::string16 extractedFolder = u"Extracted";
-		eastl::string16 destPath = creations.c_str() + extractedFolder + zip.substr(zip.find_last_of(u"/\\"),zip.find_last_of(u".")-1) + u"/";
+		eastl::string16 destPath = creations.c_str() + extractedFolder + fileName.substr(0,fileName.find_last_of(u".")-1) + u"/";
 
 		if (!std::filesystem::is_directory(destPath.c_str()) || !std::filesystem::exists(destPath.c_str())) { // Check if destination directory exists
 			std::filesystem::create_directory(destPath.c_str()); // create folder
@@ -112,7 +112,7 @@ bool cZipManager::ReadZIP(const eastl::string16& zip) {
 					std::filesystem::create_directory(targetFile.c_str()); // create folder
 				}
 			}
-			if (entry->CanExtract()) {
+			if (entry->CanExtract() && targetFile.substr(targetFile.find_last_of(u".")+1) == u"png") {
 					
 					ResourceKey key;
 
@@ -133,23 +133,23 @@ bool cZipManager::ReadZIP(const eastl::string16& zip) {
 					destFile.flush();
 					destFile.close();
 
-					if (entry->IsDirectory() && (std::filesystem::is_directory(targetFile.c_str()) || std::filesystem::exists(targetFile.c_str()))) {
-						//we'll deal with this after sorting out reading.
-						for (const auto& dirEntry : std::filesystem::directory_iterator(targetFile.c_str())) {
-							eastl::string16 entryPath = dirEntry.path().u16string().c_str();
-							if (entryPath.substr(entryPath.find_last_of(u".") + 1) == u"png") {
-								ResourceKey key;
-								bool success = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), bool, Args(App::Thumbnail_cImportExport*, const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(), dirEntry.path().u16string().c_str(), key));
-								if (success) {
-									SporeDebugPrint("%ls was successfully added to Sporepedia.\nResource key: %#u!%#u.%#u", entry.path().u16string().c_str(), key.groupID, key.instanceID, key.typeID);
-								}
-								else {
-									SporeDebugPrint("%ls was not successfully added to Sporepedia.", entry.path().u16string().c_str());
-								}
-							}
-						}
-						continue;
-					}
+					//if (entry->IsDirectory() && (std::filesystem::is_directory(targetFile.c_str()) || std::filesystem::exists(targetFile.c_str()))) {
+					//	//we'll deal with this after sorting out reading.
+					//	for (const auto& dirEntry : std::filesystem::directory_iterator(targetFile.c_str())) {
+					//		eastl::string16 entryPath = dirEntry.path().u16string().c_str();
+					//		if (entryPath.substr(entryPath.find_last_of(u".") + 1) == u"png") {
+					//			ResourceKey key;
+					//			bool success = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), bool, Args(App::Thumbnail_cImportExport*, const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(), dirEntry.path().u16string().c_str(), key));
+					//			if (success) {
+					//				SporeDebugPrint("%ls was successfully added to Sporepedia.\nResource key: %#u!%#u.%#u", entry.path().u16string().c_str(), key.groupID, key.instanceID, key.typeID);
+					//			}
+					//			else {
+					//				SporeDebugPrint("%ls was not successfully added to Sporepedia.", entry.path().u16string().c_str());
+					//			}
+					//		}
+					//	}
+					//	continue;
+					//}
 
 
 					bool readExtracted = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), bool, Args(App::Thumbnail_cImportExport*, const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(), targetFile.c_str(), key));
