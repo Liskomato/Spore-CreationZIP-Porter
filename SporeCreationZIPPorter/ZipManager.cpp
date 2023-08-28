@@ -94,14 +94,15 @@ bool cZipManager::ReadZIP(const eastl::string16& zip) {
 			const auto& entry = archive->GetEntry(i);
 			eastl::string16 targetFile = destPath;
 
-			if (entry->GetName().substr(0, 3) == "50" ||
-				entry->GetName().substr(0, 7) == "zzz_0x" ||
-				entry->GetName().substr(0, 3) == "0x" ||
-				entry->GetName().substr(0, 10) == "creation_") {
+			if (entry->GetName().find("50") != std::string::npos ||
+				entry->GetName().find("zzz_0x") != std::string::npos ||
+				entry->GetName().find("0x") != std::string::npos ||
+				entry->GetName().find("creation_") != std::string::npos) {
 				targetFile.append_convert(entry->GetName().c_str());
 			}
-			else if (entry->GetName().substr(entry->GetName().find_last_of("_"),4) == "_50") {
-				targetFile.append_sprintf(u"zzz%s",entry->GetName().substr(entry->GetName().find_last_of("_")).c_str());
+			else if (entry->GetName().find("_50") != std::string::npos) {
+				std::string name = entry->GetName().substr(entry->GetName().find_last_of("_"));
+				targetFile.append_sprintf(u"zzz%s",name.c_str());
 			}
 			else if (!entry->IsDirectory()) {
 				targetFile.append_sprintf(u"creation_%u_%#x.png", i, id(zip.c_str()));
@@ -112,7 +113,7 @@ bool cZipManager::ReadZIP(const eastl::string16& zip) {
 					std::filesystem::create_directory(targetFile.c_str()); // create folder
 				}
 			}
-			if (entry->CanExtract() && targetFile.substr(targetFile.find_last_of(u".")+1) == u"png") {
+			if (entry->CanExtract() && targetFile.find(u".png") != eastl::string16::npos) {
 					
 					ResourceKey key;
 
