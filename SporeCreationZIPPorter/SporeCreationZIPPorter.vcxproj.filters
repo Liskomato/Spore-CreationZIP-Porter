@@ -58,6 +58,9 @@
     <ClInclude Include="ZipLib.h">
       <Filter>SporeCreationZIPPorter\Headers</Filter>
     </ClInclude>
+    <ClInclude Include="PackageNameChecker.h">
+      <Filter>SporeCreationZIPPorter\Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -89,6 +92,9 @@
     </ClCompile>
     <ClCompile Include="ZIPExport.cpp">
       <Filter>SporeCreationZIPPorter\Cheats</Filter>
+    </ClCompile>
+    <ClCompile Include="PackageNameChecker.cpp">
+      <Filter>SporeCreationZIPPorter</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

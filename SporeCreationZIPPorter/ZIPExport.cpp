@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "ZIPExport.h"
 #include "DetourClasses.h"
+#include "PackageNameChecker.h"
 #include <Spore\Resource\PFRecordRead.h>
 #include <Spore\Resource\IResourceManager.h>
 #include <Spore\Resource\IResourceFactory.h>
@@ -328,7 +329,12 @@ void ZIPExport::OnShopperAccept(const ResourceKey& selection) {
 }
 
 bool ZIPExport::ExportAsset(const ResourceKey& key, eastl::string16 targetDir, Resource::Database* database) {
+	if (PackageNameChecker::IsDatabaseVanilla(database)) {
+		return false;		// We don't want packaged Maxis creations being exported.
+	}
+	
 	Resource::IRecord* record;
+
 	if (database->OpenRecord(key, &record)) {
 		record->GetStream()->SetPosition(0);
 		auto size = record->GetStream()->GetSize();
@@ -410,7 +416,7 @@ bool ZIPExport::GetKeyfromServerID(uint64_t id, eastl::string16 dst, ResourceKey
 	}
 	for (const auto& entry : std::filesystem::directory_iterator(dst.c_str())) {
 		entryPath = entry.path().u16string().c_str();
-		if (entryPath.find(idString)) {
+		if (entryPath.find(idString) != eastl::string16::npos) {
 			foundLocal = true;
 			break;
 		}

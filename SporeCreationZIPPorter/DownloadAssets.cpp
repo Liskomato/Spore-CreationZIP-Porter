@@ -32,7 +32,7 @@ void DownloadAssets::ParseLine(const ArgScript::Line& line)
 
 	// We are online, we can do this.
 	Sporepedia::ShopperRequest request(this);
-	request.shopperID = 0x14e497ed; // AssetBrowserFilter!ScenarioPlayable.prop
+	request.shopperID = 0x67060110; // AssetBrowserConfig!ScenarioShopper.prop
 	request.maxSelections = 1;
 	Sporepedia::ShopperRequest::Show(request);
 }
@@ -49,23 +49,28 @@ void DownloadAssets::OnShopperAccept(const ResourceKey& selection) {
 			SporeDebugPrint("Downloaded avatar successfully.");
 		}
 		if (scenario->mInitialPosseMembers.size() != 0) {
-			for (uint32_t i = 0; i < scenario->mInitialPosseMembers.size(); i++) {
-				if (scenario->mInitialPosseMembers[i].mAsset.mServerId != -1 && ZIPExport::GetKeyfromServerID(scenario->mInitialPosseMembers[i].mAsset.mServerId,downloadFolder,assetKey)) {
+			int i = 0;
+			for each (const auto& posseMember in scenario->mInitialPosseMembers) {
+				if (posseMember.mAsset.mServerId != -1 && ZIPExport::GetKeyfromServerID(posseMember.mAsset.mServerId,downloadFolder,assetKey)) {
 					SporeDebugPrint("Downloaded posse member %d successfully.",i+1);
+					
 				}
+				i++;
 			}
 		}
 		if (scenario->mClasses.size() != 0) {
-			for (uint32_t i = 0; i < scenario->mClasses.size(); i++) {
-				if (scenario->mClasses[i].mAsset.mServerId != -1 && ZIPExport::GetKeyfromServerID(scenario->mClasses[i].mAsset.mServerId, downloadFolder, assetKey)) {
+			int i = 0;
+			for each (const auto& creation in scenario->mClasses) {
+				if (creation.second.mAsset.mServerId != -1 && ZIPExport::GetKeyfromServerID(creation.second.mAsset.mServerId, downloadFolder, assetKey)) {
 					SporeDebugPrint("Downloaded scenario class %d successfully.", i + 1);
 				}
-				if (scenario->mClasses[i].mGameplayObjectGfxOverrideAsset.mServerId != -1 && ZIPExport::GetKeyfromServerID(scenario->mClasses[i].mGameplayObjectGfxOverrideAsset.mServerId, downloadFolder, assetKey)) {
+				if (creation.second.mGameplayObjectGfxOverrideAsset.mServerId != -1 && ZIPExport::GetKeyfromServerID(creation.second.mGameplayObjectGfxOverrideAsset.mServerId, downloadFolder, assetKey)) {
 					SporeDebugPrint("Downloaded GFX override 1 for scenario class %d successfully.",i+1);
 				}
-				if (scenario->mClasses[i].mGameplayObjectGfxOverrideAsset_Secondary.mServerId != -1 && ZIPExport::GetKeyfromServerID(scenario->mClasses[i].mGameplayObjectGfxOverrideAsset_Secondary.mServerId, downloadFolder, assetKey)) {
+				if (creation.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId != -1 && ZIPExport::GetKeyfromServerID(creation.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId, downloadFolder, assetKey)) {
 					SporeDebugPrint("Downloaded GFX override 2 for scenario class %d successfully.", i + 1);
 				}
+				i++;
 			}
 		}
 
