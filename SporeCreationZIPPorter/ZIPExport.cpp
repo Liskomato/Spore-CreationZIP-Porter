@@ -55,7 +55,7 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 		
 		if (package != nullptr && ResourceManager.GetResource(key, &resource)) {
 			
-			if (key.groupID == 0x408a0000) 
+			if (key.typeID == TypeIDs::adventure) 
 			{
 				cScenarioResourcePtr scenario = object_cast<Simulator::cScenarioResource>(resource);
 				
@@ -161,11 +161,11 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 				}
 
 				for (const ResourceKey& key : cast) {
-					if (key.groupID == GroupIDs::BuildingModels ||
-						key.groupID == GroupIDs::CellModels ||
-						key.groupID == GroupIDs::CreatureModels ||
-						key.groupID == GroupIDs::VehicleModels ||
-						key.groupID == GroupIDs::UfoModels) {
+					if (key.typeID == TypeIDs::bld ||
+						key.typeID == TypeIDs::cll ||
+						key.typeID == TypeIDs::crt ||
+						key.typeID == TypeIDs::vcl ||
+						key.typeID == TypeIDs::ufo ) {
 						png = { key.instanceID, TypeIDs::png, key.groupID };
 						SporeDebugPrint("Stored key: %#x!%#x.%#x",key.groupID,key.instanceID,key.typeID);
 						
@@ -184,11 +184,11 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 
 
 			}
-			else if (key.groupID == GroupIDs::BuildingModels ||
-					 key.groupID == GroupIDs::CellModels ||
-					 key.groupID == GroupIDs::CreatureModels ||
-					 key.groupID == GroupIDs::VehicleModels ||
-					 key.groupID == GroupIDs::UfoModels ) 
+			else if (key.typeID == TypeIDs::bld ||
+					 key.typeID == TypeIDs::cll ||
+					 key.typeID == TypeIDs::crt ||
+					 key.typeID == TypeIDs::vcl ||
+					 key.typeID == TypeIDs::ufo )
 			{
 				if (!ExportAsset(png, tmpPath, package)) {
 					App::ConsolePrintF("Failed to export %#x.png", png.instanceID);
@@ -264,7 +264,7 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 			// Making sure to make "exceptions" for specific types of filenames.
 
 			if (entryFile.find(u"50") != eastl::string16::npos ||
-				entryFile.find(u"zzz_0x") != eastl::string16::npos ||
+				entryFile.find(u"zzz_") != eastl::string16::npos ||
 				entryFile.find(u"0x") != eastl::string16::npos) {
 				inArchiveName.assign_convert(entryFile.c_str());
 			}
@@ -319,7 +319,7 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 		App::ConsolePrintF("Failed to remove temporary folder. It will persist after this process has ended.");
 	}
 
-	App::ConsolePrintF("Your creations have been added to ZIP archive %ls. It can be found in %ls",zipName.c_str(),ZipManager.GetZIPExportPath().c_str());
+	App::ConsolePrintF("Your creations have been added to ZIP archive %ls. It can be found in %ls ",zipName.c_str(),ZipManager.GetZIPExportPath().c_str());
 
 }
 void ZIPExport::OnShopperAccept(const ResourceKey& selection) {
@@ -336,20 +336,22 @@ bool ZIPExport::ExportAsset(const ResourceKey& key, eastl::string16 targetDir, R
 		record->GetStream()->Read(buffer, size);
 		record->RecordClose();
 
-		//cAssetMetadataPtr metadata;
+		cAssetMetadataPtr metadata;
 		eastl::string16 fName;
 
-		if (key == ResourceKey(key.instanceID, TypeIDs::png, 0x408a0000)) {
-			fName.append_sprintf(u"zzz_0x%x.png", key.instanceID); // Making adventures load last in imports, hopefully.
+		if (key.typeID == TypeIDs::png) {
+			if ((Pollinator::GetMetadata(key.instanceID, key.groupID, metadata) && metadata->GetAssetKey().typeID == TypeIDs::adventure) || key == ResourceKey(key.instanceID, TypeIDs::png, 0x408a0000)) {
+				fName.append_sprintf(u"zzz_adventure_%#x.png", key.instanceID); // Making adventures load last in imports, hopefully.
+			}
+			else {
+				fName.append_sprintf(u"%#x.png", key.instanceID);
+			}
 		}
-		else if (key.typeID == TypeIDs::png) {
-			fName.append_sprintf(u"0x%x.png", key.instanceID);
+		else if (ResourceManager.GetTypenameFromType(key.typeID)) {
+			fName.append_sprintf(u"%#x.%ls", key.instanceID, ResourceManager.GetTypenameFromType(key.typeID));
 		}
-		//else if (Pollinator::GetMetadata(key.instanceID, key.groupID, metadata)) {
-		//	fName.append_sprintf(u"%ls.%ls", metadata->GetName().c_str(),ResourceManager.GetTypenameFromType(key.typeID));
-		//}
 		else {
-			fName.append_sprintf(u"0x%x.0x%x", key.instanceID, key.typeID);
+			fName.append_sprintf(u"%#x.%#x", key.instanceID, key.typeID);
 		}
 		eastl::string16 fPath = targetDir + fName;
 
