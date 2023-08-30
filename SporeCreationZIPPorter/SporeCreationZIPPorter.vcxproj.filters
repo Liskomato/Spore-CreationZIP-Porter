@@ -11,6 +11,15 @@
     <Filter Include="Internal">
       <UniqueIdentifier>{d62ad12d-69d8-4933-8342-03043c9adc22}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SporeCreationZIPPorter\Cheats">
+      <UniqueIdentifier>{5fbbb20a-c4f8-4ad1-a550-ce57b41750fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SporeCreationZIPPorter\Headers">
+      <UniqueIdentifier>{3dd50be5-3076-4a90-9578-ac60e79a2863}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SporeCreationZIPPorter\Headers\Cheats">
+      <UniqueIdentifier>{b68286e5-606e-4e56-81a1-f29667337fbe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -19,32 +28,35 @@
     <ClInclude Include="stdafx.h">
       <Filter>Internal</Filter>
     </ClInclude>
-    <ClInclude Include="DetourClasses.h">
-      <Filter>SporeCreationZIPPorter</Filter>
+    <ClInclude Include="CheckForZIPs.h">
+      <Filter>SporeCreationZIPPorter\Headers\Cheats</Filter>
+    </ClInclude>
+    <ClInclude Include="DownloadAssets.h">
+      <Filter>SporeCreationZIPPorter\Headers\Cheats</Filter>
     </ClInclude>
     <ClInclude Include="DownloadCreation.h">
-      <Filter>SporeCreationZIPPorter</Filter>
-    </ClInclude>
-    <ClInclude Include="OpenFileMessage.h">
-      <Filter>SporeCreationZIPPorter</Filter>
-    </ClInclude>
-    <ClInclude Include="AlternativePackageLocations.h">
-      <Filter>SporeCreationZIPPorter</Filter>
-    </ClInclude>
-    <ClInclude Include="ZipManager.h">
-      <Filter>SporeCreationZIPPorter</Filter>
-    </ClInclude>
-    <ClInclude Include="ZipLib.h">
-      <Filter>SporeCreationZIPPorter</Filter>
-    </ClInclude>
-    <ClInclude Include="CheckForZIPs.h">
-      <Filter>SporeCreationZIPPorter</Filter>
-    </ClInclude>
-    <ClInclude Include="ZIPExport.h">
-      <Filter>SporeCreationZIPPorter</Filter>
+      <Filter>SporeCreationZIPPorter\Headers\Cheats</Filter>
     </ClInclude>
     <ClInclude Include="ImportFromURL.h">
-      <Filter>SporeCreationZIPPorter</Filter>
+      <Filter>SporeCreationZIPPorter\Headers\Cheats</Filter>
+    </ClInclude>
+    <ClInclude Include="ZIPExport.h">
+      <Filter>SporeCreationZIPPorter\Headers\Cheats</Filter>
+    </ClInclude>
+    <ClInclude Include="AlternativePackageLocations.h">
+      <Filter>SporeCreationZIPPorter\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DetourClasses.h">
+      <Filter>SporeCreationZIPPorter\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenFileMessage.h">
+      <Filter>SporeCreationZIPPorter\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ZipManager.h">
+      <Filter>SporeCreationZIPPorter\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ZipLib.h">
+      <Filter>SporeCreationZIPPorter\Headers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -53,9 +65,6 @@
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>Internal</Filter>
-    </ClCompile>
-    <ClCompile Include="DownloadCreation.cpp">
-      <Filter>SporeCreationZIPPorter</Filter>
     </ClCompile>
     <ClCompile Include="OpenFileMessage.cpp">
       <Filter>SporeCreationZIPPorter</Filter>
@@ -67,13 +76,19 @@
       <Filter>SporeCreationZIPPorter</Filter>
     </ClCompile>
     <ClCompile Include="CheckForZIPs.cpp">
-      <Filter>SporeCreationZIPPorter</Filter>
+      <Filter>SporeCreationZIPPorter\Cheats</Filter>
     </ClCompile>
-    <ClCompile Include="ZIPExport.cpp">
-      <Filter>SporeCreationZIPPorter</Filter>
+    <ClCompile Include="DownloadAssets.cpp">
+      <Filter>SporeCreationZIPPorter\Cheats</Filter>
+    </ClCompile>
+    <ClCompile Include="DownloadCreation.cpp">
+      <Filter>SporeCreationZIPPorter\Cheats</Filter>
     </ClCompile>
     <ClCompile Include="ImportFromURL.cpp">
-      <Filter>SporeCreationZIPPorter</Filter>
+      <Filter>SporeCreationZIPPorter\Cheats</Filter>
+    </ClCompile>
+    <ClCompile Include="ZIPExport.cpp">
+      <Filter>SporeCreationZIPPorter\Cheats</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

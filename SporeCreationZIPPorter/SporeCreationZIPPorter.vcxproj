@@ -112,6 +112,10 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="DetourClasses.h" />
+    <ClInclude Include="DownloadAssets.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="DownloadCreation.h">
       <SubType>
       </SubType>
@@ -149,6 +153,10 @@
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
       </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DownloadAssets.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="DownloadCreation.cpp">
       <SubType>

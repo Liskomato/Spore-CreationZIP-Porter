@@ -19,7 +19,7 @@ public:
 	void OnShopperAccept(const ResourceKey& selection) override;
 	void OnShopperAccept(const eastl::vector<ResourceKey>& selection) override;
 	/// 
-	/// Saves the given resource key into My Spore Creations/ZIPs/tmp
+	/// Saves the given resource key into the target directory.
 	/// @param key Resource key of the file.
 	/// @param targetDir Directory where the file will be written.
 	/// @param database Database where the resource is found.
@@ -27,7 +27,7 @@ public:
 	static bool ExportAsset(const ResourceKey& key, eastl::string16 targetDir, Resource::Database* database);
 	
 	/// 
-	/// Downloads the creation of the given server ID from the server to My Spore Creations/ZIPs/tmp
+	/// Downloads the creation of the given server ID from the server to the target directory
 	/// @param id Server ID of the creation.
 	/// @param dst Directory where the file will be downloaded.
 	/// @returns True if success, false if failed

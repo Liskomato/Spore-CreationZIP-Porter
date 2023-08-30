@@ -4,6 +4,7 @@
 #include "CheckForZIPs.h"
 #include "ZIPExport.h"
 #include "ImportFromURL.h"
+#include "DownloadAssets.h"
 #include "DetourClasses.h"
 #include "AlternativePackageLocations.h"
 #include "ZipManager.h"
@@ -21,13 +22,15 @@ void Initialize()
 	//  - Change materials
 
 
-
+	// Add cheats
 	CheatManager.AddCheat("DownloadCreation",new DownloadCreation());
 	CheatManager.AddCheat("CheckForZIPs", new CheckForZIPs());
 	CheatManager.AddCheat("ZIPExport", new ZIPExport());
 	CheatManager.AddCheat("ImportFromURL", new ImportFromURL());
+	CheatManager.AddCheat("DownloadAssets", new DownloadAssets());
+
+	// Initialize ZipManager
 	ZipManager.Initialize();
- 	//ZipManager.AddFilepath(AlternativePackageLocations::libDir);
 	ZipManager.CheckFilepaths();
 }
 /// Detour for App::Thumbnail_cImportExport::SavePNG
