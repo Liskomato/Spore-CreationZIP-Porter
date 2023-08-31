@@ -401,4 +401,12 @@ FodyWeavers.xsd
 *.sporemod
 *.zip
 *.package
+
+# Example sporemod files
 !ExampleSporemods/**/*
+
+# old project files
+SporeCreationZIPPorter/OpenFileMessage.*
+SporeCreationZIPPorter/DownloadAssets.*
+SporeCreationZIPPorter/DownloadCreation.*
+SporeCreationZIPPorter/ImportFromURL.*
