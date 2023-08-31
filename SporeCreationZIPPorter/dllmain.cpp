@@ -156,7 +156,7 @@ void Dispose()
 
 void AttachDetours()
 {
-	// ManualBreakpoint();
+	 ManualBreakpoint();
 	// Call the attach() method on any detours you want to add
 	// For example: cViewer_SetRenderType_detour::attach(GetAddress(cViewer, SetRenderType));
 	SavePNG_detour::attach(GetAddress(App::Thumbnail_cImportExport, SavePNG));

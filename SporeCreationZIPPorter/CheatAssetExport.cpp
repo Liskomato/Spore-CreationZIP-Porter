@@ -181,9 +181,9 @@ void CheatAdventureExport::ParseLine(const ArgScript::Line& line)
 		return;
 	}
 
-	Simulator::cScenarioResource scenarioResource = *ScenarioMode.GetResource();
+	cScenarioResourcePtr scenarioResource = ScenarioMode.GetResource();
 
-	ResourceKey adventureAsset = scenarioResource.GetResourceKey();
+	ResourceKey adventureAsset = scenarioResource->GetResourceKey();
 
 	Resource::IRecord* pRecord;
 	auto dbpf = ResourceManager.FindDatabase(adventureAsset);
@@ -192,16 +192,18 @@ void CheatAdventureExport::ParseLine(const ArgScript::Line& line)
 		return;
 	}
 
+	ScenarioMode.GetData()->StartHistoryEntry();
+
 	// Instance IDs in shared adventure assets are zeroed out so we want to restore them in the package adventure
 	ResourceKey replacementKey;
 
-	if (scenarioResource.mAvatarAsset.mServerId != -1 && ZIPExport::GetKeyfromServerID(scenarioResource.mAvatarAsset.mServerId,replacementKey)) {
-		scenarioResource.mAvatarAsset.mKey = replacementKey;
-		scenarioResource.mAvatarAsset.mServerId = -1;
+	if (scenarioResource->mAvatarAsset.mServerId != -1 && ZIPExport::GetKeyfromServerID(scenarioResource->mAvatarAsset.mServerId,replacementKey)) {
+		scenarioResource->mAvatarAsset.mKey = replacementKey;
+		scenarioResource->mAvatarAsset.mServerId = -1;
 	}
-	ExportAttempt(scenarioResource.mAvatarAsset.mKey); // Export avatar
+	ExportAttempt(scenarioResource->mAvatarAsset.mKey); // Export avatar
 
-	for each (auto posseMember in scenarioResource.mInitialPosseMembers) // Export team members
+	for each (auto posseMember in scenarioResource->mInitialPosseMembers) // Export team members
 	{
 		if (posseMember.mAsset.mServerId != -1 && ZIPExport::GetKeyfromServerID(posseMember.mAsset.mServerId,replacementKey)) {
 			posseMember.mAsset.mKey = replacementKey;
@@ -210,7 +212,7 @@ void CheatAdventureExport::ParseLine(const ArgScript::Line& line)
 		ExportAttempt(posseMember.mAsset.mKey);
 	}
 
-	for each (auto paletteAsset in scenarioResource.mClasses) // Export other assets in palette
+	for each (auto paletteAsset in scenarioResource->mClasses) // Export other assets in palette
 	{
 		if (paletteAsset.second.mAsset.mServerId != -1 && ZIPExport::GetKeyfromServerID(paletteAsset.second.mAsset.mServerId,replacementKey)) {
 			paletteAsset.second.mAsset.mKey = replacementKey;
@@ -230,7 +232,8 @@ void CheatAdventureExport::ParseLine(const ArgScript::Line& line)
 		}
 		ExportAttempt(paletteAsset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey);
 	}
-	
+	ScenarioMode.GetData()->CommitHistoryEntry();
+
 	eastl::string16 path = u"";
 	eastl::string16 archivePath = u"";
 	App::Thumbnail_cImportExport::Get()->FolderPathFromLocale(0x06244EB0, archivePath);
@@ -240,10 +243,11 @@ void CheatAdventureExport::ParseLine(const ArgScript::Line& line)
 	path.sprintf(u"%ls0x%X/0x%X.0x%X", archivePath.c_str(), adventureAsset.groupID, adventureAsset.instanceID, adventureAsset.typeID);
 	FileStreamPtr outputStream = new IO::FileStream(path.c_str());
 	outputStream->Open(IO::AccessFlags::ReadWrite, IO::CD::CreateAlways);
-	scenarioResource.Write(outputStream.get());
+	scenarioResource->Write(outputStream.get());
 	outputStream->Close();
 
 	ExportAttempt(adventureAsset);
+	
 }
 
 const char* CheatAdventureExport::GetDescription(ArgScript::DescriptionMode mode) const

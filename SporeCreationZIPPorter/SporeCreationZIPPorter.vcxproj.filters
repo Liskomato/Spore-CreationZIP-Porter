@@ -52,6 +52,9 @@
     <ClInclude Include="Import.h">
       <Filter>SporeCreationZIPPorter\Headers\Cheats</Filter>
     </ClInclude>
+    <ClInclude Include="CheatAssetExport.h">
+      <Filter>SporeCreationZIPPorter\Headers\Cheats</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -76,6 +79,9 @@
       <Filter>SporeCreationZIPPorter</Filter>
     </ClCompile>
     <ClCompile Include="Import.cpp">
+      <Filter>SporeCreationZIPPorter\Cheats</Filter>
+    </ClCompile>
+    <ClCompile Include="CheatAssetExport.cpp">
       <Filter>SporeCreationZIPPorter\Cheats</Filter>
     </ClCompile>
   </ItemGroup>

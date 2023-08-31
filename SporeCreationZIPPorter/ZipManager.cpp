@@ -72,10 +72,15 @@ bool cZipManager::ReadZIP(const eastl::string16& zip) {
 		eastl::string16 fileName = zip.substr(zip.find_last_of(u"/\\")+1);
 
 		eastl::string16 extractedFolder = u"Extracted/";
-		eastl::string16 destPath = creations.c_str() + extractedFolder + fileName.substr(0,fileName.find_last_of(u".")) + u"/";
+		eastl::string16 destFolder = creations.c_str() + extractedFolder;
+		eastl::string16 destPath = destFolder + fileName.substr(0,fileName.find_last_of(u".")) + u"/";
+
+		if (!std::filesystem::is_directory(destFolder.c_str()) || !std::filesystem::exists(destFolder.c_str())) { // Check if destination directory exists
+			std::filesystem::create_directory(destFolder.c_str()); // create parent folder
+		}
 
 		if (!std::filesystem::is_directory(destPath.c_str()) || !std::filesystem::exists(destPath.c_str())) { // Check if destination directory exists
-			std::filesystem::create_directory(destPath.c_str()); // create folder
+			std::filesystem::create_directory(destPath.c_str()); // create child folder
 		}
 
 		//ZipFile::Open(zipPath.c_str())
