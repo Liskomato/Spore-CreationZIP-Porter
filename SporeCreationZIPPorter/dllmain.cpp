@@ -5,10 +5,12 @@
 #include "ZIPExport.h"
 #include "ImportFromURL.h"
 #include "DownloadAssets.h"
+#include "Import.h"
 #include "DetourClasses.h"
 #include "AlternativePackageLocations.h"
 #include "ZipManager.h"
 #include "ZipLib.h"
+
 
 
 void Initialize()
@@ -28,6 +30,7 @@ void Initialize()
 	CheatManager.AddCheat("ZIPExport", new ZIPExport());
 	CheatManager.AddCheat("ImportFromURL", new ImportFromURL());
 	CheatManager.AddCheat("DownloadAssets", new DownloadAssets());
+	CheatManager.AddCheat("import",new Import());
 
 	// Initialize ZipManager
 	ZipManager.Initialize();

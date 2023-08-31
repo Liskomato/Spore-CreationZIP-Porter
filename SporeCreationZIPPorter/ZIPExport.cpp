@@ -401,7 +401,7 @@ bool ZIPExport::DownloadfromServerID(uint64_t id,eastl::string16 dst) {
 	//if (key != ResourceKey() && newItem) {
 	//	App::ConsolePrintF("New creation was added to Sporepedia. Resource key: %#x!%#x.%#x",key.groupID,key.instanceID,key.typeID);
 	//}
-	SporeDebugPrint("%ls was downloaded to %ls", webAddress.substr(webAddress.find_last_of(u"/")).c_str(),dst.substr(0,dst.find_last_of(u"/")));
+	SporeDebugPrint("%ls was downloaded to %ls", webAddress.substr(webAddress.find_last_of(u"/")+1).c_str(),dst.substr(0,dst.find_last_of(u"/")));
 	return true;
 }
 
