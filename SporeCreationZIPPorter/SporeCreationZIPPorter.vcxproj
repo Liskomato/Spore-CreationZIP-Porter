@@ -112,23 +112,7 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="DetourClasses.h" />
-    <ClInclude Include="DownloadAssets.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="DownloadCreation.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
     <ClInclude Include="Import.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="ImportFromURL.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="OpenFileMessage.h">
       <SubType>
       </SubType>
     </ClInclude>
@@ -159,23 +143,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
       </PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="DownloadAssets.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="DownloadCreation.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
     <ClCompile Include="Import.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="ImportFromURL.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="OpenFileMessage.cpp">
       <SubType>
       </SubType>
     </ClCompile>

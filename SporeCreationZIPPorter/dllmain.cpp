@@ -1,10 +1,10 @@
 // dllmain.cpp : Defines the entry point for the DLL application.
 #include "stdafx.h"
-#include "DownloadCreation.h"
 #include "CheckForZIPs.h"
 #include "ZIPExport.h"
-#include "ImportFromURL.h"
-#include "DownloadAssets.h"
+//#include "DownloadCreation.h"
+//#include "ImportFromURL.h"
+//#include "DownloadAssets.h"
 #include "Import.h"
 #include "DetourClasses.h"
 #include "AlternativePackageLocations.h"
@@ -24,12 +24,15 @@ void Initialize()
 	//  - Change materials
 
 
-	// Add cheats
-	CheatManager.AddCheat("DownloadCreation",new DownloadCreation());
+	// ZIP cheats
 	CheatManager.AddCheat("CheckForZIPs", new CheckForZIPs());
 	CheatManager.AddCheat("ZIPExport", new ZIPExport());
-	CheatManager.AddCheat("ImportFromURL", new ImportFromURL());
-	CheatManager.AddCheat("DownloadAssets", new DownloadAssets());
+
+	// Import cheats
+	//CheatManager.AddCheat("DownloadCreation",new DownloadCreation());
+	//CheatManager.AddCheat("ImportFromURL", new ImportFromURL());
+	//CheatManager.AddCheat("DownloadAssets", new DownloadAssets());
+	
 	CheatManager.AddCheat("import",new Import());
 
 	// Initialize ZipManager
