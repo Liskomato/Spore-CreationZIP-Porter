@@ -2,6 +2,7 @@
 #include "stdafx.h"
 #include "CheckForZIPs.h"
 #include "ZIPExport.h"
+#include "CheatAssetExport.h"
 //#include "DownloadCreation.h"
 //#include "ImportFromURL.h"
 //#include "DownloadAssets.h"
@@ -34,6 +35,10 @@ void Initialize()
 	//CheatManager.AddCheat("DownloadAssets", new DownloadAssets());
 	
 	CheatManager.AddCheat("import",new Import());
+
+	// Raw export cheats
+	CheatManager.AddCheat("assetExport",new CheatAssetExport());
+	CheatManager.AddCheat("adventureExport", new CheatAdventureExport());
 
 	// Initialize ZipManager
 	ZipManager.Initialize();

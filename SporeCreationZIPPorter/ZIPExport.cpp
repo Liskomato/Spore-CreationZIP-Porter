@@ -391,6 +391,10 @@ bool ZIPExport::DownloadfromServerID(uint64_t id,eastl::string16 dst) {
 	dst += webAddress.substr(webAddress.find_last_of(u"/"));
 	path.assign_convert(dst.c_str());
 
+	if (!std::filesystem::is_directory(dst.c_str()) || !std::filesystem::exists(dst.c_str())) { // Check if destination directory exists
+		std::filesystem::create_directory(dst.c_str()); // create folder
+	}
+
 	HRESULT result = URLDownloadToFileW(NULL, address.c_str(), path.c_str(), BINDF_GETNEWESTVERSION, NULL);
 	if (result != S_OK) {
 		App::ConsolePrintF("WARNING: Failed to download file from Spore.com. Are you connected to the internet?");
@@ -440,10 +444,15 @@ bool ZIPExport::GetKeyfromServerID(uint64_t id, eastl::string16 dst, ResourceKey
 
 bool ZIPExport::GetKeyfromServerID(uint64_t id, ResourceKey& key) {
 	//uint32_t t = CALL(Address(ModAPI::ChooseAddress(0x54e410, 0x54e460)),uint32_t,Args(void*,uint64_t,uint32_t,ResourceKey&),Args(this, id, (uint32_t)id >> 0x20, key));
-	if (key != ResourceKey()) {
-		return true;
-	}
-	else {
-		return false;
-	}
+	//if (key != ResourceKey()) {
+	//	return true;
+	//}
+	//else {
+	//	return false;
+	//}
+
+	eastl::string16 downloadFolder = u"Downloads/", creations = Resource::Paths::GetDirFromID(Resource::PathID::Creations);
+	downloadFolder = creations + downloadFolder;
+	return GetKeyfromServerID(id,downloadFolder,key);
+
 }
