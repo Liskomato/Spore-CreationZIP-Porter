@@ -406,7 +406,7 @@ bool ZIPExport::DownloadfromServerID(uint64_t id,eastl::string16 dst) {
 }
 
 bool ZIPExport::GetKeyfromServerID(uint64_t id, eastl::string16 dst, ResourceKey& key) {
-	
+	if (!DownloadfromServerID(id, dst)) return false;
 	eastl::string16 idString, entryPath;
 	idString.append_sprintf(u"%llu.png", id);
 	bool foundLocal = false;
@@ -422,7 +422,7 @@ bool ZIPExport::GetKeyfromServerID(uint64_t id, eastl::string16 dst, ResourceKey
 		}
 	}
 
-	if (foundLocal || DownloadfromServerID(id, dst)) {
+	if (foundLocal) {
 		
 		bool newItem = CALL(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)), bool, Args(App::Thumbnail_cImportExport*, const char16_t*, ResourceKey&), Args(App::Thumbnail_cImportExport::Get(),entryPath.c_str(), key));
 
