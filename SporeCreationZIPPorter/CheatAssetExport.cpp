@@ -76,7 +76,9 @@ bool CheatAssetExport::ExportAsset(ResourceKey assetKey)
 	ResourceKey* keys{};
 	size_t size{};
 	PropertyListPtr propList;
-	PropManager.GetPropertyList(0xcecf5fdf, 0xda77fdac, propList);
+	if (!PropManager.GetPropertyList(assetKey.typeID, 0xda77fdac, propList)) {
+		PropManager.GetPropertyList(0xcecf5fdf, 0xda77fdac, propList);
+	}
 	App::Property::GetArrayKey(propList.get(), 0x405F6744, size, keys);
 	try {
 		for (size_t i = 0; i < size; i++) {
@@ -234,6 +236,8 @@ void CheatAdventureExport::ParseLine(const ArgScript::Line& line)
 	}
 	ScenarioMode.GetData()->CommitHistoryEntry();
 
+	ExportAttempt(adventureAsset);
+
 	eastl::string16 path = u"";
 	eastl::string16 archivePath = u"";
 	App::Thumbnail_cImportExport::Get()->FolderPathFromLocale(0x06244EB0, archivePath);
@@ -246,7 +250,6 @@ void CheatAdventureExport::ParseLine(const ArgScript::Line& line)
 	scenarioResource->Write(outputStream.get());
 	outputStream->Close();
 
-	ExportAttempt(adventureAsset);
 	
 }
 

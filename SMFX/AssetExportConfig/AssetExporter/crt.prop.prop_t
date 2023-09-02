@@ -1,0 +1,19 @@
+keys lookUpAssets
+	0x40622900!0x0.raster
+	0x40622901!0x0.raster
+	0x40626201!0x0.png
+	0x41626202!0x0.gmdl
+	0x41626203!0x0.gmdl
+	creature+baby_editorModel~!0x0.prop
+	creatureModels_LOD1~!0x0.gmdl
+	creatureModels_LOD2~!0x0.gmdl
+	creatureModels_LOD3~!0x0.gmdl
+	creature_editorModelHi~!0x0.gmdl
+	creature_editorModel~!0x0.bem
+	creature_editorModel~!0x0.creaturedata
+	creature_editorModel~!0x0.png
+	creature_editorModel~!0x0.pollen_metadata
+	creature_editorModel~!0x0.prop
+	creature_editorModel~!0x0.summary
+	creature_editorModel~!0x0.crt
+end

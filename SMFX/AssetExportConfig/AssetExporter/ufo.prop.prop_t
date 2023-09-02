@@ -1,0 +1,17 @@
+keys lookUpAssets
+    ufoModelsUFO~!0x0.bem
+    ufoModelsUFO~!0x0.gmdl
+    ufoModelsUFO~!0x0.png
+    ufoModelsUFO~!0x0.pollen_metadata
+    ufoModelsUFO~!0x0.prop
+    ufoModelsUFO~!0x0.summary
+    ufoModels_LOD1~!0x0.gmdl
+    ufoModels_LOD2~!0x0.gmdl
+    ufoModels_LOD3~!0x0.gmdl
+    0x40657100!0x0.gmdl
+    0x40657100!0x0.prop
+    0x40657100!0x0.rw4
+    0x40652900!0x0.raster
+    0x40652901!0x0.raster
+    0x40652902!0x0.raster
+end
