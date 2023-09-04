@@ -388,12 +388,13 @@ bool ZIPExport::DownloadfromServerID(uint64_t id,eastl::string16 dst) {
 	eastl::wstring address, path;
 	address.assign_convert(webAddress.c_str());
 
-	dst += webAddress.substr(webAddress.find_last_of(u"/"));
-	path.assign_convert(dst.c_str());
-
 	if (!std::filesystem::is_directory(dst.c_str()) || !std::filesystem::exists(dst.c_str())) { // Check if destination directory exists
 		std::filesystem::create_directory(dst.c_str()); // create folder
 	}
+	
+	dst += webAddress.substr(webAddress.find_last_of(u"/"));
+	path.assign_convert(dst.c_str());
+
 
 	HRESULT result = URLDownloadToFileW(NULL, address.c_str(), path.c_str(), BINDF_GETNEWESTVERSION, NULL);
 	if (result != S_OK) {
