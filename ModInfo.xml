@@ -1,9 +1,4 @@
-<mod displayName="Creation ZIP Porter" unique="CreationZIP-Porter" description="Enables loading and packing of ZIP files within the game itself. Comes with the Asset Exporter mod." installerSystemVersion="1.0.1.2" hasCustomInstaller="true" isExperimental="false" dllsBuild="2.5.280">
-<componentGroup unique="AssetExport" displayName="Asset Exporter">
-    <component unique="AssetExportBaked" displayName="Baked Assets" description="Adds cheats 'assetExport' and 'adventureExport', with the configuration where the 'baked' creation assets get exported as well.">SporeAssetExport.dll?AssetExportConfig-Baked.package</component>
-    <component unique="AssetExportNoBake" displayName="Non-baked Assets" description="Adds cheats 'assetExport' and 'adventureExport', with the configuration where the exported creations are not baked.">SporeAssetExport.dll?AssetExportConfig-NoBake.package</component>
-    <component unique="AssetExportDisabled" displayName="Disabled" description="Disables the Asset Exporter mod."/>
-</componentGroup>
+<mod displayName="Creation ZIP Porter" unique="CreationZIP-Porter" description="Enables loading and packing of ZIP files within the game itself." installerSystemVersion="1.0.1.2" hasCustomInstaller="false" isExperimental="false" dllsBuild="2.5.278">
 <prerequisite>SporeCreationZIPPorter.dll</prerequisite>
 <remove game="GalacticAdventures">AssetExportConfig*</remove>
 <remove>AssetExportConfig*</remove>
