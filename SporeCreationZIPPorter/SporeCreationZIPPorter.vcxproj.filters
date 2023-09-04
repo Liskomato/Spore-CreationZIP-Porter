@@ -46,14 +46,11 @@
     <ClInclude Include="ZipLib.h">
       <Filter>SporeCreationZIPPorter\Headers</Filter>
     </ClInclude>
+    <ClInclude Include="ImportCreations.h">
+      <Filter>SporeCreationZIPPorter\Headers\Cheats</Filter>
+    </ClInclude>
     <ClInclude Include="PackageNameChecker.h">
       <Filter>SporeCreationZIPPorter\Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Import.h">
-      <Filter>SporeCreationZIPPorter\Headers\Cheats</Filter>
-    </ClInclude>
-    <ClInclude Include="CheatAssetExport.h">
-      <Filter>SporeCreationZIPPorter\Headers\Cheats</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -75,14 +72,11 @@
     <ClCompile Include="ZIPExport.cpp">
       <Filter>SporeCreationZIPPorter\Cheats</Filter>
     </ClCompile>
+    <ClCompile Include="ImportCreations.cpp">
+      <Filter>SporeCreationZIPPorter\Cheats</Filter>
+    </ClCompile>
     <ClCompile Include="PackageNameChecker.cpp">
       <Filter>SporeCreationZIPPorter</Filter>
-    </ClCompile>
-    <ClCompile Include="Import.cpp">
-      <Filter>SporeCreationZIPPorter\Cheats</Filter>
-    </ClCompile>
-    <ClCompile Include="CheatAssetExport.cpp">
-      <Filter>SporeCreationZIPPorter\Cheats</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

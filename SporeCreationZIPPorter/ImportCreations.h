@@ -2,13 +2,13 @@
 
 #include <Spore\BasicIncludes.h>
 
-class Import 
+class ImportCreations 
 	: public ArgScript::ICommand
 	, public Sporepedia::IShopperListener
 {
 public:
-	Import();
-	~Import();
+	ImportCreations();
+	~ImportCreations();
 
 	// Called when the cheat is invoked
 	void ParseLine(const ArgScript::Line& line) override;

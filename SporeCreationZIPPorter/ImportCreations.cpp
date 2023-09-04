@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "Import.h"
+#include "ImportCreations.h"
 #include "ZIPExport.h"
 #include "ZipManager.h"
 #include <iostream>
@@ -11,7 +11,7 @@
 #pragma comment(lib, "Urlmon")
 #pragma comment(lib,"Wininet.lib")
 
-Import::Import()
+ImportCreations::ImportCreations()
 {
 	eastl::string16 creations = Resource::Paths::GetDirFromID(Resource::PathID::Creations);
 	downloadFolder = u"Downloads/";
@@ -19,16 +19,16 @@ Import::Import()
 }
 
 
-Import::~Import()
+ImportCreations::~ImportCreations()
 {
 }
 
 
-void Import::ParseLine(const ArgScript::Line& line)
+void ImportCreations::ParseLine(const ArgScript::Line& line)
 {
 	// This method is called when your cheat is invoked.
 	// Put your cheat code here.
-	if (line.HasFlag("creations")) {
+	if (line.HasFlag("a") || line.HasFlag("assets")) {
 		// Check if we can connect to Spore's servers
 		bool bConnect = InternetCheckConnectionW(L"http://www.spore.com/", FLAG_ICC_FORCE_CONNECTION, 0);
 
@@ -64,7 +64,7 @@ void Import::ParseLine(const ArgScript::Line& line)
 	}
 }
 
-void Import::OnShopperAccept(const ResourceKey& selection) {
+void ImportCreations::OnShopperAccept(const ResourceKey& selection) {
 	ResourceObjectPtr resource;
 	if (selection.typeID == TypeIDs::adventure && ResourceManager.GetResource(selection, &resource)) {
 		cScenarioResourcePtr scenario = object_cast<Simulator::cScenarioResource>(resource);
@@ -103,7 +103,7 @@ void Import::OnShopperAccept(const ResourceKey& selection) {
 	}
 }
 
-void Import::DownloadCreation() {
+void ImportCreations::DownloadCreation() {
 	eastl::vector<eastl::string16> filePaths;
 
 	WCHAR file[1025] = { 0 };
@@ -173,7 +173,7 @@ void Import::DownloadCreation() {
 	}
 }
 
-void Import::ImportFromURL(const char* address) {
+void ImportCreations::ImportFromURL(const char* address) {
 	eastl::wstring url;
 	eastl::string16 path;
 	ResourceKey key;
@@ -221,7 +221,7 @@ void Import::ImportFromURL(const char* address) {
 	}
 }
 
-bool Import::GetKeyfromServerID(const char* id, ResourceKey& key) {
+bool ImportCreations::GetKeyfromServerID(const char* id, ResourceKey& key) {
 	eastl::string16 idString, webAddress;
 	idString.assign_convert(id);
 	eastl::string16 s1 = idString.substr(0, 3), s2 = idString.substr(3, 3), s3 = idString.substr(6, 3);
@@ -246,17 +246,17 @@ bool Import::GetKeyfromServerID(const char* id, ResourceKey& key) {
 	return true;
 }
 
-const char* Import::GetDescription(ArgScript::DescriptionMode mode) const
+const char* ImportCreations::GetDescription(ArgScript::DescriptionMode mode) const
 {
 	if (mode == ArgScript::DescriptionMode::Basic) {
-		return "Import creations to the game.";
+		return "ImportCreations creations to the game.";
 	}
 	else {
-		return "Import: Download creations into the game\n"
+		return "ImportCreations: Download creations into the game\n"
 			   "How to use:\n"
-			   "import -id: Download creations from Spore.com based on the server ID you inputted. If the downloaded creation is an adventure, download its assets as well.\n"
-			   "import -creations: Download assets of a selected adventure in the Sporepedia.\n"
-			   "import <url/filepath>: Download a ZIP or PNG file from inputted web address/file path. ZIP file will be extracted and its creations imported to the game as well.\n"
-			   "import: Open Windows Explorer to select a creation to add.";
+			   "importCreations -id <id>: Download creations from Spore.com based on the server ID you inputted. If the downloaded creation is an adventure, download its assets as well.\n"
+			   "importCreations -assets: Download assets of a selected adventure in the Sporepedia.\n"
+			   "importCreations <url/filepath>: Download a ZIP or PNG file from inputted web address/file path. ZIP file will be extracted and its creations imported to the game as well.\n"
+			   "importCreations: Open Windows Explorer to select a creation to add.";
 	}
 }

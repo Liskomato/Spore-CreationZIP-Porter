@@ -2,11 +2,10 @@
 #include "stdafx.h"
 #include "CheckForZIPs.h"
 #include "ZIPExport.h"
-#include "CheatAssetExport.h"
 //#include "DownloadCreation.h"
 //#include "ImportFromURL.h"
 //#include "DownloadAssets.h"
-#include "Import.h"
+#include "ImportCreations.h"
 #include "DetourClasses.h"
 #include "AlternativePackageLocations.h"
 #include "ZipManager.h"
@@ -34,11 +33,10 @@ void Initialize()
 	//CheatManager.AddCheat("ImportFromURL", new ImportFromURL());
 	//CheatManager.AddCheat("DownloadAssets", new DownloadAssets());
 	
-	CheatManager.AddCheat("import",new Import());
+	CheatManager.AddCheat("importCreations",new ImportCreations());
 
 	// Raw export cheats
-	CheatManager.AddCheat("assetExport",new CheatAssetExport());
-	CheatManager.AddCheat("adventureExport", new CheatAdventureExport());
+	// MOVED TO SporeAssetExporter
 
 	// Initialize ZipManager
 	ZipManager.Initialize();
@@ -156,7 +154,7 @@ void Dispose()
 
 void AttachDetours()
 {
-	 ManualBreakpoint();
+	
 	// Call the attach() method on any detours you want to add
 	// For example: cViewer_SetRenderType_detour::attach(GetAddress(cViewer, SetRenderType));
 	SavePNG_detour::attach(GetAddress(App::Thumbnail_cImportExport, SavePNG));
