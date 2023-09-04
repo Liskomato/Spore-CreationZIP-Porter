@@ -1,11 +1,15 @@
 # Creation ZIP Porter
 A foundational Spore ModAPI mod to allow loading Spore creations to and from ZIP files in-game. 
 
-This mod will also allow you to load ``.package`` and ``.zip`` files from Spore ModAPI Launcher Kit's `mLibs` folder, allowing you to essentially create `.sporemod` files containing ***both*** creations and the mods required by them. The mod will also allow you to download creations from both Spore.com and elsewhere in the internet straight from the cheat console, *without need for a Spore online account*. You can also download all of the adventure's required assets via this, allowing easier ability to play and share adventures in general.
+This mod will also allow you to load ``.package`` and ``.zip`` files from Spore ModAPI Launcher Kit's `mLibs` folder, allowing you to essentially create `.sporemod` files containing ***both*** creations and the mods required by them. 
+
+The mod will also allow you to download creations from both Spore.com and elsewhere in the internet straight from the cheat console, *without need for a Spore online account*. You can also download all of the adventure's required assets via this, allowing easier ability to play and share adventures in general.
 
 ## Features
 * Three new cheats
+    
     * ``importCreations`` - Download creations into the game.
+        
         * `importCreations -a` - Select an adventure from the Sporepedia, and you can download all of the adventure's assets without online access.
         * ``importCreations -id`` - Downloads a creation based on its ID found in Spore.com. If the creation is an adventure, its required assets will be downloaded as well.
         * ``importCreations <url>`` - Downloads the creation PNG file or extracts the ZIP file from the given (direct) URL address. ZIP files will be extracted automatically and its creations imported to the game.
