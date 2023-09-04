@@ -36,3 +36,4 @@ If you have a look at the repository's ``ExampleSporemods`` folder, you can down
 ## Testers
 - 0KepOnline
 - I_am_THEdragon
+- Your Friend the Dragon
