@@ -45,7 +45,7 @@ If you have a look at the repository's ``ExampleSporemods`` folder, you can down
 ## Credits
 - Liskomato: Main developer
 - Auntie Owl: Concept and developer of Asset Exporter
-- Kade: Concept
+- Kade: Concept and idea of ZIP importing from `mLibs`
 - Emd4600: Developer of Spore ModAPI, helped with coding issues
 - Zarklord: Creator of AlternatePackageLocations and UPE 
 - Miikka64: Original creator of the adventure "Master of Time - Interlude", used in one of the example `.sporemod` packages.
