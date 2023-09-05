@@ -39,8 +39,11 @@ namespace PackageNameChecker {
 		// Group IDs
 		{0x00000000,u"animations~"},
 		{0x021407EE,u"audio~"},
-		{0x65928944,u"ci_thumbs~"},
+		{0x65928944,u"PlannerThumbnails"},
 		{0xD87454E6,u"PaletteItems"},
+		{0x02E9C426,u"definitions~"},
+		{0x9430ADD7,u"CivicObjects"},
+		{0x441BBD49,u"ep1_adventuremodels~"},
 		{0x408A0000,u"adventureImages_1~"},
 		{0x408A0001,u"adventureImages_2~"},
 		{0x408A0002,u"adventureImages_3~"},

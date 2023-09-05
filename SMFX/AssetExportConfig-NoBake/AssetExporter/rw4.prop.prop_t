@@ -1,0 +1,9 @@
+keys lookUpAssets
+	animations~!0x0.rw4
+	animations~!0x0.prop
+	ep1_adventuremodels~!0x0.rw4
+	PaletteItems!0x0.prop
+	definitions~!0x0.prop
+	CivicObjects!0x0.prop
+	PlannerThumbnails!0x0.png
+end

@@ -19,6 +19,6 @@ eastl::string16 PackageNameChecker::IdToString(uint32_t id) {
 		}
 	}
 	eastl::string16 idString = u"";
-	idString.append_sprintf(u"0x%8X",id);
+	idString.append_sprintf(u"0x%X",id);
 	return idString;
 }

@@ -1,4 +1,10 @@
 keys lookUpAssets
+	0x40647100!0x0.gmdl
+	0x40647100!0x0.prop
+	0x40647100!0x0.rw4
+	0x40642900!0x0.raster
+	0x40642901!0x0.raster
+	0x40642902!0x0.raster
 	vehiclesModelsVCL~!0x0.bem
 	vehiclesModelsVCL~!0x0.vcl
 	vehiclesModelsVCL~!0x0.gmdl
@@ -6,5 +12,8 @@ keys lookUpAssets
 	vehiclesModelsVCL~!0x0.pollen_metadata
 	vehiclesModelsVCL~!0x0.prop
 	vehiclesModelsVCL~!0x0.summary
+	vehicleModels_LOD1~!0x0.gmdl
 	vehicleModels_LOD1~!0x0.png
+	vehicleModels_LOD2~!0x0.gmdl
+	vehicleModels_LOD3~!0x0.gmdl
 end

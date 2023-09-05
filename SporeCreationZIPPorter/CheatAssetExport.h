@@ -9,7 +9,8 @@ const uint32_t kSupportedAssetIDs[] = {
 	TypeIDs::bld,	// Buildings
 	TypeIDs::vcl,	// Vehicles
 	TypeIDs::ufo,	// UFOs
-//	0x02B9F662,		// Music
+	0x02B9F662,		// Music
+	TypeIDs::rw4	// 3D objects (fixed objects etc.)
 };
 
 const uint32_t kBakedAssetIDs[] = {
