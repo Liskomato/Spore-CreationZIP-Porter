@@ -109,9 +109,12 @@ void CheatAssetExport::ExportResource(ResourceKey assetKey)
 	eastl::string16 archivePath = u"";
 	App::Thumbnail_cImportExport::Get()->FolderPathFromLocale(0x06244EB0, archivePath);
 	eastl::wstring directoryPath = L"";
-	directoryPath.sprintf(L"%ls0x%X/", archivePath.c_str(), assetKey.groupID);
+
+	eastl::string16 group = PackageNameChecker::IdToString(assetKey.groupID);
+
+	directoryPath.sprintf(L"%ls%ls/", archivePath.c_str(), group.c_str());
 	CreateDirectory(directoryPath.data(), NULL);
-	path.sprintf(u"%ls0x%X/0x%X.0x%X", archivePath.c_str(), assetKey.groupID, assetKey.instanceID, assetKey.typeID);
+	path.sprintf(u"%ls%ls/0x%X.%ls", archivePath.c_str(), group.c_str(), assetKey.instanceID, PackageNameChecker::IdToString(assetKey.typeID).c_str());
 	FileStreamPtr outputStream = new IO::FileStream(path.c_str());
 	outputStream->Open(IO::AccessFlags::ReadWrite, IO::CD::CreateAlways);
 	outputStream->Write(buffer, size);
@@ -242,9 +245,12 @@ void CheatAdventureExport::ParseLine(const ArgScript::Line& line)
 	eastl::string16 archivePath = u"";
 	App::Thumbnail_cImportExport::Get()->FolderPathFromLocale(0x06244EB0, archivePath);
 	eastl::wstring directoryPath = L"";
-	directoryPath.sprintf(L"%ls0x%X/", archivePath.c_str(), adventureAsset.groupID);
+
+	eastl::string16 group = PackageNameChecker::IdToString(adventureAsset.groupID);
+
+	directoryPath.sprintf(L"%ls%ls/", archivePath.c_str(), group.c_str());
 	CreateDirectory(directoryPath.data(), NULL);
-	path.sprintf(u"%ls0x%X/0x%X.0x%X", archivePath.c_str(), adventureAsset.groupID, adventureAsset.instanceID, adventureAsset.typeID);
+	path.sprintf(u"%ls%ls/0x%X.0x%X", archivePath.c_str(), group.c_str(), adventureAsset.instanceID, adventureAsset.typeID);
 	FileStreamPtr outputStream = new IO::FileStream(path.c_str());
 	outputStream->Open(IO::AccessFlags::ReadWrite, IO::CD::CreateAlways);
 	scenarioResource->Write(outputStream.get());

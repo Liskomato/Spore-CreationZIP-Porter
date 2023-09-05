@@ -1,0 +1,6 @@
+keys lookUpAssets
+	audio~!0x0.snr
+	audio~!0x0.soundProp
+	ci_thumbs~!0x0.png
+	PaletteItems!0x0.prop
+end

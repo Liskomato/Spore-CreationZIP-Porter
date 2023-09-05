@@ -3,12 +3,13 @@
 #include <Spore\BasicIncludes.h>
 
 const uint32_t kSupportedAssetIDs[] = {
-	TypeIDs::adventure,		// Adventures //advns
+	TypeIDs::adventure,		// Adventures 
 	TypeIDs::cll,	// Cells
 	TypeIDs::crt,	// Creatures
 	TypeIDs::bld,	// Buildings
 	TypeIDs::vcl,	// Vehicles
 	TypeIDs::ufo,	// UFOs
+//	0x02B9F662,		// Music
 };
 
 const uint32_t kBakedAssetIDs[] = {

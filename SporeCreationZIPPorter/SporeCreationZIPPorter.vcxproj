@@ -196,6 +196,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AlternativePackageLocations.h" />
+    <ClInclude Include="CheatAssetExport.h" />
     <ClInclude Include="CheckForZIPs.h">
       <SubType>
       </SubType>
@@ -220,6 +221,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AlternativePackageLocations.cpp" />
+    <ClCompile Include="CheatAssetExport.cpp" />
     <ClCompile Include="CheckForZIPs.cpp">
       <SubType>
       </SubType>
