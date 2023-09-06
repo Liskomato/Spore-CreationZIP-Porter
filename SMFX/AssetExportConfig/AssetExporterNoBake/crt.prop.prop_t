@@ -1,11 +1,9 @@
 keys lookUpAssets
-	creature+baby_editorModel~!0x0.prop
-	0x40626201!0x0.png
+	creatureImages~!0x0.png
 	creature_editorModel~!0x0.bem
 	creature_editorModel~!0x0.creaturedata
 	creature_editorModel~!0x0.png
 	creature_editorModel~!0x0.pollen_metadata
-	creature_editorModel~!0x0.prop
 	creature_editorModel~!0x0.summary
 	creature_editorModel~!0x0.crt
 end

@@ -22,21 +22,16 @@ keys lookUpAssets
 	adventureImages_5~!0x0.png
 	buildingModelsBLD~!0x0.bem
 	buildingModelsBLD~!0x0.bld
-	buildingModelsBLD~!0x0.gmdl
 	buildingModelsBLD~!0x0.png
 	buildingModelsBLD~!0x0.pollen_metadata
-	buildingModelsBLD~!0x0.prop
 	buildingModelsBLD~!0x0.summary
 	buildingModels_LOD1~!0x0.png
 	cellModelsCLL~!0x0.summary
 	cellModelsCLL~!0x0.cll
-	creature+baby_editorModel~!0x0.prop
-	creature_editorModelHi~!0x0.gmdl
 	creature_editorModel~!0x0.bem
 	creature_editorModel~!0x0.creaturedata
 	creature_editorModel~!0x0.png
 	creature_editorModel~!0x0.pollen_metadata
-	creature_editorModel~!0x0.prop
 	creature_editorModel~!0x0.summary
 	creature_editorModel~!0x0.crt
 	floraModelsFLR~!0x0.summary
@@ -44,18 +39,14 @@ keys lookUpAssets
 	summary_pills~!0x0.summary_pill
 	ufoModelsUFO~!0x0.ufo
 	ufoModelsUFO~!0x0.bem
-	ufoModelsUFO~!0x0.gmdl
 	ufoModelsUFO~!0x0.png
 	ufoModelsUFO~!0x0.pollen_metadata
-	ufoModelsUFO~!0x0.prop
 	ufoModelsUFO~!0x0.summary
 	ufoModels_LOD1~!0x0.png
 	vehicleModels_LOD1~!0x0.png
 	vehiclesModelsVCL~!0x0.bem
 	vehiclesModelsVCL~!0x0.vcl
-	vehiclesModelsVCL~!0x0.gmdl
 	vehiclesModelsVCL~!0x0.png
 	vehiclesModelsVCL~!0x0.pollen_metadata
-	vehiclesModelsVCL~!0x0.prop
 	vehiclesModelsVCL~!0x0.summary
 end
