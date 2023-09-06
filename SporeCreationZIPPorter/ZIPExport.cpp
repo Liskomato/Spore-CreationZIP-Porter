@@ -320,7 +320,7 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 		App::ConsolePrintF("Failed to remove temporary folder. It will persist after this process has ended.");
 	}
 
-	App::ConsolePrintF("Your creations have been added to ZIP archive %ls. It can be found in %ls ",zipName.c_str(),ZipManager.GetZIPExportPath().c_str());
+	App::ConsolePrintF("Your creations have been added to ZIP archive %ls. It can be found from %ls ",zipName.c_str(),ZipManager.GetZIPExportPath().c_str());
 
 }
 void ZIPExport::OnShopperAccept(const ResourceKey& selection) {

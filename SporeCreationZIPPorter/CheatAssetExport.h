@@ -36,9 +36,9 @@ public:
 	bool IfAssetNeedsBake(ResourceKey assetKey);
 	bool IsKnownUnsupportedAsset(ResourceKey assetKey);
 	bool AssetIsBaked(ResourceKey assetKey);
-	bool ExportAsset(ResourceKey assetKey);
+	bool ExportAsset(ResourceKey assetKey, bool noBake = false);
 	void ExportResource(ResourceKey assetKey);
-	void ExportAttempt(ResourceKey assetKey);
+	void ExportAttempt(ResourceKey assetKey, bool noBake = false);
 	// Called when the cheat is invoked
 	void ParseLine(const ArgScript::Line& line) override;
 	

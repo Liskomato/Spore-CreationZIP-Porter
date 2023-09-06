@@ -71,12 +71,17 @@ bool CheatAssetExport::AssetIsBaked(ResourceKey assetKey)
 	return true;
 }
 
-bool CheatAssetExport::ExportAsset(ResourceKey assetKey)
+bool CheatAssetExport::ExportAsset(ResourceKey assetKey, bool noBake)
 {
 	ResourceKey* keys{};
 	size_t size{};
 	PropertyListPtr propList;
-	if (!PropManager.GetPropertyList(assetKey.typeID, 0xda77fdac, propList)) {
+	if (noBake) {
+		if (!PropManager.GetPropertyList(assetKey.typeID, 0x4d881742, propList)) {
+			PropManager.GetPropertyList(0xcecf5fdf, 0x4d881742, propList);
+		}
+	}
+	else if (!PropManager.GetPropertyList(assetKey.typeID, 0xda77fdac, propList)) {
 		PropManager.GetPropertyList(0xcecf5fdf, 0xda77fdac, propList);
 	}
 	App::Property::GetArrayKey(propList.get(), 0x405F6744, size, keys);
@@ -122,17 +127,17 @@ void CheatAssetExport::ExportResource(ResourceKey assetKey)
 	delete[] buffer;
 }
 
-void CheatAssetExport::ExportAttempt(ResourceKey assetKey)
+void CheatAssetExport::ExportAttempt(ResourceKey assetKey, bool noBake)
 {
 	// Localize these messages? Cheats aren't localized by the Game...
 	if (IsSupportedAsset(assetKey)) {
 		App::ConsolePrintF("Attempting export of 0x%X...", assetKey.instanceID);
-		if (!IfAssetNeedsBake(assetKey)) {
+		if (!IfAssetNeedsBake(assetKey) && !noBake) {
 			App::ConsolePrintF("Error: Creation isn't baked. Preview it to bake asset.");
 			return;
 		}
 
-		if (ExportAsset(assetKey)) {
+		if (ExportAsset(assetKey, noBake)) {
 			App::ConsolePrintF("Success.");
 		};
 		return;
@@ -186,6 +191,11 @@ void CheatAdventureExport::ParseLine(const ArgScript::Line& line)
 		return;
 	}
 
+	bool noBake = false;
+	if (line.HasFlag("noBake")) {
+		noBake = true;
+	}
+
 	cScenarioResourcePtr scenarioResource = ScenarioMode.GetResource();
 
 	ResourceKey adventureAsset = scenarioResource->GetResourceKey();
@@ -206,7 +216,7 @@ void CheatAdventureExport::ParseLine(const ArgScript::Line& line)
 		scenarioResource->mAvatarAsset.mKey = replacementKey;
 		scenarioResource->mAvatarAsset.mServerId = -1;
 	}
-	ExportAttempt(scenarioResource->mAvatarAsset.mKey); // Export avatar
+	ExportAttempt(scenarioResource->mAvatarAsset.mKey,noBake); // Export avatar
 
 	for each (auto posseMember in scenarioResource->mInitialPosseMembers) // Export team members
 	{
@@ -214,7 +224,7 @@ void CheatAdventureExport::ParseLine(const ArgScript::Line& line)
 			posseMember.mAsset.mKey = replacementKey;
 			posseMember.mAsset.mServerId = -1;
 		}
-		ExportAttempt(posseMember.mAsset.mKey);
+		ExportAttempt(posseMember.mAsset.mKey,noBake);
 	}
 
 	for each (auto paletteAsset in scenarioResource->mClasses) // Export other assets in palette
@@ -223,23 +233,23 @@ void CheatAdventureExport::ParseLine(const ArgScript::Line& line)
 			paletteAsset.second.mAsset.mKey = replacementKey;
 			paletteAsset.second.mAsset.mServerId = -1;
 		}
-		ExportAttempt(paletteAsset.second.mAsset.mKey);
+		ExportAttempt(paletteAsset.second.mAsset.mKey,noBake);
 
 		if (paletteAsset.second.mGameplayObjectGfxOverrideAsset.mServerId != -1 && ZIPExport::GetKeyfromServerID(paletteAsset.second.mGameplayObjectGfxOverrideAsset.mServerId,replacementKey)) {
 			paletteAsset.second.mGameplayObjectGfxOverrideAsset.mKey = replacementKey;
 			paletteAsset.second.mGameplayObjectGfxOverrideAsset.mServerId = -1;
 		}
-		ExportAttempt(paletteAsset.second.mGameplayObjectGfxOverrideAsset.mKey);
+		ExportAttempt(paletteAsset.second.mGameplayObjectGfxOverrideAsset.mKey,noBake);
 
 		if (paletteAsset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId != -1 && ZIPExport::GetKeyfromServerID(paletteAsset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId,replacementKey)) {
 			paletteAsset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey = replacementKey;
 			paletteAsset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId = -1;
 		}
-		ExportAttempt(paletteAsset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey);
+		ExportAttempt(paletteAsset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey,noBake);
 	}
 	ScenarioMode.GetData()->CommitHistoryEntry();
 
-	ExportAttempt(adventureAsset);
+	ExportAttempt(adventureAsset,noBake);
 
 	eastl::string16 path = u"";
 	eastl::string16 archivePath = u"";
@@ -265,6 +275,7 @@ const char* CheatAdventureExport::GetDescription(ArgScript::DescriptionMode mode
 		return "Exports creations used in adventure.";
 	}
 	else {
-		return "Exports creations used in adventure. You need to be in an adventure to use this command.";
+		return "Exports creations used in adventure. You need to be in an adventure to use this command.\n"
+			   "-noBake: Exports the adventure without baked asset files.";
 	}
 }
