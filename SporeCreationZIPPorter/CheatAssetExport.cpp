@@ -132,7 +132,7 @@ void CheatAssetExport::ExportAttempt(ResourceKey assetKey, bool noBake)
 	// Localize these messages? Cheats aren't localized by the Game...
 	if (IsSupportedAsset(assetKey)) {
 		App::ConsolePrintF("Attempting export of 0x%X...", assetKey.instanceID);
-		if (!IfAssetNeedsBake(assetKey) && !noBake) {
+		if (!IfAssetNeedsBake(assetKey)) {
 			App::ConsolePrintF("Error: Creation isn't baked. Preview it to bake asset.");
 			return;
 		}
