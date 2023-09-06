@@ -1,6 +1,8 @@
 keys lookUpAssets
 	animations~!0x0.rw4
 	animations~!0x0.prop
+	audio~!0x0.snr
+	audio~!0x0.soundProp
 	ep1_adventuremodels~!0x0.rw4
 	PaletteItems!0x0.prop
 	definitions~!0x0.prop
