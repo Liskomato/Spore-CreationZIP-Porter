@@ -18,5 +18,6 @@ keys lookUpAssets
 	buildingModelsBLD~!0x0.prop
 	buildingModelsBLD~!0x0.summary
 	buildingModels_LOD1~!0x0.gmdl
+	buildingModels_LOD1~!0x0.png
 	buildingModels_LOD2~!0x0.gmdl
 end

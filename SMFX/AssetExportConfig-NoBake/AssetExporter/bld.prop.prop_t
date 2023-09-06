@@ -6,4 +6,5 @@ keys lookUpAssets
 	buildingModelsBLD~!0x0.pollen_metadata
 	buildingModelsBLD~!0x0.prop
 	buildingModelsBLD~!0x0.summary
+	buildingModels_LOD1~!0x0.png
 end
