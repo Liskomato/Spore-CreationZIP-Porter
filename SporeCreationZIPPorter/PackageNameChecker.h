@@ -10,7 +10,9 @@ namespace PackageNameChecker {
 		 u"CSA_Graphics",
 		 u"Spore_EP1_Content_01",
 		 u"Spore_EP1_Content_02",
-		 u"Spore_EP1_Data"
+		 u"Spore_EP1_Data",
+		 u"PSI-101_Worldcrafter_v1-0-0_core",
+		 u"Adventure_ExtraSize-InfiniteComplexity-100points"
 	};
 	static eastl::hash_map<uint32_t, eastl::string16> idMap {
 		// Type IDs
