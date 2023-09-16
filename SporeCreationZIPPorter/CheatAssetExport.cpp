@@ -211,13 +211,13 @@ void CheatAdventureExport::ParseLine(const ArgScript::Line& line)
 
 	// Instance IDs in shared adventure assets are zeroed out so we want to restore them in the package adventure
 	ResourceKey replacementKey;
-
+	
 	if (scenarioResource->mAvatarAsset.mServerId != -1 && ZIPExport::GetKeyfromServerID(scenarioResource->mAvatarAsset.mServerId,replacementKey)) {
 		scenarioResource->mAvatarAsset.mKey = replacementKey;
 		scenarioResource->mAvatarAsset.mServerId = -1;
 	}
 	ExportAttempt(scenarioResource->mAvatarAsset.mKey,noBake); // Export avatar
-
+	
 	for each (auto posseMember in scenarioResource->mInitialPosseMembers) // Export team members
 	{
 		if (posseMember.mAsset.mServerId != -1 && ZIPExport::GetKeyfromServerID(posseMember.mAsset.mServerId,replacementKey)) {
@@ -226,7 +226,7 @@ void CheatAdventureExport::ParseLine(const ArgScript::Line& line)
 		}
 		ExportAttempt(posseMember.mAsset.mKey,noBake);
 	}
-
+	
 	for each (auto paletteAsset in scenarioResource->mClasses) // Export other assets in palette
 	{
 		if (paletteAsset.second.mAsset.mServerId != -1 && ZIPExport::GetKeyfromServerID(paletteAsset.second.mAsset.mServerId,replacementKey)) {
@@ -247,6 +247,14 @@ void CheatAdventureExport::ParseLine(const ArgScript::Line& line)
 		}
 		ExportAttempt(paletteAsset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey,noBake);
 	}
+
+	for each (const auto& act in scenarioResource->mActs)  // Export act music
+	{
+		ResourceKey musicKey = {act.mActMusicID,TypeIDs::prop,GroupIDs::PaletteItems};
+		ExportAttempt(musicKey);
+	}
+
+
 	ScenarioMode.GetData()->CommitHistoryEntry();
 
 	ExportAttempt(adventureAsset,noBake);

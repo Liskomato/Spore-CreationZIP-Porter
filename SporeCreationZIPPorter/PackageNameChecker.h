@@ -6,13 +6,15 @@ namespace PackageNameChecker {
 	eastl::string16 IdToString(uint32_t id);
 	static eastl::vector<eastl::string16> vanillaDatabases 
 	{
-		 u"Spore_Content",
-		 u"CSA_Graphics",
-		 u"Spore_EP1_Content_01",
-		 u"Spore_EP1_Content_02",
-		 u"Spore_EP1_Data",
-		 u"PSI-101_Worldcrafter_v1-0-0_core",
-		 u"Adventure_ExtraSize-InfiniteComplexity-100points"
+		 u"Spore_Content", // Core Spore creations
+		 u"CSA_Graphics",  // Creature Creator
+		 u"Spore_EP1_Content_01",	// GA disc creatures and vehicles
+		 u"Spore_EP1_Content_02",	// GA disc buildings
+		 u"Spore_EP1_Data",			// GA props
+		 u"PSI-101_Worldcrafter_v1-0-0_core",	// Maxis props modified by this mod.
+		 u"Adventure_ExtraSize-InfiniteComplexity-100points",	// Same as Worldcrafter
+		 u"psi's-adventure-tweaks",	// Same as Worldcrafter
+		 u"ShareSafeMusic", // Uses vanilla audio files, we don't need to export anything used here.
 	};
 	static eastl::hash_map<uint32_t, eastl::string16> idMap {
 		// Type IDs
