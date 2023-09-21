@@ -8,6 +8,9 @@ namespace PackageNameChecker {
 	{
 		 u"Spore_Content", // Core Spore creations
 		 u"CSA_Graphics",  // Creature Creator
+		 u"Spore_Audio",   // Music
+		 u"Spore_Game",	   // Props
+		 u"Spore_Graphics",			// 3D models
 		 u"Spore_EP1_Content_01",	// GA disc creatures and vehicles
 		 u"Spore_EP1_Content_02",	// GA disc buildings
 		 u"Spore_EP1_Data",			// GA props
@@ -37,6 +40,9 @@ namespace PackageNameChecker {
 		{TypeIDs::ufo,u"ufo"},
 		{TypeIDs::vcl,u"vcl"},
 		{0x01A527DB,u"snr"},
+		{0x01EEF63A,u"sns"},
+		{0x617715D9,u"pd"},
+		{0x042C9CBB,u"snd"},
 		{0x02B9F662,u"soundProp"},
 		{0x02D5C9AF,u"summary"},
 		{0x02D5C9B0,u"summary_pill"},
