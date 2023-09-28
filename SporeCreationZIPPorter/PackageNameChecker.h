@@ -48,6 +48,7 @@ namespace PackageNameChecker {
 		{0x02B9F662,u"soundProp"},
 		{0x02D5C9AF,u"summary"},
 		{0x02D5C9B0,u"summary_pill"},
+		{0x02FAC0B6,u"locale"},
 		// Group IDs
 		{0x00000000,u"animations~"},
 		{0x021407EE,u"audio~"},
@@ -88,5 +89,6 @@ namespace PackageNameChecker {
 		{0x40450201,u"gameEffects_2~"},
 		{0x40450202,u"gameEffects_3~"},
 		{0xEA5118B1,u"gameEffects_pfx~"},
+		{0x02FABF01,u"locale~"},
 	};
 };

@@ -19,4 +19,5 @@ keys lookUpAssets
 	adventureImages_5~!0x0.png
 	summary_pills~!0x0.0x0727E3E7
 	summary_pills~!0x0.summary_pill
+	locale~!0x0.locale
 end

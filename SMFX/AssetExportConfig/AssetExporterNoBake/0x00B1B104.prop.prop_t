@@ -25,4 +25,5 @@ keys lookUpAssets
 	definitions~!0x0.prop
 	CivicObjects!0x0.prop
 	PlannerThumbnails!0x0.png
+	locale~!0x0.locale
 end
