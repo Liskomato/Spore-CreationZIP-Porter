@@ -39,6 +39,8 @@ namespace PackageNameChecker {
 		{TypeIDs::tga,u"tga"},
 		{TypeIDs::ufo,u"ufo"},
 		{TypeIDs::vcl,u"vcl"},
+		{0x7DF64626,u"32bitimage"},
+		{0x497767B9,u"pfx"},
 		{0x01A527DB,u"snr"},
 		{0x01EEF63A,u"sns"},
 		{0x617715D9,u"pd"},
@@ -78,6 +80,13 @@ namespace PackageNameChecker {
 		{0x40646200,u"vehiclesModelsVCL~"},
 		{0x40646201,u"vehicleModels_LOD1~"},
 		{0x40646202,u"vehicleModels_LOD2~"},
-		{0x40646203,u"vehicleModels_LOD3~"}
+		{0x40646203,u"vehicleModels_LOD3~"},
+		{0x408A4300,u"ep1_effects_1~"},
+		{0x408A4301,u"ep1_effects_2~"},
+		{0x408A4302,u"ep1_effects_3~"},
+		{0x40450200,u"gameEffects_1~"},
+		{0x40450201,u"gameEffects_2~"},
+		{0x40450202,u"gameEffects_3~"},
+		{0xEA5118B1,u"gameEffects_pfx~"},
 	};
 };
