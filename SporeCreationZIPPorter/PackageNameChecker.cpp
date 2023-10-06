@@ -11,13 +11,11 @@ bool PackageNameChecker::IsDatabaseVanilla(Resource::Database* database) {
 		App::Property().GetArrayString16(resource.get(), 0xe1547e20,size,databases)) {
 		for (int i = 0; i < size; i++) {
 			if (databaseLocation.find(databases[i]) != eastl::string16::npos) {
-				delete[] databases;
 				return true;
 			}
 		}
 
 	}
-	delete[] databases;
 	for each (const auto & packageName in vanillaDatabases) {
 		if (databaseLocation.find(packageName) != eastl::string16::npos) {
 			return true;
