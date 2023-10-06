@@ -28,6 +28,8 @@ The mod will also allow you to download creations from both Spore.com and elsewh
 **There are currently two ways to make adventure modpacks.**
 
 #### Option 1 - .sporemod file containing ZIP archives
+**This option will require your players to install Creation ZIP Porter beforehand!**
+
 You first create a ZIP folder with all of your creations that you want to be added (for adventures keep in mind you have to include ALL of its required creations as well, and sort the adventure as last in the folder alphabetically), and create a .sporemod file containing the ZIP archive and all of the mods you want to add by renaming a ZIP file's extension from ``.zip`` to ``.sporemod``. 
 
 You will also want to create a ModInfo.xml file containing the information that the ModAPI installer can use to know how to place everything. More on that here: http://davoonline.com/sporemodder/rob55rod/ModAPI/Public/xmlModIdentity_v1_0_1_1.html
@@ -35,7 +37,9 @@ You will also want to create a ModInfo.xml file containing the information that 
 Once you've created your .sporemod archive containing everything you want and need, try installing it with the ModAPI Easy Installer to see if everything goes good. Then try launching the game to see if everything has loaded as it should've. 
 
 #### Option 2 - .package file
-First, load the adventure you want to export in the adventure editor. Then when it has loaded, press ``CTRL+SHIFT´C`` and type ``adventureExport`` (``-noBake`` flag optional) into the cheat console. Press ``ENTER`` and the adventure's files should be exported to ``C:/Users/(user)/Documents/My Spore Creations/Archive``. The directory has the format of a SporeModder FX project already, but I would suggest you move the files away from the initial folder to their own SporeModder FX project folder elsewhere in the filesystem.
+**This option will work for players WITHOUT Creation ZIP Porter installed!**
+
+First, load the adventure you want to export in the adventure editor. Then when it has loaded, press ``CTRL+SHIFT+C`` and type ``adventureExport`` (``-noBake`` flag optional) into the cheat console. Press ``ENTER`` and the adventure's files should be exported to ``C:/Users/(user)/Documents/My Spore Creations/Archive``. The directory has the format of a SporeModder FX project already, but I would suggest you move the files away from the initial folder to their own SporeModder FX project folder elsewhere in the filesystem.
 
 Once you have made your own SporeModder FX project for the exported files, you can pack them into a ``.package`` file which you can then share with other players in order to share creations. This method will also allow you to pack modded assets and localizations within the same project as well, reducing the required amount of files being installed to play modded adventures.
 
