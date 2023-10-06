@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "ZIPExport.h"
+#include "ShopperMultiRequest.h"
 #include "DetourClasses.h"
 #include "PackageNameChecker.h"
 #include <Spore\Resource\PFRecordRead.h>
@@ -24,9 +25,9 @@ void ZIPExport::ParseLine(const ArgScript::Line& line)
 {
 	// This method is called when your cheat is invoked.
 	// Put your cheat code here.
-	Sporepedia::ShopperRequest request(this);
+	Sporepedia::ShopperMultiRequest request(this);
 	request.maxSelections = -1;
-	Sporepedia::ShopperRequest::Show(request);
+	Sporepedia::ShopperMultiRequest::Show(request);
 }
 
 const char* ZIPExport::GetDescription(ArgScript::DescriptionMode mode) const
@@ -40,7 +41,14 @@ const char* ZIPExport::GetDescription(ArgScript::DescriptionMode mode) const
 }
 
 void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
-	
+	if (selection.size() != 0) {
+		std::thread asyncThread(&ZIPExport::ZIPExportAsync,this,selection);
+		asyncThread.detach();
+	}
+}
+
+void ZIPExport::ZIPExportAsync(const eastl::vector<ResourceKey>& selection) {
+
 	eastl::string16 tmpPath = u"tmp/";
 	tmpPath = ZipManager.GetZIPExportPath() + tmpPath;
 
@@ -48,26 +56,26 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 		std::filesystem::create_directory(tmpPath.c_str()); // create folder
 	}
 
-	for (const ResourceKey& key : selection) 
+	for each (const ResourceKey & key in selection)
 	{
 		ResourceObjectPtr resource;
-		ResourceKey png = {key.instanceID, TypeIDs::png, key.groupID};
+		ResourceKey png = { key.instanceID, TypeIDs::png, key.groupID };
 		auto package = ResourceManager.FindRecord(png);
-		
+
 		if (package != nullptr && ResourceManager.GetResource(key, &resource)) {
-			
-			if (key.typeID == TypeIDs::adventure) 
+
+			if (key.typeID == TypeIDs::adventure)
 			{
 				cScenarioResourcePtr scenario = object_cast<Simulator::cScenarioResource>(resource);
-				
-				if (!ExportAsset(png,tmpPath,package)) {
-					App::ConsolePrintF("Failed to export %#x.png",png.instanceID);
+
+				if (!ExportAsset(png, tmpPath, package)) {
+					App::ConsolePrintF("Failed to export %#x.png", png.instanceID);
 					continue;
 				}
 				else {
-					SporeDebugPrint("Successfully exported %#x.png to %ls",png.instanceID,tmpPath.c_str());
+					SporeDebugPrint("Successfully exported %#x.png to %ls", png.instanceID, tmpPath.c_str());
 				}
-				
+
 				if (scenario == nullptr) {
 					App::ConsolePrintF("Failed to fetch scenario resource. No dependency creations were fetched.");
 					continue;
@@ -77,7 +85,7 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 				eastl::vector<ResourceKey> cast;
 
 				// Pushing back avatar and crew members.
-				if (scenario->mAvatarAsset.mServerId != -1 && this->DownloadfromServerID(scenario->mAvatarAsset.mServerId,tmpPath)) {
+				if (scenario->mAvatarAsset.mServerId != -1 && this->DownloadfromServerID(scenario->mAvatarAsset.mServerId, tmpPath)) {
 					//ResourceKey serverKey;
 					//if (this->GetKeyfromServerID(scenario->mAvatarAsset.mServerId,tmpPath,serverKey)) {
 					//	cast.push_back(serverKey);
@@ -90,7 +98,7 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 					cast.push_back(scenario->mAvatarAsset.mKey);
 					SporeDebugPrint("Resource key: %#x!%#x.%#x", scenario->mAvatarAsset.mKey.groupID, scenario->mAvatarAsset.mKey.instanceID, scenario->mAvatarAsset.mKey.typeID);
 				}
-				
+
 				if (scenario->mInitialPosseMembers.size() != 0) {
 					for (const auto& posseMember : scenario->mInitialPosseMembers) {
 						if (posseMember.mAsset.mServerId != -1 && this->DownloadfromServerID(posseMember.mAsset.mServerId, tmpPath)) {
@@ -114,7 +122,7 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 					int i = 1;
 					for (const auto& asset : scenario->mClasses) {
 
-						if (asset.second.mAsset.mServerId != -1 && this->DownloadfromServerID(asset.second.mAsset.mServerId,tmpPath)) {
+						if (asset.second.mAsset.mServerId != -1 && this->DownloadfromServerID(asset.second.mAsset.mServerId, tmpPath)) {
 							//ResourceKey serverKey;
 							//if (this->GetKeyfromServerID(asset.second.mAsset.mServerId, tmpPath, serverKey))
 							//	cast.push_back(serverKey);
@@ -128,7 +136,7 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 							SporeDebugPrint("Resource key: %#x!%#x.%#x", asset.second.mAsset.mKey.groupID, asset.second.mAsset.mKey.instanceID, asset.second.mAsset.mKey.typeID);
 
 						}
-						
+
 						if (asset.second.mGameplayObjectGfxOverrideAsset.mServerId != -1 && this->DownloadfromServerID(asset.second.mGameplayObjectGfxOverrideAsset.mServerId, tmpPath)) {
 							//ResourceKey serverKey;
 							//if (this->GetKeyfromServerID(asset.second.mGameplayObjectGfxOverrideAsset.mServerId, tmpPath, serverKey))
@@ -142,8 +150,8 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 							cast.push_back(asset.second.mGameplayObjectGfxOverrideAsset.mKey);
 							SporeDebugPrint("Resource key: %#x!%#x.%#x", asset.second.mGameplayObjectGfxOverrideAsset.mKey.groupID, asset.second.mGameplayObjectGfxOverrideAsset.mKey.instanceID, asset.second.mGameplayObjectGfxOverrideAsset.mKey.typeID);
 						}
-						
-						if (asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId != -1 && this->DownloadfromServerID(asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId,tmpPath)) {
+
+						if (asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId != -1 && this->DownloadfromServerID(asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId, tmpPath)) {
 							//ResourceKey serverKey;
 							//if (this->GetKeyfromServerID(asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId, tmpPath, serverKey))
 							//	cast.push_back(serverKey);
@@ -156,7 +164,7 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 							cast.push_back(asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey);
 							SporeDebugPrint("Resource key: %#x!%#x.%#x", asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey.groupID, asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey.instanceID, asset.second.mGameplayObjectGfxOverrideAsset_Secondary.mKey.typeID);
 						}
-						
+
 						i++;
 					}
 				}
@@ -166,12 +174,12 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 						key.typeID == TypeIDs::cll ||
 						key.typeID == TypeIDs::crt ||
 						key.typeID == TypeIDs::vcl ||
-						key.typeID == TypeIDs::ufo ) {
+						key.typeID == TypeIDs::ufo) {
 						png = { key.instanceID, TypeIDs::png, key.groupID };
-						SporeDebugPrint("Stored key: %#x!%#x.%#x",key.groupID,key.instanceID,key.typeID);
-						
+						SporeDebugPrint("Stored key: %#x!%#x.%#x", key.groupID, key.instanceID, key.typeID);
+
 						auto loc = ResourceManager.FindDatabase(png);
-						if (loc == nullptr || !ExportAsset(png,tmpPath,loc)) {
+						if (loc == nullptr || !ExportAsset(png, tmpPath, loc)) {
 							App::ConsolePrintF("Failed to export %#x.png", png.instanceID);
 						}
 						else {
@@ -186,10 +194,10 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 
 			}
 			else if (key.typeID == TypeIDs::bld ||
-					 key.typeID == TypeIDs::cll ||
-					 key.typeID == TypeIDs::crt ||
-					 key.typeID == TypeIDs::vcl ||
-					 key.typeID == TypeIDs::ufo )
+				key.typeID == TypeIDs::cll ||
+				key.typeID == TypeIDs::crt ||
+				key.typeID == TypeIDs::vcl ||
+				key.typeID == TypeIDs::ufo)
 			{
 				if (!ExportAsset(png, tmpPath, package)) {
 					App::ConsolePrintF("Failed to export %#x.png", png.instanceID);
@@ -200,19 +208,19 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 			}
 		}
 		else {
-			App::ConsolePrintF("Failed to get resource for %#x",key.instanceID);
+			App::ConsolePrintF("Failed to get resource for %#x", key.instanceID);
 		}
 	}
 
 	// Gathering the PNGs in temp folder, creating the ZIP archive and then delete the temp folder.
-	
+
 	eastl::string16 zipName;
 	cAssetMetadataPtr firstSelection;
 	if (Pollinator::GetMetadata(selection[0].instanceID, selection[0].groupID, firstSelection)) {
-		zipName.append_sprintf(u"%ls.zip",firstSelection->GetName().c_str());
+		zipName.append_sprintf(u"%ls.zip", firstSelection->GetName().c_str());
 	}
 	else {
-		zipName.append_sprintf(u"%#x.zip",selection[0].instanceID);
+		zipName.append_sprintf(u"%#x.zip", selection[0].instanceID);
 	}
 
 	eastl::string16 zipPath = ZipManager.GetZIPExportPath() + zipName;
@@ -226,10 +234,10 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 
 	for (const auto& entry : std::filesystem::directory_iterator(tmpPath.c_str())) {
 		eastl::string16 entryPath = entry.path().u16string().c_str(); // Entry full location
-		eastl::string16 entryFile = entryPath.substr(entryPath.find_last_of(u"/\\")+1); // Entry file name
+		eastl::string16 entryFile = entryPath.substr(entryPath.find_last_of(u"/\\") + 1); // Entry file name
 		i++;
 		//ZipFile::AddFile(zipPath.c_str(),entryPath);
-		
+
 		eastl::string16 tmpFile = zipPath + u".tmp";
 		{
 			//ZipFile::Open(const std::string& zipPath);
@@ -247,7 +255,7 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 					return;
 				}
 			}
-			
+
 			ZipArchive::Ptr zipArchive = ZipArchive::Create(zipFile, true);
 
 			//AddFile continues
@@ -261,21 +269,23 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 			}
 
 			eastl::string8 inArchiveName;
-			
+
 			// Making sure to make "exceptions" for specific types of filenames.
 
 			if (entryFile.find(u"50") != eastl::string16::npos ||
+				entryFile.find(u"30") != eastl::string16::npos ||
 				entryFile.find(u"zzz_") != eastl::string16::npos ||
 				entryFile.find(u"0x") != eastl::string16::npos) {
 				inArchiveName.assign_convert(entryFile.c_str());
 			}
-			else if (entryFile.find(u"_50") != eastl::string16::npos) {
+			else if (entryFile.find(u"_50") != eastl::string16::npos ||
+				entryFile.find(u"_30") != eastl::string16::npos) {
 				//inArchiveName.append_convert(tmpPath.c_str());
 				inArchiveName.append_sprintf("zzz");
 				inArchiveName.append_convert(entryFile.substr(entryFile.find_last_of(u"_")).c_str());
 			}
 			else if (entryFile.substr(entryFile.find_last_of(u".")) == u".png") {
-				inArchiveName.append_sprintf("creation_%i_%#x.png",i,id(entryFile.c_str()));
+				inArchiveName.append_sprintf("creation_%i_%#x.png", i, id(entryFile.c_str()));
 			}
 			else {
 				continue;
@@ -296,7 +306,7 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 
 			ICompressionMethod::Ptr method = DeflateMethod::Create();
 
-			fileEntry->SetCompressionStream(fileToAdd,method);
+			fileEntry->SetCompressionStream(fileToAdd, method);
 
 			std::ofstream outFile;
 			outFile.open(tmpFile.c_str(), std::ios::binary);
@@ -311,22 +321,24 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 			// force closing the input zip stream
 		}
 		std::filesystem::remove(zipPath.c_str());
-		std::filesystem::rename(tmpFile.c_str(),zipPath.c_str());
+		std::filesystem::rename(tmpFile.c_str(), zipPath.c_str());
 
-		SporeDebugPrint("Added entry %ls to ZIP file %ls",entryPath.c_str(),zipPath.c_str());
+		SporeDebugPrint("Added entry %ls to ZIP file %ls", entryPath.c_str(), zipPath.c_str());
 	}
 
 	if (!std::filesystem::remove_all(tmpPath.c_str())) {
 		App::ConsolePrintF("Failed to remove temporary folder. It will persist after this process has ended.");
 	}
 
-	App::ConsolePrintF("Your creations have been added to ZIP archive %ls. It can be found in %ls ",zipName.c_str(),ZipManager.GetZIPExportPath().c_str());
+	App::ConsolePrintF("Your creations have been added to ZIP archive %ls. It can be found from %ls ", zipName.c_str(), ZipManager.GetZIPExportPath().c_str());
+	HintManager.ShowHint(id("zipexport-complete"));
+	Audio::PlayAudio(id("ui_attention_positive"));
+}
 
-}
-void ZIPExport::OnShopperAccept(const ResourceKey& selection) {
-	eastl::vector<ResourceKey> container = {selection};
-	this->OnShopperAccept(container);
-}
+//void ZIPExport::OnShopperAccept(const ResourceKey& selection) {
+//	eastl::vector<ResourceKey> container = {selection};
+//	this->OnShopperAccept(container);
+//}
 
 bool ZIPExport::ExportAsset(const ResourceKey& key, eastl::string16 targetDir, Resource::Database* database) {
 	if (PackageNameChecker::IsDatabaseVanilla(database)) {

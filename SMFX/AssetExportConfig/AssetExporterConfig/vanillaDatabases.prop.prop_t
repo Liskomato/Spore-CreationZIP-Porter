@@ -1,0 +1,14 @@
+string16s vanillaDatabases 
+	"Spore_Content" 					# Core Spore creations
+	"CSA_Graphics"  					# Creature Creator
+	"Spore_Audio"   					# Music
+	"Spore_Game"						# Props
+	"Spore_Graphics"					# 3D models
+	"Spore_EP1_Content_01"					# GA disc creatures and vehicles
+	"Spore_EP1_Content_02"					# GA disc buildings
+	"Spore_EP1_Data"					# GA props
+	"PSI-101_Worldcrafter_v1-0-0_core"			# Maxis props modified by this mod.
+	"Adventure_ExtraSize-InfiniteComplexity-100points"	# Same as Worldcrafter
+	"psi's-adventure-tweaks"	 				# Same as Worldcrafter
+	"ShareSafeMusic" 					# Uses vanilla audio files, we don't need to export anything used here.
+end

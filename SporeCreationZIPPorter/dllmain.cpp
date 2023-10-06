@@ -2,10 +2,8 @@
 #include "stdafx.h"
 #include "CheckForZIPs.h"
 #include "ZIPExport.h"
-//#include "DownloadCreation.h"
-//#include "ImportFromURL.h"
-//#include "DownloadAssets.h"
 #include "ImportCreations.h"
+#include "CheatAssetExport.h"
 #include "DetourClasses.h"
 #include "AlternativePackageLocations.h"
 #include "ZipManager.h"
@@ -29,14 +27,11 @@ void Initialize()
 	CheatManager.AddCheat("ZIPExport", new ZIPExport());
 
 	// Import cheats
-	//CheatManager.AddCheat("DownloadCreation",new DownloadCreation());
-	//CheatManager.AddCheat("ImportFromURL", new ImportFromURL());
-	//CheatManager.AddCheat("DownloadAssets", new DownloadAssets());
-	
 	CheatManager.AddCheat("importCreations",new ImportCreations());
 
 	// Raw export cheats
-	// MOVED TO SporeAssetExporter
+	CheatManager.AddCheat("assetExport",new CheatAssetExport());
+	CheatManager.AddCheat("adventureExport", new CheatAdventureExport());
 
 	// Initialize ZipManager
 	ZipManager.Initialize();

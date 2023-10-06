@@ -1,4 +1,5 @@
-<mod displayName="Creation ZIP Porter" unique="CreationZIP-Porter" description="Enables loading and packing of ZIP files within the game itself." installerSystemVersion="1.0.1.2" hasCustomInstaller="false" isExperimental="false" dllsBuild="2.5.278">
+<mod displayName="Creation ZIP Porter" unique="CreationZIP-Porter" description="Enables loading and packing of ZIP files within the game itself. Comes with the Asset Exporter mod." installerSystemVersion="1.0.1.2" hasCustomInstaller="false" isExperimental="false" dllsBuild="2.5.278">
+<prerequisite game="GalacticAdventures">AssetExportConfig.package</prerequisite>
 <prerequisite>SporeCreationZIPPorter.dll</prerequisite>
 <remove game="GalacticAdventures">AssetExportConfig*</remove>
 <remove>AssetExportConfig*</remove>

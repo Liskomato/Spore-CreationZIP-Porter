@@ -232,7 +232,7 @@ _pkginfo.txt
 # Others
 ClientBin/
 ~$*
-*~
+#*~
 *.dbmdl
 *.dbproj.schemaview
 *.jfm
@@ -401,12 +401,18 @@ FodyWeavers.xsd
 *.sporemod
 *.zip
 *.package
+#!SMFX/**/*
+#**/config.properties
 
 # Example sporemod files
-!ExampleSporemods/**/*
+#!ExampleSporemods/**/*
 
 # old project files
 SporeCreationZIPPorter/OpenFileMessage.*
 SporeCreationZIPPorter/DownloadAssets.*
 SporeCreationZIPPorter/DownloadCreation.*
 SporeCreationZIPPorter/ImportFromURL.*
+SporeCreationZIPPorter/Debug DLL/vc143.idb
+
+**/Debug DLL/*
+**/Release DLL/*

@@ -1,0 +1,4 @@
+key parent EDI-TemplateError.prop
+texts hintText
+	(CreationZIPPorter!0x3) "[PLACEHOLDER] Creation download failed."
+end

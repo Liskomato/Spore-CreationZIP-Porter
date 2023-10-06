@@ -1,0 +1,8 @@
+keys lookUpAssets
+	vehiclesModelsVCL~!0x0.bem
+	vehiclesModelsVCL~!0x0.vcl
+	vehiclesModelsVCL~!0x0.png
+	vehiclesModelsVCL~!0x0.pollen_metadata
+	vehiclesModelsVCL~!0x0.summary
+	vehicleModels_LOD1~!0x0.png
+end

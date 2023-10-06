@@ -16,5 +16,4 @@
 	ignore = dirty
 [submodule "Spore-ModAPI"]
 	path = Spore-ModAPI
-	url = https://github.com/emd4600/Spore-ModAPI.git
-	ignore = dirty
+	url = https://github.com/Tenderi4/Spore-ModAPI.git
