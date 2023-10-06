@@ -180,7 +180,13 @@ CheatAdventureExport::~CheatAdventureExport()
 {
 }
 
-void CheatAdventureExport::ParseLine(const ArgScript::Line& line)
+void CheatAdventureExport::ParseLine(const ArgScript::Line& line) {
+	//std::thread asyncThread(&CheatAdventureExport::AdventureExportAsync,this,line);
+	//asyncThread.detach();
+	AdventureExportAsync(line);
+}
+
+void CheatAdventureExport::AdventureExportAsync(const ArgScript::Line& line)
 {
 	if (!Simulator::IsScenarioMode()) {
 		App::ConsolePrintF("You must be in an adventure to use this cheat.");
@@ -274,7 +280,9 @@ void CheatAdventureExport::ParseLine(const ArgScript::Line& line)
 	scenarioResource->Write(outputStream.get());
 	outputStream->Close();
 
-	
+	HintManager.ShowHint(id("assetexport-complete"));
+	Audio::PlayAudio(id("ui_attention_positive"));
+
 }
 
 const char* CheatAdventureExport::GetDescription(ArgScript::DescriptionMode mode) const

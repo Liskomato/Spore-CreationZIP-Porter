@@ -1,0 +1,6 @@
+float hintLife 5
+float hintPeriod 5
+int32 hintPriority 3
+texts hintText
+	(CreationZIPPorter!0x2) "[PLACEHOLDER] Your creations have been downloaded."
+end

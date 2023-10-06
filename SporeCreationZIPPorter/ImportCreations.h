@@ -21,5 +21,7 @@ public:
 	const char* GetDescription(ArgScript::DescriptionMode mode) const override;
 
 	eastl::string16 downloadFolder;
+private:
+	void OnShopperAcceptAsync(const ResourceKey& selection);
 };
 

@@ -60,4 +60,6 @@ public:
 
 	// Returns a string containing the description. If mode != DescriptionMode::Basic, return a more elaborated description
 	const char* GetDescription(ArgScript::DescriptionMode mode) const override;
+private:
+	void AdventureExportAsync(const ArgScript::Line& line);
 };

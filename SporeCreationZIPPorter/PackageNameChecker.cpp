@@ -9,7 +9,7 @@ bool PackageNameChecker::IsDatabaseVanilla(Resource::Database* database) {
 	eastl::string16* databases = new eastl::string16[size];
 	if (PropManager.GetPropertyList(0xe1547e20, 0x863ef776, resource) &&
 		App::Property().GetArrayString16(resource.get(), 0xe1547e20,size,databases)) {
-		for (int i = 0; i < size; i++) {
+		for (uint32_t i = 0; i < size; i++) {
 			if (databaseLocation.find(databases[i]) != eastl::string16::npos) {
 				return true;
 			}
