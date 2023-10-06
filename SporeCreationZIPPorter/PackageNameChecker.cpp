@@ -5,8 +5,8 @@
 bool PackageNameChecker::IsDatabaseVanilla(Resource::Database* database) {
 	eastl::string16 databaseLocation = database->GetLocation();
 	PropertyListPtr resource;
-	size_t size = 512;
-	eastl::string16* databases = new eastl::string16[size];
+	size_t size;
+	eastl::string16* databases;
 	if (PropManager.GetPropertyList(0xe1547e20, 0x863ef776, resource) &&
 		App::Property().GetArrayString16(resource.get(), 0xe1547e20,size,databases)) {
 		for (uint32_t i = 0; i < size; i++) {
