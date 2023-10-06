@@ -282,6 +282,7 @@ void CheatAdventureExport::AdventureExportAsync(const ArgScript::Line& line)
 
 	HintManager.ShowHint(id("assetexport-complete"));
 	Audio::PlayAudio(id("ui_attention_positive"));
+	App::ConsolePrintF("Adventure export complete. You can find the extracted files from %ls",archivePath.c_str());
 
 }
 
