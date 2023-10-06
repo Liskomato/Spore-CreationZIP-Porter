@@ -413,3 +413,6 @@ SporeCreationZIPPorter/DownloadAssets.*
 SporeCreationZIPPorter/DownloadCreation.*
 SporeCreationZIPPorter/ImportFromURL.*
 SporeCreationZIPPorter/Debug DLL/vc143.idb
+
+**/Debug DLL/*
+**/Release DLL/*
