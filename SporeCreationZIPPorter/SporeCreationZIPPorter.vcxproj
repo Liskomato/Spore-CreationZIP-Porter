@@ -207,6 +207,10 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="PackageNameChecker.h" />
+    <ClInclude Include="ShopperMultiRequest.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="ZIPExport.h">
@@ -245,6 +249,10 @@
       </SubType>
     </ClCompile>
     <ClCompile Include="PackageNameChecker.cpp" />
+    <ClCompile Include="ShopperMultiRequest.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">Create</PrecompiledHeader>

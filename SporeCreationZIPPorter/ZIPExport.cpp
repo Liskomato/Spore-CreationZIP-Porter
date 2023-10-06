@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "ZIPExport.h"
+#include "ShopperMultiRequest.h"
 #include "DetourClasses.h"
 #include "PackageNameChecker.h"
 #include <Spore\Resource\PFRecordRead.h>
@@ -24,9 +25,9 @@ void ZIPExport::ParseLine(const ArgScript::Line& line)
 {
 	// This method is called when your cheat is invoked.
 	// Put your cheat code here.
-	Sporepedia::ShopperRequest request(this);
+	Sporepedia::ShopperMultiRequest request(this);
 	request.maxSelections = -1;
-	Sporepedia::ShopperRequest::Show(request);
+	Sporepedia::ShopperMultiRequest::Show(request);
 }
 
 const char* ZIPExport::GetDescription(ArgScript::DescriptionMode mode) const
@@ -48,7 +49,7 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 		std::filesystem::create_directory(tmpPath.c_str()); // create folder
 	}
 
-	for (const ResourceKey& key : selection) 
+	for each (const ResourceKey& key in selection) 
 	{
 		ResourceObjectPtr resource;
 		ResourceKey png = {key.instanceID, TypeIDs::png, key.groupID};
@@ -265,11 +266,13 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 			// Making sure to make "exceptions" for specific types of filenames.
 
 			if (entryFile.find(u"50") != eastl::string16::npos ||
+				entryFile.find(u"30") != eastl::string16::npos ||
 				entryFile.find(u"zzz_") != eastl::string16::npos ||
 				entryFile.find(u"0x") != eastl::string16::npos) {
 				inArchiveName.assign_convert(entryFile.c_str());
 			}
-			else if (entryFile.find(u"_50") != eastl::string16::npos) {
+			else if (entryFile.find(u"_50") != eastl::string16::npos ||
+				     entryFile.find(u"_30") != eastl::string16::npos) {
 				//inArchiveName.append_convert(tmpPath.c_str());
 				inArchiveName.append_sprintf("zzz");
 				inArchiveName.append_convert(entryFile.substr(entryFile.find_last_of(u"_")).c_str());
@@ -323,10 +326,10 @@ void ZIPExport::OnShopperAccept(const eastl::vector<ResourceKey>& selection) {
 	App::ConsolePrintF("Your creations have been added to ZIP archive %ls. It can be found from %ls ",zipName.c_str(),ZipManager.GetZIPExportPath().c_str());
 
 }
-void ZIPExport::OnShopperAccept(const ResourceKey& selection) {
-	eastl::vector<ResourceKey> container = {selection};
-	this->OnShopperAccept(container);
-}
+//void ZIPExport::OnShopperAccept(const ResourceKey& selection) {
+//	eastl::vector<ResourceKey> container = {selection};
+//	this->OnShopperAccept(container);
+//}
 
 bool ZIPExport::ExportAsset(const ResourceKey& key, eastl::string16 targetDir, Resource::Database* database) {
 	if (PackageNameChecker::IsDatabaseVanilla(database)) {

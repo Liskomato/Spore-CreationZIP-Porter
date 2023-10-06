@@ -6,7 +6,6 @@
 
 class ZIPExport 
 	: public ArgScript::ICommand
-	, public Sporepedia::IShopperListener
 	, public Sporepedia::IMultiShopperListener
 {
 public:
@@ -16,7 +15,7 @@ public:
 	// Called when the cheat is invoked
 	void ParseLine(const ArgScript::Line& line) override;
 	
-	void OnShopperAccept(const ResourceKey& selection) override;
+//	void OnShopperAccept(const ResourceKey& selection) override;
 	void OnShopperAccept(const eastl::vector<ResourceKey>& selection) override;
 	/// 
 	/// Saves the given resource key into the target directory.
