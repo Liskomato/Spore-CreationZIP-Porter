@@ -70,3 +70,5 @@ If you have a look at the repository's ``ExampleSporemods`` folder, you can down
 - 0KepOnline
 - I_am_THEdragon
 - Your Friend the Dragon
+- 1fishmob
+- Comma
