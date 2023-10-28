@@ -24,6 +24,11 @@ The mod will also allow you to download creations from both Spore.com and elsewh
 * Ability to load ``.package`` files into the game from ``%programdata%\Spore ModAPI Launcher Kit\mLibs``.
 
 ## FAQ
+### How do I download creations from the Spore servers with this mod? Do I need an account?
+**You don't need a Spore.com account in order to download creations from the server with this mod.** All you need to do is either use the ``importCreations`` cheat with the appropriate arguments, or the `ZIPExport` cheat in case you wanted to export an adventure in a ZIP file format. 
+
+For a future version I will try to see if it would be possible to download adventures' required creations automatically without server access, like it does when opening an adventure downloaded from the servers.
+
 ### How does creating modded adventure packs work with this?
 **There are currently two ways to make adventure modpacks.**
 
