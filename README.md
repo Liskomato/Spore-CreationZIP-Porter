@@ -60,8 +60,10 @@ You can also have modded adventures that could have their own custom localizatio
 If you have a look at the repository's ``ExampleSporemods`` folder, you can download experimental adventure ``.sporemod`` files containing examples of types of adventures made possible with this tool. They could either be modded with unique components, be localized or even just be normal adventures packed into this format. Be sure to have a look at them at some point!
 
 ## Dependencies
-* [ZipLib](https://bitbucket.org/wbenny/ziplib/)
-* [Spore ModAPI SDK v2.5.278 or higher](https://github.com/emd4600/Spore-ModAPI)
+* [ZipLib](https://bitbucket.org/wbenny/ziplib/) (Dependency library for ModAPI project)
+* [Spore ModAPI SDK v2.5.278 or higher](https://github.com/emd4600/Spore-ModAPI) (code project)
+* [SporeModder FX v2.2.3 or higher](https://github.com/emd4600/SporeModder-FX) (``.package`` file component projects)
+* [7zip](https://www.7-zip.org/) (for batch build file)
 
 ## Credits
 - Liskomato: Main developer
