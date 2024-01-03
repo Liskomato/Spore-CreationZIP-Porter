@@ -11,7 +11,7 @@
 #include <Spore/UTFWin/cSPUIMessageBox.h>
 #include "SporepediaLoadListener.h"
 
-
+SporepediaLoadListener* loadListener = nullptr;
 
 void Initialize()
 {
@@ -35,7 +35,8 @@ void Initialize()
 	CheatManager.AddCheat("assetExport",new CheatAssetExport());
 	CheatManager.AddCheat("adventureExport", new CheatAdventureExport());
 
-	MessageManager.AddListener(new SporepediaLoadListener(), 0xcc0bf724);
+	loadListener = new SporepediaLoadListener();
+//	MessageManager.AddListener(loadListener, 0xcc0bf724);
 
 	// Initialize ZipManager
 	ZipManager.Initialize();
@@ -204,6 +205,7 @@ void Dispose()
 {
 	// This method is called when the game is closing
 	ZipManager.Dispose();
+	loadListener = nullptr;
 }
 
 void AttachDetours()

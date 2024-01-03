@@ -22,7 +22,9 @@ int SporepediaLoadListener::Release()
 	return DefaultRefCounted::Release();
 }
 
+void SporepediaLoadListener::OnButtonPress(UTFWin::IWindow* pWindow, uint32_t buttonID) {
 
+}
 // The method that receives the message. The first thing you should do is checking what ID sent this message...
 bool SporepediaLoadListener::HandleMessage(uint32_t messageID, void* message)
 {
