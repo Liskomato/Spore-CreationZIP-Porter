@@ -11,7 +11,9 @@ devenv "%~dp0\SporeCreationZIPPorter\SporeCreationZIPPorter.sln" /Build "Release
 
 copy "%programdata%\SporeModManagerStorage\mLibs\SporeCreationZIPPorter.dll" "%CUR_DIR%\obj\"
 
-smfx pack "%~dp0\SMFX\AssetExportConfig"  "%~dp0\obj\AssetExportConfig.package"
+smfx pack "%~dp0\SMFX\CreationZIPPorter-AssetExportConfig"  "%~dp0\obj\!CreationZIPPorter-AssetExportConfig.package"
+
+smfx pack "%~dp0\SMFX\CreationZIPPorter-CreationAutoDownload"  "%~dp0\obj\!CreationZIPPorter-CreationAutoDownload.package"
 
 cd "%CUR_DIR%\obj\"
 
