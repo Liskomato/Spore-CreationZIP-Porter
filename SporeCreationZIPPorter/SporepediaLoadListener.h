@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Spore\BasicIncludes.h>
+#include <Spore/UTFWin/cSPUIMessageBox.h>
 
 #define SporepediaLoadListenerPtr intrusive_ptr<SporepediaLoadListener>
 
