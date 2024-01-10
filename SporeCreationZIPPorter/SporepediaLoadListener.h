@@ -2,8 +2,15 @@
 
 #include <Spore\BasicIncludes.h>
 #include <Spore/UTFWin/cSPUIMessageBox.h>
+#include <thread>
 
 #define SporepediaLoadListenerPtr intrusive_ptr<SporepediaLoadListener>
+
+class LoadParentClass
+{
+	char padding[0x10];
+	UTFWin::MessageBoxCallback* pCallback;
+};
 
 class SporepediaLoadListener 
 	: public App::IMessageListener
@@ -12,6 +19,11 @@ class SporepediaLoadListener
 {
 public:
 	static const uint32_t TYPE = id("SporepediaLoadListener");
+
+	UTFWin::MessageBoxCallback* detouredCallback;
+	LoadParentClass* detouredCallbackParent;
+	UTFWin::UILayout* UIPointer;
+	std::thread asyncThread;
 
 	SporepediaLoadListener();
 	~SporepediaLoadListener();
@@ -23,4 +35,7 @@ public:
 
 	// This is the function you have to implement, called when a message you registered to is sent.
 	bool HandleMessage(uint32_t messageID, void* message) override;
+
+	void DownloadAssets();
 };
+

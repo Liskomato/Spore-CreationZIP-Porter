@@ -93,9 +93,13 @@ member_detour(cScenarioData_init_dtr, Simulator::cScenarioData, void(bool)) {
 static_detour(dialogbox_detour,bool(UTFWin::MessageBoxCallback*,const ResourceKey&)) {
 	
 	bool detoured(UTFWin::MessageBoxCallback* pCallback, const ResourceKey & name) {
-		
-		if (name.instanceID == 0x7a555cd8 || name.instanceID == 0x65d634a3) {
-			SporeDebugPrint("Message box ID: %#x",name.instanceID);
+		SporeDebugPrint("Message box ID: %#x", name.instanceID);
+		if ((name.instanceID == 0x7a555cd8 || name.instanceID == 0x65d634a3) && loadListener != nullptr) {
+			loadListener->detouredCallback = pCallback;
+			int callbackP = (int)pCallback - 0x10;
+			loadListener->detouredCallbackParent = (LoadParentClass*)callbackP;
+			auto askToDownload = ResourceKey(id("AskToDownload"),name.typeID ,name.groupID);
+			return original_function(loadListener, askToDownload);
 		}
 		return original_function(pCallback, name);
 	}
