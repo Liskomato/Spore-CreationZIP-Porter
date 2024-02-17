@@ -97,7 +97,9 @@ static_detour(dialogbox_detour,bool(UTFWin::MessageBoxCallback*,const ResourceKe
 		if ((name.instanceID == 0x7a555cd8 || name.instanceID == 0x65d634a3) && loadListener != nullptr) {
 			loadListener->detouredCallback = pCallback;
 			int callbackP = (int)pCallback - 0x10;
+			int scenarioP = callbackP - 0x1C;
 			loadListener->detouredCallbackParent = (LoadParentClass*)callbackP;
+			loadListener->scenario = (App::cScenarioMode*)scenarioP;
 			auto askToDownload = ResourceKey(id("AskToDownload"),name.typeID ,name.groupID);
 			return original_function(loadListener, askToDownload);
 		}
@@ -105,40 +107,15 @@ static_detour(dialogbox_detour,bool(UTFWin::MessageBoxCallback*,const ResourceKe
 	}
 };
 
-member_detour(LoadScenarioResource_detour,Simulator::cScenarioData,Simulator::cScenarioResource*(const ResourceKey&)) {
-	Simulator::cScenarioResource* detoured(const ResourceKey& key) {
-		
-		Simulator::cScenarioResource* scenario = original_function(this,key);
-		/*ResourceKey k;
-		if (scenario->mAvatarAsset.mServerId != -1 && ZIPExport::GetKeyfromServerID(scenario->mAvatarAsset.mServerId, k)) {
-			SporeDebugPrint("Downloaded avatar.");
+member_detour(LoadAdventureResource_dtr, DummyClass, uint32_t(const ResourceKey&)) {
+
+	uint32_t detoured(const ResourceKey & key) {
+		if (key.typeID == TypeIDs::adventure) {
+			loadListener->storedAdventureKey = key;
 		}
-		if (scenario->mInitialPosseMembers.size() > 0 && scenario->mInitialPosseMembers.size() <= 3) {
-			for each (const auto & posseMember in scenario->mInitialPosseMembers) {
-				if (posseMember.mAsset.mServerId != -1 && ZIPExport::GetKeyfromServerID(posseMember.mAsset.mServerId, k)) {
-					SporeDebugPrint("Downloaded posse member.");
-				}
-			}
-		}
-		if (scenario->mClasses.size() > 0) {
-			for each (const auto & paletteAsset in scenario->mClasses) {
-				if (paletteAsset.second.mAsset.mServerId != -1 && ZIPExport::GetKeyfromServerID(paletteAsset.second.mAsset.mServerId, k))
-				{
-					SporeDebugPrint("Downloaded cast member.");
-				}
-				if (paletteAsset.second.mGameplayObjectGfxOverrideAsset.mServerId != -1 && ZIPExport::GetKeyfromServerID(paletteAsset.second.mGameplayObjectGfxOverrideAsset.mServerId, k))
-				{
-					SporeDebugPrint("Downloaded cast member graphics override asset #1.");
-				}
-				if (paletteAsset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId != -1 && ZIPExport::GetKeyfromServerID(paletteAsset.second.mGameplayObjectGfxOverrideAsset_Secondary.mServerId, k))
-				{
-					SporeDebugPrint("Downloaded cast member graphics override asset #2.");
-				}
-			}
-		}*/
-		
-		return scenario;
+		return original_function(this,key);
 	}
+
 };
 
 
@@ -222,7 +199,7 @@ void AttachDetours()
 	ImportPNG_dtour::attach(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)));
 	cScenarioData_init_dtr::attach(GetAddress(Simulator::cScenarioData, Initialize));
 	dialogbox_detour::attach(GetAddress(UTFWin::cSPUIMessageBox,ShowDialog));
-	LoadScenarioResource_detour::attach(Address(ModAPI::ChooseAddress(0xf44ec0,0xf44a90)));
+	LoadAdventureResource_dtr::attach(Address(ModAPI::ChooseAddress(0xec5c80,0xec5a10)));
 
 	AlternativePackageLocations::AttachDetour();
 

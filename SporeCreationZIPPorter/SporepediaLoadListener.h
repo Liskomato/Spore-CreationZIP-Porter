@@ -12,6 +12,8 @@ class LoadParentClass
 	UTFWin::MessageBoxCallback* pCallback;
 };
 
+class DummyClass {};
+
 class SporepediaLoadListener 
 	: public App::IMessageListener
 	, public UTFWin::MessageBoxCallback
@@ -22,8 +24,8 @@ public:
 
 	UTFWin::MessageBoxCallback* detouredCallback;
 	LoadParentClass* detouredCallbackParent;
-	UTFWin::UILayout* UIPointer;
-	std::thread asyncThread;
+	App::cScenarioMode* scenario;
+	ResourceKey storedAdventureKey;
 
 	SporepediaLoadListener();
 	~SporepediaLoadListener();
@@ -36,6 +38,6 @@ public:
 	// This is the function you have to implement, called when a message you registered to is sent.
 	bool HandleMessage(uint32_t messageID, void* message) override;
 
-	void DownloadAssets();
+	void DownloadAssets(const ResourceKey& selection);
 };
 
