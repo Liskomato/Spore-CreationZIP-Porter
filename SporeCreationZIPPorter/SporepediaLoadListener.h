@@ -26,6 +26,7 @@ public:
 	LoadParentClass* detouredCallbackParent;
 	App::cScenarioMode* scenario;
 	ResourceKey storedAdventureKey;
+	eastl::string16 downloadFolder;
 
 	SporepediaLoadListener();
 	~SporepediaLoadListener();

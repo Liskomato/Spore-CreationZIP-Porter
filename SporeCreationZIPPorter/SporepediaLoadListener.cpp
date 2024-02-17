@@ -7,6 +7,9 @@ SporepediaLoadListener::SporepediaLoadListener()
 	detouredCallback = nullptr;
 	detouredCallbackParent = nullptr;
 	scenario = nullptr;
+	eastl::string16 creations = Resource::Paths::GetDirFromID(Resource::PathID::Creations);
+	downloadFolder = u"Downloads/";
+	downloadFolder = creations + downloadFolder;
 }
 
 
