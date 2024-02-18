@@ -1,0 +1,4 @@
+bool dialogOKButton true
+texts dialogText
+	(AutoDownloadPrompt!0x00000012) "Download finished (PLACEHOLDER)"
+end

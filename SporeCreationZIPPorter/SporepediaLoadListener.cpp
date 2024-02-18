@@ -6,7 +6,6 @@ SporepediaLoadListener::SporepediaLoadListener()
 {
 	detouredCallback = nullptr;
 	detouredCallbackParent = nullptr;
-	scenario = nullptr;
 	eastl::string16 creations = Resource::Paths::GetDirFromID(Resource::PathID::Creations);
 	downloadFolder = u"Downloads/";
 	downloadFolder = creations + downloadFolder;
@@ -17,7 +16,6 @@ SporepediaLoadListener::~SporepediaLoadListener()
 {
 	detouredCallback = nullptr;
 	detouredCallbackParent = nullptr;
-	scenario = nullptr;
 }
 
 // For internal use, do not modify.
@@ -33,14 +31,24 @@ int SporepediaLoadListener::Release()
 }
 
 void SporepediaLoadListener::OnButtonPress(UTFWin::IWindow* pWindow, uint32_t buttonID) {
-	if (buttonID == UTFWin::cSPUIMessageBox::ControlIDs::kButton4 && detouredCallbackParent != nullptr && WindowManager.GetMainWindow()->FindWindowByID(0x07299020) != nullptr && storedAdventureKey != ResourceKey()) {
-		IWindowPtr dlWin = WindowManager.GetMainWindow()->FindWindowByID(0x07299020);
-		dlWin->SetVisible(true);
-		std::thread asyncThread(&SporepediaLoadListener::DownloadAssets,this,storedAdventureKey);
-		asyncThread.detach();
-	}
-	else if (detouredCallback != nullptr) {
-		detouredCallback->OnButtonPress(pWindow,buttonID);
+	if (detouredCallback != nullptr) 
+	{
+		if (buttonID == UTFWin::cSPUIMessageBox::ControlIDs::kButtonOK)
+		{
+			detouredCallback->OnButtonPress(pWindow, UTFWin::cSPUIMessageBox::ControlIDs::kButton1);
+		}
+		else if (buttonID == UTFWin::cSPUIMessageBox::ControlIDs::kButton4 && detouredCallbackParent != nullptr && storedAdventureKey != ResourceKey())
+		{
+			std::thread asyncThread(&SporepediaLoadListener::DownloadAssets, this, storedAdventureKey);
+			asyncThread.detach();
+			detouredCallback->OnButtonPress(pWindow, UTFWin::cSPUIMessageBox::ControlIDs::kButton1);
+			UTFWin::cSPUIMessageBox::ShowDialog(this, ResourceKey(id("DownloadStarted"), TypeIDs::prop, 0xf5f6fde8));
+
+		}
+		else
+		{
+			detouredCallback->OnButtonPress(pWindow, buttonID);
+		}
 	}
 }
 // The method that receives the message. The first thing you should do is checking what ID sent this message...
@@ -87,28 +95,18 @@ void SporepediaLoadListener::DownloadAssets(const ResourceKey& selection) {
 				i++;
 			}
 		}
-		if (WindowManager.GetMainWindow()->FindWindowByID(0x07299020) != nullptr)
-		{
-			IWindowPtr dlWin = WindowManager.GetMainWindow()->FindWindowByID(0x07299020);
-			
-			if (detouredCallback != nullptr && dlWin->IsVisible()) {
-				detouredCallback->OnButtonPress(dlWin.get(), UTFWin::cSPUIMessageBox::ControlIDs::kButton4);
-			}
+		if (detouredCallback != nullptr) {
+			UTFWin::cSPUIMessageBox::ShowDialog(this, ResourceKey(id("DownloadFinished"), TypeIDs::prop, 0xf5f6fde8));
+		}
+		else {
+			HintManager.ShowHint(id("import-downloadcomplete"));
 		}
 		Audio::PlayAudio(id("ui_attention_positive"));
-		HintManager.ShowHint(id("import-downloadcomplete"));
 		
 	}
 	else {
-		if (WindowManager.GetMainWindow()->FindWindowByID(0x07299020) != nullptr)
-		{
-			IWindowPtr dlWin = WindowManager.GetMainWindow()->FindWindowByID(0x07299020);
-			if (dlWin->IsVisible()) {
-				dlWin->SetVisible(false);
-			}
-		}
 		if (detouredCallback != nullptr) {
-			UTFWin::cSPUIMessageBox::ShowDialog(detouredCallback, ResourceKey(0x219A97F6, TypeIDs::prop, 0xf5f6fde8));
+			UTFWin::cSPUIMessageBox::ShowDialog(this, ResourceKey(0x219A97F6, TypeIDs::prop, 0xf5f6fde8));
 		}
 		Audio::PlayAudio(id("ui_attention_negative"));
 	}

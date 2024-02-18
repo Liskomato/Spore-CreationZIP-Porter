@@ -34,7 +34,6 @@ public:
 
 	UTFWin::MessageBoxCallback* detouredCallback;
 	cScenarioUI* detouredCallbackParent;
-	App::cScenarioMode* scenario;
 	ResourceKey storedAdventureKey;
 	eastl::string16 downloadFolder;
 
