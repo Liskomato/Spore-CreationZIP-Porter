@@ -97,25 +97,13 @@ static_detour(dialogbox_detour,bool(UTFWin::MessageBoxCallback*,const ResourceKe
 		if ((name.instanceID == 0x7a555cd8 || name.instanceID == 0x65d634a3) && loadListener != nullptr) {
 			loadListener->detouredCallback = pCallback;
 			int callbackP = (int)pCallback - 0x10;
-			int scenarioP = callbackP - 0x1C;
-			loadListener->detouredCallbackParent = (LoadParentClass*)callbackP;
-			loadListener->scenario = (App::cScenarioMode*)scenarioP;
+			loadListener->detouredCallbackParent = (cScenarioUI*)callbackP;
+			loadListener->storedAdventureKey = loadListener->detouredCallbackParent->dummy->key;
 			auto askToDownload = ResourceKey(id("AskToDownload"),name.typeID ,name.groupID);
 			return original_function(loadListener, askToDownload);
 		}
 		return original_function(pCallback, name);
 	}
-};
-
-member_detour(LoadAdventureResource_dtr, DummyClass, uint32_t(const ResourceKey&)) {
-
-	uint32_t detoured(const ResourceKey & key) {
-		if (key.typeID == TypeIDs::adventure) {
-			loadListener->storedAdventureKey = key;
-		}
-		return original_function(this,key);
-	}
-
 };
 
 
@@ -199,7 +187,6 @@ void AttachDetours()
 	ImportPNG_dtour::attach(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)));
 	cScenarioData_init_dtr::attach(GetAddress(Simulator::cScenarioData, Initialize));
 	dialogbox_detour::attach(GetAddress(UTFWin::cSPUIMessageBox,ShowDialog));
-	LoadAdventureResource_dtr::attach(Address(ModAPI::ChooseAddress(0xec5c80,0xec5a10)));
 
 	AlternativePackageLocations::AttachDetour();
 

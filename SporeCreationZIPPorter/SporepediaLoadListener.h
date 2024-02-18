@@ -6,13 +6,23 @@
 
 #define SporepediaLoadListenerPtr intrusive_ptr<SporepediaLoadListener>
 
-class LoadParentClass
+
+class DummyClass1 
 {
-	char padding[0x10];
-	UTFWin::MessageBoxCallback* pCallback;
+public:
+	char padding[0x8];
+	ResourceKey key;
 };
 
-class DummyClass {};
+class cScenarioUI
+{
+public: 
+	char padding[0x10];
+	UTFWin::MessageBoxCallback* pCallback;
+	char padding_second[0x4];
+	DummyClass1* dummy;
+};
+
 
 class SporepediaLoadListener 
 	: public App::IMessageListener
@@ -23,7 +33,7 @@ public:
 	static const uint32_t TYPE = id("SporepediaLoadListener");
 
 	UTFWin::MessageBoxCallback* detouredCallback;
-	LoadParentClass* detouredCallbackParent;
+	cScenarioUI* detouredCallbackParent;
 	App::cScenarioMode* scenario;
 	ResourceKey storedAdventureKey;
 	eastl::string16 downloadFolder;

@@ -90,8 +90,9 @@ void SporepediaLoadListener::DownloadAssets(const ResourceKey& selection) {
 		if (WindowManager.GetMainWindow()->FindWindowByID(0x07299020) != nullptr)
 		{
 			IWindowPtr dlWin = WindowManager.GetMainWindow()->FindWindowByID(0x07299020);
-			if (dlWin->IsVisible()) {
-				dlWin->SetVisible(false);
+			
+			if (detouredCallback != nullptr && dlWin->IsVisible()) {
+				detouredCallback->OnButtonPress(dlWin.get(), UTFWin::cSPUIMessageBox::ControlIDs::kButton4);
 			}
 		}
 		Audio::PlayAudio(id("ui_attention_positive"));
