@@ -6,7 +6,6 @@
 
 #define SporepediaLoadListenerPtr intrusive_ptr<SporepediaLoadListener>
 
-
 class DummyClass1 
 {
 public:
@@ -51,3 +50,4 @@ public:
 	void DownloadAssets(const ResourceKey& selection);
 };
 
+SporepediaLoadListener* loadListener = nullptr;

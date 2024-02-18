@@ -11,7 +11,7 @@
 #include <Spore/UTFWin/cSPUIMessageBox.h>
 #include "SporepediaLoadListener.h"
 
-SporepediaLoadListener* loadListener = nullptr;
+
 
 void Initialize()
 {
@@ -94,13 +94,24 @@ static_detour(dialogbox_detour,bool(UTFWin::MessageBoxCallback*,const ResourceKe
 	
 	bool detoured(UTFWin::MessageBoxCallback* pCallback, const ResourceKey & name) {
 		SporeDebugPrint("Message box ID: %#x", name.instanceID);
-		if ((name.instanceID == 0x7a555cd8 || name.instanceID == 0x65d634a3) && loadListener != nullptr) {
+		if ((name.instanceID == 0x7a555cd8 || name.instanceID == 0x65d634a3) && loadListener != nullptr)
+		{
 			loadListener->detouredCallback = pCallback;
 			int callbackP = (int)pCallback - 0x10;
 			loadListener->detouredCallbackParent = (cScenarioUI*)callbackP;
-			loadListener->storedAdventureKey = loadListener->detouredCallbackParent->dummy->key;
-			auto askToDownload = ResourceKey(id("AskToDownload"),name.typeID ,name.groupID);
-			return original_function(loadListener, askToDownload);
+			if (GameModeManager.GetActiveModeID() != kGGEMode || GameModeManager.GetActiveModeID() != kGameSpace) {
+				if (name.instanceID == 0x7a555cd8)
+					return original_function(pCallback, ResourceKey(id("AskToDownload-NotInGGE-Replace"), name.typeID, name.groupID));
+				else 
+					return original_function(pCallback, ResourceKey(id("AskToDownload-NotInGGE"), name.typeID, name.groupID));
+			}
+			else {
+				loadListener->storedAdventureKey = loadListener->detouredCallbackParent->dummy->key;
+				if (name.instanceID == 0x7a555cd8)
+					return original_function(loadListener, ResourceKey(id("AskToDownload-Replace"), name.typeID, name.groupID));
+				else 
+					return original_function(loadListener, ResourceKey(id("AskToDownload"), name.typeID, name.groupID));
+			}
 		}
 		return original_function(pCallback, name);
 	}

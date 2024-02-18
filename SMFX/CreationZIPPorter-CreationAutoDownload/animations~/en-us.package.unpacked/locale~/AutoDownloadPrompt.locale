@@ -1,4 +1,8 @@
 0x00000001 Download
 0x00000005 This adventure contains online creations not found in your Sporepedia. Download them from Spore.com?
+0x00000006 Using the Creation ZIP Porter to download creations while not in the main menu is not recommended due to crashing risks. If you want to login to Spore.com to download the creations normally, you can do so now.
+0x00000007 Using the Creation ZIP Porter's cheats to download creations while not in the main menu is not recommended due to crashing risks.~br~~br~ Are you sure you want to continue?
 0x00000011 Download process has begun. You will be notified once it finishes.
 0x00000012 Your creations have finished downloading.
+0x00000015 This adventure contains online creations not found in your Sporepedia. Do you want to download them? Alternatively, you can replace the missing creations and load the adventure directly.
+0x00000016 Using the Creation ZIP Porter to download creations while not in the main menu is not recommended due to crashing risks. You can either login to Spore.com to download the creations, or replace them for now.

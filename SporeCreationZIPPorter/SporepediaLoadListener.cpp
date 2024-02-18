@@ -39,9 +39,9 @@ void SporepediaLoadListener::OnButtonPress(UTFWin::IWindow* pWindow, uint32_t bu
 		}
 		else if (buttonID == UTFWin::cSPUIMessageBox::ControlIDs::kButton4 && detouredCallbackParent != nullptr && storedAdventureKey != ResourceKey())
 		{
+			detouredCallback->OnButtonPress(pWindow, UTFWin::cSPUIMessageBox::ControlIDs::kButton1);
 			std::thread asyncThread(&SporepediaLoadListener::DownloadAssets, this, storedAdventureKey);
 			asyncThread.detach();
-			detouredCallback->OnButtonPress(pWindow, UTFWin::cSPUIMessageBox::ControlIDs::kButton1);
 			UTFWin::cSPUIMessageBox::ShowDialog(this, ResourceKey(id("DownloadStarted"), TypeIDs::prop, 0xf5f6fde8));
 
 		}
