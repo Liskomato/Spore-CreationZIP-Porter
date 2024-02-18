@@ -50,4 +50,3 @@ public:
 	void DownloadAssets(const ResourceKey& selection);
 };
 
-SporepediaLoadListener* loadListener = nullptr;

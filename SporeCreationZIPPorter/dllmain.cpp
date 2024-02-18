@@ -11,7 +11,7 @@
 #include <Spore/UTFWin/cSPUIMessageBox.h>
 #include "SporepediaLoadListener.h"
 
-
+SporepediaLoadListener* loadListener = nullptr;
 
 void Initialize()
 {
