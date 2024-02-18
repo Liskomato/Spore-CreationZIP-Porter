@@ -99,7 +99,7 @@ static_detour(dialogbox_detour,bool(UTFWin::MessageBoxCallback*,const ResourceKe
 			loadListener->detouredCallback = pCallback;
 			int callbackP = (int)pCallback - 0x10;
 			loadListener->detouredCallbackParent = (cScenarioUI*)callbackP;
-			if (GameModeManager.GetActiveModeID() != kGGEMode || GameModeManager.GetActiveModeID() != kGameSpace) {
+			if (Simulator::GetGameModeID() != kGGEMode && Simulator::GetGameModeID() != kGameSpace) {
 				if (name.instanceID == 0x7a555cd8)
 					return original_function(pCallback, ResourceKey(id("AskToDownload-NotInGGE-Replace"), name.typeID, name.groupID));
 				else 

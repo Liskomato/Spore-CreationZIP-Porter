@@ -25,7 +25,7 @@ void ZIPExport::ParseLine(const ArgScript::Line& line)
 {
 	// This method is called when your cheat is invoked.
 	// Put your cheat code here.
-	if (GameModeManager.GetActiveModeID() != kGGEMode) {
+	if (Simulator::GetGameModeID() != kGGEMode) {
 		LocalizedString string = LocalizedString(id("AutoDownloadPrompt"), 0x7, u"Using the Creation ZIP Porter's cheats is not recommended while not in the main menu due to crashing risks.\n\nAre you sure you want to continue?");
 		eastl::wstring localized;
 		localized.assign_convert(string.GetText());
