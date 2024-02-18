@@ -95,7 +95,7 @@ void SporepediaLoadListener::DownloadAssets(const ResourceKey& selection) {
 				i++;
 			}
 		}
-		if (detouredCallback != nullptr) {
+		if (detouredCallback != nullptr && Simulator::GetGameModeID() != kGameSpace) {
 			UTFWin::cSPUIMessageBox::ShowDialog(this, ResourceKey(id("DownloadFinished"), TypeIDs::prop, 0xf5f6fde8));
 		}
 		else {
