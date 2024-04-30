@@ -28,6 +28,17 @@ void ImportCreations::ParseLine(const ArgScript::Line& line)
 {
 	// This method is called when your cheat is invoked.
 	// Put your cheat code here.
+	if (Simulator::GetGameModeID() != kGGEMode) {
+		LocalizedString string = LocalizedString(id("AutoDownloadPrompt"),0x7,u"Using the Creation ZIP Porter's cheats is not recommended while not in the main menu due to crashing risks.\n\nAre you sure you want to continue?");
+		eastl::wstring localized;
+		localized.assign_convert(string.GetText());
+		int confirm = MessageBoxW(NULL,localized.c_str(), L"Creation ZIP Porter", MB_YESNO | MB_ICONWARNING);
+		if (confirm == IDNO) {
+			return;
+		}
+	}
+
+
 	if (line.HasFlag("a") || line.HasFlag("assets")) {
 		// Check if we can connect to Spore's servers
 		bool bConnect = InternetCheckConnectionW(L"http://www.spore.com/", FLAG_ICC_FORCE_CONNECTION, 0);

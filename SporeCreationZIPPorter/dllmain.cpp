@@ -8,8 +8,10 @@
 #include "AlternativePackageLocations.h"
 #include "ZipManager.h"
 #include "ZipLib.h"
+#include <Spore/UTFWin/cSPUIMessageBox.h>
+#include "SporepediaLoadListener.h"
 
-
+SporepediaLoadListener* loadListener = nullptr;
 
 void Initialize()
 {
@@ -32,6 +34,9 @@ void Initialize()
 	// Raw export cheats
 	CheatManager.AddCheat("assetExport",new CheatAssetExport());
 	CheatManager.AddCheat("adventureExport", new CheatAdventureExport());
+
+	loadListener = new SporepediaLoadListener();
+//	MessageManager.AddListener(loadListener, 0xcc0bf724);
 
 	// Initialize ZipManager
 	ZipManager.Initialize();
@@ -76,6 +81,41 @@ member_detour(ImportPNG_dtour, App::Thumbnail_cImportExport, bool(const char16_t
 	}
 };
 
+
+member_detour(cScenarioData_init_dtr, Simulator::cScenarioData, void(bool)) {
+
+	void detoured(bool boolean) {
+		
+		original_function(this,boolean);
+	}
+};
+
+static_detour(dialogbox_detour,bool(UTFWin::MessageBoxCallback*,const ResourceKey&)) {
+	
+	bool detoured(UTFWin::MessageBoxCallback* pCallback, const ResourceKey & name) {
+		SporeDebugPrint("Message box ID: %#x", name.instanceID);
+		if ((name.instanceID == 0x7a555cd8 || name.instanceID == 0x65d634a3) && loadListener != nullptr)
+		{
+			loadListener->detouredCallback = pCallback;
+			int callbackP = (int)pCallback - 0x10;
+			loadListener->detouredCallbackParent = (cScenarioUI*)callbackP;
+			if (Simulator::GetGameModeID() != kGGEMode && Simulator::GetGameModeID() != kGameSpace) {
+				if (name.instanceID == 0x7a555cd8)
+					return original_function(pCallback, ResourceKey(id("AskToDownload-NotInGGE-Replace"), name.typeID, name.groupID));
+				else 
+					return original_function(pCallback, ResourceKey(id("AskToDownload-NotInGGE"), name.typeID, name.groupID));
+			}
+			else {
+				loadListener->storedAdventureKey = loadListener->detouredCallbackParent->dummy->key;
+				if (name.instanceID == 0x7a555cd8)
+					return original_function(loadListener, ResourceKey(id("AskToDownload-Replace"), name.typeID, name.groupID));
+				else 
+					return original_function(loadListener, ResourceKey(id("AskToDownload"), name.typeID, name.groupID));
+			}
+		}
+		return original_function(pCallback, name);
+	}
+};
 
 
 //// ModAPI::ChooseAddress(0x563550, 0x5634b0)
@@ -145,6 +185,7 @@ void Dispose()
 {
 	// This method is called when the game is closing
 	ZipManager.Dispose();
+	loadListener = nullptr;
 }
 
 void AttachDetours()
@@ -155,6 +196,8 @@ void AttachDetours()
 	SavePNG_detour::attach(GetAddress(App::Thumbnail_cImportExport, SavePNG));
 	PNG_Detour07::attach(Address(ModAPI::ChooseAddress(0x5fba10, 0x5fbb90)));
 	ImportPNG_dtour::attach(Address(ModAPI::ChooseAddress(0x5fc240, 0x5fc3c0)));
+	cScenarioData_init_dtr::attach(GetAddress(Simulator::cScenarioData, Initialize));
+	dialogbox_detour::attach(GetAddress(UTFWin::cSPUIMessageBox,ShowDialog));
 
 	AlternativePackageLocations::AttachDetour();
 

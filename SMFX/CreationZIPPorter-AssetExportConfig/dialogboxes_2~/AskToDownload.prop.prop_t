@@ -1,0 +1,12 @@
+texts dialogButton0
+	(0x96071085!0x07aa5b67) "Cancel (PLACEHOLDER)"
+end
+texts dialogButton3
+	(AutoDownloadPrompt!0x00000001) "Login (PLACEHOLDER)"
+end
+int32 dialogEnterButton 3
+int32 dialogEscButton 0
+int32 dialogSelectedButton 3
+texts dialogText
+	(AutoDownloadPrompt!0x00000005) "Need Login (PLACEHOLDER)"
+end

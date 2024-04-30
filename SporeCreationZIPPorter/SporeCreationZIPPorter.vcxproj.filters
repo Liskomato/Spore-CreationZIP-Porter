@@ -58,6 +58,9 @@
     <ClInclude Include="ShopperMultiRequest.h">
       <Filter>SporeCreationZIPPorter\Headers</Filter>
     </ClInclude>
+    <ClInclude Include="SporepediaLoadListener.h">
+      <Filter>SporeCreationZIPPorter\Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -88,6 +91,9 @@
       <Filter>SporeCreationZIPPorter\Cheats</Filter>
     </ClCompile>
     <ClCompile Include="ShopperMultiRequest.cpp">
+      <Filter>SporeCreationZIPPorter</Filter>
+    </ClCompile>
+    <ClCompile Include="SporepediaLoadListener.cpp">
       <Filter>SporeCreationZIPPorter</Filter>
     </ClCompile>
   </ItemGroup>

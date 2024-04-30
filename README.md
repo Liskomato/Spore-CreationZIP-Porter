@@ -3,7 +3,7 @@ A foundational Spore ModAPI mod to allow loading Spore creations to and from ZIP
 
 This mod will also allow you to load ``.package`` and ``.zip`` files from Spore ModAPI Launcher Kit's `mLibs` folder, allowing you to essentially create `.sporemod` files containing ***both*** creations and the mods required by them. 
 
-The mod will also allow you to download creations from both Spore.com and elsewhere in the internet straight from the cheat console, *without need for a Spore online account*. You can also download all of the adventure's required assets via this, allowing easier ability to play and share adventures in general.
+The mod will also allow you to download creations from both Spore.com and elsewhere in the internet straight from the cheat console, *without need for a Spore online account*. You can download all of the adventure's required assets via this, allowing easier ability to play and share adventures in general.
 
 ## Features
 * Five new cheats
@@ -22,12 +22,13 @@ The mod will also allow you to download creations from both Spore.com and elsewh
     * ``CheckForZIPs`` - Refreshes the ZIP Manager to check if new files have been added to its known directories.
 * Automatic loading of ZIP and PNG files from ``Documents\My Spore Creations\ZIPs`` and ``%programdata%\Spore ModAPI Launcher Kit\mLibs``.
 * Ability to load ``.package`` files into the game from ``%programdata%\Spore ModAPI Launcher Kit\mLibs``.
+* Ability to download adventure creations from the servers in-game without a Spore/EA account.
 
 ## FAQ
 ### How do I download creations from the Spore servers with this mod? Do I need an account?
-**You don't need a Spore.com account in order to download creations from the server with this mod.** All you need to do is either use the ``importCreations`` cheat with the appropriate arguments, or the `ZIPExport` cheat in case you wanted to export an adventure in a ZIP file format. 
+**You don't need a Spore.com account in order to download creations from the server with this mod.** When you try to open an online adventure that you don't have the creations for, the mod will ask if you want to download the creations from Spore.com, and then do so automatically once confirmed. You will get a notification once the download is finished.
 
-For a future version I will try to see if it would be possible to download adventures' required creations automatically without server access, like it does when opening an adventure downloaded from the servers.
+Alternatively, you can use the ``importCreations`` cheat to download creations from the Spore website or from elsewhere in the internet into the game in either `.png` or `.zip` format, and that way be able to access the adventure instantly once it is added into the game. 
 
 ### How does creating modded adventure packs work with this?
 **There are currently two ways to make adventure modpacks.**
